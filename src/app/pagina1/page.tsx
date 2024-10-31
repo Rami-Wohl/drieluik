@@ -25,7 +25,7 @@ export default function Pagina1() {
             <AccordionTrigger className="rounded-md bg-red-400 bg-opacity-80 p-4">
               Lorem Ipsum
             </AccordionTrigger>
-            <AccordionContent className="bg-white bg-opacity-90 p-6">
+            <AccordionContent className="flex flex-col bg-white bg-opacity-90 p-6">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 ac ornare enim, et tristique ex. Integer luctus porttitor lorem,
@@ -43,7 +43,9 @@ export default function Pagina1() {
                 vitae nec augue.
               </p>
               <Dialog>
-                <DialogTrigger className="mt-4">Oefening 1</DialogTrigger>
+                <DialogTrigger className="mt-4 place-self-center self-center rounded-full border px-4 py-2 hover:bg-white hover:shadow-sm">
+                  Oefening 1
+                </DialogTrigger>
                 <DialogContent className="max-h-[90vh] w-11/12 max-w-none overflow-scroll rounded-md lg:w-2/3">
                   <DialogHeader>
                     <DialogTitle className="mb-4">Oefening 1</DialogTitle>

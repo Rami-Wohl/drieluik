@@ -88,7 +88,9 @@ const NavComponents = () => {
               <BurgerMenuIcon stroke={"#b1b1b1"} height={40} width={40} />{" "}
             </button>
           </div>
-          <div className="absolute flex flex-wrap items-center justify-center">
+          <div
+            className={`${path === "/" ? "-translate-y-20" : "translate-y-0"} absolute flex flex-wrap items-center justify-center transition-transform duration-1000 ease-in-out`}
+          >
             <h2 className="text-fontSecondary mt-4 flex flex-row gap-4 font-sans text-base font-bold uppercase">
               <Link href="/pagina1">
                 <div
