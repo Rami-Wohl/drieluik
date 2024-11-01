@@ -16,7 +16,7 @@ import {
 export default function CravingPage() {
   return (
     <>
-      <div className="flex w-full max-w-[800px] flex-col items-center gap-12 px-4 py-16">
+      <div className="mt-32 flex w-full max-w-[800px] flex-col items-center gap-12 px-4">
         <h1 className="text-5xl font-extrabold tracking-tight text-blue-950 text-opacity-80 sm:text-[5rem]">
           Craving
         </h1>
