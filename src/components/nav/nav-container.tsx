@@ -7,10 +7,10 @@ import useScrollPosition from "~/hooks/use-scroll-position";
 import { NavLink } from "./nav-link";
 import { useNavContext } from "~/context/nav-context";
 import { usePathname } from "next/navigation";
-import Circle1Icon from "../icons/circle-1-icon";
-import Circle2Icon from "../icons/circle-2-icon";
-import Circle3Icon from "../icons/circle-3-icon";
 import Link from "next/link";
+import AfbouwenIcon from "../icons/afbouwen-icon";
+import CravingIcon from "../icons/craving-icon";
+import ZingevingIcon from "../icons/zingeving-icon";
 
 const routes = {
   main: "/",
@@ -35,6 +35,8 @@ const NavComponents = () => {
   }, [setMobileMenuVisible, path]);
 
   const { isOnTop } = useScrollPosition();
+
+  console.log(isOnTop);
 
   return (
     <div>
@@ -76,7 +78,7 @@ const NavComponents = () => {
         className={`fixed z-[2] w-full transition-transform duration-500 ease-in-out`}
       >
         <div
-          className={`bg-primary relative flex h-[55px] flex-wrap items-center justify-center px-4 py-1 ${isOnTop ? "bg-opacity-30" : "bg-opacity-100"}`}
+          className={`relative flex h-[80px] flex-wrap items-center justify-center bg-[#8D99AE] px-4 py-1 ${isOnTop ? "bg-opacity-0" : "bg-opacity-100"}`}
         >
           <div ref={mobileMenuHandlerRef}>
             <button
@@ -91,26 +93,30 @@ const NavComponents = () => {
           <div
             className={`${path === "/" ? "-translate-y-20" : "translate-y-0"} absolute flex flex-wrap items-center justify-center transition-transform duration-1000 ease-in-out`}
           >
-            <h2 className="text-fontSecondary mt-4 flex flex-row gap-4 font-sans text-base font-bold uppercase">
+            <h2 className="text-fontSecondary flex flex-row gap-6 font-sans text-base font-bold uppercase">
               <Link href="/pagina1">
                 <div
-                  className={`${path === "/pagina1" ? "-translate-x-2 scale-150" : "translate-x-0 scale-100"} transition-transform duration-500`}
+                  className={`${path === "/pagina1" ? "-translate-x-2 scale-150" : "translate-x-0 scale-100"} rounded-md border-2 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-2 transition-transform duration-500`}
                 >
-                  <Circle1Icon stroke={"#b1b1b1"} height={40} width={40} />
+                  <AfbouwenIcon height={24} width={24} />
                 </div>
               </Link>
               <Link href="/pagina2">
                 <div
-                  className={`${path === "/pagina2" ? "scale-150" : "scale-100"} transition-transform duration-500`}
+                  className={`${path === "/pagina2" ? "scale-150" : "scale-100"} rounded-md border-2 border-blue-900 border-opacity-20 bg-blue-900 bg-opacity-10 p-2 transition-transform duration-500`}
                 >
-                  <Circle2Icon stroke={"#b1b1b1"} height={40} width={40} />
+                  <CravingIcon
+                    height={24}
+                    width={24}
+                    className="fill-blue-950"
+                  />
                 </div>
               </Link>
               <Link href="/pagina3">
                 <div
-                  className={`${path === "/pagina3" ? "translate-x-2 scale-150" : "translate-x-0 scale-100"} transition-transform duration-500`}
+                  className={`${path === "/pagina3" ? "translate-x-2 scale-150" : "translate-x-0 scale-100"} rounded-md border-2 border-green-900 border-opacity-20 bg-green-900 bg-opacity-10 p-2 transition-transform duration-500`}
                 >
-                  <Circle3Icon stroke={"#b1b1b1"} height={40} width={40} />
+                  <ZingevingIcon height={24} width={24} />
                 </div>
               </Link>
             </h2>
