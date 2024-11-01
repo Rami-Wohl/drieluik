@@ -49,7 +49,7 @@ export default function ZingevingPage() {
                 <DialogTrigger className="mt-4 place-self-center self-center rounded-full border bg-white bg-opacity-30 px-4 py-2 hover:bg-opacity-70 hover:shadow-sm">
                   Oefening 1
                 </DialogTrigger>
-                <DialogContent className="max-h-[90vh] w-11/12 max-w-none overflow-scroll rounded-md lg:w-2/3">
+                <DialogContent className="max-h-[80vh] w-11/12 max-w-none overflow-scroll rounded-md lg:w-2/3">
                   <DialogHeader>
                     <DialogTitle className="mb-4">Oefening 1</DialogTitle>
                     <h3 className="mb-4">

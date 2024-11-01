@@ -42,7 +42,7 @@ const NavComponents = () => {
     <div>
       <nav
         ref={mobileMenuRef}
-        className={`to-background fixed left-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-y border-r-2 border-[#545c68] border-opacity-10 bg-gradient-to-b from-[#ffffff] text-left ${
+        className={`to-background fixed left-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-gradient-to-b from-[#ffffff] text-left ${
           isMobileMenuVisible ? "translate-x-0" : "-translate-x-full"
         } min-h-full w-full pt-[55px] transition-transform duration-500 ease-in-out lg:w-80`}
       >
