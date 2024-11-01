@@ -10,7 +10,7 @@ export default function HomePage() {
         Het Drieluik
       </h1>
       <div className="flex flex-col items-center justify-center gap-12 px-4 py-16 lg:flex-row">
-        <Link href="/pagina1">
+        <Link href="/afbouwen">
           <div
             className={`flex h-40 w-40 flex-col items-center justify-evenly gap-2 rounded-md border-4 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-4 pt-6 font-sans text-2xl text-red-950 text-opacity-80 shadow-lg transition-transform duration-500 hover:scale-125 lg:h-60 lg:gap-10`}
           >
@@ -18,7 +18,7 @@ export default function HomePage() {
             <span>Afbouwen</span>
           </div>
         </Link>
-        <Link href="/pagina2">
+        <Link href="/craving">
           <div
             className={`flex h-40 w-40 flex-col items-center justify-evenly gap-2 rounded-md border-4 border-blue-900 border-opacity-20 bg-blue-900 bg-opacity-10 p-4 pt-6 font-sans text-2xl text-blue-950 text-opacity-80 shadow-lg transition-transform duration-500 hover:scale-125 lg:h-60 lg:gap-10`}
           >
@@ -26,7 +26,7 @@ export default function HomePage() {
             <span>Craving</span>
           </div>
         </Link>
-        <Link href="/pagina3">
+        <Link href="/zingeving">
           <div
             className={`flex h-40 w-40 flex-col items-center justify-evenly gap-2 rounded-md border-4 border-green-900 border-opacity-20 bg-green-900 bg-opacity-10 p-4 pt-6 font-sans text-2xl text-green-950 text-opacity-80 shadow-lg transition-transform duration-500 hover:scale-125 lg:h-60 lg:gap-10`}
           >

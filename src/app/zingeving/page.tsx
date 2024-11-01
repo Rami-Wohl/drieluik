@@ -13,19 +13,22 @@ import {
   DialogTrigger,
 } from "~/components/ui/dialog";
 
-export default function Pagina1() {
+export default function ZingevingPage() {
   return (
     <>
-      <div className="flex w-full max-w-[800px] flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
-          Luik <span className="text-[hsl(310,51%,38%)]">1</span>
+      <div className="flex w-full max-w-[800px] flex-col items-center gap-12 px-4 py-16">
+        <h1 className="text-5xl font-extrabold tracking-tight text-green-950 text-opacity-80 sm:text-[5rem]">
+          Zingeving
         </h1>
         <Accordion type="single" collapsible className="w-full text-black">
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="rounded-md bg-red-400 bg-opacity-80 p-4">
+          <AccordionItem
+            value="item-1"
+            className="border-green-950 border-opacity-40"
+          >
+            <AccordionTrigger className="rounded-md bg-green-900 bg-opacity-30 p-4">
               Lorem Ipsum
             </AccordionTrigger>
-            <AccordionContent className="flex flex-col bg-white bg-opacity-90 p-6">
+            <AccordionContent className="flex flex-col bg-green-900 bg-opacity-5 p-6">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 ac ornare enim, et tristique ex. Integer luctus porttitor lorem,
@@ -43,7 +46,7 @@ export default function Pagina1() {
                 vitae nec augue.
               </p>
               <Dialog>
-                <DialogTrigger className="mt-4 place-self-center self-center rounded-full border px-4 py-2 hover:bg-white hover:shadow-sm">
+                <DialogTrigger className="mt-4 place-self-center self-center rounded-full border bg-white bg-opacity-30 px-4 py-2 hover:bg-opacity-70 hover:shadow-sm">
                   Oefening 1
                 </DialogTrigger>
                 <DialogContent className="max-h-[90vh] w-11/12 max-w-none overflow-scroll rounded-md lg:w-2/3">
@@ -291,11 +294,14 @@ export default function Pagina1() {
               </Dialog>
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger className="rounded-md bg-red-400 bg-opacity-80 p-4">
+          <AccordionItem
+            value="item-2"
+            className="border-green-950 border-opacity-40"
+          >
+            <AccordionTrigger className="rounded-md bg-green-900 bg-opacity-30 p-4">
               Lorem Ipsum: Reloaded
             </AccordionTrigger>
-            <AccordionContent className="bg-white bg-opacity-90 p-6">
+            <AccordionContent className="bg-green-900 bg-opacity-5 p-6">
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
               posuere cubilia curae; Proin interdum sagittis auctor. Morbi
               lacinia massa et quam tincidunt dignissim. Donec lobortis erat at
@@ -306,11 +312,14 @@ export default function Pagina1() {
               varius arcu.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger className="rounded-md bg-red-400 bg-opacity-80 p-4">
+          <AccordionItem
+            value="item-3"
+            className="border-green-950 border-opacity-40"
+          >
+            <AccordionTrigger className="rounded-md bg-green-900 bg-opacity-30 p-4">
               The Return of Lorem Ipsum
             </AccordionTrigger>
-            <AccordionContent className="bg-white bg-opacity-90 p-6">
+            <AccordionContent className="bg-green-900 bg-opacity-5 p-6">
               Phasellus quis bibendum libero, eu finibus orci. Proin magna leo,
               congue sed lacus quis, luctus maximus eros. Sed semper elit vel
               sapien eleifend dapibus. Fusce tellus lectus, finibus in purus at,

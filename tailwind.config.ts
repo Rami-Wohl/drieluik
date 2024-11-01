@@ -1,5 +1,4 @@
 import { type Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
 import TailwindCssAnimate from "tailwindcss-animate";
 
 export default {
@@ -15,7 +14,9 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      colors: {},
+      colors: {
+        background: "#788098",
+      },
       keyframes: {
         "accordion-down": {
           from: {

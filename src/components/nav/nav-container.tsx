@@ -15,9 +15,9 @@ import ZingevingIcon from "../icons/zingeving-icon";
 const routes = {
   main: "/",
   about: "/over",
-  pagina1: "/pagina1",
-  pagina2: "/pagina2",
-  pagina3: "/pagina3",
+  afbouwen: "/afbouwen",
+  craving: "/craving",
+  zingeving: "/zingeving",
 };
 
 const NavComponents = () => {
@@ -42,7 +42,7 @@ const NavComponents = () => {
     <div>
       <nav
         ref={mobileMenuRef}
-        className={`fixed left-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-y border-r border-white border-opacity-10 bg-white text-left lg:bg-opacity-20 ${
+        className={`to-background fixed left-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-y border-r-2 border-[#545c68] border-opacity-10 bg-gradient-to-b from-[#ffffff] text-left ${
           isMobileMenuVisible ? "translate-x-0" : "-translate-x-full"
         } min-h-full w-full pt-[55px] transition-transform duration-500 ease-in-out lg:w-80`}
       >
@@ -58,18 +58,18 @@ const NavComponents = () => {
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <NavLink
-            href={routes.pagina1}
-            title={"Pagina1"}
+            href={routes.afbouwen}
+            title={"Afbouwen"}
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <NavLink
-            href={routes.pagina2}
-            title={"Pagina2"}
+            href={routes.craving}
+            title={"Craving"}
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <NavLink
-            href={routes.pagina3}
-            title={"Pagina3"}
+            href={routes.zingeving}
+            title={"Zingeving"}
             closeMenu={() => setMobileMenuVisible(false)}
           />
         </div>
@@ -93,17 +93,17 @@ const NavComponents = () => {
           <div
             className={`${path === "/" ? "-translate-y-20" : "translate-y-0"} absolute flex flex-wrap items-center justify-center transition-transform duration-1000 ease-in-out`}
           >
-            <h2 className="text-fontSecondary flex flex-row gap-6 font-sans text-base font-bold uppercase">
-              <Link href="/pagina1">
+            <h2 className="flex flex-row gap-6 font-sans text-base text-black text-opacity-80">
+              <Link href="/afbouwen">
                 <div
-                  className={`${path === "/pagina1" ? "-translate-x-2 scale-150" : "translate-x-0 scale-100"} rounded-md border-2 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-2 transition-transform duration-500`}
+                  className={`${path === "/afbouwen" ? "-translate-x-2 scale-150" : "translate-x-0 scale-100"} rounded-md border-2 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-2 transition-transform duration-500`}
                 >
                   <AfbouwenIcon height={24} width={24} />
                 </div>
               </Link>
-              <Link href="/pagina2">
+              <Link href="/craving">
                 <div
-                  className={`${path === "/pagina2" ? "scale-150" : "scale-100"} rounded-md border-2 border-blue-900 border-opacity-20 bg-blue-900 bg-opacity-10 p-2 transition-transform duration-500`}
+                  className={`${path === "/craving" ? "scale-150" : "scale-100"} rounded-md border-2 border-blue-900 border-opacity-20 bg-blue-900 bg-opacity-10 p-2 transition-transform duration-500`}
                 >
                   <CravingIcon
                     height={24}
@@ -112,9 +112,9 @@ const NavComponents = () => {
                   />
                 </div>
               </Link>
-              <Link href="/pagina3">
+              <Link href="/zingeving">
                 <div
-                  className={`${path === "/pagina3" ? "translate-x-2 scale-150" : "translate-x-0 scale-100"} rounded-md border-2 border-green-900 border-opacity-20 bg-green-900 bg-opacity-10 p-2 transition-transform duration-500`}
+                  className={`${path === "/zingeving" ? "translate-x-2 scale-150" : "translate-x-0 scale-100"} rounded-md border-2 border-green-900 border-opacity-20 bg-green-900 bg-opacity-10 p-2 transition-transform duration-500`}
                 >
                   <ZingevingIcon height={24} width={24} />
                 </div>
