@@ -32,10 +32,10 @@ type Report = {
 function generateReport(props: Report) {
   const dateTimeFormatted = formatDateTime(new Date());
   const reportContent = `
-    Report gemaakt op: ${dateTimeFormatted}
+    Rapport gemaakt op: ${dateTimeFormatted}
 
     Middelengebruik: ${substancesScoreLabels[Number(props.substancesScore) - 1]}
-    Financiën: ${financesScoreLabels[Number(props.financesScore) - 1]}
+    Financien: ${financesScoreLabels[Number(props.financesScore) - 1]}
     Gezondheid: ${healthScoreLabels[Number(props.healthScore) - 1]}
     Zingeving: ${meaningScoreLabels[Number(props.meaningScore) - 1]}
     Psychisch welbevinden: ${psychologicalScoreLabels[Number(props.psychologicalScore) - 1]}
