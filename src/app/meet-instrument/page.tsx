@@ -204,17 +204,21 @@ function ScoreSelectMenu({
       </DropdownMenuTrigger>
       <DropdownMenuContent
         side="bottom"
-        className="ml-2 bg-gradient-to-b from-red-50 to-green-50 px-0 py-4"
+        className="flex flex-col gap-2 bg-gradient-to-b from-red-50 to-green-50 px-2 py-2"
       >
         {Array.from({ length: 7 }, (_, i) => i + 1).map((n) => {
           return (
-            <DropdownMenuItem
+            <div
               key={`${label}-button-${n}`}
-              className={`max-w-[calc(100vw-24px)] cursor-pointer px-4 py-1`}
-              onClick={() => setValue(String(n))}
+              className="z-10 cursor-pointer rounded-lg border-2 border-black border-opacity-20 hover:border-opacity-70"
             >
-              {options[n - 1]}
-            </DropdownMenuItem>
+              <DropdownMenuItem
+                className={`max-w-[calc(100vw-24px)] cursor-pointer px-4 py-1`}
+                onClick={() => setValue(String(n))}
+              >
+                {options[n - 1]}
+              </DropdownMenuItem>
+            </div>
           );
         })}
       </DropdownMenuContent>

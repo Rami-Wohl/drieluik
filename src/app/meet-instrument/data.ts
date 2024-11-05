@@ -1,11 +1,11 @@
 export const substancesScoreLabels = [
-  "1 - Ik gebruik niet en wil dat ook niet.",
-  "2 - Ik gebruik niet, maar wil dat wel.",
-  "3 - Ik gebruik soms, maar alleen als ik dat van tevoren plan.",
+  "1 - Ik gebruik constant, ik denk niet dat ik nog kan stoppen.",
+  "2 - Ik gebruik regelmatig, het komt gewoon veel voor in mijn omgeving.",
+  "3 - Ik gebruik regelmatig, maar kies voor deze lifestyle.",
   "4 - Ik gebruik soms, als die zeldzame gelegenheid zich voordoet.",
-  "5 - Ik gebruik regelmatig, maar kies voor deze lifestyle.",
-  "6 - Ik gebruik regelmatig, het komt gewoon veel voor in mijn omgeving.",
-  "7 - Ik gebruik constant, ik denk niet dat ik nog kan stoppen.",
+  "5 - Ik gebruik soms, maar alleen als ik dat van tevoren plan.",
+  "6 - Ik gebruik niet, maar wil dat wel.",
+  "7 - Ik gebruik niet en wil dat ook niet.",
 ];
 
 export const financesScoreLabels = [
