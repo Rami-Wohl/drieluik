@@ -193,7 +193,7 @@ function ScoreSelectMenu({
   options: string[];
 }) {
   return (
-    <DropdownMenu>
+    <DropdownMenu modal>
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
@@ -204,23 +204,27 @@ function ScoreSelectMenu({
       </DropdownMenuTrigger>
       <DropdownMenuContent
         side="bottom"
-        className="flex flex-col gap-2 bg-gradient-to-b from-red-50 to-green-50 px-2 py-2"
+        className="flex items-center justify-center bg-gradient-to-b from-red-50 to-green-50 px-2 py-2"
       >
-        {Array.from({ length: 7 }, (_, i) => i + 1).map((n) => {
-          return (
-            <div
-              key={`${label}-button-${n}`}
-              className="z-10 cursor-pointer rounded-lg border-2 border-black border-opacity-20 hover:border-opacity-70"
-            >
-              <DropdownMenuItem
-                className={`max-w-[calc(100vw-24px)] cursor-pointer px-4 py-1`}
-                onClick={() => setValue(String(n))}
+        <div className="relative flex max-h-80 flex-col gap-2 overflow-y-scroll md:max-h-full">
+          {Array.from({ length: 7 }, (_, i) => i + 1).map((n) => {
+            return (
+              <div
+                key={`${label}-button-${n}`}
+                className="z-10 cursor-pointer rounded-lg border-2 border-black border-opacity-20 hover:border-opacity-70"
               >
-                {options[n - 1]}
-              </DropdownMenuItem>
-            </div>
-          );
-        })}
+                <DropdownMenuItem
+                  className={`max-w-[calc(100vw-24px)] cursor-pointer px-4 py-1`}
+                  onClick={() => setValue(String(n))}
+                >
+                  {options[n - 1]}
+                </DropdownMenuItem>
+              </div>
+            );
+          })}
+          <div className="mb-4 md:hidden" />
+        </div>
+        <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-50 h-12 bg-gradient-to-t from-white to-transparent md:hidden"></div>
       </DropdownMenuContent>
     </DropdownMenu>
   );
