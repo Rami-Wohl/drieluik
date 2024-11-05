@@ -6,9 +6,12 @@ import ZingevingIcon from "~/components/icons/zingeving-icon";
 export default function HomePage() {
   return (
     <div className="flex h-full w-full flex-col items-center justify-center">
-      <h1 className="hidden font-sans text-5xl font-extrabold tracking-tight text-[#333333] sm:text-[5rem] lg:block">
+      <h1 className="mb-2 hidden font-sans text-5xl text-[1.1rem] font-semibold tracking-[0.2rem] text-[#333333] text-opacity-90 sm:text-5xl lg:block">
         Het Drieluik
       </h1>
+      <h2 className="hidden font-sans text-[1.1rem] text-lg font-light tracking-[0.1rem] text-[#333333] text-opacity-90 sm:text-2xl lg:block">
+        Een pasvorm voor maatwerk in verslavingsbehandeling
+      </h2>
       <div className="flex flex-col items-center justify-center gap-12 px-4 py-16 lg:flex-row">
         <Link href="/afbouwen">
           <div

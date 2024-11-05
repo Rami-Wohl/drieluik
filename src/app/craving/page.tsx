@@ -12,14 +12,13 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "~/components/ui/dialog";
+import { Pageheader } from "~/components/ui/pageheader";
 
 export default function CravingPage() {
   return (
     <>
       <div className="mt-32 flex w-full max-w-[800px] flex-col items-center gap-12 px-4">
-        <h1 className="text-5xl font-extrabold tracking-tight text-blue-950 text-opacity-80 sm:text-[5rem]">
-          Craving
-        </h1>
+        <Pageheader text="Craving" />
         <Accordion type="single" collapsible className="w-full text-black">
           <AccordionItem
             value="item-1"

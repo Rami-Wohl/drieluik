@@ -14,10 +14,13 @@ import ZingevingIcon from "../icons/zingeving-icon";
 
 const routes = {
   main: "/",
-  about: "/over",
+  missie: "/missie-en-visie",
   afbouwen: "/afbouwen",
   craving: "/craving",
   zingeving: "/zingeving",
+  contact: "/contact",
+  help: "/help",
+  instrument: "/meet-instrument",
 };
 
 const NavComponents = () => {
@@ -36,8 +39,6 @@ const NavComponents = () => {
 
   const { isOnTop } = useScrollPosition();
 
-  console.log(isOnTop);
-
   return (
     <div>
       <nav
@@ -53,23 +54,23 @@ const NavComponents = () => {
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <NavLink
-            href={routes.about}
-            title={"Over"}
+            href={routes.missie}
+            title={"Missie & Visie"}
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <NavLink
-            href={routes.afbouwen}
-            title={"Afbouwen"}
+            href={routes.instrument}
+            title={"Meet instrument"}
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <NavLink
-            href={routes.craving}
-            title={"Craving"}
+            href={routes.help}
+            title={"Help"}
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <NavLink
-            href={routes.zingeving}
-            title={"Zingeving"}
+            href={routes.contact}
+            title={"Contact"}
             closeMenu={() => setMobileMenuVisible(false)}
           />
         </div>
