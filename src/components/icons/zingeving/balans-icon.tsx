@@ -1,0 +1,119 @@
+import type { SVGProps } from "react";
+
+export default function BalansIcon({ ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      fill={props.fill ?? "none"}
+      viewBox="0 0 512 512"
+      height={props.height ?? "24"}
+      width={props.width ?? "24"}
+      strokeWidth={1.5}
+      stroke={props.stroke ?? "currentColor"}
+    >
+      <circle fill="#B5F1F4" cx="256" cy="256" r="256" />
+      <path
+        fill="#4CDBC4"
+        d="M280.274,510.847c105.351-9.911,192.119-83.654,221.239-182.156l-173.54-173.54l-1.027,1.56
+	l-65.774-65.774l-2.182,85.735l-21.52-21.52l-65.077,34.478l0.097,0.097c-23.204,2.043-77.243,6.799-77.243,6.799l60.576,60.576
+	c-5.249,2.372-9.002,4.07-9.002,4.07l50.195,50.195c-34.349,4.877-101.769,14.452-101.769,14.452L280.274,510.847z"
+      />
+      <rect
+        x="95.246"
+        y="284.444"
+        fill="#31BAFD"
+        width="142.222"
+        height="41.374"
+      />
+      <rect
+        x="95.246"
+        y="155.152"
+        fill="#FFD300"
+        width="142.222"
+        height="41.374"
+      />
+      <g>
+        <rect
+          x="146.825"
+          y="219.798"
+          fill="#D83E20"
+          width="90.648"
+          height="41.374"
+        />
+        <rect
+          x="271.084"
+          y="284.444"
+          fill="#D83E20"
+          width="142.222"
+          height="41.374"
+        />
+      </g>
+      <rect
+        x="271.084"
+        y="155.152"
+        fill="#FFD300"
+        width="56.889"
+        height="41.374"
+      />
+      <rect
+        x="271.084"
+        y="219.798"
+        fill="#31BAFD"
+        width="90.648"
+        height="41.374"
+      />
+      <rect
+        x="95.246"
+        y="305.131"
+        fill="#2B9ED8"
+        width="142.222"
+        height="20.687"
+      />
+      <rect
+        x="95.246"
+        y="172.391"
+        fill="#F4A200"
+        width="142.222"
+        height="24.135"
+      />
+      <g>
+        <rect
+          x="146.825"
+          y="239.623"
+          fill="#C1321F"
+          width="90.648"
+          height="21.549"
+        />
+        <rect
+          x="271.084"
+          y="305.131"
+          fill="#C1321F"
+          width="142.222"
+          height="20.687"
+        />
+      </g>
+      <rect
+        x="271.084"
+        y="172.391"
+        fill="#F4A200"
+        width="56.889"
+        height="24.135"
+      />
+      <rect
+        x="271.084"
+        y="239.623"
+        fill="#2B9ED8"
+        width="90.648"
+        height="21.549"
+      />
+      <rect
+        x="247.38"
+        y="90.936"
+        fill="#386895"
+        width="13.791"
+        height="312.889"
+      />
+    </svg>
+  );
+}
