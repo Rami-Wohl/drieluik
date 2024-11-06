@@ -57,10 +57,10 @@ function TijdslijnDiagram() {
       <div className="absolute -bottom-5 -right-3 h-12 font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
         Nu
       </div>
-      <div className="absolute left-[calc(65%-90px)] top-1 h-12 text-nowrap font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+      <div className="absolute left-[calc(65%-90px)] top-1 h-12 w-full whitespace-nowrap text-nowrap font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
         Positieve gebeurtenissen
       </div>
-      <div className="absolute -bottom-5 right-[calc(60%-80px)] h-12 text-nowrap font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+      <div className="absolute -bottom-5 left-[calc(30%-100px)] h-12 w-full whitespace-nowrap text-nowrap font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
         Negatieve gebeurtenissen
       </div>
     </div>
