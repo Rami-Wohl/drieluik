@@ -32,214 +32,69 @@ export function Kernquadranten() {
         icon={<KernquadrantenIcon height={72} width={72} />}
         title="Kernquadranten"
       />
-      <DialogContent className="max-h-[80vh] w-11/12 max-w-none overflow-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
-        <DialogHeader>
-          <DialogTitle className="mb-4">Oefening 1</DialogTitle>
-          <h3 className="mb-4">
-            Hier komt een korte samenvatting van een veel langer verhaal.
+      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
+        <DialogHeader className="mb-2 lg:mb-3">
+          <DialogTitle className="mb-1 w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
+            Kernquadranten
+          </DialogTitle>
+          <h3 className="w-full text-center font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
+            Wat zijn jouw kwaliteiten en uitdagingen?
           </h3>
-          <DialogDescription className="flex flex-col gap-2">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              ac ornare enim, et tristique ex. Integer luctus porttitor lorem,
-              at lobortis erat. Vivamus vestibulum orci interdum, luctus augue
-              id, venenatis purus. Phasellus eget faucibus mi, eu suscipit ante.
-              Fusce eu vestibulum magna. Orci varius natoque penatibus et magnis
-              dis parturient montes, nascetur ridiculus mus. Nunc lacinia est
-              neque, in pellentesque lacus interdum ullamcorper. Aenean nec
-              tellus vel massa hendrerit posuere. Ut pellentesque vehicula nisl
-              et rutrum. Donec ac erat molestie, varius leo ut, hendrerit velit.
-              Praesent cursus eros nec maximus varius. Nam volutpat, odio et
-              viverra placerat, sapien risus tempus diam, id venenatis neque
-              arcu sit amet urna. Suspendisse vitae sollicitudin nisi. Phasellus
-              vel orci ut urna aliquet semper vitae nec augue.
-            </p>
-            <p>
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae; Proin interdum sagittis auctor. Morbi
-              lacinia massa et quam tincidunt dignissim. Donec lobortis erat at
-              tempus luctus. Nam ullamcorper finibus euismod. Proin imperdiet
-              maximus dui, ut ullamcorper erat porta a. Fusce vestibulum ante
-              cursus purus luctus laoreet. Integer sodales diam cursus lectus
-              viverra, tempus congue ligula pharetra. Duis id pretium diam, in
-              varius arcu.
-            </p>
-            <p>
-              Phasellus quis bibendum libero, eu finibus orci. Proin magna leo,
-              congue sed lacus quis, luctus maximus eros. Sed semper elit vel
-              sapien eleifend dapibus. Fusce tellus lectus, finibus in purus at,
-              aliquet varius nisl. Donec maximus, orci volutpat ultrices
-              gravida, lorem felis pulvinar nibh, id scelerisque arcu quam vel
-              tellus. Integer euismod leo quis diam tincidunt venenatis. Proin
-              rhoncus pretium lectus et varius. Vivamus est mi, lacinia nec arcu
-              a, interdum congue enim. Maecenas in eros suscipit, maximus metus
-              vel, egestas sapien. Mauris tincidunt, tortor quis mollis rutrum,
-              leo dui cursus tortor, a fermentum orci nisl quis nulla. Nullam
-              fringilla cursus fermentum. Suspendisse et volutpat augue.
-            </p>
-            <p>
-              Sed vehicula, tellus ac elementum ultricies, libero sem eleifend
-              ex, viverra pretium felis enim ac lacus. Integer eu nulla justo.
-              Sed quis tempus orci. Sed in accumsan mauris. Suspendisse placerat
-              tortor ac nulla dictum, sed euismod sapien egestas. Aenean
-              pharetra, dui ut maximus efficitur, nisi magna malesuada purus, et
-              mollis lectus mi ut lacus. Morbi quis orci ullamcorper, vehicula
-              ex mattis, porta quam. Mauris euismod, arcu eu vehicula efficitur,
-              ipsum lectus mattis tellus, eget tincidunt enim sapien id metus.
-              Duis neque elit, dictum at fermentum at, porta et risus. Nullam
-              dui erat, porta ut mauris a, rutrum consectetur ex. Sed porta,
-              elit ac ornare cursus, sem urna tincidunt purus, sed ultricies
-              lorem enim ac sem.
-            </p>
-            <p>
-              Duis egestas tellus ut euismod luctus. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos
-              himenaeos. Donec finibus vehicula neque, euismod auctor leo
-              vehicula dictum. Sed quis convallis lorem, consequat pellentesque
-              tellus. Class aptent taciti sociosqu ad litora torquent per
-              conubia nostra, per inceptos himenaeos. Ut condimentum
-              pellentesque arcu scelerisque malesuada. Donec in lacus sodales,
-              tincidunt odio fermentum, pretium orci. Donec vulputate, lorem non
-              vestibulum consequat, diam quam hendrerit est, quis ultrices leo
-              quam ac ipsum. Aenean egestas eu nunc non scelerisque. Nullam
-              commodo leo sit amet augue rutrum, facilisis elementum urna
-              elementum. Sed eu scelerisque lectus.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              ac ornare enim, et tristique ex. Integer luctus porttitor lorem,
-              at lobortis erat. Vivamus vestibulum orci interdum, luctus augue
-              id, venenatis purus. Phasellus eget faucibus mi, eu suscipit ante.
-              Fusce eu vestibulum magna. Orci varius natoque penatibus et magnis
-              dis parturient montes, nascetur ridiculus mus. Nunc lacinia est
-              neque, in pellentesque lacus interdum ullamcorper. Aenean nec
-              tellus vel massa hendrerit posuere. Ut pellentesque vehicula nisl
-              et rutrum. Donec ac erat molestie, varius leo ut, hendrerit velit.
-              Praesent cursus eros nec maximus varius. Nam volutpat, odio et
-              viverra placerat, sapien risus tempus diam, id venenatis neque
-              arcu sit amet urna. Suspendisse vitae sollicitudin nisi. Phasellus
-              vel orci ut urna aliquet semper vitae nec augue.
-            </p>
-            <p>
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae; Proin interdum sagittis auctor. Morbi
-              lacinia massa et quam tincidunt dignissim. Donec lobortis erat at
-              tempus luctus. Nam ullamcorper finibus euismod. Proin imperdiet
-              maximus dui, ut ullamcorper erat porta a. Fusce vestibulum ante
-              cursus purus luctus laoreet. Integer sodales diam cursus lectus
-              viverra, tempus congue ligula pharetra. Duis id pretium diam, in
-              varius arcu.
-            </p>
-            <p>
-              Phasellus quis bibendum libero, eu finibus orci. Proin magna leo,
-              congue sed lacus quis, luctus maximus eros. Sed semper elit vel
-              sapien eleifend dapibus. Fusce tellus lectus, finibus in purus at,
-              aliquet varius nisl. Donec maximus, orci volutpat ultrices
-              gravida, lorem felis pulvinar nibh, id scelerisque arcu quam vel
-              tellus. Integer euismod leo quis diam tincidunt venenatis. Proin
-              rhoncus pretium lectus et varius. Vivamus est mi, lacinia nec arcu
-              a, interdum congue enim. Maecenas in eros suscipit, maximus metus
-              vel, egestas sapien. Mauris tincidunt, tortor quis mollis rutrum,
-              leo dui cursus tortor, a fermentum orci nisl quis nulla. Nullam
-              fringilla cursus fermentum. Suspendisse et volutpat augue.
-            </p>
-            <p>
-              Sed vehicula, tellus ac elementum ultricies, libero sem eleifend
-              ex, viverra pretium felis enim ac lacus. Integer eu nulla justo.
-              Sed quis tempus orci. Sed in accumsan mauris. Suspendisse placerat
-              tortor ac nulla dictum, sed euismod sapien egestas. Aenean
-              pharetra, dui ut maximus efficitur, nisi magna malesuada purus, et
-              mollis lectus mi ut lacus. Morbi quis orci ullamcorper, vehicula
-              ex mattis, porta quam. Mauris euismod, arcu eu vehicula efficitur,
-              ipsum lectus mattis tellus, eget tincidunt enim sapien id metus.
-              Duis neque elit, dictum at fermentum at, porta et risus. Nullam
-              dui erat, porta ut mauris a, rutrum consectetur ex. Sed porta,
-              elit ac ornare cursus, sem urna tincidunt purus, sed ultricies
-              lorem enim ac sem.
-            </p>
-            <p>
-              Duis egestas tellus ut euismod luctus. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos
-              himenaeos. Donec finibus vehicula neque, euismod auctor leo
-              vehicula dictum. Sed quis convallis lorem, consequat pellentesque
-              tellus. Class aptent taciti sociosqu ad litora torquent per
-              conubia nostra, per inceptos himenaeos. Ut condimentum
-              pellentesque arcu scelerisque malesuada. Donec in lacus sodales,
-              tincidunt odio fermentum, pretium orci. Donec vulputate, lorem non
-              vestibulum consequat, diam quam hendrerit est, quis ultrices leo
-              quam ac ipsum. Aenean egestas eu nunc non scelerisque. Nullam
-              commodo leo sit amet augue rutrum, facilisis elementum urna
-              elementum. Sed eu scelerisque lectus.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              ac ornare enim, et tristique ex. Integer luctus porttitor lorem,
-              at lobortis erat. Vivamus vestibulum orci interdum, luctus augue
-              id, venenatis purus. Phasellus eget faucibus mi, eu suscipit ante.
-              Fusce eu vestibulum magna. Orci varius natoque penatibus et magnis
-              dis parturient montes, nascetur ridiculus mus. Nunc lacinia est
-              neque, in pellentesque lacus interdum ullamcorper. Aenean nec
-              tellus vel massa hendrerit posuere. Ut pellentesque vehicula nisl
-              et rutrum. Donec ac erat molestie, varius leo ut, hendrerit velit.
-              Praesent cursus eros nec maximus varius. Nam volutpat, odio et
-              viverra placerat, sapien risus tempus diam, id venenatis neque
-              arcu sit amet urna. Suspendisse vitae sollicitudin nisi. Phasellus
-              vel orci ut urna aliquet semper vitae nec augue.
-            </p>
-            <p>
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae; Proin interdum sagittis auctor. Morbi
-              lacinia massa et quam tincidunt dignissim. Donec lobortis erat at
-              tempus luctus. Nam ullamcorper finibus euismod. Proin imperdiet
-              maximus dui, ut ullamcorper erat porta a. Fusce vestibulum ante
-              cursus purus luctus laoreet. Integer sodales diam cursus lectus
-              viverra, tempus congue ligula pharetra. Duis id pretium diam, in
-              varius arcu.
-            </p>
-            <p>
-              Phasellus quis bibendum libero, eu finibus orci. Proin magna leo,
-              congue sed lacus quis, luctus maximus eros. Sed semper elit vel
-              sapien eleifend dapibus. Fusce tellus lectus, finibus in purus at,
-              aliquet varius nisl. Donec maximus, orci volutpat ultrices
-              gravida, lorem felis pulvinar nibh, id scelerisque arcu quam vel
-              tellus. Integer euismod leo quis diam tincidunt venenatis. Proin
-              rhoncus pretium lectus et varius. Vivamus est mi, lacinia nec arcu
-              a, interdum congue enim. Maecenas in eros suscipit, maximus metus
-              vel, egestas sapien. Mauris tincidunt, tortor quis mollis rutrum,
-              leo dui cursus tortor, a fermentum orci nisl quis nulla. Nullam
-              fringilla cursus fermentum. Suspendisse et volutpat augue.
-            </p>
-            <p>
-              Sed vehicula, tellus ac elementum ultricies, libero sem eleifend
-              ex, viverra pretium felis enim ac lacus. Integer eu nulla justo.
-              Sed quis tempus orci. Sed in accumsan mauris. Suspendisse placerat
-              tortor ac nulla dictum, sed euismod sapien egestas. Aenean
-              pharetra, dui ut maximus efficitur, nisi magna malesuada purus, et
-              mollis lectus mi ut lacus. Morbi quis orci ullamcorper, vehicula
-              ex mattis, porta quam. Mauris euismod, arcu eu vehicula efficitur,
-              ipsum lectus mattis tellus, eget tincidunt enim sapien id metus.
-              Duis neque elit, dictum at fermentum at, porta et risus. Nullam
-              dui erat, porta ut mauris a, rutrum consectetur ex. Sed porta,
-              elit ac ornare cursus, sem urna tincidunt purus, sed ultricies
-              lorem enim ac sem.
-            </p>
-            <p>
-              Duis egestas tellus ut euismod luctus. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos
-              himenaeos. Donec finibus vehicula neque, euismod auctor leo
-              vehicula dictum. Sed quis convallis lorem, consequat pellentesque
-              tellus. Class aptent taciti sociosqu ad litora torquent per
-              conubia nostra, per inceptos himenaeos. Ut condimentum
-              pellentesque arcu scelerisque malesuada. Donec in lacus sodales,
-              tincidunt odio fermentum, pretium orci. Donec vulputate, lorem non
-              vestibulum consequat, diam quam hendrerit est, quis ultrices leo
-              quam ac ipsum. Aenean egestas eu nunc non scelerisque. Nullam
-              commodo leo sit amet augue rutrum, facilisis elementum urna
-              elementum. Sed eu scelerisque lectus.
-            </p>
-          </DialogDescription>
         </DialogHeader>
+        <div className="mb-4 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Weten waar je talenten liggen is natuurlijk goed voor je zelfbeeld,
+            maar helpt ook om uiteindelijk richting te geven aan je doelen. Er
+            zijn meerdere oefeningen die je kan doen om dit in kaart te brengen.
+            In groepsverband zou je het kwaliteitenspel kunnen inzetten en met
+            één gespreken zou je het kernkwadranten model kunnen gebruiken. Die
+            werkt als volgt:
+          </DialogDescription>
+          <div className="mb-4 flex w-full flex-col items-center justify-center">
+            <KernquadrantenTabel />
+          </div>
+          <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Je begint links bovenin met een positieve eigenschap of talent. Een
+            vak naar rechts schrijf je op hoe het eruitziet als je te veel van
+            die eigenschap laat zien of er in doorslaat. Daaronder (rechtsonder)
+            noteer je welke eigenschap je nog in zou kunnen investeren om beter
+            om te gaan met je uitdaging. En links daar van (linksonder) komt er
+            uit wat er gebeurt als je door zou slaan in die eigenschap (mensen
+            die dat van nature laten zien, zitten vaak in je allergie). Je kan
+            dus soms ook nieuwe kwaliteiten ontdekken door ergens anders in het
+            schema te starten.
+          </DialogDescription>
+        </div>
       </DialogContent>
     </Dialog>
+  );
+}
+
+function KernquadrantenTabel() {
+  return (
+    <div className="relative mt-2 flex h-60 w-full flex-col items-center justify-center lg:my-6 lg:mb-4 lg:h-60 lg:scale-100 lg:px-6">
+      <table
+        className={`relative h-full w-full border-collapse border-2 border-black border-opacity-70 bg-slate-300 p-2 text-center font-sans text-base font-semibold tracking-wide text-[#333] text-opacity-90 lg:text-lg`}
+      >
+        <tbody>
+          <tr className="w-full border-2 border-black border-opacity-70">
+            <th className="w-1/2 border-2 border-black border-opacity-70 px-4 text-center">
+              Kernkwaliteit
+            </th>
+            <th className="w-1/2 border-2 border-black border-opacity-70 px-4 text-center">
+              Valkuil
+            </th>
+          </tr>
+          <tr className="w-full border-2 border-black border-opacity-70">
+            <th className="w-1/2 border-2 border-black border-opacity-70 px-4 text-center">
+              Allergie
+            </th>
+            <th className="w-1/2 border-2 border-black border-opacity-70 px-4 text-center">
+              Uitdaging
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   );
 }
