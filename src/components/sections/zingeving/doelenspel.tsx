@@ -61,6 +61,9 @@ export function Doelenspel() {
               <ListItem>10. Spiritualiteit</ListItem>
             </ol>
           </div>
+          <div className="flex w-full flex-col items-center justify-center">
+            <DoelenspelKaarten />
+          </div>
           <DialogDescription className="flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Vervolgens leg je alle doelen op een stapel rechts van je (de start
             stapel). Dan pak je twee willekeurige doelen en die leg je recht
@@ -78,5 +81,50 @@ export function Doelenspel() {
         </div>
       </DialogContent>
     </Dialog>
+  );
+}
+
+function Kaart({
+  text,
+  top,
+  left,
+  right,
+  bottom,
+  z,
+}: {
+  text: string;
+  top?: number;
+  left?: number;
+  right?: number;
+  bottom?: number;
+  z?: number;
+}) {
+  return (
+    <div
+      style={{
+        top: top,
+        right: right,
+        left: left,
+        bottom: bottom,
+        zIndex: z,
+      }}
+      className={`absolute flex h-28 w-20 flex-col justify-end rounded-md border-2 border-black border-opacity-70 bg-slate-300 px-1 pb-3 text-center font-sans text-xs font-semibold tracking-wide text-[#333] text-opacity-90 lg:h-36 lg:w-24 lg:px-2 lg:text-sm`}
+    >
+      {text}
+    </div>
+  );
+}
+
+function DoelenspelKaarten() {
+  return (
+    <div className="relative mb-4 mt-2 flex h-[260px] w-full max-w-[400px] flex-col items-center lg:my-4 lg:h-[340px]">
+      <Kaart text={"Winnaar"} top={5} />
+      <Kaart text={"Verliezers"} bottom={5} left={0} />
+      <Kaart text={"Strijdende doelen"} bottom={5} z={2} />
+      <div
+        className={`absolute bottom-3 right-1/3 h-28 w-20 rounded-md border-2 border-black border-opacity-70 bg-slate-300 lg:h-36 lg:w-24`}
+      />
+      <Kaart text={"Start stapel"} bottom={5} right={0} />
+    </div>
   );
 }
