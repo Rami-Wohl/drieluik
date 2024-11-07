@@ -79,7 +79,7 @@ const NavComponents = () => {
         className={`fixed z-[2] w-full transition-transform duration-500 ease-in-out`}
       >
         <div
-          className={`relative flex h-[80px] flex-wrap items-center justify-center bg-[#8D99AE] px-4 py-1 ${isOnTop ? "bg-opacity-0" : "bg-opacity-100"}`}
+          className={`relative flex h-[80px] flex-wrap items-center justify-center bg-[#c9cdd3] px-4 py-1 transition-transform duration-1000 ease-in-out ${path === "/" ? "-translate-y-20 bg-opacity-0" : "translate-y-0 bg-opacity-100"}`}
         >
           <div ref={mobileMenuHandlerRef}>
             <button
@@ -97,14 +97,14 @@ const NavComponents = () => {
             <h2 className="flex flex-row gap-6 font-sans text-base text-black text-opacity-80">
               <Link href="/afbouwen">
                 <div
-                  className={`${path === "/afbouwen" ? "-translate-x-1 scale-125 lg:-translate-x-2 lg:scale-150" : "translate-x-0 scale-100"} rounded-md border-2 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-2 transition-transform duration-500`}
+                  className={`${path === "/afbouwen" ? "-translate-x-1 scale-125 lg:-translate-x-2 lg:scale-[1.35]" : "translate-x-0 scale-100"} rounded-md border-2 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-2 transition-transform duration-500`}
                 >
                   <AfbouwenIcon height={24} width={24} />
                 </div>
               </Link>
               <Link href="/craving">
                 <div
-                  className={`${path === "/craving" ? "scale-125 lg:scale-150" : "scale-100"} rounded-md border-2 border-blue-900 border-opacity-20 bg-blue-900 bg-opacity-10 p-2 transition-transform duration-500`}
+                  className={`${path === "/craving" ? "scale-125 lg:scale-[1.35]" : "scale-100"} rounded-md border-2 border-blue-900 border-opacity-20 bg-blue-900 bg-opacity-10 p-2 transition-transform duration-500`}
                 >
                   <CravingIcon
                     height={24}
@@ -115,7 +115,7 @@ const NavComponents = () => {
               </Link>
               <Link href="/zingeving">
                 <div
-                  className={`${path === "/zingeving" ? "translate-x-1 scale-125 lg:translate-x-2 lg:scale-150" : "translate-x-0 scale-100"} rounded-md border-2 border-green-900 border-opacity-20 bg-green-900 bg-opacity-10 p-2 transition-transform duration-500`}
+                  className={`${path === "/zingeving" ? "translate-x-1 scale-125 lg:translate-x-2 lg:scale-[1.35]" : "translate-x-0 scale-100"} rounded-md border-2 border-green-900 border-opacity-20 bg-green-900 bg-opacity-10 p-2 transition-transform duration-500`}
                 >
                   <ZingevingIcon height={24} width={24} />
                 </div>
