@@ -206,11 +206,12 @@ export function AdemhalingsOefening2() {
             </span>{" "}
             Nadat je je lichaam hebt gescand, merk je op hoe je je voelt. Dit
             kan een specifieke emotie zijn (zoals frustratie, onrust, kalmte) of
-            juist geen uitgesproken gevoel. Stel jezelf de vraag: "Hoe voelt
-            deze emotie in mijn lichaam?" Emoties manifesteren zich vaak fysiek,
-            zoals spanning in je borst, een knoop in je maag, of een lichte druk
-            in je keel. Observeer deze gevoelens zonder er iets aan te
-            veranderen. Laat de sensaties bestaan zonder erop te reageren.
+            juist geen uitgesproken gevoel. Stel jezelf de vraag: &quot;Hoe
+            voelt deze emotie in mijn lichaam?&quot; Emoties manifesteren zich
+            vaak fysiek, zoals spanning in je borst, een knoop in je maag, of
+            een lichte druk in je keel. Observeer deze gevoelens zonder er iets
+            aan te veranderen. Laat de sensaties bestaan zonder erop te
+            reageren.
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">
@@ -245,10 +246,11 @@ export function AdemhalingsOefening2() {
             of om je focus te verleggen. Dit kunnen verlangens zijn, zoals de
             impuls om je telefoon te pakken of een craving om een bepaalde
             handeling te verrichten. Erken deze impulsen zonder erop te
-            reageren. Zeg in gedachten tegen jezelf: "Dit is een impuls. Ik hoef
-            er nu niets mee te doen." Blijf rustig aanwezig in je lichaam,
-            zonder iets te veranderen of aan te passen aan deze verlangens. Laat
-            ze bestaan zonder dat ze een onmiddellijke reactie vereisen.
+            reageren. Zeg in gedachten tegen jezelf: &quot;Dit is een impuls. Ik
+            hoef er nu niets mee te doen.&quot; Blijf rustig aanwezig in je
+            lichaam, zonder iets te veranderen of aan te passen aan deze
+            verlangens. Laat ze bestaan zonder dat ze een onmiddellijke reactie
+            vereisen.
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">
