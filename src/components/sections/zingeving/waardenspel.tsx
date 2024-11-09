@@ -34,7 +34,7 @@ export function Waardenspel() {
                   Titel:
                 </td>
                 <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
-                  "De Waardenpiramide"
+                  &quot;De Waardenpiramide&quot;
                 </td>
               </tr>
               <tr className="h-auto">
@@ -43,8 +43,8 @@ export function Waardenspel() {
                 </td>
                 <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
                   Patiënten laten nadenken over wat zij belangrijk vinden en hoe
-                  zij hun keuzes prioriteren, met als einddoel hun "Top 5
-                  Waarden" in kaart te brengen.
+                  zij hun keuzes prioriteren, met als einddoel hun &quot;Top 5
+                  Waarden&quot; in kaart te brengen.
                 </td>
               </tr>
             </tbody>
@@ -80,25 +80,26 @@ export function Waardenspel() {
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Ronde 3:</span>Nu moet er gekozen
-            worden uit deze 10 waarden en kom je uit op de "Top 5 Waarden".
-            Bespreking: Bespreek deze "Top 5" met de cliënt. Laat de cliënt
-            nadenken over hoe deze waarden in hun leven passen en hoe deze hen
-            kunnen ondersteunen in hun herstel.
+            worden uit deze 10 waarden en kom je uit op de &quot;Top 5
+            Waarden&quot;. Bespreking: Bespreek deze &quot;Top 5&quot; met de
+            cliënt. Laat de cliënt nadenken over hoe deze waarden in hun leven
+            passen en hoe deze hen kunnen ondersteunen in hun herstel.
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Variatieopties:</span>
             <span>
-              <span className="italic">Scenariokoppeling:</span> Maak scenario's
-              waarbij elke waarde wordt toegepast in een situatie (bijv. 'Je
-              beste vriend vraagt je om hulp, maar je hebt een zware dag gehad.
-              Welke waarden komen hierbij kijken?').{" "}
+              <span className="italic">Scenariokoppeling:</span> Maak
+              scenario&apos;s waarbij elke waarde wordt toegepast in een
+              situatie (bijv. &apos;Je beste vriend vraagt je om hulp, maar je
+              hebt een zware dag gehad. Welke waarden komen hierbij
+              kijken?&apos;).{" "}
             </span>
             <span>
               <span className="italic">Reflectiekaarten:</span> Gebruik
               reflectievragen die de cliënten uitdagen om te denken over wat
-              deze waarde betekent in hun leven, zoals "Wanneer voelde je dat
-              deze waarde echt belangrijk voor je was?" of "Hoe helpt deze
-              waarde je in moeilijke tijden?"
+              deze waarde betekent in hun leven, zoals &quot;Wanneer voelde je
+              dat deze waarde echt belangrijk voor je was?&quot; of &quot;Hoe
+              helpt deze waarde je in moeilijke tijden?&quot;
             </span>{" "}
           </DialogDescription>
         </div>
@@ -114,7 +115,7 @@ export function Waardenspel() {
                   Titel:
                 </td>
                 <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
-                  "Waarden Tijdlijn"
+                  &quot;Waarden Tijdlijn&quot;
                 </td>
               </tr>
               <tr className="h-auto">
@@ -185,18 +186,18 @@ export function Waardenspel() {
             </span>{" "}
             Voor elke periode bespreek je de gekozen waarden.
             <span>
-              <br /> <span className="italic">Verleden:</span> "Waarom was deze
-              waarde destijds belangrijk? Hoe heeft die jou gevormd?"
+              <br /> <span className="italic">Verleden:</span> &quot;Waarom was
+              deze waarde destijds belangrijk? Hoe heeft die jou gevormd?&quot;
             </span>
             <span>
-              <span className="italic">Heden: </span> "Welke rol speelt deze
-              waarde nu in jouw leven? Hoe helpt deze jou om je sterk te
-              voelen?"
+              <span className="italic">Heden: </span> &quot;Welke rol speelt
+              deze waarde nu in jouw leven? Hoe helpt deze jou om je sterk te
+              voelen?&quot;
             </span>
             <span>
-              <span className="italic">Toekomst: </span> "Wat zou het betekenen
-              als je deze waarde meer centraal zou stellen in je leven? Hoe kan
-              deze waarde je helpen in je herstel?"
+              <span className="italic">Toekomst: </span> &quot;Wat zou het
+              betekenen als je deze waarde meer centraal zou stellen in je
+              leven? Hoe kan deze waarde je helpen in je herstel?&quot;
               <br />
             </span>
           </DialogDescription>

@@ -183,8 +183,8 @@ export function OntspanningsOefening2() {
             Vraag de patiënt om zich comfortabel te maken, zittend op een stoel
             of liggend, met voeten of lichaam ontspannen op de grond. Leg uit
             dat ze tijdens deze oefening hun zorgen, spanning of gedachten
-            kunnen 'laten vallen' en zich verbonden kunnen voelen met de grond
-            onder hen.
+            kunnen &apos;laten vallen&apos; en zich verbonden kunnen voelen met
+            de grond onder hen.
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="w-full font-semibold">
@@ -209,12 +209,12 @@ export function OntspanningsOefening2() {
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">
-              Stap 4: Visualisatie van 'wortels'{" "}
+              Stap 4: Visualisatie van &apos;wortels&apos;{" "}
             </span>
             Vraag de patiënt om zich voor te stellen dat ze als een boom wortels
             vanuit hun voeten of lichaam laten groeien, diep de aarde in. Deze
-            'wortels' nemen alle spanning en stress mee, die ze via de grond
-            laten wegstromen. Vraag hen om te voelen hoe elke uitademing
+            &apos;wortels&apos; nemen alle spanning en stress mee, die ze via de
+            grond laten wegstromen. Vraag hen om te voelen hoe elke uitademing
             spanning loslaat in de aarde en hoe ze zich stabieler en lichter
             voelen bij elke ademhaling.
           </DialogDescription>

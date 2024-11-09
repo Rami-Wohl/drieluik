@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { type ReactNode } from "react";
 import { Pageheader } from "~/components/ui/pageheader";
 
 function ListItem({ children }: { children: ReactNode }) {
