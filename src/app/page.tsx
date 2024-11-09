@@ -5,7 +5,7 @@ import ZingevingIcon from "~/components/icons/zingeving-icon";
 
 export default function HomePage() {
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center">
+    <div className="flex h-screen w-full flex-col items-center justify-center">
       <h1 className="mb-2 hidden font-sans text-5xl text-[1.1rem] font-semibold tracking-[0.2rem] text-[#333333] text-opacity-90 sm:text-5xl lg:block">
         Het Drieluik
       </h1>

@@ -6,19 +6,19 @@ import {
   DialogTitle,
 } from "~/components/ui/dialog";
 import { GameContainer } from "./kernquadranten";
-import TijdslijnIcon from "~/components/icons/zingeving/tijdlijn-icon";
+import TijdlijnIcon from "~/components/icons/zingeving/tijdlijn-icon";
 
-export function Tijdslijn() {
+export function Tijdlijn() {
   return (
     <Dialog>
       <GameContainer
-        icon={<TijdslijnIcon height={72} width={72} />}
-        title="Tijdslijn"
+        icon={<TijdlijnIcon height={72} width={72} />}
+        title="Tijdlijn"
       />
-      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
+      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
         <DialogHeader className="mb-2 lg:mb-3">
           <DialogTitle className="mb-1 w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
-            Tijdslijn
+            Tijdlijn
           </DialogTitle>
           <h3 className="w-full text-center font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
             Hoe is jouw leven tot nu toe gelopen?
@@ -35,7 +35,7 @@ export function Tijdslijn() {
             en de tijd te nemen om het allemaal goed te bekijken.
           </DialogDescription>
           <div className="mb-4 flex w-full flex-col items-center justify-center">
-            <TijdslijnDiagram />
+            <TijdlijnDiagram />
           </div>
         </div>
       </DialogContent>
@@ -43,7 +43,7 @@ export function Tijdslijn() {
   );
 }
 
-function TijdslijnDiagram() {
+function TijdlijnDiagram() {
   return (
     <div className="relative my-6 mt-2 flex h-28 w-5/6 flex-col items-center justify-center">
       <div className="absolute w-full border-t-4 border-black border-opacity-70" />

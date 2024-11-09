@@ -38,6 +38,8 @@ const NavComponents = () => {
   }, [setMobileMenuVisible, path]);
 
   const { isOnTop } = useScrollPosition();
+  const hideTopMenu = path === "/";
+  const hideNavBar = path === "/waardenlijst";
 
   return (
     <div>
@@ -76,23 +78,24 @@ const NavComponents = () => {
         </div>
       </nav>
       <div
-        className={`fixed z-[2] w-full transition-transform duration-500 ease-in-out`}
+        className={`fixed z-[2] w-full transition-transform duration-500 ease-in-out ${hideNavBar ? "-translate-y-20" : "translate-y-0"}`}
       >
         <div
-          className={`relative flex h-[80px] flex-wrap items-center justify-center bg-[#c9cdd3] px-4 py-1 transition-transform duration-1000 ease-in-out ${path === "/" ? "-translate-y-20 bg-opacity-0" : "translate-y-0 bg-opacity-100"}`}
+          className={`relative flex h-[80px] flex-wrap items-center justify-center ${isOnTop ? "bg-transparent" : "bg-[#c9cdd3]"} px-4 py-1`}
         >
           <div ref={mobileMenuHandlerRef}>
             <button
-              className="z-10 mr-auto flex h-10 w-10 scale-75 cursor-pointer flex-col justify-around border-none bg-transparent p-0 focus:outline-none"
+              className="z-10 mr-auto flex h-10 w-10 scale-75 cursor-pointer flex-col justify-around border-none p-0"
               onClick={() => {
                 setMobileMenuVisible(!isMobileMenuVisible);
               }}
+              tabIndex={1}
             >
               <BurgerMenuIcon stroke={"#b1b1b1"} height={40} width={40} />{" "}
             </button>
           </div>
           <div
-            className={`${path === "/" ? "-translate-y-20" : "translate-y-0"} absolute flex flex-wrap items-center justify-center transition-transform duration-1000 ease-in-out`}
+            className={`${hideTopMenu ? "-translate-y-20" : "translate-y-0"} absolute flex flex-wrap items-center justify-center transition-transform duration-1000 ease-in-out`}
           >
             <h2 className="flex flex-row gap-6 font-sans text-base text-black text-opacity-80">
               <Link href="/afbouwen">

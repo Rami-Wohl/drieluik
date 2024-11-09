@@ -16,7 +16,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html
+      lang="en"
+      className={`${GeistSans.variable} to-background bg-opacity-70 bg-gradient-to-b from-[#ffffff]`}
+    >
       <body>
         <LayoutWithNav>{children}</LayoutWithNav>
       </body>

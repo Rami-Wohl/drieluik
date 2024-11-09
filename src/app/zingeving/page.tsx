@@ -2,7 +2,7 @@ import { Balans } from "~/components/sections/zingeving/balans";
 import { Doelenspel } from "~/components/sections/zingeving/doelenspel";
 import { Kernquadranten } from "~/components/sections/zingeving/kernquadranten";
 import { SociaalKonvooi } from "~/components/sections/zingeving/sociaal-konvooi";
-import { Tijdslijn } from "~/components/sections/zingeving/tijdslijn";
+import { Tijdlijn } from "~/components/sections/zingeving/tijdlijn";
 import { Waardenspel } from "~/components/sections/zingeving/waardenspel";
 import { Pageheader } from "~/components/ui/pageheader";
 
@@ -20,7 +20,7 @@ export default function ZingevingPage() {
             <Kernquadranten />
             <SociaalKonvooi />
             <Waardenspel />
-            <Tijdslijn />
+            <Tijdlijn />
             <Balans />
           </div>
         </div>

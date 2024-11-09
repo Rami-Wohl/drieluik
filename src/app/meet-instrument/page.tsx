@@ -130,7 +130,7 @@ export default function InstrumentPage() {
               options={substancesScoreLabels}
             />
             <ValueRow
-              label="Financieën"
+              label="Financiën"
               value={financesScore}
               setValue={setFinancesScore}
               options={financesScoreLabels}
