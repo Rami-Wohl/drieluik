@@ -1,12 +1,14 @@
 import SociaalKonvooiIcon from "~/components/icons/zingeving/sociaal-konvooi-icon";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "~/components/ui/dialog";
 import { GameContainer } from "./kernquadranten";
+import { Button } from "~/components/ui/button";
 
 export function SociaalKonvooi() {
   return (
@@ -24,7 +26,7 @@ export function SociaalKonvooi() {
             Wie heb je momenteel in je omgeving en hoe goed werkt dat?
           </h3>
         </DialogHeader>
-        <div className="mb-4 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-6 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
           <DialogDescription className="flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Voor dit onderdeel kan je beginnen met het invullen van het sociaal
             konvooi (zie figuur hieronder). Bij deze oefening zet je jezelf
@@ -45,6 +47,15 @@ export function SociaalKonvooi() {
             <SociaalKonvooiCirkels />
           </div>
         </div>
+        <DialogClose asChild>
+          <Button
+            type="button"
+            variant="secondary"
+            className="rounded-md border bg-transparent"
+          >
+            Sluiten
+          </Button>
+        </DialogClose>
       </DialogContent>
     </Dialog>
   );

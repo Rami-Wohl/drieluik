@@ -1,5 +1,6 @@
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
@@ -7,6 +8,7 @@ import {
 } from "~/components/ui/dialog";
 import { GameContainer } from "./kernquadranten";
 import BalansIcon from "~/components/icons/zingeving/balans-icon";
+import { Button } from "~/components/ui/button";
 
 export function Balans() {
   return (
@@ -24,7 +26,7 @@ export function Balans() {
             Wat zijn de voor- en nadelen van gebruik?
           </h3>
         </DialogHeader>
-        <div className="mb-4 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-6 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
           <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Hier kan je het voor- en nadelen balans maken. Dit is makkelijk te
             doen op een whiteboard of een velletje papier. Je kan het als volgt
@@ -50,6 +52,15 @@ export function Balans() {
             </li>
           </ul>
         </div>
+        <DialogClose asChild>
+          <Button
+            type="button"
+            variant="secondary"
+            className="rounded-md border bg-transparent"
+          >
+            Sluiten
+          </Button>
+        </DialogClose>
       </DialogContent>
     </Dialog>
   );

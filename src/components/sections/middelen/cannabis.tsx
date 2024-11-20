@@ -249,7 +249,7 @@ function CannabisAnamnese() {
                 ]}
               />
               <CannabisTableValueRow
-                label="Charas"
+                label="Charras"
                 colors={[
                   "orange",
                   "green",

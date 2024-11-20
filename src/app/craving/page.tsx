@@ -58,7 +58,7 @@ export default function CravingPage() {
             className="border-blue-950 border-opacity-5"
           >
             <AccordionTrigger className="mb-1 rounded-md bg-blue-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
-              Ontspanningsoefening
+              Ontspanningsoefeningen
             </AccordionTrigger>
             <AccordionContent className="bg-blue-900 bg-opacity-5 p-6">
               <p className="mb-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">

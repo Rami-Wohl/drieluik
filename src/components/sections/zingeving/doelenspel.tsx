@@ -1,12 +1,14 @@
 import DoelenspelIcon from "~/components/icons/zingeving/doelenspel-icon";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "~/components/ui/dialog";
 import { GameContainer } from "./kernquadranten";
+import { Button } from "~/components/ui/button";
 
 function ListItem({ children }: { children: string }) {
   return (
@@ -32,7 +34,7 @@ export function Doelenspel() {
             Wat wil je graag allemaal doen met je leven?
           </h3>
         </DialogHeader>
-        <div className="mb-4 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-6 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
           <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Soms zal je je leven compleet nieuw vorm moeten geven als je uit een
             verslaving komt. Het doelenspel kan helpen om in beeld te brengen
@@ -79,6 +81,15 @@ export function Doelenspel() {
             alles totdat er een rangorde in de doelen is ontstaan.
           </DialogDescription>
         </div>
+        <DialogClose asChild>
+          <Button
+            type="button"
+            variant="secondary"
+            className="rounded-md border bg-transparent"
+          >
+            Sluiten
+          </Button>
+        </DialogClose>
       </DialogContent>
     </Dialog>
   );

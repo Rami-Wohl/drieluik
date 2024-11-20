@@ -1,5 +1,6 @@
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
@@ -9,6 +10,7 @@ import { GameContainer } from "./kernquadranten";
 import WaardenspelIcon from "~/components/icons/zingeving/waardenspel-icon";
 import Link from "next/link";
 import { Separator } from "@radix-ui/react-dropdown-menu";
+import { Button } from "~/components/ui/button";
 
 export function Waardenspel() {
   return (
@@ -131,7 +133,7 @@ export function Waardenspel() {
             </tbody>
           </table>
         </div>
-        <div className="mb-4 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-6 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Benodigdheden: </span>
             Een groot vel papier (of whiteboard) en stiften. Drie gekleurde
@@ -226,6 +228,15 @@ export function Waardenspel() {
             </span>{" "}
           </DialogDescription>
         </div>
+        <DialogClose asChild>
+          <Button
+            type="button"
+            variant="secondary"
+            className="rounded-md border bg-transparent"
+          >
+            Sluiten
+          </Button>
+        </DialogClose>
       </DialogContent>
     </Dialog>
   );

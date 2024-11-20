@@ -1,6 +1,8 @@
 import KernquadrantenIcon from "~/components/icons/zingeving/kernquadranten-icon";
+import { Button } from "~/components/ui/button";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
@@ -41,7 +43,7 @@ export function Kernquadranten() {
             Wat zijn jouw kwaliteiten en uitdagingen?
           </h3>
         </DialogHeader>
-        <div className="mb-4 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-6 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
           <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Weten waar je talenten liggen is natuurlijk goed voor je zelfbeeld,
             maar helpt ook om uiteindelijk richting te geven aan je doelen. Er
@@ -65,6 +67,15 @@ export function Kernquadranten() {
             schema te starten.
           </DialogDescription>
         </div>
+        <DialogClose asChild>
+          <Button
+            type="button"
+            variant="secondary"
+            className="rounded-md border bg-transparent"
+          >
+            Sluiten
+          </Button>
+        </DialogClose>
       </DialogContent>
     </Dialog>
   );
