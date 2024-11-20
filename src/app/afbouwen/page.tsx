@@ -1,3 +1,5 @@
+import { CannabisSection } from "~/components/sections/middelen/cannabis";
+import { CocaineSection } from "~/components/sections/middelen/cocaine";
 import {
   Accordion,
   AccordionContent,
@@ -9,8 +11,13 @@ import { Pageheader } from "~/components/ui/pageheader";
 export default function AfbouwenPage() {
   return (
     <>
-      <div className="mt-32 flex w-full max-w-[800px] flex-col items-center gap-12 px-4">
+      <div className="mt-32 flex w-full max-w-[800px] flex-col items-center gap-8 px-4">
         <Pageheader text="Afbouwen" />
+        <h2 className="px-2 font-sans text-sm text-[#333333] text-opacity-90 lg:text-lg">
+          Dit luik gaat over de verschillende middelen. Per middel vind je
+          algemene kennis, informatie voor voorlichting en tips voor afbouwen.{" "}
+        </h2>
+
         <Accordion type="single" collapsible className="w-full text-black">
           <AccordionItem
             value="cannabis"
@@ -20,7 +27,7 @@ export default function AfbouwenPage() {
               Cannabis
             </AccordionTrigger>
             <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
-              ...binnenkort beschikbaar...
+              <CannabisSection />
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
@@ -53,7 +60,7 @@ export default function AfbouwenPage() {
               Cocaïne
             </AccordionTrigger>
             <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
-              ...binnenkort beschikbaar...
+              <CocaineSection />
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
