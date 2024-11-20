@@ -14,13 +14,13 @@ export function AdemhalingsOefening1() {
     <Dialog>
       <DialogTrigger className="w-full gap-2 rounded-none bg-white bg-opacity-30 px-4 py-2 hover:bg-opacity-70 hover:shadow-sm">
         <div className="text-center font-sans text-sm font-light tracking-[1px] text-[#333333] text-opacity-90">
-          Basis Ademhalingsoefening
+          Basis ademhalingsoefening
         </div>
       </DialogTrigger>
       <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
         <DialogHeader className="mb-2 mt-4">
           <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
-            Basis Ademhalingsoefening
+            Basis ademhalingsoefening
           </DialogTitle>
         </DialogHeader>
         <div className="mb-6 flex flex-col gap-8 lg:px-4">

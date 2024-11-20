@@ -8,11 +8,11 @@ import {
 } from "~/components/ui/accordion";
 import { Pageheader } from "~/components/ui/pageheader";
 
-export default function AfbouwenPage() {
+export default function MiddelenPage() {
   return (
     <>
       <div className="mt-32 flex w-full max-w-[800px] flex-col items-center gap-8 px-4">
-        <Pageheader text="Afbouwen" />
+        <Pageheader text="Middelen" />
         <h2 className="px-2 font-sans text-sm text-[#333333] text-opacity-90 lg:text-lg">
           Dit luik gaat over de verschillende middelen. Per middel vind je
           algemene kennis, informatie voor voorlichting en tips voor afbouwen.{" "}

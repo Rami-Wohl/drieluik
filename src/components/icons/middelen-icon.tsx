@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-export default function AfbouwenIcon({ ...props }: SVGProps<SVGSVGElement>) {
+export default function MiddelenIcon({ ...props }: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

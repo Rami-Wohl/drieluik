@@ -8,14 +8,14 @@ import { NavLink } from "./nav-link";
 import { useNavContext } from "~/context/nav-context";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import AfbouwenIcon from "../icons/afbouwen-icon";
+import MiddelenIcon from "../icons/middelen-icon";
 import CravingIcon from "../icons/craving-icon";
 import ZingevingIcon from "../icons/zingeving-icon";
 
 const routes = {
   main: "/",
   missie: "/missie-en-visie",
-  afbouwen: "/afbouwen",
+  middelen: "/middelen",
   craving: "/craving",
   zingeving: "/zingeving",
   contact: "/contact",
@@ -45,7 +45,7 @@ const NavComponents = () => {
     <div>
       <nav
         ref={mobileMenuRef}
-        className={`to-background fixed left-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-gradient-to-b from-[#ffffff] text-left ${
+        className={`fixed left-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-gradient-to-b from-[#ffffff] to-background text-left ${
           isMobileMenuVisible ? "translate-x-0" : "-translate-x-full"
         } min-h-full w-full pt-[55px] transition-transform duration-500 ease-in-out lg:w-80`}
       >
@@ -98,11 +98,11 @@ const NavComponents = () => {
             className={`${hideTopMenu ? "-translate-y-20" : "translate-y-0"} absolute flex flex-wrap items-center justify-center transition-transform duration-1000 ease-in-out`}
           >
             <h2 className="flex flex-row gap-6 font-sans text-base text-black text-opacity-80">
-              <Link href="/afbouwen">
+              <Link href="/middelen">
                 <div
-                  className={`${path === "/afbouwen" ? "-translate-x-1 scale-125 lg:-translate-x-2 lg:scale-[1.35]" : "translate-x-0 scale-100"} rounded-md border-2 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-2 transition-transform duration-500`}
+                  className={`${path === "/middelen" ? "-translate-x-1 scale-125 lg:-translate-x-2 lg:scale-[1.35]" : "translate-x-0 scale-100"} rounded-md border-2 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-2 transition-transform duration-500`}
                 >
-                  <AfbouwenIcon height={24} width={24} />
+                  <MiddelenIcon height={24} width={24} />
                 </div>
               </Link>
               <Link href="/craving">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import AfbouwenIcon from "~/components/icons/afbouwen-icon";
+import MiddelenIcon from "~/components/icons/middelen-icon";
 import CravingIcon from "~/components/icons/craving-icon";
 import ZingevingIcon from "~/components/icons/zingeving-icon";
 
@@ -13,12 +13,12 @@ export default function HomePage() {
         Een pasvorm voor maatwerk in verslavingsbehandeling
       </h2>
       <div className="flex flex-col items-center justify-center gap-12 px-4 py-16 lg:flex-row">
-        <Link href="/afbouwen">
+        <Link href="/middelen">
           <div
             className={`flex h-40 w-40 flex-col items-center justify-evenly gap-2 rounded-md border-4 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-4 pt-6 font-sans text-2xl text-red-950 text-opacity-80 shadow-lg transition-transform duration-500 hover:scale-125 lg:h-60 lg:gap-10`}
           >
-            <AfbouwenIcon height={64} width={64} />
-            <span>Afbouwen</span>
+            <MiddelenIcon height={64} width={64} />
+            <span>Middelen</span>
           </div>
         </Link>
         <Link href="/craving">
