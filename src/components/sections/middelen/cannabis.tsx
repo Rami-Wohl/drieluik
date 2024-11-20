@@ -9,6 +9,8 @@ import {
   DialogTitle,
   DialogClose,
 } from "~/components/ui/dialog";
+import { ListItem } from "~/components/ui/list-item";
+import { type ReactNode } from "react";
 
 interface ResponsiveImageProps {
   src: string;
@@ -65,15 +67,9 @@ export function CannabisSection() {
       </StyledParagraph>
       <ul className="mb-8 flex flex-col gap-3 px-4">
         {" "}
-        <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          Cannabis Sativa (hoog in THC, laag in CBD)
-        </li>
-        <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          Cannabis Indica (ongeveer gelijk in THC en CBD)
-        </li>
-        <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          Cannabis Ruderalis (laag in thc, hoog in CBD)
-        </li>
+        <ListItem>Cannabis Sativa (hoog in THC, laag in CBD)</ListItem>
+        <ListItem>Cannabis Indica (ongeveer gelijk in THC en CBD)</ListItem>
+        <ListItem>Cannabis Ruderalis (laag in thc, hoog in CBD)</ListItem>
       </ul>
       <StyledParagraph>
         Deze families worden met elkaar gekruist om tot de bekende wietsoorten
@@ -155,38 +151,28 @@ export function CannabisSection() {
   );
 }
 
+function CannabisTableHeaderRowCell({ children }: { children: ReactNode }) {
+  return (
+    <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
+      {children}
+    </th>
+  );
+}
+
 function CannabisTableHeaderRow() {
   return (
     <thead>
       <tr className="h-8 w-full">
         <th className="min-w-28 px-2 text-left font-sans font-bold"></th>
-        <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
-          Psychose
-        </th>
-        <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
-          ADHD
-        </th>
-        <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
-          Depressie
-        </th>
-        <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
-          Angst
-        </th>
-        <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
-          Persoonlijkheid
-        </th>
-        <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
-          Slaap
-        </th>
-        <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
-          Pijn
-        </th>
-        <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
-          Eenzaamheid
-        </th>
-        <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
-          Compulsiviteit
-        </th>
+        <CannabisTableHeaderRowCell>Psychose</CannabisTableHeaderRowCell>
+        <CannabisTableHeaderRowCell>ADHD</CannabisTableHeaderRowCell>
+        <CannabisTableHeaderRowCell>Depressie</CannabisTableHeaderRowCell>
+        <CannabisTableHeaderRowCell>Angst</CannabisTableHeaderRowCell>
+        <CannabisTableHeaderRowCell>Persoonlijkheid</CannabisTableHeaderRowCell>
+        <CannabisTableHeaderRowCell>Slaap</CannabisTableHeaderRowCell>
+        <CannabisTableHeaderRowCell>Pijn</CannabisTableHeaderRowCell>
+        <CannabisTableHeaderRowCell>Eenzaamheid</CannabisTableHeaderRowCell>
+        <CannabisTableHeaderRowCell>Compulsiviteit</CannabisTableHeaderRowCell>
       </tr>
     </thead>
   );
@@ -213,6 +199,79 @@ function CannabisTableValueRow({
         );
       })}
     </tr>
+  );
+}
+
+function LegendaRow({
+  text,
+  backgroundColor,
+}: {
+  text: string;
+  backgroundColor: string;
+}) {
+  return (
+    <div className="flex flex-row items-center gap-6 px-2">
+      <div
+        className={`h-8 min-w-12 border border-black border-opacity-70 ${backgroundColor} bg-opacity-80 px-2`}
+      />
+      <div className="font-sans text-sm text-[#333333] text-opacity-90 lg:text-base">
+        {" "}
+        {text}
+      </div>
+    </div>
+  );
+}
+
+function HackyCSSTable({
+  title,
+  values,
+  hasLeftBorder = false,
+}: {
+  title: string;
+  values: string[];
+  hasLeftBorder?: boolean;
+}) {
+  return (
+    <table className="min-w-64 border-collapse">
+      <tbody>
+        <tr
+          className={`relative h-8 w-full border border-black border-opacity-70 ${!hasLeftBorder && "lg:border-l-0"}`}
+        >
+          <td
+            className={`min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold ${!hasLeftBorder && "lg:border-l-0"}`}
+          >
+            {title}
+          </td>
+        </tr>
+        {values.map((value, idx) => {
+          if (value === "") {
+            return (
+              <tr
+                key={`${title}-${idx}`}
+                className={`relative hidden h-8 w-full border border-black border-opacity-70 lg:table-row ${!hasLeftBorder && "lg:border-l-0"}`}
+              >
+                <td
+                  className={`min-w-28 border border-black border-opacity-70 px-2 text-left font-sans ${!hasLeftBorder && "lg:border-l-0"}`}
+                />
+              </tr>
+            );
+          }
+
+          return (
+            <tr
+              key={`${title}-${idx}`}
+              className={`relative h-8 w-full border border-black border-opacity-70 ${!hasLeftBorder && "lg:border-l-0"}`}
+            >
+              <td
+                className={`min-w-28 border border-black border-opacity-70 px-2 text-left font-sans ${!hasLeftBorder && "lg:border-l-0"}`}
+              >
+                {value}
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
   );
 }
 
@@ -307,42 +366,22 @@ function CannabisAnamnese() {
             </tbody>
           </table>
           <div className="my-8 flex flex-col gap-4">
-            <div className="flex flex-row items-center gap-6 px-2">
-              <div
-                className={`h-8 min-w-12 border border-black border-opacity-70 bg-green-500 bg-opacity-80 px-2`}
-              />
-              <div className="font-sans text-sm text-[#333333] text-opacity-90 lg:text-base">
-                {" "}
-                Geen directe reden om actie te ondernemen
-              </div>
-            </div>
-            <div className="flex flex-row items-center gap-6 px-2">
-              <div
-                className={`h-8 min-w-12 border border-black border-opacity-70 bg-orange-500 bg-opacity-80 px-2`}
-              />
-              <div className="font-sans text-sm text-[#333333] text-opacity-90 lg:text-base">
-                {" "}
-                Niet ideaal, overweeg over te stappen op een andere soort
-              </div>
-            </div>
-            <div className="flex flex-row items-center gap-6 px-2">
-              <div
-                className={`h-8 min-w-12 border border-black border-opacity-70 bg-red-500 bg-opacity-80 px-2`}
-              />
-              <div className="font-sans text-sm text-[#333333] text-opacity-90 lg:text-base">
-                {" "}
-                Veel risico, hoge druk om over te stappen
-              </div>
-            </div>
-            <div className="flex flex-row items-center gap-6 px-2">
-              <div
-                className={`h-8 min-w-12 border border-black border-opacity-70 bg-blue-500 bg-opacity-80 px-2`}
-              />
-              <div className="font-sans text-sm text-[#333333] text-opacity-90 lg:text-base">
-                {" "}
-                Geen informatie beschikbaar over interactie
-              </div>
-            </div>
+            <LegendaRow
+              text="Geen directe reden om actie te ondernemen"
+              backgroundColor="bg-green-500"
+            />
+            <LegendaRow
+              text="Niet ideaal, overweeg over te stappen op een andere soort"
+              backgroundColor="bg-orange-500"
+            />
+            <LegendaRow
+              text="Veel risico, hoge druk om over te stappen"
+              backgroundColor="bg-red-500"
+            />
+            <LegendaRow
+              text="Geen informatie beschikbaar over interactie"
+              backgroundColor="bg-blue-500"
+            />
           </div>
         </div>
         <div className="mb-6">
@@ -351,148 +390,51 @@ function CannabisAnamnese() {
             verkoopnaam, inclusief gemiddelde THC percentages)
           </h3>
           <div className="mb-8 flex flex-col gap-6 lg:flex-row lg:gap-0">
-            <table className="min-w-64 border-collapse">
-              <tbody>
-                <tr className="relative h-8 w-full border border-black border-opacity-70">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
-                    Zeefhasj (laag CBD)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans">
-                    Polm (15,7%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans">
-                    Maroc (27%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans">
-                    Hya (19,6%)
-                  </td>
-                </tr>
-                <tr className="relative hidden h-8 w-full border border-black border-opacity-70 lg:table-row">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans"></td>
-                </tr>
-                <tr className="relative hidden h-8 w-full border border-black border-opacity-70 lg:table-row">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans"></td>
-                </tr>
-                <tr className="relative hidden h-8 w-full border border-black border-opacity-70 lg:table-row">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans"></td>
-                </tr>
-              </tbody>
-            </table>
-            <table className="min-w-64 border-collapse">
-              <tbody>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold lg:border-l-0">
-                    Charras (hoog CBD)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Afghan (7,7%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Nepal (19%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Kashmir (20-25%)
-                  </td>
-                </tr>
-                <tr className="relative hidden h-8 w-full border border-black border-opacity-70 lg:table-row lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0"></td>
-                </tr>
-                <tr className="relative hidden h-8 w-full border border-black border-opacity-70 lg:table-row lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0"></td>
-                </tr>
-                <tr className="relative hidden h-8 w-full border border-black border-opacity-70 lg:table-row lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0"></td>
-                </tr>
-              </tbody>
-            </table>
-            <table className="min-w-64 border-collapse">
-              <tbody>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold lg:border-l-0">
-                    Sativa (weinig tot geen CBD)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Amnesia Haze (21%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Cheese (17%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Lemon Haze (20%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Silver Haze (23%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Mexican Haze (18%)
-                  </td>
-                </tr>
-                <tr className="relative hidden h-8 w-full border border-black border-opacity-70 lg:table-row lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0"></td>
-                </tr>
-              </tbody>
-            </table>
-            <table className="min-w-64 border-collapse">
-              <tbody>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold lg:border-l-0">
-                    Indica (hoger in CBD)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    White Widow (WW) (18%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Northern Lights Extra (NLX) (10%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Powerplant (PP) (15%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Jack Harer (20%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    Bubblegum (19%)
-                  </td>
-                </tr>
-                <tr className="relative h-8 w-full border border-black border-opacity-70 lg:border-l-0">
-                  <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans lg:border-l-0">
-                    AK-47 (17,5%)
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <HackyCSSTable
+              hasLeftBorder
+              title="Zeefhasj (laag CBD)"
+              values={[
+                "Polm (15,7%)",
+                "Maroc (27%)",
+                "Hya (19,6%)",
+                "",
+                "",
+                "",
+              ]}
+            />
+            <HackyCSSTable
+              title="Charras (hoog CBD)"
+              values={[
+                "Afghan (7,7%)",
+                "Nepal (19%)",
+                "Kashmir (20-25%)",
+                "",
+                "",
+                "",
+              ]}
+            />
+            <HackyCSSTable
+              title="Sativa (weinig tot geen CBD)"
+              values={[
+                "Amnesia Haze (21%)",
+                "Cheese (17%)",
+                "Lemon Haze (20%)",
+                "Silver Haze (23%)",
+                "Mexican Haze (18%)",
+                "",
+              ]}
+            />
+            <HackyCSSTable
+              title="Indica (hoger in CBD)"
+              values={[
+                "White Widow (WW) (18%)",
+                "Northern Lights Extra (NLX) (10%)",
+                "Powerplant (PP) (15%)",
+                "Jack Harer (20%)",
+                "Bubblegum (19%)",
+                "AK-47 (17,5%)",
+              ]}
+            />
           </div>
           <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
             Afbouw parameters

@@ -8,6 +8,7 @@ import {
   DialogDescription,
   DialogClose,
 } from "~/components/ui/dialog";
+import { ListItem } from "~/components/ui/list-item";
 
 export function OntspanningsOefening1() {
   return (
@@ -43,28 +44,16 @@ export function OntspanningsOefening1() {
           </DialogDescription>
           <ul className="flex flex-col gap-3 px-4">
             {" "}
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            <ListItem>
               Ga recht op je stoel zitten met je rug tegen de stoelleuning en je
               voeten plat op de grond{" "}
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-              Leg je handen plat op je schoot neer
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-              Sluit je ogen{" "}
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-              Haal een keer diep adem{" "}
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-              Hou je adem even vast{" "}
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-              Adem goed uit{" "}
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-              Neem een rustig adem ritme aan
-            </li>
+            </ListItem>
+            <ListItem>Leg je handen plat op je schoot neer</ListItem>
+            <ListItem>Sluit je ogen </ListItem>
+            <ListItem>Haal een keer diep adem </ListItem>
+            <ListItem>Hou je adem even vast </ListItem>
+            <ListItem>Adem goed uit </ListItem>
+            <ListItem>Neem een rustig adem ritme aan</ListItem>
           </ul>
           <DialogDescription className="flex flex-col font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="w-full font-semibold">
@@ -73,16 +62,16 @@ export function OntspanningsOefening1() {
           </DialogDescription>
           <ul className="flex flex-col gap-3 px-4">
             {" "}
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            <ListItem>
               Stel je een bal van licht voor in het centrum van je lichaam{" "}
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            </ListItem>
+            <ListItem>
               Stel je voor dat iedere keer dat je uitademt, de bal groeit
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            </ListItem>
+            <ListItem>
               Stel je voor dat iedere keer dat de bal groeit, het licht de
               spanning uit je lijf verdrijft{" "}
-            </li>
+            </ListItem>
           </ul>
           <DialogDescription className="flex flex-col font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="w-full font-semibold">
@@ -90,27 +79,23 @@ export function OntspanningsOefening1() {
             </span>{" "}
           </DialogDescription>
           <ul className="flex flex-col gap-3 px-4">
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-              ⁠Ga naar een prettige ruimte (bijvoorbeeld een park, het strand of
+            <ListItem>
+              Ga naar een prettige ruimte (bijvoorbeeld een park, het strand of
               je eigen slaapkamer)
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-              Ga daar op een rustige plek zitten
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            </ListItem>
+            <ListItem>Ga daar op een rustige plek zitten</ListItem>
+            <ListItem>
               Begin de details in je op te nemen (omschrijf je exacte omgeving)
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-              Breng meer rust aan in je omgeving
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            </ListItem>
+            <ListItem>Breng meer rust aan in je omgeving</ListItem>
+            <ListItem>
               Breng zintuiglijke belevingen tot stand (voel de wind, de zon,
               ruik het gras etc.)
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            </ListItem>
+            <ListItem>
               In een later stadium kan je nog events toevoegen zoals iemand
               naast de persoon laten zitten.
-            </li>
+            </ListItem>
           </ul>
         </div>
         <DialogClose asChild>

@@ -1,3 +1,4 @@
+import { type ReactNode } from "react";
 import { CannabisSection } from "~/components/sections/middelen/cannabis";
 import { CocaineSection } from "~/components/sections/middelen/cocaine";
 import {
@@ -7,6 +8,27 @@ import {
   AccordionTrigger,
 } from "~/components/ui/accordion";
 import { Pageheader } from "~/components/ui/pageheader";
+
+function AccordionSection({
+  value,
+  title,
+  section,
+}: {
+  value: string;
+  title: string;
+  section: ReactNode;
+}) {
+  return (
+    <AccordionItem value={value} className="border-red-950 border-opacity-5">
+      <AccordionTrigger className="mb-1 rounded-md bg-red-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
+        {title}
+      </AccordionTrigger>
+      <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
+        {section}
+      </AccordionContent>
+    </AccordionItem>
+  );
+}
 
 export default function MiddelenPage() {
   return (
@@ -19,94 +41,46 @@ export default function MiddelenPage() {
         </h2>
 
         <Accordion type="single" collapsible className="w-full text-black">
-          <AccordionItem
+          <AccordionSection
             value="cannabis"
-            className="border-red-950 border-opacity-5"
-          >
-            <AccordionTrigger className="mb-1 rounded-md bg-red-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
-              Cannabis
-            </AccordionTrigger>
-            <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
-              <CannabisSection />
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem
+            title="Cannabis"
+            section={<CannabisSection />}
+          />
+          <AccordionSection
             value="alcohol"
-            className="border-red-950 border-opacity-5"
-          >
-            <AccordionTrigger className="mb-1 rounded-md bg-red-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
-              Alcohol
-            </AccordionTrigger>
-            <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
-              ...binnenkort beschikbaar...
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem
+            title="Alcohol"
+            section={"...binnenkort beschikbaar..."}
+          />
+          <AccordionSection
             value="opiaten"
-            className="border-red-950 border-opacity-5"
-          >
-            <AccordionTrigger className="mb-1 rounded-md bg-red-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
-              Heroïne (en andere opiaten)
-            </AccordionTrigger>
-            <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
-              ...binnenkort beschikbaar...
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem
+            title="Heroïne (en andere opiaten)"
+            section={"...binnenkort beschikbaar..."}
+          />
+          <AccordionSection
             value="cocaine"
-            className="border-red-950 border-opacity-5"
-          >
-            <AccordionTrigger className="mb-1 rounded-md bg-red-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
-              Cocaïne
-            </AccordionTrigger>
-            <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
-              <CocaineSection />
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem
+            title="Cocaïne"
+            section={<CocaineSection />}
+          />
+          <AccordionSection
             value="ghb"
-            className="border-red-950 border-opacity-5"
-          >
-            <AccordionTrigger className="mb-1 rounded-md bg-red-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
-              GHB
-            </AccordionTrigger>
-            <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
-              ...binnenkort beschikbaar...
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem
+            title="GHB"
+            section={"...binnenkort beschikbaar..."}
+          />
+          <AccordionSection
             value="speed"
-            className="border-red-950 border-opacity-5"
-          >
-            <AccordionTrigger className="mb-1 rounded-md bg-red-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
-              Speed
-            </AccordionTrigger>
-            <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
-              ...binnenkort beschikbaar...
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem
+            title="Speed"
+            section={"...binnenkort beschikbaar..."}
+          />
+          <AccordionSection
             value="lachgas"
-            className="border-red-950 border-opacity-5"
-          >
-            <AccordionTrigger className="mb-1 rounded-md bg-red-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
-              Lachgas
-            </AccordionTrigger>
-            <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
-              ...binnenkort beschikbaar...
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem
+            title="Lachgas"
+            section={"...binnenkort beschikbaar..."}
+          />
+          <AccordionSection
             value="overig"
-            className="border-red-950 border-opacity-5"
-          >
-            <AccordionTrigger className="mb-1 rounded-md bg-red-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
-              Overig
-            </AccordionTrigger>
-            <AccordionContent className="flex flex-col bg-red-900 bg-opacity-5 p-6">
-              ...binnenkort beschikbaar...
-            </AccordionContent>
-          </AccordionItem>
+            title="Overig"
+            section={"...binnenkort beschikbaar..."}
+          />
         </Accordion>
       </div>
     </>

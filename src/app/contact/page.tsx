@@ -26,8 +26,8 @@ function ContactCard({
       <div className="text-sm">
         <div>{street}</div>
         <div className="mb-2 flex flex-row gap-2">
-          <div>{zip}</div>
-          <div>{city}</div>
+          <span>{zip}</span>
+          <span>{city}</span>
         </div>
       </div>
       <div className="flex h-12 flex-col justify-end text-sm">

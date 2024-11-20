@@ -15,6 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "~/components/ui/accordion";
+import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 
 export default function CravingPage() {
@@ -129,17 +130,17 @@ export default function CravingPage() {
               </p>
               <ul className="flex flex-col gap-3 px-4">
                 {" "}
-                <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+                <ListItem>
                   Je kan leren dat de craving weer te verlagen is via
                   ontspanningsoefeningen
-                </li>
-                <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+                </ListItem>
+                <ListItem>
                   Je kan in contact komen met de nadelen van gebruik
-                </li>
-                <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+                </ListItem>
+                <ListItem>
                   Je krijgt als therapeut de mogelijkheid om het narratief aan
                   te vullen waar nodig{" "}
-                </li>
+                </ListItem>
               </ul>
             </AccordionContent>
           </AccordionItem>

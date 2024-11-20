@@ -9,6 +9,7 @@ import {
 import { GameContainer } from "./kernquadranten";
 import BalansIcon from "~/components/icons/zingeving/balans-icon";
 import { Button } from "~/components/ui/button";
+import { ListItem } from "~/components/ui/list-item";
 
 export function Balans() {
   return (
@@ -40,16 +41,16 @@ export function Balans() {
             interpreteren:
           </DialogDescription>
           <ul className="flex flex-col gap-4 px-4">
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            <ListItem>
               De voordelen lijst bestaat eigenlijk uit een opsomming van de
               functies van het gebruik en leert je dus iets over wat je nog moet
               organiseren of ontkrachten om een stoppoging van een grotere kans
               van slagen te voorzien.
-            </li>
-            <li className="list-item list-disc pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            </ListItem>
+            <ListItem>
               De nadelen lijst bestaat uit een opsomming van wat het allemaal
               oplevert om te stoppen. Dit gaat vaak over gezondheid en geld.
-            </li>
+            </ListItem>
           </ul>
         </div>
         <DialogClose asChild>
