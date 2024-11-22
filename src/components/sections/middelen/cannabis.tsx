@@ -151,28 +151,53 @@ export function CannabisSection() {
   );
 }
 
-function CannabisTableHeaderRowCell({ children }: { children: ReactNode }) {
+export function TableHeaderCellStyled({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   return (
-    <th className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
+    <th
+      className={`${className} min-w-28 border border-black border-opacity-70 px-2 text-left font-sans text-[#333333]`}
+    >
       {children}
     </th>
+  );
+}
+
+export function TableCellStyled({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <td
+      className={`${className} min-w-28 border border-black border-opacity-70 px-2 text-left font-sans text-[#333333]`}
+    >
+      {" "}
+      {children}
+    </td>
   );
 }
 
 function CannabisTableHeaderRow() {
   return (
     <thead>
-      <tr className="h-8 w-full">
-        <th className="min-w-28 px-2 text-left font-sans font-bold"></th>
-        <CannabisTableHeaderRowCell>Psychose</CannabisTableHeaderRowCell>
-        <CannabisTableHeaderRowCell>ADHD</CannabisTableHeaderRowCell>
-        <CannabisTableHeaderRowCell>Depressie</CannabisTableHeaderRowCell>
-        <CannabisTableHeaderRowCell>Angst</CannabisTableHeaderRowCell>
-        <CannabisTableHeaderRowCell>Persoonlijkheid</CannabisTableHeaderRowCell>
-        <CannabisTableHeaderRowCell>Slaap</CannabisTableHeaderRowCell>
-        <CannabisTableHeaderRowCell>Pijn</CannabisTableHeaderRowCell>
-        <CannabisTableHeaderRowCell>Eenzaamheid</CannabisTableHeaderRowCell>
-        <CannabisTableHeaderRowCell>Compulsiviteit</CannabisTableHeaderRowCell>
+      <tr className="h-8 w-full font-bold">
+        <th className="min-w-28 px-2"></th>
+        <TableHeaderCellStyled>Psychose</TableHeaderCellStyled>
+        <TableHeaderCellStyled>ADHD</TableHeaderCellStyled>
+        <TableHeaderCellStyled>Depressie</TableHeaderCellStyled>
+        <TableHeaderCellStyled>Angst</TableHeaderCellStyled>
+        <TableHeaderCellStyled>Persoonlijkheid</TableHeaderCellStyled>
+        <TableHeaderCellStyled>Slaap</TableHeaderCellStyled>
+        <TableHeaderCellStyled>Pijn</TableHeaderCellStyled>
+        <TableHeaderCellStyled>Eenzaamheid</TableHeaderCellStyled>
+        <TableHeaderCellStyled>Compulsiviteit</TableHeaderCellStyled>
       </tr>
     </thead>
   );
@@ -186,7 +211,7 @@ function CannabisTableValueRow({
   colors: ("red" | "orange" | "green" | "blue")[];
 }) {
   return (
-    <tr className="relative h-8 w-full border border-black border-opacity-70">
+    <tr className="relative h-8 w-full border border-black border-opacity-70 text-[#333333]">
       <td className="min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold">
         {label}
       </td>
@@ -238,7 +263,7 @@ function HackyCSSTable({
           className={`relative h-8 w-full border border-black border-opacity-70 ${!hasLeftBorder && "lg:border-l-0"}`}
         >
           <td
-            className={`min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold ${!hasLeftBorder && "lg:border-l-0"}`}
+            className={`min-w-28 border border-black border-opacity-70 px-2 text-left font-sans font-bold text-[#333333] ${!hasLeftBorder && "lg:border-l-0"}`}
           >
             {title}
           </td>
@@ -278,7 +303,7 @@ function HackyCSSTable({
 function CannabisAnamnese() {
   return (
     <Dialog>
-      <DialogTrigger className="w-full gap-2 rounded-none bg-white bg-opacity-30 px-4 py-2 hover:bg-opacity-80 hover:shadow-sm">
+      <DialogTrigger className="w-full gap-2 rounded-none bg-white bg-opacity-30 px-4 py-2 text-[#333333] hover:bg-opacity-80 hover:shadow-sm">
         <div className="text-center font-sans text-sm font-light tracking-[1px] text-[#333333] text-opacity-90">
           Open de cannabis anamnese
         </div>
