@@ -9,6 +9,7 @@ import {
   OntspanningsOefening1,
   OntspanningsOefening2,
 } from "~/components/sections/craving/ontspanningsoefeningen";
+import { VerbeeldingsOefening1 } from "~/components/sections/craving/verbeeldingsoefeningen";
 import {
   Accordion,
   AccordionContent,
@@ -128,7 +129,7 @@ export default function CravingPage() {
                 bepaalde beelden heeft te laten doen afnemen. Het uitvoeren van
                 deze oefeningen kan meerdere positieve effecten hebben:
               </p>
-              <ul className="flex flex-col gap-3 px-4">
+              <ul className="mb-4 flex flex-col gap-3 px-4">
                 {" "}
                 <ListItem>
                   Je kan leren dat de craving weer te verlagen is via
@@ -142,6 +143,12 @@ export default function CravingPage() {
                   te vullen waar nodig{" "}
                 </ListItem>
               </ul>
+              <p className="mb-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+                Klik op een verbeeldingsoefening om de instructies te lezen:
+              </p>
+              <div className="my-2 flex flex-col gap-2">
+                <VerbeeldingsOefening1 />
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>

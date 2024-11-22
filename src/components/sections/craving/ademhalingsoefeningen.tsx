@@ -34,16 +34,6 @@ export function AdemhalingsOefening1() {
                   1-5 minuten
                 </td>
               </tr>
-              {/* <tr className="h-auto">
-                <td className="text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90">
-                  Doel:
-                </td>
-                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
-                  Helpen om controle over aandacht en focus te krijgen, impulsen
-                  te herkennen, en afstand te nemen van onmiddellijke
-                  verlangens.
-                </td>
-              </tr> */}
             </tbody>
           </table>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">

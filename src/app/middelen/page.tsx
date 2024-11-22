@@ -1,4 +1,5 @@
 import { type ReactNode } from "react";
+import { AlcoholSection } from "~/components/sections/middelen/alcohol";
 import { CannabisSection } from "~/components/sections/middelen/cannabis";
 import { CocaineSection } from "~/components/sections/middelen/cocaine";
 import {
@@ -49,7 +50,7 @@ export default function MiddelenPage() {
           <AccordionSection
             value="alcohol"
             title="Alcohol"
-            section={"...binnenkort beschikbaar..."}
+            section={<AlcoholSection />}
           />
           <AccordionSection
             value="opiaten"

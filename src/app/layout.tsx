@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Het driekluik",
   description:
     "Het drieluik - heldere, overzichtelijke documentatie voor verslavingszorg",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/favicon.svg" }],
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} to-background bg-opacity-70 bg-gradient-to-b from-[#ffffff]`}
+      className={`${GeistSans.variable} bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-background`}
     >
       <body>
         <LayoutWithNav>{children}</LayoutWithNav>
