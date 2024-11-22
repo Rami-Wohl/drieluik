@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-background`}
+      className={`${GeistSans.variable} from-backgroundStart bg-gradient-to-b to-background`}
     >
       <body>
         <LayoutWithNav>{children}</LayoutWithNav>

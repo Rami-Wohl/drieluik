@@ -12,7 +12,8 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        background: "#809090",
+        backgroundStart: "#DDD",
+        background: "#BBB",
       },
       keyframes: {
         "accordion-down": {
