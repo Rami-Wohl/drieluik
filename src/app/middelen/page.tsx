@@ -2,6 +2,8 @@ import { AlcoholSection } from "~/components/sections/middelen/alcohol";
 import { CannabisSection } from "~/components/sections/middelen/cannabis";
 import { CocaineSection } from "~/components/sections/middelen/cocaine";
 import { HeroineSection } from "~/components/sections/middelen/heroine";
+import { LachgasSection } from "~/components/sections/middelen/lachgas";
+import { SpeedSection } from "~/components/sections/middelen/speed";
 import { Accordion } from "~/components/ui/accordion";
 import { AccordionSection } from "~/components/ui/accordion-section";
 import { Pageheader } from "~/components/ui/pageheader";
@@ -45,12 +47,12 @@ export default function MiddelenPage() {
           <AccordionSection
             value="speed"
             title="Speed"
-            section={"...binnenkort beschikbaar..."}
+            section={<SpeedSection />}
           />
           <AccordionSection
             value="lachgas"
             title="Lachgas"
-            section={"...binnenkort beschikbaar..."}
+            section={<LachgasSection />}
           />
           <AccordionSection
             value="overig"

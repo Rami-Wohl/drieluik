@@ -28,7 +28,7 @@ const ResponsiveImage = ({
 }: ResponsiveImageProps) => {
   return (
     <div
-      className={`relative my-10 flex h-full items-center justify-center rounded-md lg:my-12 ${className ?? ""}`}
+      className={`relative mb-10 mt-6 flex h-full items-center justify-center rounded-md lg:my-12 ${className ?? ""}`}
     >
       <Image
         src={src}
@@ -56,7 +56,7 @@ export function CannabisSection() {
         title="Algemene kennis"
         section={
           <>
-            <StyledParagraph>
+            <StyledParagraph marginBottom="mb-2">
               <span className="font-semibold">Wiet</span> is de (gedroogde)
               vrucht van de cannabisplant (toppen). THC en CBD zijn de
               hoofd-werkzame stoffen in wiet. THC is de psycho-actieve stof, Het
