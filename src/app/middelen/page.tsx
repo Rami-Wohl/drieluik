@@ -2,6 +2,7 @@ import { type ReactNode } from "react";
 import { AlcoholSection } from "~/components/sections/middelen/alcohol";
 import { CannabisSection } from "~/components/sections/middelen/cannabis";
 import { CocaineSection } from "~/components/sections/middelen/cocaine";
+import { HeroineSection } from "~/components/sections/middelen/heroine";
 import {
   Accordion,
   AccordionContent,
@@ -10,7 +11,7 @@ import {
 } from "~/components/ui/accordion";
 import { Pageheader } from "~/components/ui/pageheader";
 
-function AccordionSection({
+export function AccordionSection({
   value,
   title,
   section,
@@ -55,7 +56,7 @@ export default function MiddelenPage() {
           <AccordionSection
             value="opiaten"
             title="Heroïne (en andere opiaten)"
-            section={"...binnenkort beschikbaar..."}
+            section={<HeroineSection />}
           />
           <AccordionSection
             value="cocaine"

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { AccordionSubSection, StyledParagraph } from "./cocaine";
 import { Button } from "~/components/ui/button";
 import {
@@ -13,42 +12,7 @@ import { ListItem } from "~/components/ui/list-item";
 import { type ReactNode } from "react";
 import { Accordion } from "~/components/ui/accordion";
 
-interface ResponsiveImageProps {
-  src: string;
-  alt: string;
-  description?: string;
-  className?: string;
-}
-
-const ResponsiveImage = ({
-  src,
-  alt,
-  description,
-  className,
-}: ResponsiveImageProps) => {
-  return (
-    <div
-      className={`relative my-10 flex h-full items-center justify-center rounded-md lg:my-12 ${className ?? ""}`}
-    >
-      <Image
-        src={src}
-        alt={alt}
-        width={128}
-        height={128}
-        className="h-32 w-32 rounded-md border-2 border-black border-opacity-30 object-cover md:h-48 md:w-48 lg:h-64 lg:w-64"
-      />
-      {description && (
-        <span className="absolute -bottom-4 font-sans text-xs tracking-[1px] text-[#333333] text-opacity-90">
-          {description}
-        </span>
-      )}
-    </div>
-  );
-};
-
-export default ResponsiveImage;
-
-export function CannabisSection() {
+export function SpeedSection() {
   return (
     <Accordion type="single" collapsible className="w-full text-black">
       <AccordionSubSection
@@ -63,11 +27,6 @@ export function CannabisSection() {
               effect wordt vaak omschreven als geestverruimend. En CBD heeft een
               meer pijnstillende en slaap opwekkende werking.
             </StyledParagraph>
-            <ResponsiveImage
-              src="/images/cannabis-1.jpg"
-              alt="Plaatje van cannabis"
-              description="Cannabis"
-            />
             <StyledParagraph marginBottom="mb-2">
               Er zijn drie soorten cannabis planten:
             </StyledParagraph>
@@ -94,11 +53,6 @@ export function CannabisSection() {
               gewreven zodat er een donkere kneedachtige hasj overblijft die
               Charas wordt genoemd.
             </StyledParagraph>
-            <ResponsiveImage
-              src="/images/hash-1.png"
-              alt="Plaatje van hash"
-              description="Hash"
-            />
           </>
         }
       />
@@ -107,7 +61,7 @@ export function CannabisSection() {
         title="Voorlichting"
         section={
           <>
-            <StyledParagraph marginBottom="mb-2">
+            <StyledParagraph header="Voorlichting" marginBottom="mb-2">
               <span className="italic">Cannabis en psychose</span>
               <br />
               de hoofd-werkzame stof in cannabis (THC), kan nadelige gevolgen
