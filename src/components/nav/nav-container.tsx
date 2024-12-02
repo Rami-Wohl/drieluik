@@ -19,7 +19,6 @@ const routes = {
   craving: "/craving",
   zingeving: "/zingeving",
   contact: "/contact",
-  help: "/help",
   instrument: "/meet-instrument",
 };
 
@@ -45,7 +44,7 @@ const NavComponents = () => {
     <div>
       <nav
         ref={mobileMenuRef}
-        className={`from-backgroundStart fixed left-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-gradient-to-b to-background text-left ${
+        className={`fixed left-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-gradient-to-b from-backgroundStart to-background text-left ${
           isMobileMenuVisible ? "translate-x-0" : "-translate-x-full"
         } min-h-full w-full pt-[55px] transition-transform duration-500 ease-in-out lg:w-80`}
       >
@@ -63,11 +62,6 @@ const NavComponents = () => {
           <NavLink
             href={routes.instrument}
             title={"Meet instrument"}
-            closeMenu={() => setMobileMenuVisible(false)}
-          />
-          <NavLink
-            href={routes.help}
-            title={"Help"}
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <NavLink
