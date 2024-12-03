@@ -4,6 +4,7 @@ import { CocaineSection } from "~/components/sections/middelen/cocaine";
 import { GhbSection } from "~/components/sections/middelen/ghb";
 import { HeroineSection } from "~/components/sections/middelen/heroine";
 import { LachgasSection } from "~/components/sections/middelen/lachgas";
+import { PsychedelicaSection } from "~/components/sections/middelen/psychedelica";
 import { SpeedSection } from "~/components/sections/middelen/speed";
 import { Accordion } from "~/components/ui/accordion";
 import { AccordionSection } from "~/components/ui/accordion-section";
@@ -52,9 +53,9 @@ export default function MiddelenPage() {
             section={<LachgasSection />}
           />
           <AccordionSection
-            value="overig"
-            title="Overig"
-            section={"...binnenkort beschikbaar..."}
+            value="psychedelica"
+            title="Psychedelica en designer drugs"
+            section={<PsychedelicaSection />}
           />
         </Accordion>
       </div>
