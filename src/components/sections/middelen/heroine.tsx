@@ -30,7 +30,7 @@ export function HeroineSection() {
               op den duur de controle over hun gebruik. Je kunt de risico&apos;s
               toch enigszins beperken door:
             </StyledParagraph>
-            <ul className="mb-8 flex flex-col gap-3 px-4">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               {" "}
               <ListItem> De heroïne te chinezen en niet te spuiten. </ListItem>
               <ListItem>

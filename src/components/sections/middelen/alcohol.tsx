@@ -2,6 +2,7 @@ import { ListItem } from "~/components/ui/list-item";
 import { AccordionSubSection, StyledParagraph } from "./cocaine";
 import { TableCellStyled, TableHeaderCellStyled } from "./cannabis";
 import { Accordion } from "~/components/ui/accordion";
+import { SubSectionHeader } from "./ghb";
 
 export function AlcoholSection() {
   return (
@@ -111,10 +112,10 @@ export function AlcoholSection() {
             </div>
             <ol className="flex flex-col px-4">
               <ListItem ordered>
-                <h3 className="mb-2 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
+                <SubSectionHeader>
                   Start met een intake om de huidige situatie te begrijpen:
-                </h3>
-                <ul className="mb-8 mt-2 flex flex-col px-4">
+                </SubSectionHeader>
+                <ul className="mb-6 mt-2 flex flex-col gap-2">
                   <ListItem>
                     Gemiddelde dagelijkse consumptie en soort alcohol.{" "}
                   </ListItem>
@@ -129,10 +130,8 @@ export function AlcoholSection() {
               </ListItem>
 
               <ListItem ordered>
-                <h3 className="mb-2 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-                  Medische monitoring
-                </h3>
-                <ul className="mb-8 mt-2 flex flex-col px-4">
+                <SubSectionHeader>Medische monitoring</SubSectionHeader>
+                <ul className="mb-6 mt-2 flex flex-col gap-2">
                   <ListItem>
                     Overweeg een medische check-up en consult met een arts,
                     zeker bij hogere consumpties of bij mensen met een complexe
@@ -165,10 +164,10 @@ export function AlcoholSection() {
           <>
             <ol className="flex flex-col px-4">
               <ListItem ordered>
-                <h3 className="mb-2 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
+                <SubSectionHeader>
                   Psychologische ondersteuning
-                </h3>
-                <ul className="mb-8 mt-2 flex flex-col px-4">
+                </SubSectionHeader>
+                <ul className="mb-6 mt-2 flex flex-col gap-2">
                   <ListItem>
                     Bespreek mogelijke triggers en manieren om craving aan te
                     pakken.
@@ -180,10 +179,8 @@ export function AlcoholSection() {
                 </ul>
               </ListItem>
               <ListItem ordered>
-                <h3 className="mb-2 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-                  Gezonde routines
-                </h3>
-                <ul className="mb-8 mt-2 flex flex-col px-4">
+                <SubSectionHeader>Gezonde routines</SubSectionHeader>
+                <ul className="mb-6 mt-2 flex flex-col gap-2">
                   <ListItem>
                     Vervang drinkmomenten door activiteiten zoals sport,
                     ontspanningsoefeningen of hobby&apos;s.
@@ -191,10 +188,8 @@ export function AlcoholSection() {
                 </ul>
               </ListItem>
               <ListItem ordered>
-                <h3 className="mb-2 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-                  Medicatie (indien nodig)
-                </h3>
-                <ul className="mb-8 mt-2 flex flex-col px-4">
+                <SubSectionHeader>Medicatie (indien nodig)</SubSectionHeader>
+                <ul className="mb-6 mt-2 flex flex-col gap-2">
                   <ListItem>
                     Voor patiënten die moeite hebben om zonder hulp af te
                     bouwen, kan een arts overwegen om medicatie (zoals

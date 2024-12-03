@@ -5,23 +5,20 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "~/components/ui/accordion";
+import { SubSectionHeader } from "./ghb";
 
 export function StyledParagraph({
   header,
   children,
-  marginBottom = "mb-8",
+  marginBottom = "mb-6",
 }: {
   header?: string;
-  marginBottom?: "mb-2" | "mb-8";
+  marginBottom?: "mb-2" | "mb-6";
   children: ReactNode;
 }) {
   return (
     <div className={`${marginBottom}`}>
-      {header && (
-        <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-          {header}
-        </h3>
-      )}
+      {header && <SubSectionHeader>{header}</SubSectionHeader>}
       <p className="mb-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
         {children}
       </p>

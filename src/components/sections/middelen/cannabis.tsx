@@ -12,6 +12,7 @@ import {
 import { ListItem } from "~/components/ui/list-item";
 import { type ReactNode } from "react";
 import { Accordion } from "~/components/ui/accordion";
+import { SubSectionHeader, SubSectionParagraph } from "./ghb";
 
 interface ResponsiveImageProps {
   src: string;
@@ -71,7 +72,7 @@ export function CannabisSection() {
             <StyledParagraph marginBottom="mb-2">
               Er zijn drie soorten cannabis planten:
             </StyledParagraph>
-            <ul className="mb-8 flex flex-col gap-3 px-4">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               {" "}
               <ListItem>Cannabis Sativa (hoog in THC, laag in CBD)</ListItem>
               <ListItem>
@@ -86,7 +87,7 @@ export function CannabisSection() {
               dominante hybride) of Kush (wat eerder wijst op een Indica
               dominante hybride).
             </StyledParagraph>
-            <StyledParagraph>
+            <StyledParagraph marginBottom="mb-2">
               <span className="font-semibold">Hash</span> wordt gemaakt van
               wiet. De manier van vervaardigen bepaalt het soort hasj. Soms
               wordt bijvoorbeeld eerst de wiet gezeefd en daarna geperst
@@ -157,21 +158,21 @@ export function CannabisSection() {
             <StyledParagraph header="Afbouwtips" marginBottom="mb-2">
               Afbouwen met cannabis kan volgens de volgende methodes:
             </StyledParagraph>
-            <ul className="mb-8 flex flex-col gap-2">
+            <div className="mb-8 flex flex-col gap-2">
               {" "}
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              <SubSectionParagraph>
                 <span className="font-semibold">Sterkte:</span> er kan minder
                 sterke cannabis gerookt worden (zie cannabis anamnese)
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold"> Hoeveelheid:</span> er kan
                 minder cannabis in de joint worden verwerkt
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold"> Frequentie:</span> er kan
                 minder vaak een joint worden gerookt.
-              </li>
-            </ul>
+              </SubSectionParagraph>
+            </div>
             <div className="mb-10">
               <CannabisAnamnese />
             </div>
@@ -492,9 +493,7 @@ function CannabisAnamnese() {
               ]}
             />
           </div>
-          <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-            Afbouw parameters
-          </h3>
+          <SubSectionHeader>Afbouw parameters</SubSectionHeader>
           <div className="font-sans text-base tracking-[1px] text-[#333333]">
             <div className="mb-2 flex flex-col lg:mb-0 lg:flex-row">
               <span className="w-48 italic">Eenheid kwantiteit:</span>

@@ -1,6 +1,7 @@
 import { AlcoholSection } from "~/components/sections/middelen/alcohol";
 import { CannabisSection } from "~/components/sections/middelen/cannabis";
 import { CocaineSection } from "~/components/sections/middelen/cocaine";
+import { GhbSection } from "~/components/sections/middelen/ghb";
 import { HeroineSection } from "~/components/sections/middelen/heroine";
 import { LachgasSection } from "~/components/sections/middelen/lachgas";
 import { SpeedSection } from "~/components/sections/middelen/speed";
@@ -39,11 +40,7 @@ export default function MiddelenPage() {
             title="Cocaïne"
             section={<CocaineSection />}
           />
-          <AccordionSection
-            value="ghb"
-            title="GHB"
-            section={"...binnenkort beschikbaar..."}
-          />
+          <AccordionSection value="ghb" title="GHB" section={<GhbSection />} />
           <AccordionSection
             value="speed"
             title="Speed"

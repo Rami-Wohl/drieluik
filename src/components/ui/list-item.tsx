@@ -9,7 +9,7 @@ export function ListItem({
 }) {
   return (
     <li
-      className={`list-item ${ordered ? "list-decimal" : "list-disc"} pl-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base`}
+      className={`list-item ${ordered ? "list-decimal" : "list-disc"} pl-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90`}
     >
       {children}
     </li>

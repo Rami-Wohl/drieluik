@@ -1,3 +1,4 @@
+import { SubSectionParagraph } from "~/components/sections/middelen/ghb";
 import { Pageheader } from "~/components/ui/pageheader";
 
 export default function MissiePage() {
@@ -9,15 +10,15 @@ export default function MissiePage() {
           <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
             1. Inleiding
           </h2>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <SubSectionParagraph>
             Rond 2020 fuseerden de Rotterdamse zorgonderdelen Delta/Bouman
             (inclusief haar dochterondernemingen) en Bavo Europoort tot Antes
             BV. Daarmee kwam er een einde aan het scheiden van psychiatrie en
             verslaving. De zorgonderdelen die voorheen geen EPA-patiënten met
             verslavingsproblematiek behandelden moesten dat vanaf dat moment wel
             gaan doen.
-          </p>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          </SubSectionParagraph>
+          <SubSectionParagraph>
             In 2022 is binnen de GGZ-teams van de Dynamostraat d.m.v. een
             enquête geïnventariseerd wat collega’s nodig hebben om hiertoe in
             staat te zijn. Op basis daarvan zijn de Handreikingen Verslaving
@@ -26,8 +27,8 @@ export default function MissiePage() {
             verschillende verslavende middelen in het bijzonder. De
             handreikingen bevatten informatie over visie, diagnostiek,
             behandeling, kennis en samenwerking.
-          </p>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          </SubSectionParagraph>
+          <SubSectionParagraph>
             Het leveren van een bijdrage aan het herstel van een patiënt met EPA
             vereist creativiteit van de behandelaar. Het toepassen van een
             enkele behandelrichtlijn is doorgaans ontoereikend vanwege de
@@ -47,27 +48,27 @@ export default function MissiePage() {
             abstinentie geen noodzaak is of bij wie het focussen op abstinentie
             averechts werkt. Dan zijn andere interventies dan het 12 stappen
             model noodzakelijk.
-          </p>
+          </SubSectionParagraph>
           <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
             2. Visie: Wat is verslaving?
           </h2>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <SubSectionParagraph>
             Verslaving is de afhankelijkheid van een middel. Een ruime definitie
             van “een middel” omvat ook de gedragsverslavingen (zoals gamen,
             gokken, seks en eten), maar over het algemeen wordt er bij “een
             middel” gedoeld op drugs (waaronder alcohol).
-          </p>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          </SubSectionParagraph>
+          <SubSectionParagraph>
             Om de complexiteit van verslaving in kaart te brengen is het handig
             om dit te ontleden als een probleem met meerdere lagen en een solide
             kern.
-          </p>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          </SubSectionParagraph>
+          <SubSectionParagraph>
             <span className="font-semibold">Laag 1:</span> Het middel en het
             gebruik. Het middel is zichtbaar en de effecten van het middel zijn
             vaak zichtbaar voor omstanders. Dit is de oppervlakslaag
-          </p>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          </SubSectionParagraph>
+          <SubSectionParagraph>
             <span className="font-semibold">Laag 2:</span> De geestelijke
             afhankelijkheid. Het gebruik is geen bewuste keuze meer, stoppen met
             gebruik gebeurt vaak later dan gepland of lukt helemaal niet. Het is
@@ -75,8 +76,8 @@ export default function MissiePage() {
             moment voor kiest, of omdat ‘ie afhankelijk is. Er zijn
             uiteenlopende oorzaken waarom iemand geestelijk afhankelijk is
             geworden van een middel.
-          </p>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          </SubSectionParagraph>
+          <SubSectionParagraph>
             <span className="font-semibold">Laag 3:</span> De fysieke
             afhankelijkheid: Bij veelvuldig gebruik van sommige middelen
             -bijvoorbeeld heroïne, alcohol en GHB- kan een lichamelijke
@@ -86,8 +87,8 @@ export default function MissiePage() {
             aangetoond dat sommige mensen een neurobiologische aanleg hebben
             voor het ontwikkelen van verslaving en makkelijker verslaafd worden
             dan mensen die deze neurobiologische aanleg niet hebben.
-          </p>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          </SubSectionParagraph>
+          <SubSectionParagraph>
             <span className="font-semibold">Laag 4:</span> Psychische aspecten
             en emotionele afhankelijkheid. Deze laag gaat over betekenisgeving
             en zingeving: Hoe maak je plezier, verwerk je verdriet en deal je
@@ -98,8 +99,8 @@ export default function MissiePage() {
             en uit welk hout je gesneden bent (nature/nurture). Deze laag omvat
             alles tussen levensloop en genetica, coping en psychische
             kwetsbaarheid.
-          </p>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          </SubSectionParagraph>
+          <SubSectionParagraph>
             <span className="font-semibold">Laag 5:</span> De maatschappij. Veel
             verslavingsepidemieën zijn zowel lokaal als tijdsgebonden, wat een
             aanwijzing geeft naar een andere drijfveer achter verslaving; niet
@@ -112,8 +113,8 @@ export default function MissiePage() {
             Nigeria. En aan de oplossingskant kan je dat zien aan wat
             bijvoorbeeld Portugal voor elkaar heeft gekregen na de invoering van
             een progressief de-criminalisatie beleid.
-          </p>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          </SubSectionParagraph>
+          <SubSectionParagraph>
             Frequent wordt er in de behandeling gefocust op laag 1: het gebruik,
             terwijl het probleem zich bevindt in de diepere lagen. Het is niet
             erg als iemand regelmatig een glas wijn drinkt, het is pas erg als
@@ -122,8 +123,8 @@ export default function MissiePage() {
             verslavingsbehandelingen wordt succes vertaald in bereikte
             abstinentie en niet in kwaliteit van leven of in herstel van het
             compulsieve onderliggende gedrag.
-          </p>
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          </SubSectionParagraph>
+          <SubSectionParagraph>
             Johann Hari maakte in zijn boek ‘Chasing the Scream’ het statement
             “the opposite of addiction isn’t sobriety, it’s connection”. Bij het
             behandelen van een verslaving moet het om meer gaan dan louter een
@@ -139,12 +140,12 @@ export default function MissiePage() {
             in isolatie verbleven juist wel heroïne bleven gebruiken. De
             resultaten worden uitgebreid behandeld in het boek ‘The
             Globalisation of Addiction’
-          </p>
+          </SubSectionParagraph>
           <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
             Missie; wetenschappelijk & humaan:
           </h2>
 
-          <p className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <SubSectionParagraph>
             Als er een goede definitie van verslaving en van herstel van
             verslaving is geformuleerd, dan wordt het makkelijker om een
             succesvolle behandeling aan te bieden die mensen met een verslaving
@@ -164,7 +165,7 @@ export default function MissiePage() {
             schade met zich meebrengt. Met het drieluik hopen we behandelaren
             handvatten te geven om behandeling humaan, wetenschappelijk en
             eenvoudig te maken.
-          </p>
+          </SubSectionParagraph>
         </div>
       </div>
     </>

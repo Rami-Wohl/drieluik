@@ -1,6 +1,7 @@
 import { AccordionSubSection, StyledParagraph } from "./cocaine";
 import { ListItem } from "~/components/ui/list-item";
 import { Accordion } from "~/components/ui/accordion";
+import { SubSectionHeader, SubSectionParagraph } from "./ghb";
 
 export function LachgasSection() {
   return (
@@ -25,17 +26,15 @@ export function LachgasSection() {
               Het effect begint vrijwel direct na inademing en houdt enkele
               minuten aan.
             </StyledParagraph>
-            <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-              Fysieke en mentale effecten:
-            </h3>
-            <ul className="mb-8 flex flex-col gap-2">
+            <SubSectionHeader>Fysieke en mentale effecten:</SubSectionHeader>
+            <div className="mb-8 flex flex-col gap-2">
               {" "}
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              <SubSectionParagraph>
                 <span className="font-semibold">Korte termijn:</span> euforie,
                 duizeligheid, verlies van controle over spieren, veranderingen
                 in waarneming, korte bewustzijnsveranderingen.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold">
                   {" "}
                   Langetermijnrisico&apos;s:
@@ -43,17 +42,15 @@ export function LachgasSection() {
                  neurologische schade door vitamine B12-tekort, schade aan het
                 zenuwstelsel (zoals tintelingen of gevoelloosheid in ledematen),
                 en ademhalingsproblemen.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold"> Overdosisrisico: </span>
                 bij overmatig gebruik of verkeerd gebruik (in een afgesloten
                 ruimte) kan een zuurstoftekort ontstaan, wat gevaarlijk is.
-              </li>
-            </ul>
-            <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-              Hoe herken je gebruik?
-            </h3>
-            <ul className="mb-8 list-inside">
+              </SubSectionParagraph>
+            </div>
+            <SubSectionHeader>Hoe herken je gebruik?</SubSectionHeader>
+            <ul className="mb-8 flex list-inside flex-col gap-2">
               <ListItem>
                 {" "}
                 Restanten van ballonnen en ampullen of cilinders in de omgeving.
@@ -81,60 +78,56 @@ export function LachgasSection() {
         title="Voorlichting"
         section={
           <>
-            <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-              Risico&apos;s van gebruik:
-            </h3>
-            <ul className="mb-8 flex flex-col gap-2">
+            <SubSectionHeader>Risico&apos;s van gebruik:</SubSectionHeader>
+            <div className="mb-8 flex flex-col gap-2">
               {" "}
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              <SubSectionParagraph>
                 <span className="font-semibold">Fysieke gevolgen: </span>{" "}
                 zenuwschade, vitamine B12-tekort, zuurstoftekort, bevriezing van
                 luchtwegen (bij direct inhaleren uit een ampul).
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold">Psychische gevolgen: </span>
                 afhankelijkheid van het middel voor ontspanning of euforie,
                 toename van angstgevoelens, of cognitieve achteruitgang.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold"> Sociale gevolgen: </span>
                 conflicten met naasten, achteruitgang in functioneren, en
                 financiële problemen door overmatig gebruik.
-              </li>
-            </ul>
-            <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
+              </SubSectionParagraph>
+            </div>
+            <SubSectionHeader>
               Harm reduction (veilig gebruik):
-            </h3>
-            <ul className="mb-8 flex flex-col gap-2">
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            </SubSectionHeader>
+            <div className="mb-8 flex flex-col gap-2">
+              <SubSectionParagraph>
                 <span className="font-semibold">Dosering:</span> Gebruik matig
                 en niet frequent.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold"> Manier van gebruik:</span>{" "}
                 Alleen via ballonnen inademen (nooit direct uit een ampul of
                 cilinder).
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold"> Omgeving: </span> Gebruik in
                 een veilige omgeving, bij voorkeur zittend, om vallen en letsel
                 te voorkomen.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold"> Herstel: </span> Laat voldoende
                 tijd tussen gebruiksmomenten om vitamine B12-tekorten te
                 voorkomen.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold"> Aanvulling: </span> Overweeg
                 het gebruik van vitamine B12-supplementen bij regelmatig
                 gebruik.
-              </li>
-            </ul>
-            <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-              Verantwoorde communicatie:
-            </h3>
-            <ul className="mb-8 list-inside">
+              </SubSectionParagraph>
+            </div>
+            <SubSectionHeader>Verantwoorde communicatie:</SubSectionHeader>
+            <ul className="mb-8 flex list-inside flex-col gap-2">
               <ListItem>
                 Maak gebruikers bewust van de risico&apos;s zonder te oordelen.
               </ListItem>
@@ -157,10 +150,8 @@ export function LachgasSection() {
         title="Afbouwtips"
         section={
           <>
-            <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-              Is afbouwen altijd nodig?
-            </h3>
-            <ul className="mb-8 list-inside">
+            <SubSectionHeader>Is afbouwen altijd nodig?</SubSectionHeader>
+            <ul className="mb-8 flex list-inside flex-col gap-2">
               <ListItem>
                 Lachgas veroorzaakt geen fysieke afhankelijkheid zoals alcohol
                 of opiaten, maar psychologische afhankelijkheid kan een
@@ -171,64 +162,60 @@ export function LachgasSection() {
                 frequent gebruik en moeite hebben om direct te stoppen.
               </ListItem>
             </ul>
-            <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-              Hoe af te bouwen:
-            </h3>
-            <ul className="mb-8 flex flex-col gap-2">
+            <SubSectionHeader>Hoe af te bouwen:</SubSectionHeader>
+            <div className="mb-8 flex flex-col gap-2">
               {" "}
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              <SubSectionParagraph>
                 <span className="font-semibold">Stap 1:</span> Breng het gebruik
                 in kaart (frequentie, hoeveelheid).
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold">Stap 2:</span>
                 Stel duidelijke doelen, zoals het verminderen van het aantal
                 gebruiksmomenten per week.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold">Stap 3:</span> Creëer
                 vervangende routines voor ontspanning, zoals mindfulness,
                 sporten, of creatieve activiteiten.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold">Stap 4:</span> Verlaag de
                 hoeveelheid per sessie en verleng de tijd tussen sessies.
-              </li>
-            </ul>
+              </SubSectionParagraph>
+            </div>
             <StyledParagraph header="Direct stoppen:">
               Bij ernstig gebruik of tekenen van neurologische schade
               (bijvoorbeeld tintelingen of gevoelloosheid) is direct stoppen aan
               te raden, met ondersteuning van medische begeleiding. Overweeg een
               bloedonderzoek op vitamine B12-tekorten of andere complicaties.
             </StyledParagraph>
-            <h3 className="mb-4 w-full font-sans text-base font-semibold tracking-[1px] text-[#333333] lg:tracking-[0.1rem]">
-              Ondersteuning bij afbouw:
-            </h3>
-            <ul className="mb-8 flex flex-col gap-2">
+            <SubSectionHeader>Ondersteuning bij afbouw:</SubSectionHeader>
+            <div className="mb-8 flex flex-col gap-2">
               {" "}
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              <SubSectionParagraph>
                 <span className="font-semibold">
                   Therapeutische begeleiding:{" "}
                 </span>{" "}
                 motiverende gespreksvoering, cognitieve gedragstherapie.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold">Sociale steun: </span> betrek
                 vrienden, familie, of zelfhulpgroepen.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold">Medische begeleiding: </span>
                 controleer op vitamine B12-tekorten en ondersteun herstel door
                 middel van supplementen indien nodig.
-              </li>
-              <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+              </SubSectionParagraph>
+              <SubSectionParagraph>
                 <span className="font-semibold">Herstel en nazorg:</span> Zorg
                 voor een plan om terugval te voorkomen, zoals het identificeren
                 van triggers en strategieën om hiermee om te gaan. Moedig
                 deelname aan activiteiten die positieve gevoelens opwekken en
                 sociale verbinding bevorderen.
-              </li>
-            </ul>
+              </SubSectionParagraph>
+            </div>
           </>
         }
       />
