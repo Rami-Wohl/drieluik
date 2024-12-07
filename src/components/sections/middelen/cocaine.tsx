@@ -5,7 +5,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "~/components/ui/accordion";
-import { SubSectionHeader } from "./ghb";
+import { SubSectionHeader, SubSectionParagraph } from "./ghb";
+import { ListItem } from "~/components/ui/list-item";
 
 export function StyledParagraph({
   header,
@@ -51,8 +52,168 @@ export function CocaineSection() {
   return (
     <Accordion type="single" collapsible className="w-full text-black">
       <AccordionSubSection
-        value="afbouwen"
-        title="Afbouwen"
+        value="algemene-kennis"
+        title="Algemene kennis"
+        section={
+          <>
+            <StyledParagraph header="Wat is cocaine?" marginBottom="mb-2">
+              Cocaïne is een krachtig stimulerend middel dat wordt gewonnen uit
+              de bladeren van de coca-plant. Het is meestal verkrijgbaar als wit
+              poeder of in kristalvorm (&quot;crack&quot;).
+            </StyledParagraph>
+            <StyledParagraph>
+              Het middel wordt vaak gesnoven, gerookt of geïnjecteerd. De
+              werkingsduur varieert van enkele minuten (bij roken) tot een uur
+              (bij snuiven).
+            </StyledParagraph>
+            <StyledParagraph header="Werkingsmechanisme:" marginBottom="mb-2">
+              Cocaïne blokkeert de heropname van dopamine, serotonine en
+              noradrenaline in de hersenen, wat een intense, korte euforie
+              veroorzaakt.
+            </StyledParagraph>
+            <StyledParagraph>
+              Het effect begint vrijwel direct na gebruik en neemt snel af, wat
+              bijdraagt aan de neiging om het middel herhaaldelijk te gebruiken.{" "}
+            </StyledParagraph>
+            <SubSectionHeader>Fysieke en mentale effecten:</SubSectionHeader>
+            <div className="mb-8 flex flex-col gap-2">
+              {" "}
+              <SubSectionParagraph>
+                <span className="font-semibold">Korte termijn:</span> euforie,
+                verhoogd zelfvertrouwen, energie, versnelde hartslag, verhoogde
+                bloeddruk, verminderde eetlust.
+              </SubSectionParagraph>
+              <SubSectionParagraph>
+                <span className="font-semibold"> Langetermijn:</span> schade aan
+                het neusslijmvlies (bij snuiven), cardiovasculaire problemen,
+                gewichtsverlies, vermoeidheid, depressie, en verhoogd risico op
+                psychoses.
+              </SubSectionParagraph>
+              <SubSectionParagraph>
+                <span className="font-semibold"> Overdosisrisico: </span>
+                hartritmestoornissen, beroerte, hartaanval, of overlijden.
+              </SubSectionParagraph>
+            </div>
+            <SubSectionHeader>Hoe herken je gebruik?</SubSectionHeader>
+            <ul className="mb-8 flex list-inside flex-col gap-2">
+              <ListItem>
+                {" "}
+                Symptomen zoals spraakzaamheid, opgewektheid, pupilvergroting,
+                snelle ademhaling, of overmatig zweten.
+              </ListItem>
+              <ListItem>
+                Fysieke aanwijzingen zoals resten van wit poeder, opgerolde
+                bankbiljetten, pijpjes of injectiemateriaal.
+              </ListItem>
+            </ul>
+            <StyledParagraph header="Sociaal gedrag:" marginBottom="mb-2">
+              Cocaïnegebruik komt vaak voor in sociale settings zoals clubs of
+              feesten, maar kan bij frequent gebruik ook leiden tot isolatie.
+            </StyledParagraph>
+            <StyledParagraph>
+              Problematisch gebruik kan leiden tot conflicten met familie,
+              verlies van werk, of financiële problemen.{" "}
+            </StyledParagraph>
+          </>
+        }
+      />
+      <AccordionSubSection
+        value="voorlichting"
+        title="Voorlichting"
+        section={
+          <>
+            <SubSectionHeader>Risico&apos;s van gebruik:</SubSectionHeader>
+            <div className="mb-8 flex flex-col gap-2">
+              {" "}
+              <SubSectionParagraph>
+                <span className="font-semibold">Fysieke gevolgen: </span>{" "}
+                verhoogd risico op hart- en vaatziekten, beroertes, schade aan
+                het neusslijmvlies, en longschade bij roken.
+              </SubSectionParagraph>
+              <SubSectionParagraph>
+                <span className="font-semibold">Psychische gevolgen: </span>
+                angst, depressie, prikkelbaarheid, paranoia, hallucinaties, of
+                psychoses bij langdurig gebruik.
+              </SubSectionParagraph>
+              <SubSectionParagraph>
+                <span className="font-semibold"> Sociale gevolgen: </span>
+                relatieproblemen, financiële schulden, verlies van werk, of
+                juridische problemen.
+              </SubSectionParagraph>
+            </div>
+            <SubSectionHeader>
+              Harm reduction (veilig gebruik):
+            </SubSectionHeader>
+            <div className="mb-8 flex flex-col gap-2">
+              <SubSectionParagraph>
+                <span className="font-semibold">Dosering:</span> Gebruik zo
+                weinig mogelijk om de impact op het lichaam te minimaliseren.
+              </SubSectionParagraph>
+              <SubSectionParagraph>
+                <span className="font-semibold"> Manier van gebruik:</span> Deel
+                geen snuifmaterialen (zoals rietjes) om het risico op infecties
+                te vermijden. Bij roken: gebruik een schone pijp.
+              </SubSectionParagraph>
+              <SubSectionParagraph>
+                <span className="font-semibold"> Hydratatie en voeding:</span>{" "}
+                Zorg voor voldoende vocht en regelmatige maaltijden om de
+                fysieke belasting van het middel te verminderen.
+              </SubSectionParagraph>
+              <SubSectionParagraph>
+                <span className="font-semibold">Combinaties:</span> Vermijd het
+                combineren van cocaïne met alcohol (leidt tot de vorming van
+                coca-ethyleen, wat extra belastend is voor het hart) of andere
+                middelen.
+              </SubSectionParagraph>
+              <SubSectionParagraph>
+                <span className="font-semibold">
+                  Herken signalen van overdosering:
+                </span>{" "}
+                Versnelde hartslag, pijn op de borst, hevige agitatie, of
+                verwardheid zijn signalen om direct medische hulp te zoeken.
+              </SubSectionParagraph>
+            </div>
+            <SubSectionHeader>
+              Psychische impact en sociale aspecten:
+            </SubSectionHeader>
+            <ul className="mb-8 flex list-inside flex-col gap-2">
+              <ListItem>
+                Bespreek hoe cocaïnegebruik vaak wordt gekoppeld aan
+                prestatiedrang, sociale druk, of escapisme.
+              </ListItem>
+              <ListItem>
+                Adviseer de patiënt om triggers voor gebruik te identificeren,
+                zoals stressvolle situaties of sociale settings waar cocaïne
+                vaak wordt gebruikt.
+              </ListItem>
+            </ul>
+            <SubSectionHeader>Voorlichting over herstel: </SubSectionHeader>
+            <ul className="mb-8 flex list-inside flex-col gap-2">
+              <ListItem>
+                Leg uit dat herstel vaak gepaard gaat met psychische klachten
+                zoals depressie en dat professionele begeleiding essentieel is.
+              </ListItem>
+              <ListItem>
+                Bespreek het belang van een ondersteunend sociaal netwerk en het
+                vermijden van risicovolle situaties.
+              </ListItem>
+            </ul>
+            <SubSectionHeader>Verantwoorde communicatie: </SubSectionHeader>
+            <ul className="mb-8 flex list-inside flex-col gap-2">
+              <ListItem>
+                Wees open en niet-oordelend in gesprekken over cocaïnegebruik.
+              </ListItem>
+              <ListItem>
+                Leg uit dat stoppen een proces is dat gepaard kan gaan met
+                terugval en dat dit onderdeel is van herstel.
+              </ListItem>
+            </ul>
+          </>
+        }
+      />
+      <AccordionSubSection
+        value="afbouwtips"
+        title="Afbouwtips"
         section={
           <div>
             <StyledParagraph header="Afbouwen of in één keer stoppen">
