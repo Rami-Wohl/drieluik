@@ -324,7 +324,7 @@ export function Gebruiksfunctie() {
               7. Dieper graven: wat ligt onder de functie?
             </span>{" "}
             Vaak vervult gebruik niet alleen een oppervlakkige functie, maar
-            raakt het diepere, onbewuste thema's. Stel verdiepende vragen:
+            raakt het diepere, onbewuste thema&apos;s. Stel verdiepende vragen:
           </DialogDescription>
           <ol className="flex list-inside flex-col gap-4">
             <ListItem ordered>
@@ -376,7 +376,7 @@ export function Gebruiksfunctie() {
               <span className="font-semibold">Langetermijndoelen: </span>
               <ul className="my-2 flex list-inside flex-col gap-2">
                 <ListItem>
-                  Werken aan bredere thema's zoals zelfbeeld, sociale
+                  Werken aan bredere thema&apos;s zoals zelfbeeld, sociale
                   vaardigheden, of emotieregulatie.
                 </ListItem>
               </ul>
