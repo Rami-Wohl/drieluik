@@ -192,7 +192,7 @@ export function Gebruikscyclus() {
           </ol>
           <DialogDescription className="mt-4 flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">
-              4. Inzicht: Waar Kun je Ingrijpen in de Cyclus?
+              4. Inzicht: waar kun je ingrijpen in de cyclus?
             </span>{" "}
             Samen met de cliënt bespreek je de zwakke schakels in de cyclus. Dit
             zijn punten waarop ze invloed kunnen uitoefenen:{" "}
@@ -259,7 +259,7 @@ export function Gebruikscyclus() {
           </ol>
           <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">
-              5. Oefening: Breng je Eigen Cyclus in Kaart
+              5. Oefening: breng je eigen cyclus in kaart
             </span>{" "}
           </DialogDescription>
           <ol className="mb-4 flex list-inside flex-col gap-4">
@@ -278,7 +278,7 @@ export function Gebruikscyclus() {
           </ol>
           <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">
-              6. Plan van Aanpak: Doorbreken van de Cyclus
+              6. Plan van aanpak: doorbreken van de cyclus
             </span>{" "}
           </DialogDescription>
           <ul className="mb-4 flex list-inside flex-col gap-4">
@@ -301,7 +301,7 @@ export function Gebruikscyclus() {
             </ListItem>
           </ul>
           <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">7. Follow-up en Herhaling </span>{" "}
+            <span className="font-semibold">7. Follow-up en herhaling </span>{" "}
           </DialogDescription>
           <ul className="mb-4 flex list-inside flex-col gap-4">
             <ListItem>

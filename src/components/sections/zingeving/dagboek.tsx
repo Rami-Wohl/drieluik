@@ -28,32 +28,32 @@ export function Dagboek() {
           <table className="mb-2">
             <tbody>
               <tr className="h-auto">
-                <td className="w-6 max-w-fit text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="w-6 max-w-fit text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
                   Oefening 1:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
                   Het experiment
                 </td>
               </tr>
               <tr className="h-auto">
-                <td className="w-6 max-w-fit text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="w-6 max-w-fit text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
                   Benodigdheden:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
                   Schriftje
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div className="relative mb-4 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="relative mb-4 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Kies een dag of een periode uit waarop er even niet gebruikt wordt,
             bijvoorbeeld een periode van een week en laat de cliënt een simpel
             logboek bijhouden in een schriftje. Dit is een voorbeeld van een
             format dat aangehouden kan worden:
           </DialogDescription>
-          <div className="flex w-full flex-col gap-2 rounded-md border border-black p-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <div className="flex w-full flex-col gap-2 rounded-md border border-black p-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span>Dag:</span>
             <span>
               Tijdstip van piek (openlaten indien niet van toepassing):
@@ -83,37 +83,37 @@ export function Dagboek() {
           <table className="mb-2">
             <tbody>
               <tr className="h-auto">
-                <td className="w-6 max-w-fit text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="w-6 max-w-fit text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
                   Oefening 2:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
                   Mindful gebruiken
                 </td>
               </tr>
               <tr className="h-auto">
-                <td className="w-6 max-w-fit text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="w-6 max-w-fit text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
                   Benodigdheden:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
                   Schriftje
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div className="relative mb-4 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="relative mb-4 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Registreer ieder moment dat je hebt gebruikt. Je kan gebruik maken
             van het volgende format:
           </DialogDescription>
-          <div className="flex w-full flex-col gap-2 rounded-md border border-black p-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <div className="flex w-full flex-col gap-2 rounded-md border border-black p-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span>Dag:</span>
             <span>Tijdstip:</span>
             <span>Middel:</span>
             <span>Aanleiding: </span>
             <span>Hoe ik mij achteraf voelde:</span>
           </div>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Bespreek achteraf de registraties en bepaal of het wel of niet
             voortgezet moet worden.
           </DialogDescription>

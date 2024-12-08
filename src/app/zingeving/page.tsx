@@ -2,6 +2,7 @@ import { Balans } from "~/components/sections/zingeving/balans";
 import { Dagboek } from "~/components/sections/zingeving/dagboek";
 import { Doelenspel } from "~/components/sections/zingeving/doelenspel";
 import { Gebruikscyclus } from "~/components/sections/zingeving/gebruikscyclus";
+import { Gebruiksfunctie } from "~/components/sections/zingeving/gebruiksfunctie";
 import { Kernquadranten } from "~/components/sections/zingeving/kernquadranten";
 import { SociaalKonvooi } from "~/components/sections/zingeving/sociaal-konvooi";
 import { Tijdlijn } from "~/components/sections/zingeving/tijdlijn";
@@ -26,6 +27,7 @@ export default function ZingevingPage() {
             <Balans />
             <Dagboek />
             <Gebruikscyclus />
+            <Gebruiksfunctie />
           </div>
         </div>
       </div>
