@@ -26,24 +26,24 @@ export function Waardenspel() {
           </DialogTitle>
         </DialogHeader>
         <div className="my-2 flex flex-col gap-4 lg:px-4">
-          <h3 className="w-full text-center font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
+          <h3 className="w-full text-center font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
             Spelvorm 1
           </h3>
           <table className="mb-2">
             <tbody>
               <tr className="h-auto">
-                <td className="text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap pr-2 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
                   Titel:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
                   &quot;De Waardenpiramide&quot;
                 </td>
               </tr>
               <tr className="h-auto">
-                <td className="text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap pr-2 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
                   Doel:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
                   Patiënten laten nadenken over wat zij belangrijk vinden en hoe
                   zij hun keuzes prioriteren, met als einddoel hun &quot;Top 5
                   Waarden&quot; in kaart te brengen.
@@ -52,8 +52,8 @@ export function Waardenspel() {
             </tbody>
           </table>
         </div>
-        <div className="mb-4 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-4 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Voorbereiding:</span>{" "}
             <span>
               Knip of print elk van de waarden op een aparte kaart. Een lijst
@@ -69,25 +69,25 @@ export function Waardenspel() {
               .
             </span>
           </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Ronde 1: </span>Geef de cliënt een
             stapel van alle 50 waarden. Vraag om eerst 25 waarden te selecteren
             die op dit moment het belangrijkste zijn.
           </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Ronde 2: </span>Vraag om de stapel
             van 25 waarden verder te verkleinen tot 10 kernwaarden. Bespreek
             eventueel kort waarom bepaalde waarden worden gekozen en anderen
             niet.
           </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Ronde 3:</span>Nu moet er gekozen
             worden uit deze 10 waarden en kom je uit op de &quot;Top 5
             Waarden&quot;. Bespreking: Bespreek deze &quot;Top 5&quot; met de
             cliënt. Laat de cliënt nadenken over hoe deze waarden in hun leven
             passen en hoe deze hen kunnen ondersteunen in hun herstel.
           </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Variatieopties:</span>
             <span>
               <span className="italic">Scenariokoppeling:</span> Maak
@@ -107,24 +107,24 @@ export function Waardenspel() {
         </div>
         <Separator className="my-4 border-b-2 border-black border-opacity-30" />
         <div className="my-2 flex flex-col gap-4 lg:px-4">
-          <h3 className="w-full text-center font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
+          <h3 className="w-full text-center font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
             Spelvorm 2
           </h3>
           <table className="mb-2">
             <tbody>
               <tr className="h-auto">
-                <td className="text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap pr-2 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
                   Titel:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
                   &quot;Waarden Tijdlijn&quot;
                 </td>
               </tr>
               <tr className="h-auto">
-                <td className="text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap pr-2 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
                   Doel:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90">
+                <td className="text-wrap text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
                   Inzicht geven in hoe waarden veranderen door de tijd, en welke
                   waarden de patiënt kan meenemen naar de toekomst om hen te
                   ondersteunen.
@@ -133,14 +133,14 @@ export function Waardenspel() {
             </tbody>
           </table>
         </div>
-        <div className="mb-6 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-6 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Benodigdheden: </span>
             Een groot vel papier (of whiteboard) en stiften. Drie gekleurde
             post-its voor drie tijdsperiodes: Verleden, Heden en Toekomst.
             Post-its voor de waarden.
           </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Voorbereiding: </span>
             <span>
               <span className="italic">Tijdlijn maken:</span> Teken een
@@ -162,7 +162,7 @@ export function Waardenspel() {
               . Schrijf elke waarde op een aparte kaart of post-it.
             </span>{" "}
           </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Waarden toewijzen:</span> Geef de
             patiënt de taak om de waardenkaarten te verdelen over de drie
             tijdsperiodes.
@@ -182,7 +182,7 @@ export function Waardenspel() {
               <br />
             </span>
           </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">
               Reflectievraag per tijdsperiode:{" "}
             </span>{" "}
@@ -203,7 +203,7 @@ export function Waardenspel() {
               <br />
             </span>
           </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold"> Waarden prioriteren: </span> Nadat
             de patiënt waarden heeft toegewezen aan elk tijdsblok, vraag je hen
             om in elke tijdsperiode de belangrijkste 2-3 waarden te kiezen.{" "}
@@ -213,7 +213,7 @@ export function Waardenspel() {
               kunnen werken.
             </span>
           </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             <span className="font-semibold">Afsluiting:</span>
             <span>
               <span className="italic">Samenvatting en doelen:</span> Bespreek

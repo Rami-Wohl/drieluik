@@ -39,12 +39,12 @@ export function Kernquadranten() {
           <DialogTitle className="mb-1 w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
             Kernquadranten
           </DialogTitle>
-          <h3 className="w-full text-center font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
+          <h3 className="w-full text-center font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
             Wat zijn jouw kwaliteiten en uitdagingen?
           </h3>
         </DialogHeader>
-        <div className="mb-6 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-6 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Weten waar je talenten liggen is natuurlijk goed voor je zelfbeeld,
             maar helpt ook om uiteindelijk richting te geven aan je doelen. Er
             zijn meerdere oefeningen die je kan doen om dit in kaart te brengen.
@@ -55,7 +55,7 @@ export function Kernquadranten() {
           <div className="mb-4 flex w-full flex-col items-center justify-center">
             <KernquadrantenTabel />
           </div>
-          <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Je begint links bovenin met een positieve eigenschap of talent. Een
             vak naar rechts schrijf je op hoe het eruitziet als je te veel van
             die eigenschap laat zien of er in doorslaat. Daaronder (rechtsonder)

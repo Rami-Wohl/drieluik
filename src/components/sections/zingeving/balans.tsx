@@ -23,12 +23,12 @@ export function Balans() {
           <DialogTitle className="mb-1 w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
             Balansspel
           </DialogTitle>
-          <h3 className="w-full text-center font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
+          <h3 className="w-full text-center font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
             Wat zijn de voor- en nadelen van gebruik?
           </h3>
         </DialogHeader>
-        <div className="mb-6 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-6 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Hier kan je het voor- en nadelen balans maken. Dit is makkelijk te
             doen op een whiteboard of een velletje papier. Je kan het als volgt
             vormgeven:
@@ -36,7 +36,7 @@ export function Balans() {
           <div className="mb-4 flex w-full flex-col items-center justify-center">
             <BalansTabel />
           </div>
-          <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Als je dit zorgvuldig uitwerkt kan je daarna de lijsten als volgt
             interpreteren:
           </DialogDescription>

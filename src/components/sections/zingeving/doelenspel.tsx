@@ -12,7 +12,7 @@ import { Button } from "~/components/ui/button";
 
 function ListItem({ children }: { children: string }) {
   return (
-    <li className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+    <li className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
       {children}
     </li>
   );
@@ -30,17 +30,17 @@ export function Doelenspel() {
           <DialogTitle className="mb-1 w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
             Doelenspel
           </DialogTitle>
-          <h3 className="w-full text-center font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
+          <h3 className="w-full text-center font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
             Wat wil je graag allemaal doen met je leven?
           </h3>
         </DialogHeader>
-        <div className="mb-6 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-6 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Soms zal je je leven compleet nieuw vorm moeten geven als je uit een
             verslaving komt. Het doelenspel kan helpen om in beeld te brengen
             welke dingen je graag wil doen en hoe belangrijk die voor je zijn.
           </DialogDescription>
-          <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Je begint met zoveel mogelijk categorieën te definiëren. Je geeft je
             cliënt dan 10 lege briefjes waar ze vervolgens doelen op mogen
             schrijven. Moedig dan vooral aan om de doelen op zo veel mogelijk
@@ -50,7 +50,7 @@ export function Doelenspel() {
             <span className="font-sans text-base font-medium tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg">
               Categoriën
             </span>
-            <ol className="pl-1 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            <ol className="pl-1 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
               <ListItem>1. Behandeling</ListItem>
               <ListItem>2. Wonen</ListItem>
               <ListItem>3. Financiën</ListItem>
@@ -66,13 +66,13 @@ export function Doelenspel() {
           <div className="flex w-full flex-col items-center justify-center">
             <DoelenspelKaarten />
           </div>
-          <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Vervolgens leg je alle doelen op een stapel rechts van je (de start
             stapel). Dan pak je twee willekeurige doelen en die leg je recht
             voor je neer, dit zijn dan de strijdende doelen. Laat deze strijd op
             intuïtie gaan en denk er vooral niet te lang over na.
           </DialogDescription>
-          <DialogDescription className="font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Het winnende doel blijft liggen en de verliezer leg je links van je
             neer. Dit doe je tot er één winnaar voor je blijft liggen en alle
             doelen op een stapel links van je liggen. Het winnende doel schuif
@@ -119,7 +119,7 @@ function Kaart({
         bottom: bottom,
         zIndex: z,
       }}
-      className={`absolute flex h-28 w-20 flex-col justify-end rounded-md border-2 border-black border-opacity-70 bg-slate-300 px-1 pb-3 text-center font-sans text-xs font-semibold tracking-wide text-[#333] text-opacity-90 lg:h-36 lg:w-24 lg:px-2 lg:text-sm`}
+      className={`absolute flex h-28 w-20 flex-col justify-end rounded-md border-2 border-black border-opacity-70 bg-slate-300 px-1 pb-3 text-center font-sans text-xs font-semibold tracking-wide text-[#333] text-opacity-90 lg:h-36 lg:w-24 lg:px-2 lg:text-base`}
     >
       {text}
     </div>

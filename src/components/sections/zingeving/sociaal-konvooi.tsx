@@ -22,12 +22,12 @@ export function SociaalKonvooi() {
           <DialogTitle className="mb-1 w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
             Sociaal Konvooi
           </DialogTitle>
-          <h3 className="w-full text-center font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
+          <h3 className="w-full text-center font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
             Wie heb je momenteel in je omgeving en hoe goed werkt dat?
           </h3>
         </DialogHeader>
-        <div className="mb-6 flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+        <div className="mb-6 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Voor dit onderdeel kan je beginnen met het invullen van het sociaal
             konvooi (zie figuur hieronder). Bij deze oefening zet je jezelf
             centraal en teken je daar drie lagen omheen en deze lagen nummer je
@@ -36,7 +36,7 @@ export function SociaalKonvooi() {
             groter de rol van de persoon is, hoe dichter je deze bij de
             binnenste cirkel plaatst.
           </DialogDescription>
-          <DialogDescription className="flex flex-col gap-6 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <DialogDescription className="flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
             Na deze oefening kan je gaan kijken of iedereen op een gunstige plek
             staat, of dat er eventueel geschoven kan worden. Dit betekent in de
             praktijk dat de persoon in kwestie kan gaan investeren in bepaalde
