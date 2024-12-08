@@ -9,7 +9,10 @@ import {
   OntspanningsOefening1,
   OntspanningsOefening2,
 } from "~/components/sections/craving/ontspanningsoefeningen";
-import { VerbeeldingsOefening1 } from "~/components/sections/craving/verbeeldingsoefeningen";
+import {
+  VerbeeldingsOefening1,
+  VerbeeldingsOefening2,
+} from "~/components/sections/craving/verbeeldingsoefeningen";
 import {
   Accordion,
   AccordionContent,
@@ -148,6 +151,7 @@ export default function CravingPage() {
               </p>
               <div className="my-2 flex flex-col gap-2">
                 <VerbeeldingsOefening1 />
+                <VerbeeldingsOefening2 />
               </div>
             </AccordionContent>
           </AccordionItem>
