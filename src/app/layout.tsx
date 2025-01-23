@@ -6,7 +6,7 @@ import { type Metadata } from "next";
 import { LayoutWithNav } from "~/components/nav/layout-with-nav";
 
 export const metadata: Metadata = {
-  title: "Het driekluik",
+  title: "Het drieluik",
   description:
     "Het drieluik - heldere, overzichtelijke documentatie voor verslavingszorg",
   icons: [{ rel: "icon", url: "/favicon.svg" }],
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} from-backgroundStart bg-gradient-to-b to-background`}
+      className={`${GeistSans.variable} bg-gradient-to-b from-backgroundStart to-background`}
     >
       <body>
         <LayoutWithNav>{children}</LayoutWithNav>
