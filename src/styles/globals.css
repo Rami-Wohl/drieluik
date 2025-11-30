@@ -14,3 +14,7 @@ body {
   height: 100%;
   font-size: 16px;
 }
+
+/* Tailwind utility for scrollbar-hidden */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

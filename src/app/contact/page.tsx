@@ -51,10 +51,10 @@ export default function ContactPage() {
           <div className="relative flex max-w-full flex-col gap-8 lg:flex-row">
             <ContactCard
               name="Devi Hisgen"
-              title="Verslavingsdeskundige bij Antes Rotterdam zuid"
-              street="Dynamostraat 18"
-              zip="3083AK"
-              city="Rotterdam"
+              title="Verslavingsdeskundige bij Antes"
+              street="Klaasje Zevensterstraat"
+              zip="3193TW"
+              city="Hoogvliet"
               phone="0651029460"
               email="d.hisgen@anteszorg.nl"
             />

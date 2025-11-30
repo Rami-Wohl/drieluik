@@ -1,4 +1,5 @@
 import { SubSectionParagraph } from "~/components/sections/middelen/ghb";
+import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 
 export default function MissiePage() {
@@ -8,163 +9,158 @@ export default function MissiePage() {
         <Pageheader text="Missie & visie" />
         <div className="flex flex-col items-center justify-start gap-6">
           <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
-            1. Inleiding
+            Verslaving begrijpen: meer dan alleen stoppen met gebruiken
           </h2>
           <SubSectionParagraph>
-            Rond 2020 fuseerden de Rotterdamse zorgonderdelen Delta/Bouman
-            (inclusief haar dochterondernemingen) en Bavo Europoort tot Antes
-            BV. Daarmee kwam er een einde aan het scheiden van psychiatrie en
-            verslaving. De zorgonderdelen die voorheen geen EPA-patiënten met
-            verslavingsproblematiek behandelden moesten dat vanaf dat moment wel
-            gaan doen.
+            Het behandelen van mensen met een ernstige psychiatrische aandoening
+            (EPA) en verslaving vraagt meer dan simpelweg een behandelprotocol
+            volgen. Elke patiënt is uniek, en dat maakt creativiteit van de
+            behandelaar onmisbaar. Dat inzicht inspireerde Devi Hisgen,
+            verslavings- en hersteldeskundige, om dit <b>Drieluik</b> te
+            ontwikkelen: een hulpmiddel dat bestaande interventies bundelt
+            binnen een nieuwe structuur en visie.
           </SubSectionParagraph>
           <SubSectionParagraph>
-            In 2022 is binnen de GGZ-teams van de Dynamostraat d.m.v. een
-            enquête geïnventariseerd wat collega’s nodig hebben om hiertoe in
-            staat te zijn. Op basis daarvan zijn de Handreikingen Verslaving
-            ontwikkeld die de aandachtspunten beschrijven voor signalering,
-            diagnostiek en behandeling van verslaving algemeen en van de
-            verschillende verslavende middelen in het bijzonder. De
-            handreikingen bevatten informatie over visie, diagnostiek,
-            behandeling, kennis en samenwerking.
+            Die visie draait om één belangrijk uitgangspunt:{" "}
+            <b>het middel zelf is niet het centrale probleem</b>. Gebruik is
+            vaak een manier om met andere problemen om te gaan. Daarom ligt de
+            focus niet alleen op stoppen met middelen, maar ook op{" "}
+            <b>triggers, craving en zingeving.</b>
           </SubSectionParagraph>
           <SubSectionParagraph>
-            Het leveren van een bijdrage aan het herstel van een patiënt met EPA
-            vereist creativiteit van de behandelaar. Het toepassen van een
-            enkele behandelrichtlijn is doorgaans ontoereikend vanwege de
-            complexiteit van de problematiek. Dat gegeven heeft Devi Hisgen,
-            verslavings- en hersteldeskundige, ertoe gebracht om dit Drieluik te
-            ontwikkelen. Met deze onderlegger wil hij ervaringen en zijn manier
-            van werken delen. Hij maakt gebruik van perse reeds bestaande
-            interventies die hij in een structuur heeft gegoten. Deze structuur
-            is gebaseerd op een visie. Namelijk de visie dat het gebruik van een
-            middel niet het centrale probleem is, maar een manier van omgaan met
-            problemen. Stoppen met het middel is dus niet het belangrijkste
-            doel. Het is belangrijk om ook aandacht te hebben voor
-            triggers//craving en voor zingeving. Sommige patiënten vinden het
-            bereiken/bestendigen van abstinentie noodzakelijk. Zij kunnen
-            profiteren van het populaire Minnesota-12-stappen-model, omdat dit
-            aansluit bij hun waarden. Er zijn echter ook patiënten voor wie
-            abstinentie geen noodzaak is of bij wie het focussen op abstinentie
-            averechts werkt. Dan zijn andere interventies dan het 12 stappen
-            model noodzakelijk.
+            Sommige patiënten voelen zich geholpen door complete abstinentie,
+            bijvoorbeeld via het bekende <b>Minnesota 12-stappenprogramma.</b>{" "}
+            Voor anderen werkt dat juist averechts, en zijn alternatieve
+            interventies noodzakelijk.
           </SubSectionParagraph>
           <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
-            2. Visie: Wat is verslaving?
-          </h2>
-          <SubSectionParagraph>
-            Verslaving is de afhankelijkheid van een middel. Een ruime definitie
-            van “een middel” omvat ook de gedragsverslavingen (zoals gamen,
-            gokken, seks en eten), maar over het algemeen wordt er bij “een
-            middel” gedoeld op drugs (waaronder alcohol).
-          </SubSectionParagraph>
-          <SubSectionParagraph>
-            Om de complexiteit van verslaving in kaart te brengen is het handig
-            om dit te ontleden als een probleem met meerdere lagen en een solide
-            kern.
-          </SubSectionParagraph>
-          <SubSectionParagraph>
-            <span className="font-semibold">Laag 1:</span> Het middel en het
-            gebruik. Het middel is zichtbaar en de effecten van het middel zijn
-            vaak zichtbaar voor omstanders. Dit is de oppervlakslaag
-          </SubSectionParagraph>
-          <SubSectionParagraph>
-            <span className="font-semibold">Laag 2:</span> De geestelijke
-            afhankelijkheid. Het gebruik is geen bewuste keuze meer, stoppen met
-            gebruik gebeurt vaak later dan gepland of lukt helemaal niet. Het is
-            niet altijd zichtbaar of iemand gebruikt omdat ‘ie daar op dat
-            moment voor kiest, of omdat ‘ie afhankelijk is. Er zijn
-            uiteenlopende oorzaken waarom iemand geestelijk afhankelijk is
-            geworden van een middel.
-          </SubSectionParagraph>
-          <SubSectionParagraph>
-            <span className="font-semibold">Laag 3:</span> De fysieke
-            afhankelijkheid: Bij veelvuldig gebruik van sommige middelen
-            -bijvoorbeeld heroïne, alcohol en GHB- kan een lichamelijke
-            afhankelijkheid ontstaan. Acuut stoppen kan zorgen voor een scala
-            aan lichamelijke verschijnselen, oplopend van lichtelijk ongemak tot
-            insulten en soms zelfs de dood. Daarnaast is wetenschappelijk
-            aangetoond dat sommige mensen een neurobiologische aanleg hebben
-            voor het ontwikkelen van verslaving en makkelijker verslaafd worden
-            dan mensen die deze neurobiologische aanleg niet hebben.
-          </SubSectionParagraph>
-          <SubSectionParagraph>
-            <span className="font-semibold">Laag 4:</span> Psychische aspecten
-            en emotionele afhankelijkheid. Deze laag gaat over betekenisgeving
-            en zingeving: Hoe maak je plezier, verwerk je verdriet en deal je
-            met frustratie? Deze laag gaat dikwijls het diepst en is
-            hoogstpersoonlijk. Uit hoeveel sub-lagen deze laag bestaat tot je de
-            kern van jouw verslaving hebt bereikt is dus 100%
-            persoonsafhankelijk. Het heeft te maken met wat jij hebt meegemaakt
-            en uit welk hout je gesneden bent (nature/nurture). Deze laag omvat
-            alles tussen levensloop en genetica, coping en psychische
-            kwetsbaarheid.
-          </SubSectionParagraph>
-          <SubSectionParagraph>
-            <span className="font-semibold">Laag 5:</span> De maatschappij. Veel
-            verslavingsepidemieën zijn zowel lokaal als tijdsgebonden, wat een
-            aanwijzing geeft naar een andere drijfveer achter verslaving; niet
-            een individuele, maar een maatschappelijke. Beleid, cultuur,
-            welvaart, socio-economische status en politiek spelen allemaal
-            mogelijk een rol bij de epidemiologie van verslaving. Aan de
-            probleemkant kun je dat zien aan bijvoorbeeld de lokale heroïne
-            epidemieën zoals in Utrecht in de jaren 70, de opioïde medicijnen in
-            de mid-staten van Amerika of de hoestdrank problemen in landen als
-            Nigeria. En aan de oplossingskant kan je dat zien aan wat
-            bijvoorbeeld Portugal voor elkaar heeft gekregen na de invoering van
-            een progressief de-criminalisatie beleid.
-          </SubSectionParagraph>
-          <SubSectionParagraph>
-            Frequent wordt er in de behandeling gefocust op laag 1: het gebruik,
-            terwijl het probleem zich bevindt in de diepere lagen. Het is niet
-            erg als iemand regelmatig een glas wijn drinkt, het is pas erg als
-            iemand niet in staat is om op een normale manier om te gaan met het
-            middel. Ook in diverse onderzoeken naar de effectiviteit van
-            verslavingsbehandelingen wordt succes vertaald in bereikte
-            abstinentie en niet in kwaliteit van leven of in herstel van het
-            compulsieve onderliggende gedrag.
-          </SubSectionParagraph>
-          <SubSectionParagraph>
-            Johann Hari maakte in zijn boek ‘Chasing the Scream’ het statement
-            “the opposite of addiction isn’t sobriety, it’s connection”. Bij het
-            behandelen van een verslaving moet het om meer gaan dan louter een
-            fixatie op middelengebruik: het gaat om de individuen en hun
-            persoonlijke problemen. Hij gelooft dat verslaving in de kern een
-            probleem is van het maken van betekenisvolle connecties. In zowel
-            zijn boek als zijn TedTalk haalt hij het experiment van professor
-            Bruce K. Alexander aan. Daar werd onderzocht wat een bepalende
-            invloed de omgeving had op de ontwikkeling van een verslaving. Dit
-            werd het Ratpark experiment genoemd. Ratten konden zichzelf heroïne
-            toedienen. De ratten die verbleven in een stimulusrijke omgeving met
-            veel andere ratten taalden niet naar heroïne, terwijl de ratten die
-            in isolatie verbleven juist wel heroïne bleven gebruiken. De
-            resultaten worden uitgebreid behandeld in het boek ‘The
-            Globalisation of Addiction’
-          </SubSectionParagraph>
-          <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
-            Missie; wetenschappelijk & humaan:
+            Wat is verslaving?{" "}
           </h2>
 
           <SubSectionParagraph>
-            Als er een goede definitie van verslaving en van herstel van
-            verslaving is geformuleerd, dan wordt het makkelijker om een
-            succesvolle behandeling aan te bieden die mensen met een verslaving
-            helpt bij hun herstel. Goede onderzoeksinstrumenten zijn daarom
-            onmisbaar: voor het vaststellen van verslaving en voor het meten van
-            de effectiviteit van de behandeling. Uitsluitend het objectiveren
-            van het gebruik is niet voldoende noch behulpzaam. Een
-            onderzoeksinstrument zou het verschil tussen recreatief gebruik en
-            een verslaving moeten meten. Dus de impact op alle leefgebieden
-            moeten nagaan. Een metrische schaal waarbij de mate van teloorgang,
-            vervreemding of beperking in kaart kan worden gebracht. Idealiter
-            zou een behandelaar een verslaving moeten kunnen herkennen zonder de
-            patiënt verder te kennen. Het gaat dus niet om het gebruik, maar om
-            wat het gebruik drijft. Bij een verslaving is het middel niet het
-            onderliggende probleem, maar vormt voor de person vaak juist een
-            oplossing, zij het een oplossing die een overdaad aan collaterale
-            schade met zich meebrengt. Met het drieluik hopen we behandelaren
-            handvatten te geven om behandeling humaan, wetenschappelijk en
-            eenvoudig te maken.
+            Verslaving betekent afhankelijkheid van een middel of gedrag. Dat
+            kan gaan om alcohol of drugs, maar ook om gokken, gamen, seks of
+            eten. Om de complexiteit van verslaving te begrijpen, kun je het
+            zien als een probleem met verschillende lagen:
+          </SubSectionParagraph>
+          <SubSectionParagraph>
+            <span className="font-medium">
+              1. Het middel en gebruik (oppervlakte)
+            </span>
+          </SubSectionParagraph>
+          <ul className="flex flex-col gap-3 px-4">
+            {" "}
+            <ListItem>
+              Het zichtbare deel: welk middel gebruikt iemand, en wat ziet de
+              omgeving daarvan?
+            </ListItem>
+          </ul>
+          <SubSectionParagraph>
+            <span className="font-semibold">
+              2. Geestelijke afhankelijkheid
+            </span>
+          </SubSectionParagraph>
+          <ul className="flex flex-col gap-3 px-4">
+            {" "}
+            <ListItem>
+              Het gebruik is niet meer een vrije keuze. Stoppen lukt vaak niet,
+              of pas veel later dan gepland.
+            </ListItem>
+          </ul>
+          <SubSectionParagraph>
+            <span className="font-semibold">
+              3. Lichamelijke afhankelijkheid
+            </span>
+          </SubSectionParagraph>
+          <ul className="flex flex-col gap-3 px-4">
+            {" "}
+            <ListItem>
+              Bij middelen als alcohol, heroïne of GHB kan stoppen
+              levensgevaarlijk zijn.
+            </ListItem>
+            <ListItem>
+              Bovendien hebben sommige mensen een genetische of neurobiologische
+              aanleg waardoor ze sneller verslaafd raken.
+            </ListItem>
+          </ul>
+          <SubSectionParagraph>
+            <span className="font-semibold">
+              4. Psychische en emotionele laag
+            </span>
+          </SubSectionParagraph>
+          <ul className="flex flex-col gap-3 px-4">
+            {" "}
+            <ListItem>
+              Hoe ga je om met verdriet, frustratie of leegte?
+            </ListItem>
+            <ListItem>
+              Deze diepste laag is persoonlijk en gevormd door
+              levensgeschiedenis, genetica en psychische kwetsbaarheid.
+            </ListItem>
+          </ul>
+          <SubSectionParagraph>
+            <span className="font-semibold">5. De maatschappelijke laag</span>
+          </SubSectionParagraph>
+          <ul className="flex flex-col gap-3 px-4">
+            {" "}
+            <ListItem>
+              Verslaving is ook een sociaal fenomeen. Voorbeelden zijn de
+              heroïne-epidemie in Utrecht (jaren ‘70), de opioïdencrisis in de
+              VS of hoestdrankmisbruik in Nigeria.
+            </ListItem>
+            <ListItem>
+              Beleidskeuzes en cultuur kunnen het verschil maken, zoals Portugal
+              liet zien met hun succesvolle decriminalisatiebeleid.
+            </ListItem>
+          </ul>
+
+          <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
+            Alleen focussen op gebruik schiet tekort, waarom?
+          </h2>
+          <SubSectionParagraph>
+            Veel behandelingen richten zich vooral op laag 1: het stoppen met
+            middelengebruik. Maar het echte probleem ligt vaak dieper. Het is
+            bijvoorbeeld niet erg om af en toe een glas wijn te drinken, wél als
+            iemand er de controle over verliest.
+          </SubSectionParagraph>
+          <SubSectionParagraph>
+            Succes wordt in onderzoek vaak afgemeten aan abstinentie. Maar dat
+            zegt weinig over <b>kwaliteit van leven</b> of{" "}
+            <b>herstel van compulsief gedrag</b>.
+          </SubSectionParagraph>
+          <SubSectionParagraph>
+            De schrijver Johann Hari verwoordde het treffend:
+          </SubSectionParagraph>
+          <SubSectionParagraph>
+            <i>“The opposite of addiction isn’t sobriety, it’s connection.”</i>
+          </SubSectionParagraph>
+          <SubSectionParagraph>
+            Verslaving draait dus niet om het middel zelf, maar om een gebrek
+            aan verbinding en betekenis. Dat idee sluit aan bij het beroemde Rat
+            Park-experiment van Bruce K. Alexander: ratten in een sociale,
+            prikkelrijke omgeving raakten nauwelijks verslaafd, terwijl
+            geïsoleerde ratten juist wel bleven gebruiken.
+          </SubSectionParagraph>
+          <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
+            Missie: een humane en praktische benadering
+          </h2>
+          <SubSectionParagraph>
+            Een goede definitie van verslaving én van herstel maakt het mogelijk
+            om behandelingen beter af te stemmen. Daarvoor zijn betrouwbare
+            onderzoeksinstrumenten nodig die meer meten dan alleen gebruik:
+            bijvoorbeeld de impact op relaties, werk, gezondheid en welzijn.
+          </SubSectionParagraph>
+          <SubSectionParagraph>
+            Het uitgangspunt is dat{" "}
+            <b>
+              het middel vaak niet het probleem is, maar een tijdelijke
+              oplossing
+            </b>{" "}
+            die uiteindelijk veel schade veroorzaakt.
+          </SubSectionParagraph>
+          <SubSectionParagraph>
+            Met het Drieluik wil Devi Hisgen behandelaren praktische handvatten
+            geven om verslavingszorg <b>humaan en werkbaar</b> te maken.
           </SubSectionParagraph>
         </div>
       </div>

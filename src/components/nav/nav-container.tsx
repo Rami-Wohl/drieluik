@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useEffect } from "react";
@@ -11,6 +10,13 @@ import Link from "next/link";
 import MiddelenIcon from "../icons/middelen-icon";
 import CravingIcon from "../icons/craving-icon";
 import ZingevingIcon from "../icons/zingeving-icon";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../ui/accordion";
+import { NavSubLink } from "./nav-sublink";
 
 const routes = {
   main: "/",
@@ -44,16 +50,163 @@ const NavComponents = () => {
     <div>
       <nav
         ref={mobileMenuRef}
-        className={`fixed left-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-gradient-to-b from-backgroundStart to-background text-left ${
-          isMobileMenuVisible ? "translate-x-0" : "-translate-x-full"
-        } min-h-full w-full pt-[55px] transition-transform duration-500 ease-in-out lg:w-80`}
+        className={`fixed left-0 top-0 z-[2] flex h-screen w-full transform flex-col justify-between border-r border-white/10 bg-gradient-to-b from-backgroundStart to-background transition-transform duration-500 ease-in-out lg:w-80 ${isMobileMenuVisible ? "translate-x-0" : "-translate-x-full"} `}
       >
-        <div className="flex h-full w-full flex-col justify-center">
+        <div className="no-scrollbar flex h-full flex-col overflow-y-auto px-2 pb-10 pt-[80px]">
           <NavLink
             href={routes.main}
             title={"Home"}
             closeMenu={() => setMobileMenuVisible(false)}
           />
+          <Accordion type="single" collapsible className="w-full text-black">
+            <AccordionItem value="nav-middelen">
+              <AccordionTrigger className="flex w-full cursor-pointer items-center justify-between border-none p-4 font-sans text-[1.1rem] tracking-[0.1rem] text-opacity-60 no-underline opacity-90 hover:bg-white hover:bg-opacity-90 hover:text-black hover:text-opacity-100">
+                <span>Middelen</span>
+              </AccordionTrigger>
+              <AccordionContent className="no-scrollbar overflow-y-auto">
+                <NavSubLink
+                  href={routes.missie}
+                  isActive={path === routes.missie}
+                  title={"Middel 1"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.instrument}
+                  isActive={path === routes.instrument}
+                  title={"Middel 2"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.contact}
+                  isActive={path === routes.contact}
+                  title={"Middel 3"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.missie}
+                  isActive={path === routes.missie}
+                  title={"Middel 1"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.instrument}
+                  isActive={path === routes.instrument}
+                  title={"Middel 2"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.contact}
+                  isActive={path === routes.contact}
+                  title={"Middel 3"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.missie}
+                  isActive={path === routes.missie}
+                  title={"Middel 1"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.instrument}
+                  isActive={path === routes.instrument}
+                  title={"Middel 2"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.contact}
+                  isActive={path === routes.contact}
+                  title={"Middel 3"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.missie}
+                  isActive={path === routes.missie}
+                  title={"Middel 1"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.instrument}
+                  isActive={path === routes.instrument}
+                  title={"Middel 2"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.contact}
+                  isActive={path === routes.contact}
+                  title={"Middel 3"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.missie}
+                  isActive={path === routes.missie}
+                  title={"Middel 1"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.instrument}
+                  isActive={path === routes.instrument}
+                  title={"Middel 2"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.contact}
+                  isActive={path === routes.contact}
+                  title={"Middel 3"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="nav-craving">
+              <AccordionTrigger className="flex w-full cursor-pointer items-center justify-between border-none p-4 font-sans text-[1.1rem] tracking-[0.1rem] text-opacity-60 no-underline opacity-90 hover:bg-white hover:bg-opacity-90 hover:text-black hover:text-opacity-100">
+                <span>Craving</span>
+              </AccordionTrigger>
+              <AccordionContent>
+                <NavSubLink
+                  href={routes.missie}
+                  isActive={path === routes.missie}
+                  title={"Craving 1"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.instrument}
+                  isActive={path === routes.instrument}
+                  title={"Craving 2"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.contact}
+                  isActive={path === routes.contact}
+                  title={"Craving 3"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="nav-zingeving">
+              <AccordionTrigger className="flex w-full cursor-pointer items-center justify-between border-none p-4 font-sans text-[1.1rem] tracking-[0.1rem] text-opacity-60 no-underline opacity-90 hover:bg-white hover:bg-opacity-90 hover:text-black hover:text-opacity-100">
+                <span>Zingeving</span>
+              </AccordionTrigger>
+              <AccordionContent>
+                <NavSubLink
+                  href={routes.missie}
+                  isActive={path === routes.missie}
+                  title={"Zingeving 1"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.instrument}
+                  isActive={path === routes.instrument}
+                  title={"Zingeving 2"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+                <NavSubLink
+                  href={routes.contact}
+                  isActive={path === routes.contact}
+                  title={"Zingeving 3"}
+                  closeMenu={() => setMobileMenuVisible(false)}
+                />
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
           <NavLink
             href={routes.missie}
             title={"Missie & Visie"}
@@ -75,7 +228,7 @@ const NavComponents = () => {
         className={`fixed z-[2] w-full transition-transform duration-500 ease-in-out ${hideNavBar ? "-translate-y-20" : "translate-y-0"}`}
       >
         <div
-          className={`relative flex h-[80px] flex-wrap items-center justify-center ${isOnTop ? "bg-transparent" : "bg-backgroundStart"} px-4 py-1`}
+          className={`relative flex h-[80px] flex-wrap items-center justify-center ${isOnTop ? "bg-backgroundStart" : "bg-backgroundStart"} px-4 py-1`}
         >
           <div ref={mobileMenuHandlerRef}>
             <button
@@ -85,7 +238,7 @@ const NavComponents = () => {
               }}
               tabIndex={1}
             >
-              <BurgerMenuIcon stroke={"#b1b1b1"} height={40} width={40} />{" "}
+              <BurgerMenuIcon stroke={"black"} height={40} width={40} />{" "}
             </button>
           </div>
           <div
