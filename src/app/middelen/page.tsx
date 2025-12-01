@@ -1,5 +1,15 @@
 import Link from "next/link";
+import InfoIcon from "~/components/icons/info-icon";
 import { middelenRoutes } from "~/components/nav/routes";
+import { Button } from "~/components/ui/button";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "~/components/ui/dialog";
 import { Pageheader } from "~/components/ui/pageheader";
 
 type MiddelenLinkProps = {
@@ -21,11 +31,41 @@ const MiddelenLink = ({ title, href, icon }: MiddelenLinkProps) => {
     </Link>
   );
 };
+
+function MiddelenInfo() {
+  return (
+    <Dialog>
+      <DialogTrigger className="">
+        <InfoIcon fill="none" />
+      </DialogTrigger>
+      <DialogContent className="max-h-[80vh] w-11/12 max-w-[1300px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-80 bg-gradient-to-b from-[#ffffff] to-blue-50">
+        <DialogHeader className="mb-2 mt-4">
+          <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
+            Info hier
+          </DialogTitle>
+        </DialogHeader>
+        <DialogClose asChild>
+          <Button
+            type="button"
+            variant="secondary"
+            className="rounded-md border bg-transparent"
+          >
+            Sluiten
+          </Button>
+        </DialogClose>
+      </DialogContent>
+    </Dialog>
+  );
+}
+
 export default function MiddelenPage() {
   return (
     <>
       <div className="relative mt-32 flex w-full max-w-full flex-col items-center justify-center gap-1 px-6 md:max-w-[600px] lg:gap-10">
-        <Pageheader text="Middelen" />
+        <div className="flex items-baseline gap-4">
+          <Pageheader text="Middelen" />
+          <MiddelenInfo />
+        </div>
         <div className="flex flex-col items-center justify-center">
           <h2 className="my-4 font-sans text-sm text-[#333333] text-opacity-90 lg:text-lg">
             Dit luik gaat over de verschillende middelen. Per middel vind je

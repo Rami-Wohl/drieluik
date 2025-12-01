@@ -19,7 +19,7 @@ export const NavSubLink = ({
   return (
     <Link href={href} className="w-full">
       <div
-        className={`text-md flex w-full cursor-pointer items-center justify-start gap-4 border-b bg-white bg-opacity-20 py-3 pl-4 text-center font-sans tracking-[0.1rem] ${isActive && "text-blue-800"} no-underline opacity-90 hover:bg-white hover:bg-opacity-90 hover:text-black hover:text-opacity-100`}
+        className={`text-md flex w-full cursor-pointer items-center justify-start gap-4 border-b bg-white bg-opacity-20 py-3 pl-4 text-center font-sans tracking-[0.1rem] ${isActive && "bg-opacity-80"} no-underline opacity-90 hover:bg-white hover:bg-opacity-90 hover:text-black hover:text-opacity-100`}
       >
         <BulletIcon height={8} width={8} />
         <button onClick={handleClick}>{title}</button>
