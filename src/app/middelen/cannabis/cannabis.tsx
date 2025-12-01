@@ -9,41 +9,8 @@ import {
   DialogTitle,
   DialogClose,
 } from "~/components/ui/dialog";
-import { type ReactNode } from "react";
-import { SubSectionHeader } from "./ghb";
-
-export function TableHeaderCellStyled({
-  children,
-  className,
-}: {
-  children: ReactNode;
-  className?: string;
-}) {
-  return (
-    <th
-      className={`${className} min-w-28 border border-black border-opacity-70 px-2 text-left font-sans text-[#333333]`}
-    >
-      {children}
-    </th>
-  );
-}
-
-export function TableCellStyled({
-  children,
-  className,
-}: {
-  children: ReactNode;
-  className?: string;
-}) {
-  return (
-    <td
-      className={`${className} min-w-28 border border-black border-opacity-70 px-2 text-left font-sans text-[#333333]`}
-    >
-      {" "}
-      {children}
-    </td>
-  );
-}
+import { SubSectionHeader } from "../../../components/ui/text-components/subsection-header";
+import { TableHeaderCellStyled } from "~/components/ui/table-components/table-header-cell";
 
 function CannabisTableHeaderRow() {
   return (

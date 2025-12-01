@@ -1,4 +1,4 @@
-import { SubSectionParagraph } from "~/components/sections/middelen/ghb";
+import { SubSectionParagraph } from "~/components/ui/text-components/subsection-paragraph";
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 

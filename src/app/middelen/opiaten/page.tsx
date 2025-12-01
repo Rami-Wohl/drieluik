@@ -1,4 +1,4 @@
-import { StyledParagraph } from "~/components/sections/middelen/cocaine";
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";

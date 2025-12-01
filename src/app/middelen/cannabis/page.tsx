@@ -1,6 +1,6 @@
-import { CannabisAnamnese } from "~/components/sections/middelen/cannabis";
-import { StyledParagraph } from "~/components/sections/middelen/cocaine";
-import { SubSectionParagraph } from "~/components/sections/middelen/ghb";
+import { CannabisAnamnese } from "~/app/middelen/cannabis/cannabis";
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
+import { SubSectionParagraph } from "~/components/ui/text-components/subsection-paragraph";
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { ResponsiveImage } from "~/components/ui/responsive-image";

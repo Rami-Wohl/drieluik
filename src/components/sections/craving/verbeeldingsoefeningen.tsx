@@ -9,7 +9,7 @@ import {
   DialogClose,
 } from "~/components/ui/dialog";
 import { ListItem } from "~/components/ui/list-item";
-import { SubSectionHeader } from "../middelen/ghb";
+import { SubSectionHeader } from "../../ui/text-components/subsection-header";
 
 export function VerbeeldingsOefening1() {
   return (

@@ -1,8 +1,6 @@
-import { StyledParagraph } from "~/components/sections/middelen/cocaine";
-import {
-  SubSectionHeader,
-  SubSectionParagraph,
-} from "~/components/sections/middelen/ghb";
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
+import { SubSectionParagraph } from "~/components/ui/text-components/subsection-paragraph";
+import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";

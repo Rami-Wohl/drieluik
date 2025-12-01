@@ -1,6 +1,6 @@
-import { AlcoholAfbouwTable } from "~/components/sections/middelen/alcohol";
-import { StyledParagraph } from "~/components/sections/middelen/cocaine";
-import { SubSectionHeader } from "~/components/sections/middelen/ghb";
+import { AlcoholAfbouwTable } from "~/app/middelen/alcohol/alcohol";
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
+import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";

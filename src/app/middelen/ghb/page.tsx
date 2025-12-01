@@ -1,7 +1,5 @@
-import {
-  SubSectionHeader,
-  SubSectionParagraph,
-} from "~/components/sections/middelen/ghb";
+import { SubSectionParagraph } from "~/components/ui/text-components/subsection-paragraph";
+import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";

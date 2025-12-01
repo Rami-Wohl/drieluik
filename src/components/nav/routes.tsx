@@ -28,13 +28,13 @@ const subMenu = [
     parentRoute: "/middelen",
     routes: middelenRoutes,
   },
-  { name: "Craving", key: "nav-craving", parentRoute: "/craving", routes: [] },
-  {
-    name: "Zingeving",
-    key: "nav-zingeving",
-    parentRoute: "/zingeving",
-    routes: [],
-  },
+  // { name: "Craving", key: "nav-craving", parentRoute: "/craving", routes: [] },
+  // {
+  //   name: "Zingeving",
+  //   key: "nav-zingeving",
+  //   parentRoute: "/zingeving",
+  //   routes: [],
+  // },
 ] as const;
 
 export const navMenuRoutes = [
@@ -43,6 +43,8 @@ export const navMenuRoutes = [
     type: "submenu",
     routeTree: subMenu,
   },
+  { type: "route", href: "/craving", name: "Craving" },
+  { type: "route", href: "/zingeving", name: "Zingeving" },
   { type: "route", href: "/missie-en-visie", name: "Missie & Visie" },
   { type: "route", href: "/contact", name: "Contact" },
   { type: "route", href: "/meet-instrument", name: "Meet instrument" },
