@@ -16,7 +16,7 @@ const MiddelenNavLink = ({
   return (
     <Link href={href} className="w-full">
       <div
-        className={`w-full cursor-pointer border-b py-3 pl-3 font-sans text-[1.1rem] tracking-[0.1rem] no-underline ${isActive && "text-red-900"} rounded-md bg-red-900 bg-opacity-30 p-4 opacity-90 hover:bg-opacity-50 hover:no-underline`}
+        className={`w-full cursor-pointer border-b py-3 pl-3 font-sans text-[1.1rem] tracking-[0.1rem] no-underline ${isActive && "text-red-900"} rounded-md bg-red-900 bg-opacity-30 p-4 opacity-90 hover:bg-opacity-50`}
       >
         {name}
       </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import { ListItem } from "~/components/ui/list-item";
 import { AccordionSubSection, StyledParagraph } from "./cocaine";
 import { TableCellStyled, TableHeaderCellStyled } from "./cannabis";
@@ -228,7 +230,7 @@ export function AlcoholSection() {
   );
 }
 
-function AlcoholAfbouwTable() {
+export function AlcoholAfbouwTable() {
   return (
     <table className="relative my-8 h-auto w-full border-collapse">
       <thead>

@@ -1,16 +1,24 @@
 export const middelenRoutes = [
-  { href: "/middelen/cannabis", name: "Cannabis" },
-  { href: "/middelen/cocaine", name: "Cocaine" },
-  { href: "/middelen/alcohol", name: "Alcohol" },
-  { href: "/middelen/ketamine", name: "Ketamine" },
-  { href: "/middelen/ghb", name: "GHB" },
-  { href: "/middelen/speed", name: "Speed" },
-  { href: "/middelen/opiaten", name: "Heroine & andere opiaten" },
-  { href: "/middelen/lachgas", name: "Lachgas" },
-  { href: "/middelen/psychedelica", name: "Psychedelica & designerdrugs" },
-  { href: "/middelen/gedragsverslavingen", name: "Gedragsverslavingen" },
-  { href: "/middelen/benzodiazepines", name: "Benzodiazepines" },
-  { href: "/middelen/roken", name: "Roken" },
+  { href: "/middelen/cannabis", name: "Cannabis", icon: <></> },
+  { href: "/middelen/cocaine", name: "Cocaine", icon: <></> },
+  { href: "/middelen/alcohol", name: "Alcohol", icon: <></> },
+  { href: "/middelen/ketamine", name: "Ketamine", icon: <></> },
+  { href: "/middelen/ghb", name: "GHB", icon: <></> },
+  { href: "/middelen/speed", name: "Speed", icon: <></> },
+  { href: "/middelen/opiaten", name: "Heroine & andere opiaten", icon: <></> },
+  { href: "/middelen/lachgas", name: "Lachgas", icon: <></> },
+  {
+    href: "/middelen/psychedelica",
+    name: "Psychedelica & designerdrugs",
+    icon: <></>,
+  },
+  {
+    href: "/middelen/gedragsverslavingen",
+    name: "Gedragsverslavingen",
+    icon: <></>,
+  },
+  { href: "/middelen/benzodiazepines", name: "Benzodiazepines", icon: <></> },
+  { href: "/middelen/roken", name: "Roken", icon: <></> },
 ] as const;
 
 const subMenu = [
@@ -37,7 +45,7 @@ export const navMenuRoutes = [
   },
   { type: "route", href: "/missie-en-visie", name: "Missie & Visie" },
   { type: "route", href: "/contact", name: "Contact" },
-  { type: "route", href: "meet-instrument", name: "Meet instrument" },
+  { type: "route", href: "/meet-instrument", name: "Meet instrument" },
 ] as const;
 
 export type NavMenuRoutes = typeof navMenuRoutes;
