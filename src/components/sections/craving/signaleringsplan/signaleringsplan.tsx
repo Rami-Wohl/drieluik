@@ -164,52 +164,7 @@ export function Signaleringsplan() {
           </DialogTitle>
         </DialogHeader>
 
-        <div
-          id="signaleringsplan-content"
-          className="relative flex max-w-full flex-col px-2"
-        >
-          <Section title="Wat kan ik doen?">
-            <ValueRow
-              background="bg-green-300"
-              label="Het gaat goed"
-              value={ik_doen_goed}
-              setValue={set_ik_doen_goed}
-            />
-            <ValueRow
-              background="bg-yellow-300"
-              label="Het gaat niet goed"
-              value={ik_doen_mid}
-              setValue={set_ik_doen_mid}
-            />
-            <ValueRow
-              background="bg-red-300"
-              label="Het gaat slecht"
-              value={ik_doen_slecht}
-              setValue={set_ik_doen_slecht}
-            />
-          </Section>
-
-          <Section title="Wat kan een ander doen?">
-            <ValueRow
-              background="bg-green-300"
-              label="Het gaat goed"
-              value={ander_doen_goed}
-              setValue={set_ander_doen_goed}
-            />
-            <ValueRow
-              background="bg-yellow-300"
-              label="Het gaat niet goed"
-              value={ander_doen_mid}
-              setValue={set_ander_doen_mid}
-            />
-            <ValueRow
-              background="bg-red-300"
-              label="Het gaat slecht"
-              value={ander_doen_slecht}
-              setValue={set_ander_doen_slecht}
-            />
-          </Section>
-
+        <div className="relative flex max-w-full flex-col px-2">
           <Section title="Wat merk ik?">
             <ValueRow
               background="bg-green-300"
@@ -251,23 +206,64 @@ export function Signaleringsplan() {
               setValue={set_ander_merk_slecht}
             />
           </Section>
+          <Section title="Wat kan ik doen?">
+            <ValueRow
+              background="bg-green-300"
+              label="Het gaat goed"
+              value={ik_doen_goed}
+              setValue={set_ik_doen_goed}
+            />
+            <ValueRow
+              background="bg-yellow-300"
+              label="Het gaat niet goed"
+              value={ik_doen_mid}
+              setValue={set_ik_doen_mid}
+            />
+            <ValueRow
+              background="bg-red-300"
+              label="Het gaat slecht"
+              value={ik_doen_slecht}
+              setValue={set_ik_doen_slecht}
+            />
+          </Section>
+
+          <Section title="Wat kan een ander doen?">
+            <ValueRow
+              background="bg-green-300"
+              label="Het gaat goed"
+              value={ander_doen_goed}
+              setValue={set_ander_doen_goed}
+            />
+            <ValueRow
+              background="bg-yellow-300"
+              label="Het gaat niet goed"
+              value={ander_doen_mid}
+              setValue={set_ander_doen_mid}
+            />
+            <ValueRow
+              background="bg-red-300"
+              label="Het gaat slecht"
+              value={ander_doen_slecht}
+              setValue={set_ander_doen_slecht}
+            />
+          </Section>
         </div>
         <PDFDownloadLink
           document={
             <SignaleringsplanPDF
               data={{
-                ik_doen_goed,
-                ik_doen_mid,
-                ik_doen_slecht,
-                ander_doen_goed,
-                ander_doen_mid,
-                ander_doen_slecht,
                 ik_merk_goed,
                 ik_merk_mid,
                 ik_merk_slecht,
                 ander_merk_goed,
                 ander_merk_mid,
                 ander_merk_slecht,
+                ik_doen_goed,
+                ik_doen_mid,
+                ik_doen_slecht,
+                ander_doen_goed,
+                ander_doen_mid,
+                ander_doen_slecht,
               }}
             />
           }

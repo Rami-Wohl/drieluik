@@ -1,4 +1,3 @@
-// SignaleringsplanPDF.tsx
 "use client";
 
 import { Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer";
@@ -69,7 +68,6 @@ export function SignaleringsplanPDF({ data }: Props) {
       <Page size="A3" style={styles.page}>
         <Text style={styles.title}>Signaleringsplan</Text>
 
-        {/* Wat kan ik doen? */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Wat kan ik doen?</Text>
           <View style={[styles.row, { backgroundColor: "#86efad50" }]}>
@@ -86,7 +84,6 @@ export function SignaleringsplanPDF({ data }: Props) {
           </View>
         </View>
 
-        {/* Wat kan een ander doen? */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Wat kan een ander doen?</Text>
           <View style={[styles.row, { backgroundColor: "#86efac50" }]}>
@@ -103,7 +100,6 @@ export function SignaleringsplanPDF({ data }: Props) {
           </View>
         </View>
 
-        {/* Wat merk ik? */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Wat merk ik?</Text>
           <View style={[styles.row, { backgroundColor: "#86efac50" }]}>
@@ -120,7 +116,6 @@ export function SignaleringsplanPDF({ data }: Props) {
           </View>
         </View>
 
-        {/* Wat merkt een ander? */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Wat merkt een ander?</Text>
           <View style={[styles.row, { backgroundColor: "#86efac50" }]}>
