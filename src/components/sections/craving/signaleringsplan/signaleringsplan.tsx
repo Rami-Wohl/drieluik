@@ -10,7 +10,8 @@ import {
   DialogTitle,
 } from "~/components/ui/dialog";
 import { formatDateTimeForFilename } from "~/lib/utils";
-import generatePDF, { Resolution, Margin, Options } from "react-to-pdf";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import { SignaleringsplanPDF } from "./print-components";
 
 export function ScoreSelectDialog({
   label,
@@ -127,37 +128,6 @@ function ValueRow({
     </div>
   );
 }
-
-const getTargetElement = () =>
-  document.getElementById("signaleringsplan-content");
-
-const dateTimeFormatted = formatDateTimeForFilename(new Date());
-
-const filename = `signaleringsplan-${dateTimeFormatted}.pdf`;
-
-const options: Options = {
-  // default is `save`
-  filename,
-  method: "save",
-  // default is Resolution.MEDIUM = 3, which should be enough, higher values
-  // increases the image quality but also the size of the PDF, so be careful
-  // using values higher than 10 when having multiple pages generated, it
-  // might cause the page to crash or hang.
-  resolution: Resolution.NORMAL,
-  page: {
-    // margin is in MM, default is Margin.NONE = 0
-    margin: Margin.SMALL,
-    // default is 'A4'
-    format: "A3",
-    // default is 'portrait'
-    orientation: "portrait",
-  },
-  canvas: {
-    // default is 'image/jpeg' for better size performance
-    mimeType: "image/jpeg",
-    qualityRatio: 1,
-  },
-};
 
 export function Signaleringsplan() {
   const [ik_doen_goed, set_ik_doen_goed] = useState("");
@@ -282,14 +252,36 @@ export function Signaleringsplan() {
             />
           </Section>
         </div>
-
-        <Button
-          variant="secondary"
-          className="mt-4 w-full border bg-transparent"
-          onClick={() => generatePDF(getTargetElement, options)}
+        <PDFDownloadLink
+          document={
+            <SignaleringsplanPDF
+              data={{
+                ik_doen_goed,
+                ik_doen_mid,
+                ik_doen_slecht,
+                ander_doen_goed,
+                ander_doen_mid,
+                ander_doen_slecht,
+                ik_merk_goed,
+                ik_merk_mid,
+                ik_merk_slecht,
+                ander_merk_goed,
+                ander_merk_mid,
+                ander_merk_slecht,
+              }}
+            />
+          }
+          fileName={`signaleringsplan-${formatDateTimeForFilename(new Date())}.pdf`}
         >
-          Downloaden
-        </Button>
+          {({ loading }) => (
+            <Button
+              variant="secondary"
+              className="mt-4 w-full border bg-transparent"
+            >
+              {loading ? "Genereren..." : "Downloaden"}
+            </Button>
+          )}
+        </PDFDownloadLink>
       </DialogContent>
     </Dialog>
   );
