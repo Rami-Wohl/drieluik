@@ -54,7 +54,7 @@ export default function MiddelenLayout({
     >
       {children}
       {showSideNavigation && (
-        <div className="mt-32 hidden w-full max-w-80 grow rounded-md lg:flex">
+        <div className="mt-[228px] hidden w-full max-w-80 grow rounded-md lg:flex">
           <MiddelenNavigation path={path} />
         </div>
       )}

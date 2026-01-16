@@ -87,7 +87,7 @@ function ValueRow({
         <ScoreSelectMenu label={label} setValue={setValue} options={options} />
       </td>
       <td
-        className={`h-8 w-12 cursor-pointer border border-black border-opacity-70 p-1 text-center text-xl font-thin text-opacity-70`}
+        className={`h-8 w-12 border border-black border-opacity-70 p-1 text-center text-xl font-thin text-opacity-70`}
       >
         {value}
       </td>

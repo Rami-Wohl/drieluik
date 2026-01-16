@@ -42,21 +42,21 @@ export const TopBar = ({ path }: TopBarProps) => {
           <h2 className="flex flex-row gap-6 font-sans text-base text-black text-opacity-80">
             <Link href="/middelen">
               <div
-                className={`${path.includes("/middelen") ? "-translate-x-1 scale-125 lg:-translate-x-2 lg:scale-[1.35]" : "translate-x-0 scale-100"} rounded-md border-2 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-2 transition-transform duration-500`}
+                className={`${path.includes("/middelen") ? "-translate-x-1 scale-125 lg:-translate-x-2 lg:scale-[1.35]" : "translate-x-0 scale-100 hover:scale-110"} rounded-md border-2 border-red-900 border-opacity-20 bg-red-900 bg-opacity-10 p-2 transition-transform duration-500`}
               >
                 <MiddelenIcon height={24} width={24} />
               </div>
             </Link>
             <Link href="/craving">
               <div
-                className={`${path.includes("/craving") ? "scale-125 lg:scale-[1.35]" : "scale-100"} rounded-md border-2 border-blue-900 border-opacity-20 bg-blue-900 bg-opacity-10 p-2 transition-transform duration-500`}
+                className={`${path.includes("/craving") ? "scale-125 lg:scale-[1.35]" : "scale-100 hover:scale-110"} rounded-md border-2 border-blue-900 border-opacity-20 bg-blue-900 bg-opacity-10 p-2 transition-transform duration-500`}
               >
                 <CravingIcon height={24} width={24} className="fill-blue-950" />
               </div>
             </Link>
             <Link href="/zingeving">
               <div
-                className={`${path.includes("/zingeving") ? "translate-x-1 scale-125 lg:translate-x-2 lg:scale-[1.35]" : "translate-x-0 scale-100"} rounded-md border-2 border-green-900 border-opacity-20 bg-green-900 bg-opacity-10 p-2 transition-transform duration-500`}
+                className={`${path.includes("/zingeving") ? "translate-x-1 scale-125 lg:translate-x-2 lg:scale-[1.35]" : "translate-x-0 scale-100 hover:scale-110"} rounded-md border-2 border-green-900 border-opacity-20 bg-green-900 bg-opacity-10 p-2 transition-transform duration-500`}
               >
                 <ZingevingIcon height={24} width={24} />
               </div>

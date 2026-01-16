@@ -36,7 +36,7 @@ function MiddelenInfo() {
   return (
     <Dialog>
       <DialogTrigger className="">
-        <InfoIcon fill="none" />
+        <InfoIcon fill="none" className="h-5 w-5 md:h-6 md:w-6" />
       </DialogTrigger>
       <DialogContent className="max-h-[80vh] w-11/12 max-w-[1300px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-80 bg-gradient-to-b from-[#ffffff] to-blue-50">
         <DialogHeader className="mb-2 mt-4">
@@ -62,7 +62,7 @@ export default function MiddelenPage() {
   return (
     <>
       <div className="relative mt-32 flex w-full max-w-full flex-col items-center justify-center gap-1 px-6 md:max-w-[600px] lg:gap-10">
-        <div className="flex items-baseline gap-4">
+        <div className="flex items-baseline gap-2 md:gap-4">
           <Pageheader text="Middelen" />
           <MiddelenInfo />
         </div>

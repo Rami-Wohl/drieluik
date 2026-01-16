@@ -6,6 +6,7 @@ import {
 } from "~/components/sections/craving/aandachtsoefeningen";
 import { AdemhalingsOefening1 } from "~/components/sections/craving/ademhalingsoefeningen";
 import { CravingCheck } from "~/components/sections/craving/craving-check";
+import { Signaleringsplan } from "~/components/sections/craving/signaleringsplan";
 import {
   OntspanningsOefening1,
   OntspanningsOefening2,
@@ -36,7 +37,7 @@ function CravingInfo() {
   return (
     <Dialog>
       <DialogTrigger>
-        <InfoIcon fill="none" />
+        <InfoIcon fill="none" className="h-5 w-5 md:h-6 md:w-6" />
       </DialogTrigger>
       <DialogContent className="max-h-[80vh] w-11/12 max-w-[1300px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-80 bg-gradient-to-b from-[#ffffff] to-blue-50">
         <DialogHeader className="mb-2 mt-4">
@@ -61,12 +62,23 @@ function CravingInfo() {
 export default function CravingPage() {
   return (
     <>
-      <div className="mt-32 flex w-full max-w-[800px] flex-col items-center gap-12 px-4">
-        <div className="flex gap-4">
+      <div className="relative mt-32 flex w-full max-w-full flex-col items-center justify-center gap-10 px-6 md:max-w-[900px]">
+        <div className="flex items-baseline gap-2 md:gap-4">
           <Pageheader text="Craving" />
           <CravingInfo />
         </div>
         <Accordion type="single" collapsible className="w-full text-black">
+          <AccordionItem
+            value="signaleringsplan"
+            className="border-blue-950 border-opacity-5"
+          >
+            <AccordionTrigger className="mb-1 rounded-md bg-blue-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
+              Signaleringsplan
+            </AccordionTrigger>
+            <AccordionContent className="bg-blue-900 bg-opacity-5 p-6">
+              <Signaleringsplan />
+            </AccordionContent>
+          </AccordionItem>
           <AccordionItem
             value="craving-check"
             className="border-blue-950 border-opacity-5"

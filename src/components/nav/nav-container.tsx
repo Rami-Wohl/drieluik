@@ -1,14 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import BurgerMenuIcon from "../icons/burgermenu-icon";
-import useScrollPosition from "~/hooks/use-scroll-position";
 import { useNavContext } from "~/context/nav-context";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
-import MiddelenIcon from "../icons/middelen-icon";
-import CravingIcon from "../icons/craving-icon";
-import ZingevingIcon from "../icons/zingeving-icon";
 import { navMenuRoutes } from "./routes";
 import { NavMenu } from "./nav-menu";
 import { TopBar } from "./top-bar";
