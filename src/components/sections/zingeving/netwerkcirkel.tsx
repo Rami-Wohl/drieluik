@@ -1,4 +1,4 @@
-import SociaalKonvooiIcon from "~/components/icons/zingeving/sociaal-konvooi-icon";
+import NetwerkcirkelIcon from "~/components/icons/zingeving/netwerkcirkel-icon";
 import {
   Dialog,
   DialogClose,
@@ -10,17 +10,17 @@ import {
 import { GameContainer } from "./kernquadranten";
 import { Button } from "~/components/ui/button";
 
-export function SociaalKonvooi() {
+export function Netwerkcirkel() {
   return (
     <Dialog>
       <GameContainer
-        icon={<SociaalKonvooiIcon height={72} width={72} />}
-        title="Sociaal Konvooi"
+        icon={<NetwerkcirkelIcon height={72} width={72} />}
+        title="Netwerkcirkel"
       />
       <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
         <DialogHeader className="mb-2 lg:mb-3">
           <DialogTitle className="mb-1 w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
-            Sociaal Konvooi
+            Netwerkcirkel
           </DialogTitle>
           <h3 className="w-full text-center font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
             Wie heb je momenteel in je omgeving en hoe goed werkt dat?
@@ -44,7 +44,7 @@ export function SociaalKonvooi() {
             invloed hebben.
           </DialogDescription>
           <div className="mb-4 flex w-full flex-col items-center justify-center">
-            <SociaalKonvooiCirkels />
+            <NetwerkcirkelCirkels />
           </div>
         </div>
         <DialogClose asChild>
@@ -61,7 +61,7 @@ export function SociaalKonvooi() {
   );
 }
 
-function SociaalKonvooiCirkels() {
+function NetwerkcirkelCirkels() {
   return (
     <div className="relative mb-4 mt-2 flex h-60 w-full max-w-[400px] scale-75 flex-col items-center justify-center lg:my-12 lg:h-60 lg:scale-100">
       <div

@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-export default function SociaalKonvooiIcon({
+export default function NetwerkcirkelIcon({
   ...props
 }: SVGProps<SVGSVGElement>) {
   return (

@@ -5,7 +5,7 @@ import { Doelenspel } from "~/components/sections/zingeving/doelenspel";
 import { Gebruikscyclus } from "~/components/sections/zingeving/gebruikscyclus";
 import { Gebruiksfunctie } from "~/components/sections/zingeving/gebruiksfunctie";
 import { Kernquadranten } from "~/components/sections/zingeving/kernquadranten";
-import { SociaalKonvooi } from "~/components/sections/zingeving/sociaal-konvooi";
+import { Netwerkcirkel } from "~/components/sections/zingeving/netwerkcirkel";
 import { Tijdlijn } from "~/components/sections/zingeving/tijdlijn";
 import { Waardenspel } from "~/components/sections/zingeving/waardenspel";
 import { Button } from "~/components/ui/button";
@@ -60,7 +60,7 @@ export default function ZingevingPage() {
           <div className="grid w-full grid-cols-2 items-center justify-items-center gap-4 md:grid-cols-3 lg:gap-10">
             <Doelenspel />
             <Kernquadranten />
-            <SociaalKonvooi />
+            <Netwerkcirkel />
             <Waardenspel />
             <Tijdlijn />
             <Balans />
