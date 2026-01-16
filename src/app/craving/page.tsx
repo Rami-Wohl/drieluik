@@ -6,7 +6,7 @@ import {
 } from "~/components/sections/craving/aandachtsoefeningen";
 import { AdemhalingsOefening1 } from "~/components/sections/craving/ademhalingsoefeningen";
 import { CravingCheck } from "~/components/sections/craving/craving-check";
-import { Signaleringsplan } from "~/components/sections/craving/signaleringsplan";
+import { Signaleringsplan } from "~/components/sections/craving/signaleringsplan/signaleringsplan";
 import {
   OntspanningsOefening1,
   OntspanningsOefening2,

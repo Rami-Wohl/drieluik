@@ -9,33 +9,39 @@ import {
   DialogContent,
   DialogTitle,
 } from "~/components/ui/dialog";
+import { formatDateTimeForFilename } from "~/lib/utils";
+import generatePDF, { Resolution, Margin, Options } from "react-to-pdf";
 
 export function ScoreSelectDialog({
   label,
   value,
   setValue,
+  isOpen,
+  setIsOpen,
 }: {
   label: string;
   value: string;
   setValue: Dispatch<SetStateAction<string>>;
+  isOpen: boolean;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
 }) {
   const [tempVal, setTempVal] = useState(value);
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      {/* Trigger button */}
       <DialogTrigger asChild>
         <Button
           variant="ghost"
-          className="h-full w-full justify-start rounded-none hover:bg-opacity-50 focus-visible:ring-0 focus-visible:ring-offset-0"
+          className="h-full w-full justify-start rounded-none hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
         >
           {label}
         </Button>
       </DialogTrigger>
 
-      {/* Dialog content */}
-      <DialogContent className="w-full max-w-md p-4">
+      <DialogContent
+        className="w-11/12 max-w-md p-4"
+        aria-describedby={undefined}
+      >
         <DialogHeader>
           <DialogTitle className="text-lg font-semibold">{label}</DialogTitle>
         </DialogHeader>
@@ -71,7 +77,7 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section className="mb-6">
+    <section className="relative mb-6">
       <h2 className="border border-black border-opacity-70 px-4 py-2 text-center font-sans font-bold">
         {title}
       </h2>
@@ -93,18 +99,65 @@ function ValueRow({
   setValue: Dispatch<SetStateAction<string>>;
   background: "bg-green-300" | "bg-yellow-300" | "bg-red-300";
 }) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="grid grid-cols-[10rem_1fr] border-b border-black border-opacity-70">
-      <div className={`${background} border-r border-black border-opacity-70`}>
-        <ScoreSelectDialog label={label} value={value} setValue={setValue} />
+    <div
+      className={`${background} grid grid-cols-[10rem_1fr] border-b border-black border-opacity-70 bg-opacity-30 hover:bg-opacity-50`}
+    >
+      <div className={`border-r border-black border-opacity-70`}>
+        <ScoreSelectDialog
+          label={label}
+          value={value}
+          setValue={setValue}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
       </div>
 
-      <div className="overflow-hidden text-ellipsis whitespace-nowrap p-2 text-start text-base font-thin text-opacity-70 lg:overflow-auto lg:text-wrap lg:text-lg">
+      <Button
+        variant="ghost"
+        className="h-full justify-start overflow-hidden text-ellipsis whitespace-nowrap rounded-none p-2 text-start text-base font-thin text-opacity-70 hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 lg:overflow-auto lg:text-wrap lg:text-lg"
+        onClick={() => {
+          !isOpen && setIsOpen(true);
+        }}
+      >
         {value}
-      </div>
+      </Button>
     </div>
   );
 }
+
+const getTargetElement = () =>
+  document.getElementById("signaleringsplan-content");
+
+const dateTimeFormatted = formatDateTimeForFilename(new Date());
+
+const filename = `signaleringsplan-${dateTimeFormatted}.pdf`;
+
+const options: Options = {
+  // default is `save`
+  filename,
+  method: "save",
+  // default is Resolution.MEDIUM = 3, which should be enough, higher values
+  // increases the image quality but also the size of the PDF, so be careful
+  // using values higher than 10 when having multiple pages generated, it
+  // might cause the page to crash or hang.
+  resolution: Resolution.NORMAL,
+  page: {
+    // margin is in MM, default is Margin.NONE = 0
+    margin: Margin.SMALL,
+    // default is 'A4'
+    format: "A3",
+    // default is 'portrait'
+    orientation: "portrait",
+  },
+  canvas: {
+    // default is 'image/jpeg' for better size performance
+    mimeType: "image/jpeg",
+    qualityRatio: 1,
+  },
+};
 
 export function Signaleringsplan() {
   const [ik_doen_goed, set_ik_doen_goed] = useState("");
@@ -123,20 +176,6 @@ export function Signaleringsplan() {
   const [ander_merk_mid, set_ander_merk_mid] = useState("");
   const [ander_merk_slecht, set_ander_merk_slecht] = useState("");
 
-  const enableDownloadReport =
-    ik_doen_goed &&
-    ik_doen_mid &&
-    ik_doen_slecht &&
-    ander_doen_goed &&
-    ander_doen_mid &&
-    ander_doen_slecht &&
-    ik_merk_goed &&
-    ik_merk_mid &&
-    ik_merk_slecht &&
-    ander_merk_goed &&
-    ander_merk_mid &&
-    ander_merk_slecht;
-
   return (
     <Dialog>
       <DialogTrigger className="w-full rounded-none bg-white bg-opacity-30 px-4 py-2 hover:bg-opacity-70 hover:shadow-sm">
@@ -145,14 +184,20 @@ export function Signaleringsplan() {
         </div>
       </DialogTrigger>
 
-      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-y-auto rounded-md bg-gradient-to-b from-white to-blue-50 lg:w-2/3">
+      <DialogContent
+        aria-describedby={undefined}
+        className="max-h-[80vh] w-11/12 max-w-[800px] overflow-y-auto rounded-md bg-gradient-to-b from-white to-blue-50 lg:w-2/3"
+      >
         <DialogHeader className="mb-4">
           <DialogTitle className="text-center font-sans text-2xl font-semibold tracking-wide lg:text-3xl">
             Signaleringsplan
           </DialogTitle>
         </DialogHeader>
 
-        <div className="relative flex max-w-full flex-col px-2">
+        <div
+          id="signaleringsplan-content"
+          className="relative flex max-w-full flex-col px-2"
+        >
           <Section title="Wat kan ik doen?">
             <ValueRow
               background="bg-green-300"
@@ -240,9 +285,8 @@ export function Signaleringsplan() {
 
         <Button
           variant="secondary"
-          disabled={!enableDownloadReport}
           className="mt-4 w-full border bg-transparent"
-          onClick={() => console.log("download")}
+          onClick={() => generatePDF(getTargetElement, options)}
         >
           Downloaden
         </Button>
