@@ -57,3 +57,16 @@ export const socialScoreLabels = [
   "6 - Ik heb veel mensen om me heen waar ik energie van krijg en sommige zijn minder leuk.",
   "7 - Ik voel me sociaal en heb een goede band met mijn vrienden en/of familie.",
 ];
+
+export const gevoelsTemperatuurLabels = [
+  "1 - een een een een",
+  "2 - twee twee twee twee",
+  "3 - drie drie drie drie",
+  "4 - vier vier vier vier",
+  "5 - vijf vijf vijf vijf",
+  "6 - zes zes zes zes",
+  "7 - zeven zeven zeven zeven",
+  "8 - acht acht acht acht",
+  "9 - negen negen negen negen",
+  "10 - tien tien tien tien",
+];

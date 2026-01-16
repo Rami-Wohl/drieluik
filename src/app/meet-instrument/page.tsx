@@ -16,9 +16,10 @@ import {
   psychologicalScoreLabels,
   socialScoreLabels,
   substancesScoreLabels,
+  gevoelsTemperatuurLabels,
 } from "./data";
 import InformationIcon from "~/components/icons/information-icon";
-import { formatDateTime } from "~/lib/utils";
+import { formatDateTime, formatDateTimeForFilename } from "~/lib/utils";
 
 type Report = {
   substancesScore: string;
@@ -27,71 +28,82 @@ type Report = {
   meaningScore: string;
   psychologicalScore: string;
   socialScore: string;
+  substancesTemp: string;
+  financesTemp: string;
+  healthTemp: string;
+  meaningTemp: string;
+  psychologicalTemp: string;
+  socialTemp: string;
 };
 
 function generateReport(props: Report) {
   const dateTimeFormatted = formatDateTime(new Date());
   const reportContent = `
-    Rapport gemaakt op: ${dateTimeFormatted}
+Rapport gemaakt op: ${dateTimeFormatted}
 
-    Middelengebruik: ${substancesScoreLabels[Number(props.substancesScore) - 1]}
-    Financien: ${financesScoreLabels[Number(props.financesScore) - 1]}
-    Gezondheid: ${healthScoreLabels[Number(props.healthScore) - 1]}
-    Zingeving: ${meaningScoreLabels[Number(props.meaningScore) - 1]}
-    Psychisch welbevinden: ${psychologicalScoreLabels[Number(props.psychologicalScore) - 1]}
-    Sociale situatie: ${socialScoreLabels[Number(props.socialScore) - 1]}
-  `;
+Middelengebruik: ${substancesScoreLabels[Number(props.substancesScore) - 1]}. De gevoelstemperatuur voor deze categorie is ${gevoelsTemperatuurLabels[Number(props.substancesTemp) - 1]}
+Financien: ${financesScoreLabels[Number(props.financesScore) - 1]}. De gevoelstemperatuur voor deze categorie is ${gevoelsTemperatuurLabels[Number(props.financesTemp) - 1]}
+Gezondheid: ${healthScoreLabels[Number(props.healthScore) - 1]}. De gevoelstemperatuur voor deze categorie is ${gevoelsTemperatuurLabels[Number(props.healthTemp) - 1]}
+Zingeving: ${meaningScoreLabels[Number(props.meaningScore) - 1]}. De gevoelstemperatuur voor deze categorie is ${gevoelsTemperatuurLabels[Number(props.meaningTemp) - 1]}
+Psychisch welbevinden: ${psychologicalScoreLabels[Number(props.psychologicalScore) - 1]}. De gevoelstemperatuur voor deze categorie is ${gevoelsTemperatuurLabels[Number(props.psychologicalTemp) - 1]}
+Sociale situatie: ${socialScoreLabels[Number(props.socialScore) - 1]}. De gevoelstemperatuur voor deze categorie is ${gevoelsTemperatuurLabels[Number(props.socialTemp) - 1]}
+`;
 
   const blob = new Blob([reportContent], { type: "text/plain" });
   const url = URL.createObjectURL(blob);
 
   const link = document.createElement("a");
   link.href = url;
-  link.download = `Report_${dateTimeFormatted.replace(/[:\s]/g, "_")}.txt`;
+  link.download = `Meetinstrument_rapport_${formatDateTimeForFilename(new Date())}.txt`;
   document.body.appendChild(link);
   link.click();
-
   document.body.removeChild(link);
   URL.revokeObjectURL(url);
 }
 
-function HeaderRow() {
-  return (
-    <thead>
-      <tr className="h-8 w-full border border-black border-opacity-70">
-        <th className="border-black border-opacity-70 px-4 text-left font-sans font-bold">
-          Categorie
-        </th>
-        <th className="w-12 border border-black border-opacity-70 px-4 text-left font-sans font-bold">
-          Score
-        </th>
-      </tr>
-    </thead>
-  );
-}
-
 function ValueRow({
   label,
-  value,
-  setValue,
-  options,
+  selfReportValue,
+  temperatureValue,
+  setSelfReportValue,
+  setTemperature,
+  selfReportOptions,
+  temperatureOptions,
 }: {
   label: string;
-  value: string;
-  setValue: Dispatch<SetStateAction<string>>;
-  options: string[];
+  selfReportValue: string;
+  temperatureValue: string;
+  setSelfReportValue: Dispatch<SetStateAction<string>>;
+  setTemperature: Dispatch<SetStateAction<string>>;
+  selfReportOptions: string[];
+  temperatureOptions: string[];
 }) {
   return (
-    <tr className="relative h-8 w-full border border-black border-opacity-70">
-      <td className="border border-black border-opacity-70 text-left text-xs md:text-base">
-        <ScoreSelectMenu label={label} setValue={setValue} options={options} />
-      </td>
-      <td
-        className={`h-8 w-12 border border-black border-opacity-70 p-1 text-center text-xl font-thin text-opacity-70`}
-      >
-        {value}
-      </td>
-    </tr>
+    <div className="flex w-full flex-col border-b border-black border-opacity-70 last:border-b-0">
+      <div className="flex flex-1 items-center justify-center border-b border-black border-opacity-70 px-2 py-1 text-xs md:text-base">
+        {label}
+      </div>
+
+      <div className="flex flex-row">
+        <div className="flex flex-1 items-center justify-center border-r border-black border-opacity-70">
+          <ScoreSelectMenu
+            label={label}
+            value={selfReportValue}
+            setValue={setSelfReportValue}
+            options={selfReportOptions}
+          />
+        </div>
+
+        <div className="flex flex-1 items-center justify-center">
+          <ScoreSelectMenu
+            label={label}
+            value={temperatureValue}
+            setValue={setTemperature}
+            options={temperatureOptions}
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -103,68 +115,106 @@ export default function InstrumentPage() {
   const [psychologicalScore, setPsychologicalScore] = useState<string>("");
   const [socialScore, setSocialScore] = useState<string>("");
 
+  const [substancesTemp, setSubstancesTemp] = useState<string>("");
+  const [financesTemp, setFinancesTemp] = useState<string>("");
+  const [healthTemp, setHealthTemp] = useState<string>("");
+  const [meaningTemp, setMeaningTemp] = useState<string>("");
+  const [psychologicalTemp, setPsychologicalTemp] = useState<string>("");
+  const [socialTemp, setSocialTemp] = useState<string>("");
+
   const enableDownloadReport =
-    substancesScore.length > 0 &&
-    financesScore.length > 0 &&
-    healthScore.length > 0 &&
-    meaningScore.length > 0 &&
-    psychologicalScore.length > 0 &&
-    socialScore.length > 0;
+    !!substancesScore &&
+    !!financesScore &&
+    !!healthScore &&
+    !!meaningScore &&
+    !!psychologicalScore &&
+    !!socialScore &&
+    !!substancesTemp &&
+    !!financesTemp &&
+    !!healthTemp &&
+    !!meaningTemp &&
+    !!psychologicalTemp &&
+    !!socialTemp;
 
   return (
-    <div className="relative mt-32 flex w-full max-w-[500px] flex-col items-center justify-center gap-10 px-6">
+    <div className="relative mt-32 flex w-full max-w-[500px] flex-col items-center justify-center gap-6 px-6">
       <Pageheader text="Meet instrument" />
 
-      <div className="relative w-full">
+      <div className="w-full">
         <label className="mb-1 flex flex-row items-center justify-start gap-1 font-sans text-xs font-light text-[#333333] text-opacity-90 sm:text-sm">
-          <InformationIcon height={16} width={16} />
-          Klik op een categorie om een score te geven:
+          {" "}
+          <InformationIcon height={16} width={16} /> Klik op de velden onder
+          elke categorie om scores te geven:{" "}
         </label>
-        <table className="relative h-auto w-full border-collapse">
-          <HeaderRow />
-          <tbody>
-            <ValueRow
-              label="Middelengebruik"
-              value={substancesScore}
-              setValue={setSubstancesScore}
-              options={substancesScoreLabels}
-            />
-            <ValueRow
-              label="Financiën"
-              value={financesScore}
-              setValue={setFinancesScore}
-              options={financesScoreLabels}
-            />
-            <ValueRow
-              label="Gezondheid"
-              value={healthScore}
-              setValue={setHealthScore}
-              options={healthScoreLabels}
-            />
-            <ValueRow
-              label="Zingeving"
-              value={meaningScore}
-              setValue={setMeaningScore}
-              options={meaningScoreLabels}
-            />
-            <ValueRow
-              label="Psychisch welbevinden"
-              value={psychologicalScore}
-              setValue={setPsychologicalScore}
-              options={psychologicalScoreLabels}
-            />
-            <ValueRow
-              label="Sociale situatie"
-              value={socialScore}
-              setValue={setSocialScore}
-              options={socialScoreLabels}
-            />
-          </tbody>
-        </table>
+        <div className="relative flex w-full flex-col border border-black border-opacity-70">
+          <div className="flex w-full border-b border-black border-opacity-70 bg-gray-400 bg-opacity-65">
+            <div className="flex-1 px-2 py-1 text-center font-sans text-xs font-bold md:text-base">
+              Score
+            </div>
+            <div className="flex-1 px-2 py-1 text-center font-sans text-xs font-bold md:text-base">
+              Gevoelstemperatuur
+            </div>
+          </div>
+
+          <ValueRow
+            label="Middelengebruik"
+            selfReportValue={substancesScore}
+            temperatureValue={substancesTemp}
+            setSelfReportValue={setSubstancesScore}
+            setTemperature={setSubstancesTemp}
+            selfReportOptions={substancesScoreLabels}
+            temperatureOptions={gevoelsTemperatuurLabels}
+          />
+          <ValueRow
+            label="Financiën"
+            selfReportValue={financesScore}
+            temperatureValue={financesTemp}
+            setSelfReportValue={setFinancesScore}
+            setTemperature={setFinancesTemp}
+            selfReportOptions={financesScoreLabels}
+            temperatureOptions={gevoelsTemperatuurLabels}
+          />
+          <ValueRow
+            label="Gezondheid"
+            selfReportValue={healthScore}
+            temperatureValue={healthTemp}
+            setSelfReportValue={setHealthScore}
+            setTemperature={setHealthTemp}
+            selfReportOptions={healthScoreLabels}
+            temperatureOptions={gevoelsTemperatuurLabels}
+          />
+          <ValueRow
+            label="Zingeving"
+            selfReportValue={meaningScore}
+            temperatureValue={meaningTemp}
+            setSelfReportValue={setMeaningScore}
+            setTemperature={setMeaningTemp}
+            selfReportOptions={meaningScoreLabels}
+            temperatureOptions={gevoelsTemperatuurLabels}
+          />
+          <ValueRow
+            label="Psychisch welbevinden"
+            selfReportValue={psychologicalScore}
+            temperatureValue={psychologicalTemp}
+            setSelfReportValue={setPsychologicalScore}
+            setTemperature={setPsychologicalTemp}
+            selfReportOptions={psychologicalScoreLabels}
+            temperatureOptions={gevoelsTemperatuurLabels}
+          />
+          <ValueRow
+            label="Sociale situatie"
+            selfReportValue={socialScore}
+            temperatureValue={socialTemp}
+            setSelfReportValue={setSocialScore}
+            setTemperature={setSocialTemp}
+            selfReportOptions={socialScoreLabels}
+            temperatureOptions={gevoelsTemperatuurLabels}
+          />
+        </div>
       </div>
       <Button
         variant="secondary"
-        className="border border-black border-opacity-50 bg-opacity-50"
+        className="w-full border border-black border-opacity-50 bg-opacity-50"
         disabled={!enableDownloadReport}
         onClick={() =>
           generateReport({
@@ -174,10 +224,16 @@ export default function InstrumentPage() {
             meaningScore,
             psychologicalScore,
             socialScore,
+            substancesTemp,
+            financesTemp,
+            healthTemp,
+            meaningTemp,
+            psychologicalTemp,
+            socialTemp,
           })
         }
       >
-        Download scores
+        Download rapport
       </Button>
     </div>
   );
@@ -185,10 +241,12 @@ export default function InstrumentPage() {
 
 function ScoreSelectMenu({
   label,
+  value,
   setValue,
   options,
 }: {
   label: string;
+  value: string;
   setValue: Dispatch<SetStateAction<string>>;
   options: string[];
 }) {
@@ -197,9 +255,9 @@ function ScoreSelectMenu({
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="flex h-8 w-full flex-row justify-start rounded-none hover:bg-opacity-50 focus-visible:ring-0 focus-visible:ring-offset-0"
+          className="flex h-8 w-full flex-row justify-center rounded-none hover:bg-opacity-50 focus-visible:ring-0 focus-visible:ring-offset-0"
         >
-          {label}
+          {value || <span className="text-gray-500">{"..."}</span>}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent
@@ -207,24 +265,22 @@ function ScoreSelectMenu({
         className="flex items-center justify-center bg-gradient-to-b from-red-50 to-green-50 px-2 py-2"
       >
         <div className="relative flex max-h-80 flex-col gap-2 overflow-y-scroll md:max-h-full">
-          {Array.from({ length: 7 }, (_, i) => i + 1).map((n) => {
-            return (
-              <div
-                key={`${label}-button-${n}`}
-                className="z-10 cursor-pointer rounded-lg border-2 border-black border-opacity-20 hover:border-opacity-70"
+          {Array.from({ length: options.length }, (_, i) => i + 1).map((n) => (
+            <div
+              key={`${label}-button-${n}`}
+              className="z-10 cursor-pointer rounded-lg border-2 border-black border-opacity-20 hover:border-opacity-70"
+            >
+              <DropdownMenuItem
+                className="max-w-[calc(100vw-24px)] cursor-pointer px-4 py-1"
+                onClick={() => setValue(String(n))}
               >
-                <DropdownMenuItem
-                  className={`max-w-[calc(100vw-24px)] cursor-pointer px-4 py-1`}
-                  onClick={() => setValue(String(n))}
-                >
-                  {options[n - 1]}
-                </DropdownMenuItem>
-              </div>
-            );
-          })}
+                {options[n - 1]}
+              </DropdownMenuItem>
+            </div>
+          ))}
           <div className="mb-4 md:hidden" />
         </div>
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-50 h-12 bg-gradient-to-t from-white to-transparent md:hidden"></div>
+        <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-50 h-12 bg-gradient-to-t from-white to-transparent md:hidden" />
       </DropdownMenuContent>
     </DropdownMenu>
   );
