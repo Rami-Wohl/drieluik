@@ -118,13 +118,13 @@ export function OntspanningsOefening2() {
     <Dialog>
       <DialogTrigger className="w-full gap-2 rounded-none bg-white bg-opacity-30 px-4 py-2 hover:bg-opacity-70 hover:shadow-sm">
         <div className="text-center font-sans text-sm font-light tracking-[1px] text-[#333333] text-opacity-90">
-          Loslaten en aarden
+          Aarden en loslaten
         </div>
       </DialogTrigger>
       <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
         <DialogHeader className="mb-2 mt-4">
           <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
-            Loslaten en aarden
+            Aarden en loslaten
           </DialogTitle>
         </DialogHeader>
         <div className="mb-6 flex flex-col gap-8 lg:px-4">
@@ -152,67 +152,89 @@ export function OntspanningsOefening2() {
             </tbody>
           </table>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="w-full font-semibold">
-              Stap 1: Introductie en Settelen{" "}
-            </span>
-            Vraag de patiënt om zich comfortabel te maken, zittend op een stoel
-            of liggend, met voeten of lichaam ontspannen op de grond. Leg uit
-            dat ze tijdens deze oefening hun zorgen, spanning of gedachten
-            kunnen &apos;laten vallen&apos; en zich verbonden kunnen voelen met
-            de grond onder hen.
+            Neem even de tijd om het jezelf comfortabel te maken. Je kunt zitten
+            op een stoel of liggen, wat voor jou het prettigst voelt. Als je
+            zit, laat je voeten dan rustig op de grond rusten. Laat je handen
+            ontspannen op je schoot of naast je lichaam liggen. Als je ligt,
+            voel hoe je lichaam wordt gedragen door wat er onder je is.
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="w-full font-semibold">
-              Stap 2: Aarden door ademhaling{" "}
-            </span>
-            Vraag de patiënt om een paar keer rustig door de neus in te ademen
-            en door de mond uit te ademen. Laat hen bij elke uitademing
-            voorstellen dat ze hun spanning naar de grond laten zakken. Zeg
-            bijvoorbeeld: “Adem diep in, voel hoe frisse lucht je lichaam vult,
-            en adem uit, alsof je gedachten en zorgen van je af laat vallen in
-            de aarde onder je.”
+            Je hoeft nu niets te doen, nergens naartoe. Alles wat je bezighoudt
+            mag je voor dit moment laten liggen. Alsof je het zachtjes van je af
+            laat glijden, naar de grond onder je.
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              Stap 3: Voelen van het contact met de grond
-            </span>
-            Vraag de patiënt om aandacht te geven aan de plekken waar hun
-            lichaam de stoel, de vloer, of het bed raakt. Moedig hen aan om het
-            gevoel van stabiliteit en steun op te merken, alsof de grond hen
-            draagt. Laat hen enkele ademhalingen nemen met de focus op dit
-            contactpunt, zodat ze zich meer geaard voelen.
+            Breng je aandacht naar je ademhaling. Adem rustig in door je neus…
+            en adem langzaam uit door je mond.
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              Stap 4: Visualisatie van &apos;wortels&apos;{" "}
-            </span>
-            Vraag de patiënt om zich voor te stellen dat ze als een boom wortels
-            vanuit hun voeten of lichaam laten groeien, diep de aarde in. Deze
-            &apos;wortels&apos; nemen alle spanning en stress mee, die ze via de
-            grond laten wegstromen. Vraag hen om te voelen hoe elke uitademing
-            spanning loslaat in de aarde en hoe ze zich stabieler en lichter
-            voelen bij elke ademhaling.
+            Nog een keer. Adem in… en adem uit.
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              Stap 5: Rust en Overgave aan het moment{" "}
-            </span>
-            Moedig de patiënt aan om de rust te voelen die in hun lichaam en
-            geest is ontstaan. Vraag hen om zich nog even helemaal over te geven
-            aan het moment, de warmte of het gewicht van hun lichaam tegen de
-            grond te voelen en zich over te geven aan dat gevoel van veiligheid
-            en stabiliteit.
+            Bij elke uitademing mag je je voorstellen dat spanning, onrust of
+            gedachten zwaar worden en naar beneden zakken. De grond vangt het
+            op. Jij hoeft het niet vast te houden.
           </DialogDescription>
           <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              Stap 6: Terugkeer naar het hier en nu
-            </span>
-            Laat hen langzaam hun aandacht terugbrengen naar de kamer, de
-            geluiden om hen heen, en hun ademhaling. Moedig hen aan om enkele
-            keren diep adem te halen, zachtjes hun tenen en vingers te bewegen,
-            en, als ze er klaar voor zijn, hun ogen weer te openen. Vraag de
-            patiënt hoe ze zich voelen en bespreek indien gewenst kort hun
-            ervaring.
+            Richt nu je aandacht op de plekken waar je lichaam contact maakt. Je
+            voeten op de vloer. Je benen, je rug, je schouders tegen de stoel of
+            het bed.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Voel hoe dat contact steun geeft. Alsof je gedragen wordt. Je hoeft
+            jezelf niet overeind te houden. De grond doet dat voor je.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Blijf hier even bij. Adem rustig door, en merk op hoe stabiel dit
+            voelt.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Stel je nu voor dat er vanuit je voeten, of vanuit het contactpunt
+            van je lichaam met de grond, wortels groeien.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Zoals bij een boom. Deze wortels groeien langzaam, diep de aarde in.
+            Stevig. Betrouwbaar.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Alles wat te veel is, alles wat spanning geeft, mag via die wortels
+            wegstromen.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Bij elke uitademing laat je los. De aarde neemt het van je over.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            En bij elke inademing voel je hoe je steviger wordt. Meer aanwezig.
+            Meer hier.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Neem nog een paar rustige ademhalingen. Voel hoe je lichaam zwaarder
+            mag worden, en tegelijk lichter van binnen.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Blijf nog even bij dit gevoel van rust. Van steun. Van veiligheid.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Er is niets dat je hoeft te bereiken. Je mag gewoon zijn.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            En wanneer je merkt dat het moment daar is, breng dan langzaam je
+            aandacht terug naar de ruimte om je heen.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Merk de geluiden op. De temperatuur. Je ademhaling zoals die nu
+            vanzelf gaat.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Beweeg zachtjes je vingers en je tenen. Misschien wil je je even
+            uitrekken.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            En als je er klaar voor bent, open je rustig je ogen.
+          </DialogDescription>
+          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+            Neem een moment om op te merken hoe je je nu voelt. Er is geen goed
+            of fout. Alles wat je ervaart is welkom.
           </DialogDescription>
         </div>
         <DialogClose asChild>
