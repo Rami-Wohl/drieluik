@@ -10,15 +10,15 @@ export default function Page() {
     <div className="mt-32 flex w-full grow flex-col items-center gap-8 px-4 md:px-20">
       <Pageheader text="Alcohol" />
       <Tabs
-        defaultValue="voorlichting"
+        defaultValue="algemeen"
         className="relative w-full bg-transparent p-0 text-opacity-70"
       >
         <TabsList className="relative mb-10 w-full flex-col md:mb-0 md:flex-row">
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
-            value="voorlichting"
+            value="algemeen"
           >
-            Voorlichting
+            Algemeen
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
@@ -33,8 +33,8 @@ export default function Page() {
             Aanvullend
           </TabsTrigger>
         </TabsList>
-        <TabsContent value="voorlichting">
-          <AlcoholVoorlichting />
+        <TabsContent value="algemeen">
+          <AlcoholAlgemeen />
         </TabsContent>
         <TabsContent value="afbouwschema">
           <AlcoholAfbouwschema />
@@ -47,89 +47,186 @@ export default function Page() {
   );
 }
 
-const AlcoholVoorlichting = () => {
+const AlcoholAlgemeen = () => {
   return (
     <>
-      <StyledParagraph header="Tip 1: Houd een dagboek bij.">
-        Schrijf dagelijks op hoeveel je drinkt, hoe je je voelt en wat je
-        triggers zijn; dit geeft inzicht en helpt om patronen te herkennen.
+      <StyledParagraph>
+        Alcohol is één van de meest genormaliseerde psychoactieve stoffen in
+        Nederland. Juist daardoor is het soms lastig te zien wanneer gebruik
+        verschuift van recreatief naar problematisch. Niet elk glas is een
+        probleem, en niet elke zware avond maakt iemand verslaafd. Het
+        onderscheid zit niet in hoeveelheden alleen, maar in relatie, functie en
+        gevolgen.
+      </StyledParagraph>{" "}
+      <SubSectionHeader>
+        Wanneer spreek je van verslaving in plaats van recreatief gebruik?
+      </SubSectionHeader>
+      <StyledParagraph marginBottom="mb-2">
+        Recreatief gebruik en verslaving verschillen niet in stof, maar in
+        dynamiek. Bij recreatief gebruik:
+      </StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>is alcohol een middel, geen doel.</ListItem>
+        <ListItem>kan iemand zonder veel moeite stoppen of minderen.</ListItem>
+        <ListItem>herstelt lichaam en psyche vanzelf na excessen.</ListItem>
+        <ListItem>blijft alcohol geïntegreerd in een breder leven. </ListItem>
+      </ul>
+      <StyledParagraph marginBottom="mb-2">Bij verslaving:</StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>wordt alcohol een regulatiestrategie.</ListItem>
+        <ListItem>kost niet-drinken actieve inspanning.</ListItem>
+        <ListItem>keert onrust of leegte terug zodra alcohol wegvalt.</ListItem>
+        <ListItem>verschuift het leven langzaam rondom het gebruik. </ListItem>
+      </ul>
+      <StyledParagraph marginBottom="mb-2">
+        Een belangrijk criterium is strijd.
       </StyledParagraph>
-      <StyledParagraph header="Tip 2: Gebruik een stoppen met drinken app.">
-        Deze apps bieden handige tools, zoals voortgang bijhouden en motiverende
-        berichten, om je doelen makkelijker te behalen.{" "}
+      <StyledParagraph marginBottom="mb-2">
+        Niet: <span className="italic">“Ik drink graag.” </span>{" "}
       </StyledParagraph>
-      <StyledParagraph header="Tip 3: Maak een lijstje met jouw redenen om te stoppen.">
-        Houd deze lijst in zicht als reminder voor moeilijke momenten; je
-        motivatie versterken helpt om vol te houden.
+      <StyledParagraph>
+        Maar:{" "}
+        <span className="italic">
+          “Ik moet moeite doen om het niet te doen.”
+        </span>
       </StyledParagraph>
-      <StyledParagraph header="Tip 4: Beloon jezelf.">
-        Kies gezonde beloningen die niets met alcohol te maken hebben, zoals een
-        uitstapje, een cadeau of iets lekkers.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 5: Bereid je voor op moeilijke situaties.">
-        Denk van tevoren na over wat je kunt doen of zeggen als je in verleiding
-        komt, bijvoorbeeld bij sociale gelegenheden.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 6: Maak afspraken en stel grenzen.">
-        Zet duidelijke grenzen voor jezelf, zoals maximaal een bepaald aantal
-        eenheden of geen alcohol in huis halen.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 7: Zoek steun in je omgeving.">
-        Vertel aan vrienden of familie wat je probeert te bereiken; steun en
-        begrip maken de verandering makkelijker.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 8: Doorbreek je drinkpatroon">
-        Drink je altijd op dezelfde momenten? Deel je dag dan anders in. Probeer
-        bijvoorbeeld op je vaste drinkmomenten iets te gaan doen waarbij je niet
-        kunt drinken.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 9: Zoek afleiding">
-        Als je trek in alcohol krijgt, bedenk dan dat deze weer voorbij gaat. Je
-        hoeft er niet aan toe te geven. Zoek afleiding en probeer aan andere
-        dingen te denken. Vaak verdwijnt de trek dan weer.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 10: Plan alcoholvrije dagen in">
-        Drink je dagelijks en wil je minderen? Plan dan alcoholvrije dagen in.
-        Bedenk vante vorenwelke dagen dat zijn. Zorg dat je op die dagen genoeg
-        te doen hebt.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 11: Drink niet als je dorst hebt">
-        Drink als je dorst hebt geen alcohol. Van alcohol (ook van bier!) krijg
-        je juist meer dorst. Drink overdag voldoende water of thee.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 12: Drink niet op een lege maag">
-        Eet altijd iets voordat je alcohol drinkt. Een vollere maag zorgt ervoor
-        dat je langzamer dronken wordt en minder last van een kater zult
-        krijgen.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 13: Wissel alcohol en water/fris af">
-        Wissel alcohol af met water of fris. Drink na elk glas alcohol een glas
-        zonder alcohol. Als je in een restaurant wijn bestelt, bestel dan ook
-        altijd een karaf water. Drink één op één: een glas wijn, een glas water.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 14: Drink minder dan één glas per uur">
-        Je lichaam heeft ongeveer een uur nodig om één drankje te verwerken. Zo
-        drink je minder en geef je je lichaam de tijd de alcohol te verwerken,
-        waardoor je veel minder last hebt van een kater.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 15: Zorg ervoor dat je niet teveel alcohol in huis hebt">
-        Een voorraad alcohol in huis kan ervoor zorgen dat je sneller gaat
-        drinken. Als je besluit om iets te drinken, koop dit dan op diezelfde
-        dag en koop niet meer dan je heb bedachtom te drinken.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 16: Geniet van wat je drinkt">
-        Drink je glas niet in een keer leeg, geniet ervan. Neem kleine slokjes
-        en zie het als een speciale verwennerij.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 17: Drink uit een glas">
-        Drink uit een glas en niet direct uit een fles. Uit een fles drink je
-        sneller met grote slokken tegelijk. Wanneer je uit een glas drinkt, kan
-        je de bodem van je glas zien als een soort natuurlijke grens. Als je de
-        bodem van de fles ziet heb je al gelijk veel meer alcohol gedronken.
-      </StyledParagraph>
-      <StyledParagraph header="Tip 18: Houd de fles uit het zicht">
-        Uit het oog, uit het hart: het vermijden van visuele triggers helpt om
-        verleiding te verminderen en maakt het makkelijker om niet te drinken.
+      <SubSectionHeader>Hoe herken je een alcoholverslaving?</SubSectionHeader>
+      <StyledParagraph marginBottom="mb-2">
+        Alcoholverslaving is zelden spectaculair zichtbaar. Het ontstaat vaak
+        sluipend, juist bij mensen die “goed functioneren”.
+      </StyledParagraph>{" "}
+      <StyledParagraph marginBottom="mb-2">
+        Psychische en gedragsmatige signalen:
+      </StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>drinken om te ontspannen, slapen, durven of voelen.</ListItem>
+        <ListItem>
+          steeds vaker een aanleiding nodig hebben om níét te drinken.
+        </ListItem>
+        <ListItem>beloftes aan jezelf die niet standhouden.</ListItem>
+        <ListItem>bagatelliseren of rationaliseren van gebruik.</ListItem>
+        <ListItem>irritatie of onrust bij (gedwongen) onthouding.</ListItem>
+        <ListItem>alcohol wordt onderdeel van identiteit of ritme.</ListItem>
+      </ul>
+      <StyledParagraph marginBottom="mb-2">Controleverlies:</StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>vaker of langer drinken dan gepland.</ListItem>
+        <ListItem>moeite hebben met stoppen zodra je begint.</ListItem>
+        <ListItem>
+          steeds vaker momenten waarop alcohol “er gewoon bij hoort”.
+        </ListItem>
+      </ul>
+      <StyledParagraph marginBottom="mb-2">Sociale signalen:</StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>conflicten over drinken.</ListItem>
+        <ListItem>verbergen van hoeveel of wanneer je drinkt.</ListItem>
+        <ListItem>
+          sociale activiteiten vermijden waar alcohol geen rol speelt.
+        </ListItem>
+        <ListItem>
+          relaties die verschralen of onder druk komen te staan.
+        </ListItem>
+      </ul>
+      <StyledParagraph>
+        Cruciaal: alcoholverslaving gaat niet over zwakte, maar over
+        automatisering. Het gedrag wordt minder een keuze en meer een reflex.
+      </StyledParagraph>{" "}
+      <SubSectionHeader>
+        Welke complicaties kunnen na verloop van tijd optreden?
+      </SubSectionHeader>
+      <StyledParagraph marginBottom="mb-2">
+        Alcohol heeft een brede impact omdat het meerdere systemen tegelijk
+        beïnvloedt.
+      </StyledParagraph>{" "}
+      <StyledParagraph marginBottom="mb-2">
+        Lichamelijke complicaties:
+      </StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>leververvetting, hepatitis, cirrose.</ListItem>
+        <ListItem>
+          verhoogd risico op kanker (o.a. mond, slokdarm, lever, borst).
+        </ListItem>
+        <ListItem>hoge bloeddruk, hartritmestoornissen.</ListItem>
+        <ListItem>maag- en darmklachten.</ListItem>
+        <ListItem>
+          neurologische schade (geheugen, concentratie, coördinatie).
+        </ListItem>
+      </ul>
+      <StyledParagraph marginBottom="mb-2">
+        Psychische complicaties:
+      </StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>depressieve klachten of angststoornissen.</ListItem>
+        <ListItem>
+          slaapstoornissen (ook als alcohol “helpt” bij inslapen).
+        </ListItem>
+        <ListItem>verhoogde stressgevoeligheid.</ListItem>
+        <ListItem>verergering van trauma- en stemmingsproblematiek.</ListItem>
+      </ul>
+      <StyledParagraph marginBottom="mb-2">
+        Cognitieve en emotionele verschraling:
+      </StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>verminderde emotieregulatie.</ListItem>
+        <ListItem>lagere stresstolerantie.</ListItem>
+        <ListItem>
+          afhankelijkheid van alcohol voor ontspanning of expressie.
+        </ListItem>
+      </ul>
+      <StyledParagraph marginBottom="mb-2">
+        Sociale en maatschappelijke gevolgen:
+      </StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>relationele schade.</ListItem>
+        <ListItem>werkproblemen of verminderde prestaties.</ListItem>
+        <ListItem>financiële stress.</ListItem>
+        <ListItem>schaamte en geheimhouding.</ListItem>
+        <ListItem>sociaal isolement.</ListItem>
+      </ul>
+      <StyledParagraph>
+        Belangrijk: de ernst wordt niet bepaald door hoeveel iemand drinkt, maar
+        door wat alcohol wegneemt.
+      </StyledParagraph>{" "}
+      <SubSectionHeader>Alcohol in de Nederlandse cultuur</SubSectionHeader>
+      <StyledParagraph marginBottom="mb-2">
+        Alcohol is diep verweven met: gezelligheid, ontspanning, vieren en
+        rouwen, volwassenheid en normaliteit
+      </StyledParagraph>{" "}
+      <StyledParagraph>
+        Niet drinken vraagt vaak méér uitleg dan wel drinken. Dat maakt alcohol
+        uniek in presentatie, maar niet in werking.
+      </StyledParagraph>{" "}
+      <SubSectionHeader>Is alcohol anders dan andere drugs?</SubSectionHeader>
+      <StyledParagraph marginBottom="mb-2">
+        Het eerlijke antwoord is: nee.
+      </StyledParagraph>{" "}
+      <StyledParagraph marginBottom="mb-2">
+        Het eerlijke antwoord is: nee.
+      </StyledParagraph>{" "}
+      <StyledParagraph marginBottom="mb-2">
+        Alcohol verschilt farmacologisch niet principieel van andere drugs. Het:
+      </StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>beïnvloedt het beloningssysteem.</ListItem>
+        <ListItem>werkt dempend op spanning.</ListItem>
+        <ListItem>kan tolerantie en afhankelijkheid veroorzaken.</ListItem>
+        <ListItem>heeft ontwenningsverschijnselen.</ListItem>
+        <ListItem>kent zowel psychische als lichamelijke schade.</ListItem>
+      </ul>
+      <StyledParagraph marginBottom="mb-2">
+        Het echte verschil zit niet in het middel, maar in:
+      </StyledParagraph>{" "}
+      <ul className="mb-6 mt-2 flex flex-col gap-2">
+        <ListItem>maatschappelijke acceptatie.</ListItem>
+
+        <ListItem>beschikbaarheid.</ListItem>
+        <ListItem>culturele normalisering.</ListItem>
+        <ListItem>juridische status.</ListItem>
+      </ul>
+      <StyledParagraph>
+        Alcohol is geen “milde uitzondering”, maar een volledig erkende drug die
+        toevallig sociaal is ingebed. Dat maakt problematisch gebruik minder
+        zichtbaar, niet minder ernstig.
       </StyledParagraph>{" "}
     </>
   );
