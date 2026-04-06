@@ -22,9 +22,9 @@ export default function Page() {
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
-            value="afbouwschema"
+            value="afbouwtips"
           >
-            Afbouwschema
+            Afbouwtips
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
@@ -36,8 +36,8 @@ export default function Page() {
         <TabsContent value="algemeen">
           <AlcoholAlgemeen />
         </TabsContent>
-        <TabsContent value="afbouwschema">
-          <AlcoholAfbouwschema />
+        <TabsContent value="afbouwtips">
+          <AlcoholAfbouwstips />
         </TabsContent>
         <TabsContent value="aanvullend">
           <AlcoholAanvullend />
@@ -201,9 +201,6 @@ const AlcoholAlgemeen = () => {
         Het eerlijke antwoord is: nee.
       </StyledParagraph>{" "}
       <StyledParagraph marginBottom="mb-2">
-        Het eerlijke antwoord is: nee.
-      </StyledParagraph>{" "}
-      <StyledParagraph marginBottom="mb-2">
         Alcohol verschilt farmacologisch niet principieel van andere drugs. Het:
       </StyledParagraph>{" "}
       <ul className="mb-6 mt-2 flex flex-col gap-2">
@@ -232,7 +229,7 @@ const AlcoholAlgemeen = () => {
   );
 };
 
-const AlcoholAfbouwschema = () => {
+const AlcoholAfbouwstips = () => {
   return (
     <>
       <div className="mb-6 w-full font-sans text-sm tracking-[1px] text-[#333333]">

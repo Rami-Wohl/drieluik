@@ -11,6 +11,8 @@ import {
 } from "~/components/ui/dialog";
 import { Pageheader } from "~/components/ui/pageheader";
 import { MiddelenLink } from "./middelen-link";
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
+import { ListItem } from "~/components/ui/list-item";
 
 function MiddelenInfo() {
   return (
@@ -21,9 +23,32 @@ function MiddelenInfo() {
       <DialogContent className="max-h-[80vh] w-11/12 max-w-[1300px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-80 bg-gradient-to-b from-[#ffffff] to-blue-50">
         <DialogHeader className="mb-2 mt-4">
           <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
-            Info hier
+            Over het <b>middelen</b> luik
           </DialogTitle>
         </DialogHeader>
+        <div className="px-12">
+          <StyledParagraph marginBottom="mb-2">
+            In dit luik vind je informatie over de verschillende soorten
+            middelen. Ieder middel is opgedeeld in drie onderwerpen:
+          </StyledParagraph>{" "}
+          <ul className="mb-6 mt-2 flex flex-col gap-2">
+            <ListItem>
+              <b>Algemeen: </b>
+              hier vind je voornamelijk informatie die je voor algemene
+              voorlichting kan gebruiken.
+            </ListItem>
+            <ListItem>
+              <b>Afbouwtips: </b>
+              Hier vind je afbouwschema’s en andere zaken die belangrijk kunnen
+              zijn bij afbouwen.
+            </ListItem>
+            <ListItem>
+              <b>Overig: </b>
+              Dit kan alles zijn dat niet onder de andere categorieën valt.
+              Bijvoorbeeld maatschappelijke context of interessante weetjes.
+            </ListItem>
+          </ul>
+        </div>
         <DialogClose asChild>
           <Button
             type="button"

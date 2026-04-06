@@ -18,9 +18,9 @@ export default function Page() {
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
-            value="afbouwschema"
+            value="afbouwtips"
           >
-            Afbouwschema
+            Afbouwtips
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
@@ -30,7 +30,7 @@ export default function Page() {
           </TabsTrigger>
         </TabsList>
         <TabsContent value="voorlichting">Algemeen</TabsContent>
-        <TabsContent value="afbouwschema">Afbouwschema</TabsContent>
+        <TabsContent value="afbouwtips">Afbouwtips</TabsContent>
         <TabsContent value="aanvullend">Aanvullend</TabsContent>
       </Tabs>
     </div>
