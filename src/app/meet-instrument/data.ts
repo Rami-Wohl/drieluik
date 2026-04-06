@@ -1,11 +1,51 @@
 export const substancesScoreLabels = [
-  "1 - Ik gebruik constant, ik denk niet dat ik nog kan stoppen.",
-  "2 - Ik gebruik regelmatig, het komt gewoon veel voor in mijn omgeving.",
-  "3 - Ik gebruik regelmatig, maar kies voor deze lifestyle.",
-  "4 - Ik gebruik soms, als die zeldzame gelegenheid zich voordoet.",
-  "5 - Ik gebruik soms, maar alleen als ik dat van tevoren plan.",
-  "6 - Ik gebruik niet, maar wil dat wel.",
-  "7 - Ik gebruik niet en wil dat ook niet.",
+  "1 - Middelen zijn mijn belangrijkste manier om te functioneren; zonder gebruik voel ik me ontregeld of verloren.",
+  "2 - Ik ben vaak met middelen bezig en zoek momenten om me terug te trekken, omdat gebruik mijn veiligste vorm van rust voelt.",
+  "3 - Bij spanning, verveling, vieren of vergeten is gebruik voor mij een automatische reactie.",
+  "4 - Bij oplopende spanning gebruik ik soms om afstand te nemen, maar veel minder dwingend dan vroeger.",
+  "5 - Mijn gebruik is vooral verbonden aan specifieke situaties, mensen of rituelen; daarbuiten heb ik weinig behoefte.",
+  "6 - Ik gebruik af en toe bij speciale gelegenheden, meer als toevoeging aan het moment dan uit noodzaak.",
+  "7 - Als ik al gebruik, doe ik dat zeer doordacht en verstandig.",
+];
+
+export const healthScoreLabels = [
+  "1 - Ik heb een lichamelijke aandoening waardoor ik niet kan functioneren.",
+  "2 - Ik heb een lichamelijke aandoening die mij continu belemmert.",
+  "3 - Ik heb een lichamelijke aandoening die mij vaak belemmert.",
+  "4 - Ik heb een lichamelijke aandoening die mij soms belemmert.",
+  "5 - Ik heb een lichamelijke aandoening, maar die belemmert mij niet.",
+  "6 - Ik mankeer weinig, maar voel me wel vaak moe en futloos.",
+  "7 - Ik ben gezond en voel mij fit.",
+];
+
+export const psychologicalScoreLabels = [
+  "1 - Ik word dagelijks overweldigd door gevoelens, waardoor ik niet kan functioneren.",
+  "2 - Ik word continu belemmerd door de heftige gevoelens die ik heb.",
+  "3 - Ik word regelmatig belemmerd door de heftige gevoelens die ik heb.",
+  "4 - Ik word soms belemmerd door de heftige gevoelens die ik heb.",
+  "5 - Ik heb heftige gevoelens, maar kan deze redelijk goed hanteren.",
+  "6 - Ik zit meestal lekker in mijn vel, maar raak nog wel snel uit het veld geslagen.",
+  "7 - Ik zit lekker in mijn vel en kan tegen een stootje, ik voel me weerbaar.",
+];
+
+export const socialScoreLabels = [
+  "1 - Ik heb contact met niemand en dat wil ik zo houden.",
+  "2 - Ik heb contact met niemand en daar heb ik last van.",
+  "3 - Ik heb een beperkt sociaal netwerk, bestaand uit gebruikers, dealers & hulpverleners.",
+  "4 - Ik heb problematisch contact met mijn familie/vrienden met veel conflicten.",
+  "5 - Ik heb oppervlakkig contact met familie/ vrienden, maar we zoeken elkaar weinig op.",
+  "6 - Ik heb een steunend netwerk van familie/vrienden, maar het contact verloopt stroef.",
+  "7 - Ik heb een gezond sociaal netwerk en voel me verbonden met mijn vrienden/familie.",
+];
+
+export const meaningScoreLabels = [
+  "1 - Ik heb geen zinvolle dagbesteding/werk, maar dat vind ik niet erg.",
+  "2 - Ik heb geen zinvolle dagbesteding/werk en ga dat ook nooit vinden denk ik.",
+  "3 - Ik heb geen zinvolle dagbesteding/werk, maar dat wil ik wel graag.",
+  "4 - Ik heb wel dagbesteding/werk, maar vind het niet zinvol.",
+  "5 - Ik heb dagbesteding/werk wat ik niet zinvol vind, maar heb wel een zinvolle hobby.",
+  "6 - Ik heb zinvolle dagbesteding/werk en een hobby.",
+  "7 - Ik voel mij erg betrokken bij mijn dagbesteding/werk en hobby's.",
 ];
 
 export const financesScoreLabels = [
@@ -16,46 +56,6 @@ export const financesScoreLabels = [
   "5 - Ik heb een inkomen en stabiele schulden.",
   "6 - Ik heb een inkomen en geen schulden.",
   "7 - Ik heb een inkomen en ik spaar.",
-];
-
-export const healthScoreLabels = [
-  "1 - Ik heb verschillende lichamelijke klachten waar ik dagelijks last van heb.",
-  "2 - Ik heb een lichamelijke klacht waar ik dagelijks last van heb.",
-  "3 - Ik heb verschillende lichamelijke klachten, heb daar regelmatig last van.",
-  "4 - Ik heb een lichamelijke klacht en heb daar regelmatig last van.",
-  "5 - Meestal voel ik mij fit, maar ik worstel soms met mijn gezondheid.",
-  "6 - Ik mankeer weinig, maar ben wel wat vaak ziek of erg futloos.",
-  "7 - Ik ben gezond en voel mij fit.",
-];
-
-export const meaningScoreLabels = [
-  "1 - Ik heb geen zinvolle invulling voor mijn dagen en die wil ik ook niet.",
-  "2 - Ik heb wel werk of dagbesteding, maar wil daarmee stoppen.",
-  "3 - Ik heb geen werk of dagbesteding, maar zou dat wel graag willen.",
-  "4 - Ik heb wel werk of dagbesteding, maar kan het lastig zinvol noemen.",
-  "5 - Ik vind mijn werk of dagbesteding niet leuk, maar heb daarbuiten wel een hobby die mij bekoort.",
-  "6 - Ik heb een leuke/zinvolle baan of dagbesteding.",
-  "7 - Ik voel mij erg betrokken in alles dat ik doe; werk, hobby’s, etc.",
-];
-
-export const psychologicalScoreLabels = [
-  "1 - Ik ben dagelijks zeer bang, bedroefd, boos of verward en niets in het leven lukt.",
-  "2 - Ik ben dagelijks zeer bang, bedroefd, boos of verward.",
-  "3 - Ik heb regelmatig last van episodes die een flinke invloed op mijn leven hebben.",
-  "4 - Ik worstel regelmatig dusdanig veel met mijzelf dat ik niet echt ruimte heb voor andere dingen.",
-  "5 - Ik worstel regelmatig met mijzelf en dit maakt het dagelijks leven soms wat lastiger.",
-  "6 - Ik voel mij goed, maar weet dat ik moet oppassen om niet terug te vallen.",
-  "7 - Ik voel mij goed en veerkrachtig, ik heb het idee dat ik inmiddels wel tegen een stootje kan.",
-];
-
-export const socialScoreLabels = [
-  "1 - Ik ben altijd alleen, niemand wil mij meer zien en contact gaat dikwijls gepaard met wrijving.",
-  "2 - Ik ben altijd alleen, maar heb wel hulpverleners waar ik op kan bouwen.",
-  "3 - Ik ben meestal alleen, maar mijn kennissen kring bestaat vooral uit professionals, dealers etc.",
-  "4 - Ik ben vaak alleen, maar heb wel een handjevol vrienden/familie die ik af en toe zie of spreek.",
-  "5 - Ik ben niet het meest sociale persoon, maar heb toch een diverse groep mensen om me heen.",
-  "6 - Ik heb veel mensen om me heen waar ik energie van krijg en sommige zijn minder leuk.",
-  "7 - Ik voel me sociaal en heb een goede band met mijn vrienden en/of familie.",
 ];
 
 export const gevoelsTemperatuurLabels = [
