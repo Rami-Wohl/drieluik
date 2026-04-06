@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 export default function Page() {
   return (
     <div className="mt-32 flex w-full grow flex-col items-center gap-8 px-4 md:px-20">
-      <Pageheader text="Flakka" />
+      <Pageheader text="Flakka (α-PVP)" />
       <Tabs
         defaultValue="algemeen"
         className="relative w-full bg-transparent p-0 text-opacity-70"
@@ -18,13 +18,7 @@ export default function Page() {
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
             value="algemeen"
           >
-            Algemene Kennis
-          </TabsTrigger>
-          <TabsTrigger
-            className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
-            value="voorlichting"
-          >
-            Voorlichting
+            Algemeen
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
@@ -32,15 +26,21 @@ export default function Page() {
           >
             Afbouwtips
           </TabsTrigger>
+          <TabsTrigger
+            className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
+            value="overig"
+          >
+            Overig
+          </TabsTrigger>
         </TabsList>
         <TabsContent value="algemeen">
           <FlakkaAlgemeen />
         </TabsContent>
-        <TabsContent value="voorlichting">
-          <FlakkaVoorlichting />
-        </TabsContent>
         <TabsContent value="afbouwtips">
           <FlakkaAfbouwtips />
+        </TabsContent>
+        <TabsContent value="overig">
+          <FlakkaOverig />
         </TabsContent>
       </Tabs>
     </div>
@@ -51,123 +51,56 @@ const FlakkaAlgemeen = () => {
   return (
     <>
       <StyledParagraph header="Wat is Flakka?">
-        Flakka (distikstofmonoxide of N₂O) is een kleurloos gas met een licht
-        zoete geur en smaak. Het wordt gebruikt als medisch anestheticum, in
-        voedingsmiddelen (slagroompatronen), en recreatief als roesmiddel.
-        Recreatief gebruik gebeurt meestal door het gas in te ademen via
-        ballonnen, die gevuld worden met Flakka uit ampullen of cilinders.
+        Flakka is de straatnaam voor <b>α-PVP</b>, een synthetische stimulant
+        uit de groep <b>cathinonen</b>. Het werkt sterk op het dopamine- en
+        noradrenalinesysteem en heeft een langdurige, intense werking.
       </StyledParagraph>
-      <StyledParagraph header="Werkingsmechanisme:">
-        Flakka heeft een verdovende en dissociatieve werking. Het beïnvloedt
-        neurotransmitters zoals dopamine en kan leiden tot tijdelijke euforie,
-        ontspanning en vervorming van geluid en beeld. Het effect begint vrijwel
-        direct na inademing en houdt enkele minuten aan.
-      </StyledParagraph>
-      <SubSectionHeader>Fysieke en mentale effecten:</SubSectionHeader>
-      <div className="mb-8 flex flex-col gap-2">
-        {" "}
-        <SubSectionParagraph>
-          <span className="font-semibold">Korte termijn:</span> euforie,
-          duizeligheid, verlies van controle over spieren, veranderingen in
-          waarneming, korte bewustzijnsveranderingen.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold"> Langetermijnrisico&apos;s:</span>{" "}
-           neurologische schade door vitamine B12-tekort, schade aan het
-          zenuwstelsel (zoals tintelingen of gevoelloosheid in ledematen), en
-          ademhalingsproblemen.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold"> Overdosisrisico: </span>
-          bij overmatig gebruik of verkeerd gebruik (in een afgesloten ruimte)
-          kan een zuurstoftekort ontstaan, wat gevaarlijk is.
-        </SubSectionParagraph>
-      </div>
-      <SubSectionHeader>Hoe herken je gebruik?</SubSectionHeader>
+      <SubSectionHeader>Classificatie:</SubSectionHeader>
       <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem> Synthetische stimulant</ListItem>
+        <ListItem>Vergelijkbaar met: amfetamine, methamfetamine</ListItem>
         <ListItem>
-          {" "}
-          Restanten van ballonnen en ampullen of cilinders in de omgeving.
-        </ListItem>
-        <ListItem>
-          Symptomen zoals duizeligheid, slaperigheid, ongecontroleerd lachen, en
-          coördinatieproblemen.
-        </ListItem>
-        <ListItem>
-          <span className="font-semibold"> Bij frequent gebruik:</span>{" "}
-          tintelingen of gevoelloosheid, vermoeidheid, en concentratieproblemen.
+          Verschil: <b>sterker, grilliger en psychotischer profiel</b>
         </ListItem>
       </ul>
-      <StyledParagraph header="Sociaal gedrag:">
-        Flakkagebruik is vaak verbonden aan feesten of informeel gebruik in
-        sociale settings. Frequent gebruik kan leiden tot sociale isolatie of
-        verminderde prestaties op werk of school.
-      </StyledParagraph>
-    </>
-  );
-};
-
-const FlakkaVoorlichting = () => {
-  return (
-    <>
-      <SubSectionHeader>Risico&apos;s van gebruik:</SubSectionHeader>
-      <div className="mb-8 flex flex-col gap-2">
-        {" "}
-        <SubSectionParagraph>
-          <span className="font-semibold">Fysieke gevolgen: </span> zenuwschade,
-          vitamine B12-tekort, zuurstoftekort, bevriezing van luchtwegen (bij
-          direct inhaleren uit een ampul).
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold">Psychische gevolgen: </span>
-          afhankelijkheid van het middel voor ontspanning of euforie, toename
-          van angstgevoelens, of cognitieve achteruitgang.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold"> Sociale gevolgen: </span>
-          conflicten met naasten, achteruitgang in functioneren, en financiële
-          problemen door overmatig gebruik.
-        </SubSectionParagraph>
-      </div>
-      <SubSectionHeader>Harm reduction (veilig gebruik):</SubSectionHeader>
-      <div className="mb-8 flex flex-col gap-2">
-        <SubSectionParagraph>
-          <span className="font-semibold">Dosering:</span> Gebruik matig en niet
-          frequent.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold"> Manier van gebruik:</span> Alleen via
-          ballonnen inademen (nooit direct uit een ampul of cilinder).
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold"> Omgeving: </span> Gebruik in een
-          veilige omgeving, bij voorkeur zittend, om vallen en letsel te
-          voorkomen.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold"> Herstel: </span> Laat voldoende tijd
-          tussen gebruiksmomenten om vitamine B12-tekorten te voorkomen.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold"> Aanvulling: </span> Overweeg het
-          gebruik van vitamine B12-supplementen bij regelmatig gebruik.
-        </SubSectionParagraph>
-      </div>
-      <SubSectionHeader>Verantwoorde communicatie:</SubSectionHeader>
+      <SubSectionHeader>Toedieningsvormen:</SubSectionHeader>
       <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem> Roken (folie, pijp)</ListItem>
+        <ListItem>Sniffen </ListItem>
         <ListItem>
-          Maak gebruikers bewust van de risico&apos;s zonder te oordelen.
-        </ListItem>
-        <ListItem>
-          Bespreek concrete signalen van problematisch gebruik, zoals dagelijks
-          gebruik of het gebruik van grote hoeveelheden.{" "}
+          Slikken (Roken geeft snelle, intense piek → hoogste
+          ontregelingsrisico)
         </ListItem>
       </ul>
-      <StyledParagraph header="Voorlichting aan patiënten:">
-        Benadruk dat recreatief gebruik altijd risico&apos;s met zich meebrengt,
-        maar dat minder frequent en veilig gebruik de kans op ernstige gevolgen
-        kan beperken. Stimuleer patiënten om alternatieven voor ontspanning en
-        euforie te vinden.
+      <SubSectionHeader>Effecten (kortdurend):</SubSectionHeader>
+      <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem>Sterke alertheid en energie</ListItem>
+        <ListItem>Gevoel van macht/onkwetsbaarheid</ListItem>
+        <ListItem>Onderdrukking van vermoeidheid, honger en angst</ListItem>
+        <ListItem>Verhoogde focus (subjectief)</ListItem>
+      </ul>
+      <SubSectionHeader>Bijwerkingen/risico’s:</SubSectionHeader>
+      <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem>Paranoia en achterdocht</ListItem>
+        <ListItem>Ernstige angst, paniek</ListItem>
+        <ListItem>Slaaploosheid (meerdere dagen)</ListItem>
+        <ListItem>
+          Psychotische symptomen (wanen, stemmen, derealisatie)
+        </ListItem>
+        <ListItem>Agressie of impulsief gedrag</ListItem>
+        <ListItem>
+          Lichamelijk: hartkloppingen, oververhitting, uitdroging
+        </ListItem>
+      </ul>
+      <SubSectionHeader>Verslavingspotentie:</SubSectionHeader>
+      <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem>Hoog</ListItem>
+        <ListItem>Snelle tolerantieontwikkeling</ListItem>
+        <ListItem>Sterke craving, vooral mentaal</ListItem>
+      </ul>
+      <StyledParagraph header="Belangrijk onderscheid:">
+        Waar cocaïne vaak <i>kort en cyclisch</i> werkt, kan flakka{" "}
+        <b>dagenlange ontregeling</b> veroorzaken na één gebruiksperiode.
       </StyledParagraph>
     </>
   );
@@ -176,70 +109,143 @@ const FlakkaVoorlichting = () => {
 const FlakkaAfbouwtips = () => {
   return (
     <>
-      <SubSectionHeader>Is afbouwen altijd nodig?</SubSectionHeader>
+      <div className="mb-6 w-full border border-black p-1 px-2 font-sans text-sm tracking-[1px] text-[#333333]">
+        Let op: afbouwen gebeurt altijd samen met behandelaren. Deze punten zijn
+        bedoeld als kader voor gesprek, niet als zelfhulpinstructie.
+      </div>
+
+      <SubSectionHeader>A. Signaleren van risico fases</SubSectionHeader>
+      <ul className="mb-4 flex list-inside flex-col gap-2">
+        <ListItem>Gebruiker overschat eigen functioneren</ListItem>
+        <ListItem>Verminderd ziektebesef</ListItem>
+        <ListItem>Toenemende achterdocht richting hulpverlening</ListItem>
+        <ListItem>Verwaarlozing slaap / structuur </ListItem>
+      </ul>
+      <StyledParagraph>
+        <b>Afbouwen begint vaak met stabiliseren, niet met stoppen.</b>
+      </StyledParagraph>
+      <SubSectionHeader>B. Eerste behandelprioriteiten</SubSectionHeader>
       <ul className="mb-8 flex list-inside flex-col gap-2">
         <ListItem>
-          Flakka veroorzaakt geen fysieke afhankelijkheid zoals alcohol of
-          opiaten, maar psychologische afhankelijkheid kan een uitdaging
-          zijn.{" "}
+          <b>Slaap herstellen</b>
+          <br />
+          Zonder slaap is elke verdere behandeling ineffectief.
         </ListItem>
         <ListItem>
-          Afbouwen kan nuttig zijn voor patiënten die gewend zijn aan frequent
-          gebruik en moeite hebben om direct te stoppen.
+          <b>Fysieke basis op orde</b>
+          <br />
+          Hydratatie, voeding, dag-nachtritme.
+        </ListItem>
+        <ListItem>
+          <b>Prikkelreductie</b>
+          <br />
+          Flakka vergroot sensorische overbelasting.
         </ListItem>
       </ul>
-      <SubSectionHeader>Hoe af te bouwen:</SubSectionHeader>
-      <div className="mb-8 flex flex-col gap-2">
-        {" "}
-        <SubSectionParagraph>
-          <span className="font-semibold">Stap 1:</span> Breng het gebruik in
-          kaart (frequentie, hoeveelheid).
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold">Stap 2:</span>
-          Stel duidelijke doelen, zoals het verminderen van het aantal
-          gebruiksmomenten per week.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold">Stap 3:</span> Creëer vervangende
-          routines voor ontspanning, zoals mindfulness, sporten, of creatieve
-          activiteiten.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold">Stap 4:</span> Verlaag de hoeveelheid
-          per sessie en verleng de tijd tussen sessies.
-        </SubSectionParagraph>
-      </div>
-      <StyledParagraph header="Direct stoppen:">
-        Bij ernstig gebruik of tekenen van neurologische schade (bijvoorbeeld
-        tintelingen of gevoelloosheid) is direct stoppen aan te raden, met
-        ondersteuning van medische begeleiding. Overweeg een bloedonderzoek op
-        vitamine B12-tekorten of andere complicaties.
+      <SubSectionHeader>C. Afbouw in de praktijk</SubSectionHeader>
+      <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem>
+          Abrupt stoppen kan leiden tot:
+          <ul className="my-2 flex list-inside flex-col gap-2 pl-4">
+            <ListItem>extreme uitputting</ListItem>
+            <ListItem>depressieve klachten</ListItem>
+            <ListItem>suïcidaliteit</ListItem>
+          </ul>
+        </ListItem>
+        <ListItem>
+          Gefaseerd verminderen is soms realistischer dan onmiddellijke
+          abstinentie
+        </ListItem>
+        <ListItem>
+          Medicatie kan <b>ondersteunend</b> zijn (geen vervanging van
+          behandeling)
+        </ListItem>
+      </ul>
+      <SubSectionHeader>D. Craving bespreekbaar maken</SubSectionHeader>
+      <StyledParagraph marginBottom="mb-2">
+        Craving bij flakka is vaak:
       </StyledParagraph>
-      <SubSectionHeader>Ondersteuning bij afbouw:</SubSectionHeader>
-      <div className="mb-8 flex flex-col gap-2">
-        {" "}
-        <SubSectionParagraph>
-          <span className="font-semibold">Therapeutische begeleiding: </span>{" "}
-          motiverende gespreksvoering, cognitieve gedragstherapie.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold">Sociale steun: </span> betrek
-          vrienden, familie, of zelfhulpgroepen.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold">Medische begeleiding: </span>
-          controleer op vitamine B12-tekorten en ondersteun herstel door middel
-          van supplementen indien nodig.
-        </SubSectionParagraph>
-        <SubSectionParagraph>
-          <span className="font-semibold">Herstel en nazorg:</span> Zorg voor
-          een plan om terugval te voorkomen, zoals het identificeren van
-          triggers en strategieën om hiermee om te gaan. Moedig deelname aan
-          activiteiten die positieve gevoelens opwekken en sociale verbinding
-          bevorderen.
-        </SubSectionParagraph>
-      </div>
+      <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem>cognitief (“ik moet scherp zijn”)</ListItem>
+        <ListItem>
+          existentieel (“zonder dit kan ik niet functioneren”)
+        </ListItem>
+      </ul>
+      <StyledParagraph>
+        Benader craving als <i>betekenisvolle signalen</i>, niet als falen.
+      </StyledParagraph>
+    </>
+  );
+};
+
+const FlakkaOverig = () => {
+  return (
+    <>
+      <SubSectionHeader>Functie van gebruik (veelvoorkomend)</SubSectionHeader>
+      <StyledParagraph marginBottom="mb-2">
+        Bij flakka zien we relatief vaak:
+      </StyledParagraph>
+      <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem>
+          Willen ontsnappen aan:
+          <ul className="my-2 flex list-inside flex-col gap-2 pl-4">
+            <ListItem>innerlijke onrust</ListItem>
+            <ListItem>somberheid</ListItem>
+            <ListItem>trauma-gerelateerde spanning</ListItem>
+          </ul>
+        </ListItem>
+        <ListItem>
+          Behoefte aan:
+          <ul className="my-2 flex list-inside flex-col gap-2 pl-4">
+            <ListItem>controle</ListItem>
+            <ListItem>kracht</ListItem>
+            <ListItem>versnelling of stilzetten van gedachten</ListItem>
+          </ul>
+        </ListItem>
+        <ListItem>
+          Vermijden van:
+          <ul className="my-2 flex list-inside flex-col gap-2 pl-4">
+            <ListItem>gevoelens van machteloosheid</ListItem>
+            <ListItem>afhankelijkheid van anderen</ListItem>
+          </ul>
+        </ListItem>
+      </ul>
+      <StyledParagraph>
+        Het middel wordt vaak ingezet als <b>zelfmedicatie</b>, maar verergert
+        juist de kernproblematiek.
+      </StyledParagraph>
+      <SubSectionHeader>
+        Differentiaaldiagnostische aandachtspunten
+      </SubSectionHeader>
+      <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem>
+          Flakka-geïnduceerde psychose is <b>niet hetzelfde</b> als primaire
+          psychotische stoornis (maar kan hier wel in overlopen)
+        </ListItem>
+
+        <ListItem>
+          Achterdocht kan middelgerelateerd én traumagerelateerd zijn
+        </ListItem>
+
+        <ListItem>
+          Gedragsontregeling is <b>niet hetzelfde</b> als onwil
+        </ListItem>
+      </ul>
+
+      <SubSectionHeader>Houding van de behandelaar</SubSectionHeader>
+      <StyledParagraph marginBottom="mb-2">Wat helpt:</StyledParagraph>
+      <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem>Rust, voorspelbaarheid</ListItem>
+        <ListItem>Eenduidigheid </ListItem>
+        <ListItem>Begrenzen zonder escaleren </ListItem>
+        <ListItem>Blijven erkennen waarom iemand gebruikt </ListItem>
+      </ul>
+      <StyledParagraph>Wat averechts werkt:</StyledParagraph>
+      <ul className="mb-8 flex list-inside flex-col gap-2">
+        <ListItem>Confronterend doorvragen op inhoud van wanen</ListItem>
+        <ListItem>Moraliserende taal</ListItem>
+        <ListItem>Te snelle focus op abstinentie</ListItem>
+      </ul>
     </>
   );
 };

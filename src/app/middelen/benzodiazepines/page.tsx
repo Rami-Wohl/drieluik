@@ -3,7 +3,7 @@ import {
   BenzosAfbouwtabel2,
 } from "~/app/middelen/benzodiazepines/benzos-afbouwtabel";
 import { StyledParagraph } from "~/components/ui/text-components/paragraph";
-import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
+// import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
@@ -31,9 +31,9 @@ export default function Page() {
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
-            value="aanvullend"
+            value="overig"
           >
-            Aanvullend
+            Overig
           </TabsTrigger>
         </TabsList>
         <TabsContent value="algemeen">
@@ -42,8 +42,8 @@ export default function Page() {
         <TabsContent value="afbouwtips">
           <BenzosAfbouwtips />
         </TabsContent>
-        <TabsContent value="aanvullend">
-          <BenzosAanvullend />
+        <TabsContent value="overig">
+          <BenzosOverig />
         </TabsContent>
       </Tabs>
     </div>
@@ -194,8 +194,10 @@ const BenzosAfbouwtips = () => {
           uitleg vergroot de kans dat iemand het volhoudt.
         </ListItem>
       </ul>
-      <SubSectionHeader>Voorbeeld afbouwschema (diazepam)</SubSectionHeader>
-      <StyledParagraph marginBottom="mb-2">
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="Voorbeeld afbouwschema (diazepam)"
+      >
         <b>Uitgangspunt: </b>
         startdosering 45 mg per dag
         <br />
@@ -222,11 +224,13 @@ const BenzosAfbouwtips = () => {
   );
 };
 
-const BenzosAanvullend = () => {
+const BenzosOverig = () => {
   return (
     <>
-      <SubSectionHeader>Tussen medicijn en afhankelijkheid</SubSectionHeader>
-      <StyledParagraph marginBottom="mb-2">
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="Tussen medicijn en afhankelijkheid"
+      >
         Benzodiazepinen nemen een bijzondere positie in binnen het
         middelenlandschap. Het zijn geen “straatdrugs”, maar ook geen
         onschuldige hulpmiddelen. Ze bevinden zich precies op het snijvlak van

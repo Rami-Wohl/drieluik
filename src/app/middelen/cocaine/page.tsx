@@ -18,29 +18,29 @@ export default function Page() {
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
             value="algemeen"
           >
-            Algemene Kennis
+            Algemeen
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
-            value="voorlichting"
+            value="afbouwtips"
           >
-            Voorlichting
+            Afbouwtips
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
-            value="afbouwen"
+            value="overig"
           >
-            Afbouwen
+            Overig
           </TabsTrigger>
         </TabsList>
         <TabsContent value="algemeen">
           <CocaineAlgemeen />
         </TabsContent>
-        <TabsContent value="voorlichting">
-          <CocaineVoorlichting />
+        <TabsContent value="afbouwtips">
+          <CocaineAfbouwtips />
         </TabsContent>
-        <TabsContent value="afbouwen">
-          <CocaineAfbouwen />
+        <TabsContent value="overig">
+          <CocaineOverig />
         </TabsContent>
       </Tabs>
     </div>
@@ -106,13 +106,6 @@ const CocaineAlgemeen = () => {
         Problematisch gebruik kan leiden tot conflicten met familie, verlies van
         werk, of financiële problemen.{" "}
       </StyledParagraph>
-    </>
-  );
-};
-
-const CocaineVoorlichting = () => {
-  return (
-    <>
       <SubSectionHeader>Risico&apos;s van gebruik:</SubSectionHeader>
       <div className="mb-8 flex flex-col gap-2">
         {" "}
@@ -201,7 +194,7 @@ const CocaineVoorlichting = () => {
   );
 };
 
-const CocaineAfbouwen = () => {
+const CocaineAfbouwtips = () => {
   return (
     <div>
       <StyledParagraph header="Afbouwen of in één keer stoppen">
@@ -239,5 +232,76 @@ const CocaineAfbouwen = () => {
         moeilijk zijn om ze tijdig te herkennen (Sofuoglu et al., 2005).{" "}
       </StyledParagraph>
     </div>
+  );
+};
+
+const CocaineOverig = () => {
+  return (
+    <>
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="Cocaïne: van medicijn tot moreel vraagstuk"
+      >
+        Cocaïne heeft een lange en complexe geschiedenis die sterk verschilt van
+        het huidige beeld als illegale harddrug. Oorspronkelijk werd coca (de
+        plant waar cocaïne uit wordt gewonnen) al duizenden jaren gebruikt door
+        inheemse volkeren in Zuid-Amerika vanwege de milde stimulerende werking
+        en het vermogen om vermoeidheid en honger te onderdrukken.
+      </StyledParagraph>
+      <StyledParagraph marginBottom="mb-2">
+        Aan het eind van de 19e eeuw werd cocaïne in Europa en de Verenigde
+        Staten een populair en legaal middel. Het werd verwerkt in medicijnen,
+        tonics en zelfs frisdranken. Bekende figuren zoals Sigmund Freud prezen
+        het middel aanvankelijk vanwege de vermeende therapeutische voordelen.
+      </StyledParagraph>
+      <StyledParagraph marginBottom="mb-2">
+        Ook in Nederland speelde cocaïne een opmerkelijke rol. In het begin van
+        de 20e eeuw was Nederland een van de grootste producenten van
+        farmaceutische cocaïne ter wereld. Bedrijven zoals Nederlandsche
+        Cocaïnefabriek produceerden cocaïne op industriële schaal voor medisch
+        gebruik, onder andere als lokaal verdovingsmiddel bij operaties. In die
+        tijd werd cocaïne gezien als een waardevol en innovatief geneesmiddel,
+        niet als maatschappelijk probleem.
+      </StyledParagraph>
+      <StyledParagraph marginBottom="mb-2">
+        De beeldvorming rondom cocaïne veranderde sterk in de Verenigde Staten
+        met de invoering van de Harrison Act in 1914. Officieel was dit een
+        belastingwet die het gebruik en de distributie van opiaten en cocaïne
+        moest reguleren, maar in de praktijk betekende het het begin van
+        criminalisering.
+      </StyledParagraph>
+      <StyledParagraph marginBottom="mb-2">
+        Historisch onderzoek laat zien dat deze verschuiving niet alleen medisch
+        gemotiveerd was. In de publieke en politieke discussie werd
+        cocaïnegebruik regelmatig gekoppeld aan racistische stereotypes, met
+        name gericht op Afro-Amerikaanse gemeenschappen. Dit droeg bij aan angst
+        en draagvlak voor strengere wetgeving. Tegelijkertijd ontstond een
+        systeem waarin middelengebruik steeds meer een strafrechtelijk probleem
+        werd in plaats van een gezondheidsvraagstuk.
+      </StyledParagraph>
+      <StyledParagraph marginBottom="mb-2">
+        In de decennia daarna groeide dit uit tot wat later bekend werd als de
+        “war on drugs”, een beleid dat wereldwijd invloed heeft gehad op hoe
+        samenlevingen omgaan met middelengebruik. Critici wijzen erop dat dit
+        beleid heeft bijgedragen aan massale opsluiting, ongelijkheid en
+        stigmatisering, terwijl de effectiviteit in het verminderen van gebruik
+        beperkt is gebleken.
+      </StyledParagraph>
+      <StyledParagraph marginBottom="mb-2">
+        Tegenwoordig wordt cocaïne nog steeds gebruikt in de medische wereld,
+        zij het in zeer beperkte en gecontroleerde vorm, bijvoorbeeld als lokaal
+        verdovingsmiddel bij specifieke KNO-ingrepen. Dit onderstreept dat de
+        stof zelf niet eendimensionaal is, maar dat de context, dosering en
+        manier van gebruik bepalend zijn voor de risico’s.
+      </StyledParagraph>
+      <StyledParagraph marginBottom="mb-2">
+        Het verhaal van cocaïne laat zien hoe sterk maatschappelijke, politieke
+        en culturele factoren bepalen hoe we naar middelen kijken. Wat ooit een
+        geaccepteerd medicijn was, werd een symbool van criminaliteit. Deze
+        geschiedenis nodigt uit om kritisch te blijven kijken naar hoe we
+        middelengebruik benaderen: als moreel falen, als strafbaar feit, of als
+        onderdeel van menselijk gedrag dat om begrip en passende zorg vraagt.
+      </StyledParagraph>
+    </>
   );
 };

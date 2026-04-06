@@ -5,7 +5,6 @@ import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { ResponsiveImage } from "~/components/ui/responsive-image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
-import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
 
 export default function Page() {
   return (
@@ -38,11 +37,11 @@ export default function Page() {
         <TabsContent value="algemeen">
           <CannabisAlgemeen />
         </TabsContent>
-        <TabsContent value="overig">
-          <CannabisOverig />
-        </TabsContent>
         <TabsContent value="afbouwtips">
           <CannabisAfbouwtips />
+        </TabsContent>
+        <TabsContent value="overig">
+          <CannabisOverig />
         </TabsContent>
       </Tabs>
     </div>
@@ -94,8 +93,7 @@ const CannabisAlgemeen = () => {
         alt="Plaatje van hash"
         description="Hash"
       />
-      <SubSectionHeader> Cannabis en psychose</SubSectionHeader>
-      <StyledParagraph marginBottom="mb-2">
+      <StyledParagraph marginBottom="mb-2" header="Cannabis en psychose">
         de hoofd-werkzame stof in cannabis (THC), kan nadelige gevolgen hebben
         voor mensen die gevoelig zijn voor het krijgen van psychoses. Terwijl er
         van CBD redenen zijn om aan te nemen dat het juist bescherming kan
@@ -109,10 +107,9 @@ const CannabisAlgemeen = () => {
         er in stappen kan worden toegewerkt naar minder THC inname per dag,
         bijvoorbeeld door soorten te nemen die minder THC (en bij voorkeur juist
         meer CBD) bevatten. Voor een overzicht van soorten en bijbehorende THC
-        en CBD gehaltes; zie de cannabis anamnese onder &apos;Afbouwtips&apos;.
+        en CBD gehaltes; zie de cannabis anamnese hierboven.
       </StyledParagraph>
-      <SubSectionHeader> Overige psychische klachten</SubSectionHeader>
-      <StyledParagraph marginBottom="mb-2">
+      <StyledParagraph marginBottom="mb-2" header="Overige psychische klachten">
         Er zijn verschillende klachten waar cannabis juist bij lijkt te helpen.
         Mensen nemen cannabis bijvoorbeeld tegen de pijn, om beter te slapen of
         om rustiger te blijven bij angst en spanning. Echter blijkt dat op lange
@@ -167,10 +164,10 @@ const CannabisOverig = () => {
       <div className="mb-4">
         <CannabisAnamnese />
       </div>
-      <SubSectionHeader>
-        Behandeling en cannabisgebruik: waarom wachten niet helpt
-      </SubSectionHeader>
-      <StyledParagraph marginBottom="mb-2">
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="Behandeling en cannabisgebruik: waarom wachten niet helpt"
+      >
         In de praktijk wordt behandeling vaak uitgesteld totdat iemand volledig
         is gestopt met cannabis. Dit lijkt logisch, maar wordt steeds minder
         ondersteund door wetenschappelijke inzichten en herstelgerichte

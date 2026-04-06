@@ -28,9 +28,9 @@ export default function Page() {
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
-            value="aanvullend"
+            value="overig"
           >
-            Aanvullend
+            Overig
           </TabsTrigger>
         </TabsList>
         <TabsContent value="algemeen">
@@ -39,8 +39,8 @@ export default function Page() {
         <TabsContent value="afbouwtips">
           <AlcoholAfbouwstips />
         </TabsContent>
-        <TabsContent value="aanvullend">
-          <AlcoholAanvullend />
+        <TabsContent value="overig">
+          <AlcoholOverig />
         </TabsContent>
       </Tabs>
     </div>
@@ -58,10 +58,10 @@ const AlcoholAlgemeen = () => {
         onderscheid zit niet in hoeveelheden alleen, maar in relatie, functie en
         gevolgen.
       </StyledParagraph>{" "}
-      <SubSectionHeader>
-        Wanneer spreek je van verslaving in plaats van recreatief gebruik?
-      </SubSectionHeader>
-      <StyledParagraph marginBottom="mb-2">
+      <StyledParagraph
+        marginBottom="mb-2"
+        header=" Wanneer spreek je van verslaving in plaats van recreatief gebruik?"
+      >
         Recreatief gebruik en verslaving verschillen niet in stof, maar in
         dynamiek. Bij recreatief gebruik:
       </StyledParagraph>{" "}
@@ -90,8 +90,10 @@ const AlcoholAlgemeen = () => {
           “Ik moet moeite doen om het niet te doen.”
         </span>
       </StyledParagraph>
-      <SubSectionHeader>Hoe herken je een alcoholverslaving?</SubSectionHeader>
-      <StyledParagraph marginBottom="mb-2">
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="Hoe herken je een alcoholverslaving?"
+      >
         Alcoholverslaving is zelden spectaculair zichtbaar. Het ontstaat vaak
         sluipend, juist bij mensen die “goed functioneren”.
       </StyledParagraph>{" "}
@@ -131,10 +133,10 @@ const AlcoholAlgemeen = () => {
         Cruciaal: alcoholverslaving gaat niet over zwakte, maar over
         automatisering. Het gedrag wordt minder een keuze en meer een reflex.
       </StyledParagraph>{" "}
-      <SubSectionHeader>
-        Welke complicaties kunnen na verloop van tijd optreden?
-      </SubSectionHeader>
-      <StyledParagraph marginBottom="mb-2">
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="Welke complicaties kunnen na verloop van tijd optreden?"
+      >
         Alcohol heeft een brede impact omdat het meerdere systemen tegelijk
         beïnvloedt.
       </StyledParagraph>{" "}
@@ -187,8 +189,10 @@ const AlcoholAlgemeen = () => {
         Belangrijk: de ernst wordt niet bepaald door hoeveel iemand drinkt, maar
         door wat alcohol wegneemt.
       </StyledParagraph>{" "}
-      <SubSectionHeader>Alcohol in de Nederlandse cultuur</SubSectionHeader>
-      <StyledParagraph marginBottom="mb-2">
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="Alcohol in de Nederlandse cultuur<"
+      >
         Alcohol is diep verweven met: gezelligheid, ontspanning, vieren en
         rouwen, volwassenheid en normaliteit
       </StyledParagraph>{" "}
@@ -196,8 +200,10 @@ const AlcoholAlgemeen = () => {
         Niet drinken vraagt vaak méér uitleg dan wel drinken. Dat maakt alcohol
         uniek in presentatie, maar niet in werking.
       </StyledParagraph>{" "}
-      <SubSectionHeader>Is alcohol anders dan andere drugs?</SubSectionHeader>
-      <StyledParagraph marginBottom="mb-2">
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="Is alcohol anders dan andere drugs?"
+      >
         Het eerlijke antwoord is: nee.
       </StyledParagraph>{" "}
       <StyledParagraph marginBottom="mb-2">
@@ -232,7 +238,7 @@ const AlcoholAlgemeen = () => {
 const AlcoholAfbouwstips = () => {
   return (
     <>
-      <div className="mb-6 w-full font-sans text-sm tracking-[1px] text-[#333333]">
+      <div className="mb-6 w-full border border-black p-1 px-2 font-sans text-sm tracking-[1px] text-[#333333]">
         Let op: Stoppen met alcohol kan risicovol zijn. Doe dit daarom altijd in
         overleg met het behandelteam of een verslavingsarts!
       </div>
@@ -284,7 +290,7 @@ const AlcoholAfbouwstips = () => {
   );
 };
 
-const AlcoholAanvullend = () => {
+const AlcoholOverig = () => {
   return (
     <>
       <ol className="flex flex-col px-4">
