@@ -59,6 +59,7 @@ export default function MiddelenPage() {
                   key={route.name}
                   title={route.name}
                   href={route.href}
+                  icon={route.icon}
                 />
               );
             })}

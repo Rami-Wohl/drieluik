@@ -2,7 +2,7 @@ import Link from "next/link";
 
 type MiddelenLinkProps = {
   href: string;
-  icon?: JSX.Element;
+  icon: JSX.Element;
   title: string;
 };
 
@@ -15,7 +15,8 @@ export const MiddelenLink = ({ title, href, icon }: MiddelenLinkProps) => {
       <span className="lg:text-md max-w-full overflow-hidden text-wrap px-2 text-center text-sm font-semibold tracking-[0.5px] text-[#333333] text-opacity-90">
         {title}
       </span>
-      {icon}
+      <div className="h-12 w-12 md:h-16 md:w-16"> {icon}</div>
+      <div />
     </Link>
   );
 };
