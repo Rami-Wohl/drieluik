@@ -1,4 +1,4 @@
-import { AlcoholAfbouwTable } from "~/app/middelen/alcohol/alcohol";
+import { AlcoholAfbouwTable } from "~/app/middelen/alcohol/alcohol-afbouwtabel";
 import { StyledParagraph } from "~/components/ui/text-components/paragraph";
 import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
 import { ListItem } from "~/components/ui/list-item";
