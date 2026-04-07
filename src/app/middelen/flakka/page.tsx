@@ -1,5 +1,4 @@
 import { StyledParagraph } from "~/components/ui/text-components/paragraph";
-import { SubSectionParagraph } from "~/components/ui/text-components/subsection-paragraph";
 import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
@@ -57,7 +56,7 @@ const FlakkaAlgemeen = () => {
       </StyledParagraph>
       <SubSectionHeader>Classificatie:</SubSectionHeader>
       <ul className="mb-8 flex flex-col gap-2 px-4">
-        <ListItem> Synthetische stimulant</ListItem>
+        <ListItem>Synthetische stimulant</ListItem>
         <ListItem>Vergelijkbaar met: amfetamine, methamfetamine</ListItem>
         <ListItem>
           Verschil: <b>sterker, grilliger en psychotischer profiel</b>
@@ -65,7 +64,7 @@ const FlakkaAlgemeen = () => {
       </ul>
       <SubSectionHeader>Toedieningsvormen:</SubSectionHeader>
       <ul className="mb-8 flex flex-col gap-2 px-4">
-        <ListItem> Roken (folie, pijp)</ListItem>
+        <ListItem>Roken (folie, pijp)</ListItem>
         <ListItem>Sniffen </ListItem>
         <ListItem>
           Slikken (Roken geeft snelle, intense piek → hoogste

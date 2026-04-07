@@ -204,7 +204,7 @@ const CannabisOverig = () => {
       <StyledParagraph marginBottom="mb-2">
         Een meer effectieve en humane benadering is om:{" "}
       </StyledParagraph>
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>behandeling te starten ongeacht cannabisgebruik.</ListItem>
         <ListItem>
           samen te onderzoeken welke functie het gebruik heeft.
