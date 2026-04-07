@@ -70,7 +70,7 @@ export function PsychedelicaSection() {
               </SubSectionParagraph>
             </div>
             <SubSectionHeader>Harm reduction tips:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Gebruik in een rustige, veilige omgeving met een tripsitter.
@@ -81,10 +81,11 @@ export function PsychedelicaSection() {
               </ListItem>
             </ul>
             <SubSectionHeader>Advies voor behandelaren:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
-                Bespreek hoe setting en mindset invloed hebben op de ervaring.{" "}
+                Bespreek hoe setting en mindset invloed hebben op de
+                ervaring.{" "}
               </ListItem>
               <ListItem>
                 <span className="font-semibold">
@@ -126,7 +127,7 @@ export function PsychedelicaSection() {
               </SubSectionParagraph>
             </div>
             <SubSectionHeader>Harm reduction tips:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Gebruik kleine doseringen in een gecontroleerde omgeving.{" "}
@@ -137,7 +138,7 @@ export function PsychedelicaSection() {
               </ListItem>
             </ul>
             <SubSectionHeader>Advies voor behandelaren:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Bespreek het gebruik openlijk, vooral als patiënten het als
@@ -175,7 +176,7 @@ export function PsychedelicaSection() {
               </SubSectionParagraph>
             </div>
             <SubSectionHeader>Harm reduction tips:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Gebruik zo weinig mogelijk en met pauzes tussen sessies.
@@ -186,7 +187,7 @@ export function PsychedelicaSection() {
               </ListItem>
             </ul>
             <SubSectionHeader>Advies voor behandelaren:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Ketamine kan ook therapeutisch worden gebruikt (bij depressie).
@@ -229,7 +230,7 @@ export function PsychedelicaSection() {
               </SubSectionParagraph>
             </div>
             <SubSectionHeader>Harm reduction tips:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Beperk gebruik tot lage doses en vermijd het combineren met
@@ -238,7 +239,7 @@ export function PsychedelicaSection() {
               <ListItem>Zorg voor voldoende rust en hydratatie.</ListItem>
             </ul>
             <SubSectionHeader>Advies voor behandelaren:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Bespreek de snelle opkomst van afhankelijkheid en het korte
@@ -280,7 +281,7 @@ export function PsychedelicaSection() {
               </SubSectionParagraph>
             </div>
             <SubSectionHeader>Harm reduction tips:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Gebruik zeer lage doseringen vanwege de onvoorspelbaarheid van
@@ -291,7 +292,7 @@ export function PsychedelicaSection() {
               </ListItem>
             </ul>
             <SubSectionHeader>Advies voor behandelaren:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Bespreek de lange werkingsduur en de risico&apos;s van herhaald
@@ -331,7 +332,7 @@ export function PsychedelicaSection() {
               </SubSectionParagraph>
             </div>
             <SubSectionHeader>Harm reduction tips:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Gebruik enkel in een veilige omgeving met begeleiding.{" "}
@@ -339,7 +340,7 @@ export function PsychedelicaSection() {
               <ListItem>Vermijd gebruik bij psychische kwetsbaarheid.</ListItem>
             </ul>
             <SubSectionHeader>Advies voor behandelaren:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Wees alert op patiënten die ayahuasca-ceremonies gebruiken als
@@ -376,7 +377,7 @@ export function PsychedelicaSection() {
               </SubSectionParagraph>
             </div>
             <SubSectionHeader>Harm reduction tips:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Gebruik zittend of liggend in een veilige omgeving.
@@ -386,7 +387,7 @@ export function PsychedelicaSection() {
               </ListItem>
             </ul>
             <SubSectionHeader>Advies voor behandelaren:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Bespreek het korte maar overweldigende effect van salvia en de
@@ -424,7 +425,7 @@ export function PsychedelicaSection() {
               </SubSectionParagraph>
             </div>
             <SubSectionHeader>Harm reduction tips:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Vermijd het gebruik van PCP vanwege de hoge risico&apos;s.{" "}
@@ -434,7 +435,7 @@ export function PsychedelicaSection() {
               </ListItem>
             </ul>
             <SubSectionHeader>Advies voor behandelaren:</SubSectionHeader>
-            <ul className="mb-8 flex list-inside flex-col gap-2">
+            <ul className="mb-8 flex flex-col gap-2 px-4">
               <ListItem>
                 {" "}
                 Bij vermoeden van gebruik: monitor agressie of psychosesymptomen

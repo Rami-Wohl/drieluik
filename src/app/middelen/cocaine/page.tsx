@@ -87,7 +87,7 @@ const CocaineAlgemeen = () => {
         </SubSectionParagraph>
       </div>
       <SubSectionHeader>Hoe herken je gebruik?</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           {" "}
           Symptomen zoals spraakzaamheid, opgewektheid, pupilvergroting, snelle
@@ -158,7 +158,7 @@ const CocaineAlgemeen = () => {
       <SubSectionHeader>
         Psychische impact en sociale aspecten:
       </SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Bespreek hoe cocaïnegebruik vaak wordt gekoppeld aan prestatiedrang,
           sociale druk, of escapisme.
@@ -170,7 +170,7 @@ const CocaineAlgemeen = () => {
         </ListItem>
       </ul>
       <SubSectionHeader>Voorlichting over herstel: </SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Leg uit dat herstel vaak gepaard gaat met psychische klachten zoals
           depressie en dat professionele begeleiding essentieel is.
@@ -181,7 +181,7 @@ const CocaineAlgemeen = () => {
         </ListItem>
       </ul>
       <SubSectionHeader>Verantwoorde communicatie: </SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Wees open en niet-oordelend in gesprekken over cocaïnegebruik.
         </ListItem>

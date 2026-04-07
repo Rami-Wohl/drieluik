@@ -84,7 +84,7 @@ const LachgasAlgemeen = () => {
         </SubSectionParagraph>
       </div>
       <SubSectionHeader>Hoe herken je gebruik?</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           {" "}
           Restanten van ballonnen en ampullen of cilinders in de omgeving.
@@ -154,7 +154,7 @@ const LachgasVoorlichting = () => {
         </SubSectionParagraph>
       </div>
       <SubSectionHeader>Verantwoorde communicatie:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Maak gebruikers bewust van de risico&apos;s zonder te oordelen.
         </ListItem>
@@ -177,10 +177,11 @@ const LachgasAfbouwtips = () => {
   return (
     <>
       <SubSectionHeader>Is afbouwen altijd nodig?</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Lachgas veroorzaakt geen fysieke afhankelijkheid zoals alcohol of
-          opiaten, maar psychologische afhankelijkheid kan een uitdaging zijn.{" "}
+          opiaten, maar psychologische afhankelijkheid kan een uitdaging
+          zijn.{" "}
         </ListItem>
         <ListItem>
           Afbouwen kan nuttig zijn voor patiënten die gewend zijn aan frequent

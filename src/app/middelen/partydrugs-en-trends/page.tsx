@@ -84,7 +84,7 @@ const PartydrugsAlgemeen = () => {
         </SubSectionParagraph>
       </div>
       <SubSectionHeader>Hoe herken je gebruik?</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           {" "}
           Restanten van ballonnen en ampullen of cilinders in de omgeving.
@@ -154,7 +154,7 @@ const PartydrugsVoorlichting = () => {
         </SubSectionParagraph>
       </div>
       <SubSectionHeader>Verantwoorde communicatie:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Maak gebruikers bewust van de risico&apos;s zonder te oordelen.
         </ListItem>
@@ -177,7 +177,7 @@ const PartydrugsAfbouwtips = () => {
   return (
     <>
       <SubSectionHeader>Is afbouwen altijd nodig?</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Partydrugs veroorzaakt geen fysieke afhankelijkheid zoals alcohol of
           opiaten, maar psychologische afhankelijkheid kan een uitdaging

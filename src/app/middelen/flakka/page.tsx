@@ -56,7 +56,7 @@ const FlakkaAlgemeen = () => {
         noradrenalinesysteem en heeft een langdurige, intense werking.
       </StyledParagraph>
       <SubSectionHeader>Classificatie:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem> Synthetische stimulant</ListItem>
         <ListItem>Vergelijkbaar met: amfetamine, methamfetamine</ListItem>
         <ListItem>
@@ -64,7 +64,7 @@ const FlakkaAlgemeen = () => {
         </ListItem>
       </ul>
       <SubSectionHeader>Toedieningsvormen:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem> Roken (folie, pijp)</ListItem>
         <ListItem>Sniffen </ListItem>
         <ListItem>
@@ -73,14 +73,14 @@ const FlakkaAlgemeen = () => {
         </ListItem>
       </ul>
       <SubSectionHeader>Effecten (kortdurend):</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>Sterke alertheid en energie</ListItem>
         <ListItem>Gevoel van macht/onkwetsbaarheid</ListItem>
         <ListItem>Onderdrukking van vermoeidheid, honger en angst</ListItem>
         <ListItem>Verhoogde focus (subjectief)</ListItem>
       </ul>
       <SubSectionHeader>Bijwerkingen/risico’s:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>Paranoia en achterdocht</ListItem>
         <ListItem>Ernstige angst, paniek</ListItem>
         <ListItem>Slaaploosheid (meerdere dagen)</ListItem>
@@ -93,7 +93,7 @@ const FlakkaAlgemeen = () => {
         </ListItem>
       </ul>
       <SubSectionHeader>Verslavingspotentie:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>Hoog</ListItem>
         <ListItem>Snelle tolerantieontwikkeling</ListItem>
         <ListItem>Sterke craving, vooral mentaal</ListItem>
@@ -115,7 +115,7 @@ const FlakkaAfbouwtips = () => {
       </div>
 
       <SubSectionHeader>A. Signaleren van risico fases</SubSectionHeader>
-      <ul className="mb-4 flex list-inside flex-col gap-2">
+      <ul className="mb-4 flex flex-col gap-2 px-4">
         <ListItem>Gebruiker overschat eigen functioneren</ListItem>
         <ListItem>Verminderd ziektebesef</ListItem>
         <ListItem>Toenemende achterdocht richting hulpverlening</ListItem>
@@ -125,7 +125,7 @@ const FlakkaAfbouwtips = () => {
         <b>Afbouwen begint vaak met stabiliseren, niet met stoppen.</b>
       </StyledParagraph>
       <SubSectionHeader>B. Eerste behandelprioriteiten</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           <b>Slaap herstellen</b>
           <br />
@@ -143,10 +143,10 @@ const FlakkaAfbouwtips = () => {
         </ListItem>
       </ul>
       <SubSectionHeader>C. Afbouw in de praktijk</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Abrupt stoppen kan leiden tot:
-          <ul className="my-2 flex list-inside flex-col gap-2 pl-4">
+          <ul className="my-2 flex flex-col gap-2 px-4">
             <ListItem>extreme uitputting</ListItem>
             <ListItem>depressieve klachten</ListItem>
             <ListItem>suïcidaliteit</ListItem>
@@ -165,7 +165,7 @@ const FlakkaAfbouwtips = () => {
       <StyledParagraph marginBottom="mb-2">
         Craving bij flakka is vaak:
       </StyledParagraph>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>cognitief (“ik moet scherp zijn”)</ListItem>
         <ListItem>
           existentieel (“zonder dit kan ik niet functioneren”)
@@ -185,10 +185,10 @@ const FlakkaOverig = () => {
       <StyledParagraph marginBottom="mb-2">
         Bij flakka zien we relatief vaak:
       </StyledParagraph>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Willen ontsnappen aan:
-          <ul className="my-2 flex list-inside flex-col gap-2 pl-4">
+          <ul className="my-2 flex flex-col gap-2 px-4">
             <ListItem>innerlijke onrust</ListItem>
             <ListItem>somberheid</ListItem>
             <ListItem>trauma-gerelateerde spanning</ListItem>
@@ -196,7 +196,7 @@ const FlakkaOverig = () => {
         </ListItem>
         <ListItem>
           Behoefte aan:
-          <ul className="my-2 flex list-inside flex-col gap-2 pl-4">
+          <ul className="my-2 flex flex-col gap-2 px-4">
             <ListItem>controle</ListItem>
             <ListItem>kracht</ListItem>
             <ListItem>versnelling of stilzetten van gedachten</ListItem>
@@ -204,7 +204,7 @@ const FlakkaOverig = () => {
         </ListItem>
         <ListItem>
           Vermijden van:
-          <ul className="my-2 flex list-inside flex-col gap-2 pl-4">
+          <ul className="my-2 flex flex-col gap-2 px-4">
             <ListItem>gevoelens van machteloosheid</ListItem>
             <ListItem>afhankelijkheid van anderen</ListItem>
           </ul>
@@ -217,7 +217,7 @@ const FlakkaOverig = () => {
       <SubSectionHeader>
         Differentiaaldiagnostische aandachtspunten
       </SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Flakka-geïnduceerde psychose is <b>niet hetzelfde</b> als primaire
           psychotische stoornis (maar kan hier wel in overlopen)
@@ -234,14 +234,14 @@ const FlakkaOverig = () => {
 
       <SubSectionHeader>Houding van de behandelaar</SubSectionHeader>
       <StyledParagraph marginBottom="mb-2">Wat helpt:</StyledParagraph>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>Rust, voorspelbaarheid</ListItem>
         <ListItem>Eenduidigheid </ListItem>
         <ListItem>Begrenzen zonder escaleren </ListItem>
         <ListItem>Blijven erkennen waarom iemand gebruikt </ListItem>
       </ul>
       <StyledParagraph>Wat averechts werkt:</StyledParagraph>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>Confronterend doorvragen op inhoud van wanen</ListItem>
         <ListItem>Moraliserende taal</ListItem>
         <ListItem>Te snelle focus op abstinentie</ListItem>

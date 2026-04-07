@@ -163,7 +163,7 @@ const GhbVoorlichting = () => {
         </SubSectionParagraph>
       </div>
       <SubSectionHeader>Chemsex en seksuele voorlichting:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Vraag door naar het gebruik van GHB in een chemsexcontext. Dit kan
           wijzen op risicovol seksueel gedrag of onderliggende problematiek.
@@ -175,7 +175,7 @@ const GhbVoorlichting = () => {
         </ListItem>
       </ul>
       <SubSectionHeader>Verantwoorde communicatie:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         {" "}
         <ListItem>
           Leg uit dat GHB snel verslavend kan zijn, maar veroordeel niet.
@@ -192,7 +192,7 @@ const GhbAfbouwtips = () => {
   return (
     <>
       <SubSectionHeader>Klinische afbouw noodzakelijk:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Intensief gebruik van GHB (zoals meerdere doses per dag) vereist
           afbouw onder klinisch toezicht vanwege het hoge risico op ernstige
@@ -231,7 +231,7 @@ const GhbAfbouwtips = () => {
         </SubSectionParagraph>
       </div>
       <SubSectionHeader>Ondersteuning bij afbouw:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Psychologische begeleiding, zoals cognitieve gedragstherapie en
           motiverende gespreksvoering.
@@ -244,7 +244,7 @@ const GhbAfbouwtips = () => {
         </ListItem>
       </ul>
       <SubSectionHeader>Herstel en nazorg:</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Bespreek het risico op terugval en stel een plan op om triggers te
           vermijden.

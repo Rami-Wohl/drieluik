@@ -82,7 +82,7 @@ const SpeedAlgemeen = () => {
         </SubSectionParagraph>
       </div>
       <SubSectionHeader>Hoe herken je gebruik?</SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           {" "}
           Symptomen zoals slapeloosheid, overmatig praten, nervositeit,
@@ -149,7 +149,7 @@ const SpeedVoorlichting = () => {
       <SubSectionHeader>
         Signalen van problematisch gebruik bespreken met de patiënt:
       </SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>Frequent gebruik of moeite om te stoppen.</ListItem>
         <ListItem>
           Gebruik ondanks negatieve gevolgen (gezondheid, werk, relaties).
@@ -222,7 +222,7 @@ const SpeedAfbouwen = () => {
       <SubSectionHeader>
         Wanneer direct stoppen aan te raden is:{" "}
       </SubSectionHeader>
-      <ul className="mb-8 flex list-inside flex-col gap-2">
+      <ul className="mb-8 flex flex-col gap-2 px-4">
         <ListItem>
           Bij gevaarlijk gebruik (bijvoorbeeld in combinatie met een zwakke
           gezondheid of cardiovasculaire problemen).

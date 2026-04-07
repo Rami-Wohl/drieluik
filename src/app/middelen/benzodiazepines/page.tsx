@@ -70,7 +70,7 @@ const BenzosAlgemeen = () => {
         Voorlichting aan patiënten is belangrijk, omdat de voordelen en risico’s
         dicht bij elkaar liggen. Wat vaak helpend is om uit te leggen:
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>
           <b>Het middel onderdrukt klachten, maar lost de oorzaak niet op.</b>
           <br />
@@ -124,7 +124,7 @@ const BenzosAlgemeen = () => {
         tijdelijk hulpmiddel in plaats van een oplossing. Het gesprek kan zich
         richten op:{" "}
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>wat het middel iemand op dit moment oplevert.</ListItem>
         <ListItem>
           welke functie het vervult (bijv. slaap, demping, controle).
@@ -155,7 +155,7 @@ const BenzosAfbouwtips = () => {
       <StyledParagraph marginBottom="mb-2">
         Een aantal uitgangspunten voor de praktijk:
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>
           <b>Bouw geleidelijk af</b>
           <br />

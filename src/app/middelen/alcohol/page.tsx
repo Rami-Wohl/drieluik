@@ -65,14 +65,14 @@ const AlcoholAlgemeen = () => {
         Recreatief gebruik en verslaving verschillen niet in stof, maar in
         dynamiek. Bij recreatief gebruik:
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>is alcohol een middel, geen doel.</ListItem>
         <ListItem>kan iemand zonder veel moeite stoppen of minderen.</ListItem>
         <ListItem>herstelt lichaam en psyche vanzelf na excessen.</ListItem>
         <ListItem>blijft alcohol geïntegreerd in een breder leven. </ListItem>
       </ul>
       <StyledParagraph marginBottom="mb-2">Bij verslaving:</StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>wordt alcohol een regulatiestrategie.</ListItem>
         <ListItem>kost niet-drinken actieve inspanning.</ListItem>
         <ListItem>keert onrust of leegte terug zodra alcohol wegvalt.</ListItem>
@@ -100,7 +100,7 @@ const AlcoholAlgemeen = () => {
       <StyledParagraph marginBottom="mb-2">
         Psychische en gedragsmatige signalen:
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>drinken om te ontspannen, slapen, durven of voelen.</ListItem>
         <ListItem>
           steeds vaker een aanleiding nodig hebben om níét te drinken.
@@ -111,7 +111,7 @@ const AlcoholAlgemeen = () => {
         <ListItem>alcohol wordt onderdeel van identiteit of ritme.</ListItem>
       </ul>
       <StyledParagraph marginBottom="mb-2">Controleverlies:</StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>vaker of langer drinken dan gepland.</ListItem>
         <ListItem>moeite hebben met stoppen zodra je begint.</ListItem>
         <ListItem>
@@ -119,7 +119,7 @@ const AlcoholAlgemeen = () => {
         </ListItem>
       </ul>
       <StyledParagraph marginBottom="mb-2">Sociale signalen:</StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>conflicten over drinken.</ListItem>
         <ListItem>verbergen van hoeveel of wanneer je drinkt.</ListItem>
         <ListItem>
@@ -143,7 +143,7 @@ const AlcoholAlgemeen = () => {
       <StyledParagraph marginBottom="mb-2">
         Lichamelijke complicaties:
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>leververvetting, hepatitis, cirrose.</ListItem>
         <ListItem>
           verhoogd risico op kanker (o.a. mond, slokdarm, lever, borst).
@@ -157,7 +157,7 @@ const AlcoholAlgemeen = () => {
       <StyledParagraph marginBottom="mb-2">
         Psychische complicaties:
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>depressieve klachten of angststoornissen.</ListItem>
         <ListItem>
           slaapstoornissen (ook als alcohol “helpt” bij inslapen).
@@ -168,7 +168,7 @@ const AlcoholAlgemeen = () => {
       <StyledParagraph marginBottom="mb-2">
         Cognitieve en emotionele verschraling:
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>verminderde emotieregulatie.</ListItem>
         <ListItem>lagere stresstolerantie.</ListItem>
         <ListItem>
@@ -178,7 +178,7 @@ const AlcoholAlgemeen = () => {
       <StyledParagraph marginBottom="mb-2">
         Sociale en maatschappelijke gevolgen:
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>relationele schade.</ListItem>
         <ListItem>werkproblemen of verminderde prestaties.</ListItem>
         <ListItem>financiële stress.</ListItem>
@@ -209,7 +209,7 @@ const AlcoholAlgemeen = () => {
       <StyledParagraph marginBottom="mb-2">
         Alcohol verschilt farmacologisch niet principieel van andere drugs. Het:
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>beïnvloedt het beloningssysteem.</ListItem>
         <ListItem>werkt dempend op spanning.</ListItem>
         <ListItem>kan tolerantie en afhankelijkheid veroorzaken.</ListItem>
@@ -219,7 +219,7 @@ const AlcoholAlgemeen = () => {
       <StyledParagraph marginBottom="mb-2">
         Het echte verschil zit niet in het middel, maar in:
       </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2">
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
         <ListItem>maatschappelijke acceptatie.</ListItem>
 
         <ListItem>beschikbaarheid.</ListItem>
@@ -247,7 +247,7 @@ const AlcoholAfbouwstips = () => {
           <SubSectionHeader>
             Start met een intake om de huidige situatie te begrijpen:
           </SubSectionHeader>
-          <ul className="mb-6 mt-2 flex flex-col gap-2">
+          <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
             <ListItem>
               Gemiddelde dagelijkse consumptie en soort alcohol.{" "}
             </ListItem>
