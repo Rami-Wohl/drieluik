@@ -18,29 +18,29 @@ export default function Page() {
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
             value="algemeen"
           >
-            Algemene Kennis
+            Algemeen
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
-            value="voorlichting"
+            value="afbouwtips"
           >
-            Voorlichting
+            Afbouwtips
           </TabsTrigger>
           <TabsTrigger
             className="w-full bg-red-900 bg-opacity-30 font-sans text-[1.1rem] tracking-[0.1rem] opacity-90 hover:bg-opacity-50 data-[state=active]:bg-opacity-50"
-            value="afbouwen"
+            value="overig"
           >
-            Afbouwen
+            Overig
           </TabsTrigger>
         </TabsList>
         <TabsContent value="algemeen">
           <SpeedAlgemeen />
         </TabsContent>
-        <TabsContent value="voorlichting">
-          <SpeedVoorlichting />
+        <TabsContent value="afbouwtips">
+          <SpeedAfbouwtips />
         </TabsContent>
-        <TabsContent value="afbouwen">
-          <SpeedAfbouwen />
+        <TabsContent value="overig">
+          <SpeedOverig />
         </TabsContent>
       </Tabs>
     </div>
@@ -98,13 +98,6 @@ const SpeedAlgemeen = () => {
         studeeruren vol te houden. Langdurig gebruik kan leiden tot sociale
         isolatie en problemen met relaties, werk, of financiën.
       </StyledParagraph>
-    </>
-  );
-};
-
-const SpeedVoorlichting = () => {
-  return (
-    <>
       <SubSectionHeader>Risico’s van gebruik:</SubSectionHeader>
       <div className="mb-8 flex flex-col gap-2">
         {" "}
@@ -167,7 +160,7 @@ const SpeedVoorlichting = () => {
   );
 };
 
-const SpeedAfbouwen = () => {
+const SpeedAfbouwtips = () => {
   return (
     <>
       <SubSectionHeader>Is afbouwen altijd nodig?</SubSectionHeader>
@@ -230,6 +223,99 @@ const SpeedAfbouwen = () => {
         <ListItem>
           Als de gebruiker ernstige psychische klachten ontwikkelt (zoals
           psychoses).
+        </ListItem>
+      </ul>
+    </>
+  );
+};
+
+const SpeedOverig = () => {
+  return (
+    <>
+      <StyledParagraph marginBottom="mb-2" header="Maatschappelijke context">
+        Speed (amfetamine) staat niet op zichzelf. Het zit in dezelfde “familie”
+        als medicijnen die veel worden voorgeschreven bij ADHD, zoals
+        methylfenidaat (bijvoorbeeld Ritalin). Beide middelen werken op
+        vergelijkbare systemen in de hersenen, met name dopamine en
+        noradrenaline. Het verschil zit vooral in dosering, snelheid van opname
+        en gebruikscontext.
+      </StyledParagraph>
+      <StyledParagraph>
+        Medicatie bij ADHD wordt doorgaans in gecontroleerde doseringen
+        gebruikt, waardoor het helpt om focus en impulscontrole te verbeteren.
+        Bij recreatief gebruik van speed gaat het vaak om hogere doseringen en
+        snellere opname (bijvoorbeeld snuiven of slikken zonder medische
+        begeleiding), wat juist kan leiden tot euforie, ontremming en
+        uiteindelijk afhankelijkheid.{" "}
+      </StyledParagraph>
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="ADHD en gevoeligheid voor verslaving"
+      >
+        Mensen met ADHD hebben een verhoogde kans op verslavingsproblematiek.
+        Dit hangt samen met factoren zoals impulsiviteit, moeite met
+        emotieregulatie en een verhoogde behoefte aan prikkels of beloning.
+      </StyledParagraph>
+      <StyledParagraph>
+        Dat betekent niet automatisch dat iemand met ADHD verslaafd raakt, maar
+        wel dat middelen zoals speed soms extra “goed lijken te werken” in het
+        begin. Bijvoorbeeld omdat iemand zich voor het eerst rustig, gefocust of
+        energiek voelt. Dit kan het risico vergroten dat gebruik zich herhaalt
+        en inslijpt.{" "}
+      </StyledParagraph>
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="Misvatting: “ADHD-medicatie leidt tot verslaving”"
+      >
+        Er bestaat een hardnekkig idee dat ADHD-medicatie mensen juist richting
+        verslaving duwt. Onderzoek laat echter zien dat dit niet klopt.
+      </StyledParagraph>
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
+        <ListItem>ADHD zelf verhoogt het risico op middelengebruik</ListItem>
+        <ListItem>
+          Behandeling met medicatie lijkt dat risico eerder te verlagen dan te
+          verhogen
+        </ListItem>
+      </ul>
+      <StyledParagraph>
+        Wel is het zo dat deze middelen misbruikt kunnen worden als ze anders
+        worden gebruikt dan voorgeschreven (bijvoorbeeld hogere doseringen of
+        andere toedieningsroutes).
+      </StyledParagraph>
+      <StyledParagraph
+        marginBottom="mb-2"
+        header="Waarom speed “klikt” voor sommige mensen"
+      >
+        Voor een deel van de gebruikers voelt speed niet als “losgaan”, maar
+        juist als:
+      </StyledParagraph>
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
+        <ListItem>eindelijk rust in het hoofd</ListItem>
+        <ListItem>meer overzicht</ListItem>
+        <ListItem>minder sociale spanning</ListItem>
+        <ListItem>meer energie en richting</ListItem>
+      </ul>
+      <StyledParagraph>
+        Dat maakt het verraderlijk. Wat begint als iets functioneels (“dit helpt
+        mij”) kan langzaam verschuiven naar afhankelijkheid, juist omdat het zo
+        goed lijkt aan te sluiten bij wat iemand mist.
+      </StyledParagraph>
+      <SubSectionHeader>Kort samengevat</SubSectionHeader>
+      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
+        <ListItem>
+          Speed en ADHD-medicatie lijken farmacologisch op elkaar, maar worden
+          anders gebruikt
+        </ListItem>
+        <ListItem>
+          ADHD vergroot de kans op verslaving, niet de medicatie zelf
+        </ListItem>
+        <ListItem>
+          Speed kan voor sommige mensen voelen als een “oplossing”, wat het
+          risico op herhaald gebruik vergroot
+        </ListItem>
+        <ListItem>
+          Misbruik (hoge dosering, verkeerde context) is de belangrijkste
+          risicofactor
         </ListItem>
       </ul>
     </>
