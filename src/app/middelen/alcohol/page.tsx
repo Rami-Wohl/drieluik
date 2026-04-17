@@ -52,184 +52,79 @@ const AlcoholAlgemeen = () => {
     <>
       <StyledParagraph>
         Alcohol is één van de meest genormaliseerde psychoactieve stoffen in
-        Nederland. Juist daardoor is het soms lastig te zien wanneer gebruik
-        verschuift van recreatief naar problematisch. Niet elk glas is een
-        probleem, en niet elke zware avond maakt iemand verslaafd. Het
-        onderscheid zit niet in hoeveelheden alleen, maar in relatie, functie en
-        gevolgen.
-      </StyledParagraph>{" "}
-      <StyledParagraph
-        marginBottom="mb-2"
-        header=" Wanneer spreek je van verslaving in plaats van recreatief gebruik?"
-      >
-        Recreatief gebruik en verslaving verschillen niet in stof, maar in
-        dynamiek. Bij recreatief gebruik:
-      </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>is alcohol een middel, geen doel.</ListItem>
-        <ListItem>kan iemand zonder veel moeite stoppen of minderen.</ListItem>
-        <ListItem>herstelt lichaam en psyche vanzelf na excessen.</ListItem>
-        <ListItem>blijft alcohol geïntegreerd in een breder leven. </ListItem>
-      </ul>
-      <StyledParagraph marginBottom="mb-2">Bij verslaving:</StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>wordt alcohol een regulatiestrategie.</ListItem>
-        <ListItem>kost niet-drinken actieve inspanning.</ListItem>
-        <ListItem>keert onrust of leegte terug zodra alcohol wegvalt.</ListItem>
-        <ListItem>verschuift het leven langzaam rondom het gebruik. </ListItem>
-      </ul>
-      <StyledParagraph marginBottom="mb-2">
-        Een belangrijk criterium is strijd.
-      </StyledParagraph>
-      <StyledParagraph marginBottom="mb-2">
-        Niet: <span className="italic">“Ik drink graag.” </span>{" "}
-      </StyledParagraph>
-      <StyledParagraph>
-        Maar:{" "}
-        <span className="italic">
-          “Ik moet moeite doen om het niet te doen.”
-        </span>
-      </StyledParagraph>
-      <StyledParagraph
-        marginBottom="mb-2"
-        header="Hoe herken je een alcoholverslaving?"
-      >
-        Alcoholverslaving is zelden spectaculair zichtbaar. Het ontstaat vaak
-        sluipend, juist bij mensen die “goed functioneren”.
-      </StyledParagraph>{" "}
-      <StyledParagraph marginBottom="mb-2">
-        Psychische en gedragsmatige signalen:
-      </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>drinken om te ontspannen, slapen, durven of voelen.</ListItem>
-        <ListItem>
-          steeds vaker een aanleiding nodig hebben om níét te drinken.
-        </ListItem>
-        <ListItem>beloftes aan jezelf die niet standhouden.</ListItem>
-        <ListItem>bagatelliseren of rationaliseren van gebruik.</ListItem>
-        <ListItem>irritatie of onrust bij (gedwongen) onthouding.</ListItem>
-        <ListItem>alcohol wordt onderdeel van identiteit of ritme.</ListItem>
-      </ul>
-      <StyledParagraph marginBottom="mb-2">Controleverlies:</StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>vaker of langer drinken dan gepland.</ListItem>
-        <ListItem>moeite hebben met stoppen zodra je begint.</ListItem>
-        <ListItem>
-          steeds vaker momenten waarop alcohol “er gewoon bij hoort”.
-        </ListItem>
-      </ul>
-      <StyledParagraph marginBottom="mb-2">Sociale signalen:</StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>conflicten over drinken.</ListItem>
-        <ListItem>verbergen van hoeveel of wanneer je drinkt.</ListItem>
-        <ListItem>
-          sociale activiteiten vermijden waar alcohol geen rol speelt.
-        </ListItem>
-        <ListItem>
-          relaties die verschralen of onder druk komen te staan.
-        </ListItem>
-      </ul>
-      <StyledParagraph>
-        Cruciaal: alcoholverslaving gaat niet over zwakte, maar over
-        automatisering. Het gedrag wordt minder een keuze en meer een reflex.
-      </StyledParagraph>{" "}
-      <StyledParagraph
-        marginBottom="mb-2"
-        header="Welke complicaties kunnen na verloop van tijd optreden?"
-      >
-        Alcohol heeft een brede impact omdat het meerdere systemen tegelijk
-        beïnvloedt.
-      </StyledParagraph>{" "}
-      <StyledParagraph marginBottom="mb-2">
-        Lichamelijke complicaties:
-      </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>leververvetting, hepatitis, cirrose.</ListItem>
-        <ListItem>
-          verhoogd risico op kanker (o.a. mond, slokdarm, lever, borst).
-        </ListItem>
-        <ListItem>hoge bloeddruk, hartritmestoornissen.</ListItem>
-        <ListItem>maag- en darmklachten.</ListItem>
-        <ListItem>
-          neurologische schade (geheugen, concentratie, coördinatie).
-        </ListItem>
-      </ul>
-      <StyledParagraph marginBottom="mb-2">
-        Psychische complicaties:
-      </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>depressieve klachten of angststoornissen.</ListItem>
-        <ListItem>
-          slaapstoornissen (ook als alcohol “helpt” bij inslapen).
-        </ListItem>
-        <ListItem>verhoogde stressgevoeligheid.</ListItem>
-        <ListItem>verergering van trauma- en stemmingsproblematiek.</ListItem>
-      </ul>
-      <StyledParagraph marginBottom="mb-2">
-        Cognitieve en emotionele verschraling:
-      </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>verminderde emotieregulatie.</ListItem>
-        <ListItem>lagere stresstolerantie.</ListItem>
-        <ListItem>
-          afhankelijkheid van alcohol voor ontspanning of expressie.
-        </ListItem>
-      </ul>
-      <StyledParagraph marginBottom="mb-2">
-        Sociale en maatschappelijke gevolgen:
-      </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>relationele schade.</ListItem>
-        <ListItem>werkproblemen of verminderde prestaties.</ListItem>
-        <ListItem>financiële stress.</ListItem>
-        <ListItem>schaamte en geheimhouding.</ListItem>
-        <ListItem>sociaal isolement.</ListItem>
-      </ul>
-      <StyledParagraph>
-        Belangrijk: de ernst wordt niet bepaald door hoeveel iemand drinkt, maar
-        door wat alcohol wegneemt.
-      </StyledParagraph>{" "}
-      <StyledParagraph
-        marginBottom="mb-2"
-        header="Alcohol in de Nederlandse cultuur<"
-      >
-        Alcohol is diep verweven met: gezelligheid, ontspanning, vieren en
-        rouwen, volwassenheid en normaliteit
+        Nederland. Juist daardoor is problematisch gebruik vaak moeilijker te
+        herkennen dan bij andere middelen. Niet omdat de signalen er niet zijn,
+        maar omdat ze minder opvallen. Drinken past binnen sociale situaties,
+        wordt verwacht en vaak zelfs aangemoedigd. Daardoor verschuift de grens
+        tussen recreatief en problematisch gebruik geleidelijk, zonder duidelijk
+        kantelpunt.
       </StyledParagraph>{" "}
       <StyledParagraph>
-        Niet drinken vraagt vaak méér uitleg dan wel drinken. Dat maakt alcohol
-        uniek in presentatie, maar niet in werking.
+        Voor behandelaars is het daarom belangrijk om niet alleen te kijken naar
+        hoeveel iemand drinkt, maar vooral naar de functie van het gebruik en de
+        mate van controle. Alcohol wordt problematisch wanneer het een vaste rol
+        krijgt in emotieregulatie, ontspanning of functioneren. Dat zie je
+        bijvoorbeeld wanneer iemand alcohol nodig heeft om tot rust te komen, te
+        slapen, sociale situaties aan te kunnen of juist om gevoelens te dempen.
       </StyledParagraph>{" "}
-      <StyledParagraph
-        marginBottom="mb-2"
-        header="Is alcohol anders dan andere drugs?"
-      >
-        Het eerlijke antwoord is: nee.
-      </StyledParagraph>{" "}
-      <StyledParagraph marginBottom="mb-2">
-        Alcohol verschilt farmacologisch niet principieel van andere drugs. Het:
-      </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>beïnvloedt het beloningssysteem.</ListItem>
-        <ListItem>werkt dempend op spanning.</ListItem>
-        <ListItem>kan tolerantie en afhankelijkheid veroorzaken.</ListItem>
-        <ListItem>heeft ontwenningsverschijnselen.</ListItem>
-        <ListItem>kent zowel psychische als lichamelijke schade.</ListItem>
-      </ul>
-      <StyledParagraph marginBottom="mb-2">
-        Het echte verschil zit niet in het middel, maar in:
-      </StyledParagraph>{" "}
-      <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-        <ListItem>maatschappelijke acceptatie.</ListItem>
-
-        <ListItem>beschikbaarheid.</ListItem>
-        <ListItem>culturele normalisering.</ListItem>
-        <ListItem>juridische status.</ListItem>
-      </ul>
       <StyledParagraph>
-        Alcohol is geen “milde uitzondering”, maar een volledig erkende drug die
-        toevallig sociaal is ingebed. Dat maakt problematisch gebruik minder
-        zichtbaar, niet minder ernstig.
+        Een praktisch aanknopingspunt in de voorlichting is het begrip strijd.
+        Niet: “drink je veel?”, maar:
+        <br />
+        <i>hoeveel moeite kost het je om niet te drinken?</i>
+        Wanneer niet-drinken inspanning vraagt, verschuift gebruik vaak van
+        keuze naar automatisme.
+      </StyledParagraph>{" "}
+      <StyledParagraph>
+        Herkenning zit zelden in één duidelijk signaal, maar in patronen. Denk
+        aan gebruik dat steeds vaker vanzelfsprekend wordt, aan momenten waarop
+        iemand vooraf iets anders van plan was dan wat er uiteindelijk gebeurt,
+        of aan het langzaam verdwijnen van alternatieve manieren om te
+        ontspannen. Ook subtiele vormen van controleverlies zijn relevant: vaker
+        drinken dan gepland, moeite met stoppen als iemand eenmaal begonnen is,
+        of het steeds opnieuw maken van afspraken met zichzelf die niet
+        standhouden.
+      </StyledParagraph>{" "}
+      <StyledParagraph>
+        Wat helpt in de voorlichting is om het gesprek weg te halen van schuld
+        en richting mechanisme te brengen. Alcoholverslaving gaat niet over
+        zwakte, maar over herhaling. Gedrag dat vaak genoeg wordt gekoppeld aan
+        verlichting of ontspanning, wordt op den duur automatisch. Dat maakt het
+        begrijpelijk, en juist daardoor ook behandelbaar.
+      </StyledParagraph>{" "}
+      <StyledParagraph>
+        Alcohol onderscheidt zich van veel andere middelen niet zozeer door hoe
+        het werkt, maar door de context waarin het gebruikt wordt. Waar andere
+        middelen vaak een duidelijke grens hebben (je gebruikt of je gebruikt
+        niet), zit alcohol verweven in het dagelijks leven. Het is aanwezig bij
+        sociale momenten, rituelen en ontspanning. Daardoor ontstaat een
+        situatie waarin iemand tegelijkertijd probeert te minderen én continu
+        wordt blootgesteld aan cues om te drinken.
+      </StyledParagraph>{" "}
+      <StyledParagraph>
+        Dat maakt werken met alcoholverslaving anders dan bij veel andere
+        middelen. Stoppen betekent vaak niet alleen afstand nemen van een stof,
+        maar ook opnieuw leren omgaan met situaties die voorheen automatisch met
+        alcohol gepaard gingen. Voorlichting kan hier helpen door dit expliciet
+        te maken: het gaat niet alleen om minder drinken, maar om andere
+        manieren ontwikkelen om met spanning, verveling, sociale druk en emoties
+        om te gaan.
+      </StyledParagraph>{" "}
+      <StyledParagraph>
+        Tegelijk vraagt alcohol om een andere klinische alertheid. Bij langdurig
+        en zwaar gebruik kan lichamelijke afhankelijkheid ontstaan, waarbij
+        abrupt stoppen risico’s met zich meebrengt, zoals
+        ontwenningsverschijnselen en in ernstige gevallen insulten of delier.
+        Dit maakt het belangrijk om bij twijfel altijd te screenen op frequentie
+        en hoeveelheid, en zo nodig medische begeleiding te overwegen.
+      </StyledParagraph>{" "}
+      <StyledParagraph>
+        Tot slot is het goed om te benoemen dat alcohol vaak meer wegneemt dan
+        het op het eerste gezicht lijkt. Niet alleen lichamelijke gezondheid,
+        maar ook herstelvermogen, emotieregulatie en relaties kunnen langzaam
+        onder druk komen te staan. De ernst van een alcoholprobleem zit daarom
+        niet alleen in de hoeveelheid, maar in de mate waarin het andere
+        domeinen van het leven verdringt.{" "}
       </StyledParagraph>{" "}
     </>
   );

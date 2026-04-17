@@ -1,4 +1,3 @@
-import InfoIcon from "~/components/icons/info-icon";
 import { Balans } from "~/components/sections/zingeving/balans";
 import { Dagboek } from "~/components/sections/zingeving/dagboek";
 import { Doelenspel } from "~/components/sections/zingeving/doelenspel";
@@ -8,42 +7,8 @@ import { Kernquadranten } from "~/components/sections/zingeving/kernquadranten";
 import { Netwerkcirkel } from "~/components/sections/zingeving/netwerkcirkel";
 import { Tijdlijn } from "~/components/sections/zingeving/tijdlijn";
 import { Waardenspel } from "~/components/sections/zingeving/waardenspel";
-import { Button } from "~/components/ui/button";
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "~/components/ui/dialog";
 import { Pageheader } from "~/components/ui/pageheader";
-
-function ZingevingInfo() {
-  return (
-    <Dialog>
-      <DialogTrigger>
-        <InfoIcon fill="none" className="h-5 w-5 md:h-6 md:w-6" />
-      </DialogTrigger>
-      <DialogContent className="max-h-[80vh] w-11/12 max-w-[1300px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-80 bg-gradient-to-b from-[#ffffff] to-blue-50">
-        <DialogHeader className="mb-2 mt-4">
-          <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
-            Info hier
-          </DialogTitle>
-        </DialogHeader>
-        <DialogClose asChild>
-          <Button
-            type="button"
-            variant="secondary"
-            className="rounded-md border bg-transparent"
-          >
-            Sluiten
-          </Button>
-        </DialogClose>
-      </DialogContent>
-    </Dialog>
-  );
-}
+import { ZingevingInfo } from "./zingeving-info";
 
 export default function ZingevingPage() {
   return (

@@ -4,6 +4,7 @@ export default function InfoIcon({ ...props }: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
+      className="rounded-full bg-opacity-70 hover:bg-neutral-800 hover:stroke-white"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       height={props.height ?? "24"}
