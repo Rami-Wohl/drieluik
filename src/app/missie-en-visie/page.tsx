@@ -5,10 +5,10 @@ import { Pageheader } from "~/components/ui/pageheader";
 export default function MissiePage() {
   return (
     <>
-      <div className="relative mt-32 flex w-full max-w-full flex-col items-center justify-center gap-1 px-6 md:max-w-[600px] lg:gap-10">
+      <div className="relative mt-32 flex w-full max-w-full flex-col items-center justify-center gap-1 px-6 md:max-w-[800px] lg:gap-10">
         <Pageheader text="Missie & visie" />
         <div className="flex flex-col items-center justify-start gap-6">
-          <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
+          <h2 className="mt-4 w-full font-sans text-lg font-semibold text-[#333333] text-opacity-90">
             Verslaving begrijpen: meer dan alleen stoppen met gebruiken
           </h2>
           <SubSectionParagraph>
@@ -33,7 +33,7 @@ export default function MissiePage() {
             Voor anderen werkt dat juist averechts, en zijn alternatieve
             interventies noodzakelijk.
           </SubSectionParagraph>
-          <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
+          <h2 className="mt-4 w-full font-sans text-lg font-semibold text-[#333333] text-opacity-90">
             Wat is verslaving?{" "}
           </h2>
 
@@ -43,24 +43,26 @@ export default function MissiePage() {
             eten. Om de complexiteit van verslaving te begrijpen, kun je het
             zien als een probleem met verschillende lagen:
           </SubSectionParagraph>
+
           <SubSectionParagraph>
-            <span className="font-medium">
+            <span className="font-semibold">
               1. Het middel en gebruik (oppervlakte)
             </span>
           </SubSectionParagraph>
-          <ul className="flex flex-col gap-3 px-4">
+          <ul className="flex w-full flex-col gap-3 px-4">
             {" "}
             <ListItem>
               Het zichtbare deel: welk middel gebruikt iemand, en wat ziet de
               omgeving daarvan?
             </ListItem>
           </ul>
+
           <SubSectionParagraph>
             <span className="font-semibold">
               2. Geestelijke afhankelijkheid
             </span>
           </SubSectionParagraph>
-          <ul className="flex flex-col gap-3 px-4">
+          <ul className="flex w-full flex-col gap-3 px-4">
             {" "}
             <ListItem>
               Het gebruik is niet meer een vrije keuze. Stoppen lukt vaak niet,
@@ -72,7 +74,7 @@ export default function MissiePage() {
               3. Lichamelijke afhankelijkheid
             </span>
           </SubSectionParagraph>
-          <ul className="flex flex-col gap-3 px-4">
+          <ul className="flex w-full flex-col gap-3 px-4">
             {" "}
             <ListItem>
               Bij middelen als alcohol, heroïne of GHB kan stoppen
@@ -88,7 +90,7 @@ export default function MissiePage() {
               4. Psychische en emotionele laag
             </span>
           </SubSectionParagraph>
-          <ul className="flex flex-col gap-3 px-4">
+          <ul className="flex w-full flex-col gap-3 px-4">
             {" "}
             <ListItem>
               Hoe ga je om met verdriet, frustratie of leegte?
@@ -101,7 +103,7 @@ export default function MissiePage() {
           <SubSectionParagraph>
             <span className="font-semibold">5. De maatschappelijke laag</span>
           </SubSectionParagraph>
-          <ul className="flex flex-col gap-3 px-4">
+          <ul className="flex w-full flex-col gap-3 px-4">
             {" "}
             <ListItem>
               Verslaving is ook een sociaal fenomeen. Voorbeelden zijn de
@@ -114,7 +116,7 @@ export default function MissiePage() {
             </ListItem>
           </ul>
 
-          <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
+          <h2 className="mt-4 w-full font-sans text-lg font-semibold text-[#333333] text-opacity-90">
             Alleen focussen op gebruik schiet tekort, waarom?
           </h2>
           <SubSectionParagraph>
@@ -141,7 +143,7 @@ export default function MissiePage() {
             prikkelrijke omgeving raakten nauwelijks verslaafd, terwijl
             geïsoleerde ratten juist wel bleven gebruiken.
           </SubSectionParagraph>
-          <h2 className="mt-4 w-full font-sans text-sm font-semibold text-[#333333] text-opacity-90 lg:text-lg">
+          <h2 className="mt-4 w-full font-sans text-lg font-semibold text-[#333333] text-opacity-90">
             Missie: een humane en praktische benadering
           </h2>
           <SubSectionParagraph>

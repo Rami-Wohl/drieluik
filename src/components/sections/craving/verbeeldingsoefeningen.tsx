@@ -19,7 +19,7 @@ export function VerbeeldingsOefening1() {
           De torenreis: Een visualisatie van keuzes en betekenis
         </div>
       </DialogTrigger>
-      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
+      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-gradient-to-b from-backgroundStart to-background lg:w-2/3">
         <DialogHeader className="mb-2 mt-4">
           <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
             De torenreis: Een visualisatie van keuzes en betekenis
@@ -151,7 +151,8 @@ export function VerbeeldingsOefening1() {
               <ul className="my-2 flex flex-col gap-3 px-4">
                 <ListItem>
                   &quot;De omgeving verandert. Je hoort langzaam andere
-                  geluiden: stemmen, marktkramen, een klok in de verte.&quot;{" "}
+                  geluiden: stemmen, marktkramen, een klok in de
+                  verte.&quot;{" "}
                 </ListItem>
                 <ListItem>
                   Vraag de cliënt wat hij/zij opmerkt tijdens deze overgang: hoe
@@ -266,7 +267,7 @@ export function VerbeeldingsOefening1() {
           <Button
             type="button"
             variant="secondary"
-            className="rounded-md border bg-transparent"
+            className="rounded-md border bg-backgroundStart bg-opacity-90"
           >
             Sluiten
           </Button>
@@ -284,7 +285,7 @@ export function VerbeeldingsOefening2() {
           De realiteitscheck van gebruik
         </div>
       </DialogTrigger>
-      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
+      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-gradient-to-b from-backgroundStart to-background lg:w-2/3">
         <DialogHeader className="mb-2 mt-4">
           <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
             De realiteitscheck van gebruik
@@ -415,7 +416,7 @@ export function VerbeeldingsOefening2() {
           <Button
             type="button"
             variant="secondary"
-            className="rounded-md border bg-transparent"
+            className="rounded-md border bg-backgroundStart bg-opacity-90"
           >
             Sluiten
           </Button>

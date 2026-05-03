@@ -5,6 +5,7 @@ import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { DrugPropertiesTable } from "../drug-properties-table";
+import { ResponsiveImage } from "~/components/ui/responsive-image";
 
 export default function Page() {
   return (
@@ -51,6 +52,7 @@ export default function Page() {
 const AlcoholAlgemeen = () => {
   return (
     <>
+      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van alcohol" />
       <DrugPropertiesTable
         werkzameStof="Ethanol (C₂H₅OH)"
         gebruiksvorm="Drinken"
@@ -79,7 +81,7 @@ const AlcoholAlgemeen = () => {
         Een praktisch aanknopingspunt in de voorlichting is het begrip strijd.
         Niet: “drink je veel?”, maar:
         <br />
-        <i>hoeveel moeite kost het je om niet te drinken?</i>
+        <i>hoeveel moeite kost het je om niet te drinken? </i>
         Wanneer niet-drinken inspanning vraagt, verschuift gebruik vaak van
         keuze naar automatisme.
       </StyledParagraph>{" "}

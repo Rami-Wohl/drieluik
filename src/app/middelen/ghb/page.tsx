@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { StyledParagraph } from "~/components/ui/text-components/paragraph";
 import { GhbAfbouwtabel, GhbInfoTabel } from "./ghb-afbouwtabel";
 import { DrugPropertiesTable } from "../drug-properties-table";
+import { ResponsiveImage } from "~/components/ui/responsive-image";
 
 export default function Page() {
   return (
@@ -52,6 +53,7 @@ export default function Page() {
 const GhbAlgemeen = () => {
   return (
     <>
+      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van GHB" />
       <DrugPropertiesTable
         werkzameStof="Gamma-hydroxyboterzuur C₄H₈O₃"
         gebruiksvorm="Drinken"

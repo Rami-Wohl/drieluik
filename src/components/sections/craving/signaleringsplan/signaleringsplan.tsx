@@ -156,7 +156,7 @@ export function Signaleringsplan() {
 
       <DialogContent
         aria-describedby={undefined}
-        className="max-h-[80vh] w-11/12 max-w-[800px] overflow-y-auto rounded-md bg-gradient-to-b from-white to-blue-50 lg:w-2/3"
+        className="max-h-[80vh] w-11/12 max-w-[800px] overflow-y-auto rounded-md bg-gradient-to-b from-backgroundStart to-background lg:w-2/3"
       >
         <DialogHeader className="mb-4">
           <DialogTitle className="text-center font-sans text-2xl font-semibold tracking-wide lg:text-3xl">
@@ -271,8 +271,9 @@ export function Signaleringsplan() {
         >
           {({ loading }) => (
             <Button
+              type="button"
               variant="secondary"
-              className="mt-4 w-full border bg-transparent"
+              className="mt-4 w-full rounded-md border bg-backgroundStart bg-opacity-90"
             >
               {loading ? "Genereren..." : "Downloaden"}
             </Button>

@@ -2,6 +2,7 @@ import { StyledParagraph } from "~/components/ui/text-components/paragraph";
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
+import { ResponsiveImage } from "~/components/ui/responsive-image";
 
 export default function Page() {
   return (
@@ -48,6 +49,10 @@ export default function Page() {
 const PartydrugsAlgemeen = () => {
   return (
     <>
+      <ResponsiveImage
+        src="/images/cannabis-1.jpg"
+        alt="Plaatje van partydrugs"
+      />
       <StyledParagraph marginBottom="mb-2">
         De categorie partydrugs verandert snel. Anders dan bij klassieke
         middelen zoals alcohol of cannabis gaat het hier niet om één stof, maar

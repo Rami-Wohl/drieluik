@@ -4,6 +4,7 @@ import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
 import { DrugPropertiesTable } from "../drug-properties-table";
+import { ResponsiveImage } from "~/components/ui/responsive-image";
 
 export default function Page() {
   return (
@@ -50,6 +51,7 @@ export default function Page() {
 const OpiatenAlgemeen = () => {
   return (
     <>
+      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van opiaten" />
       <DrugPropertiesTable
         werkzameStof="Diacetylmorfine C₂₁H₂₃NO₅"
         gebruiksvorm="Roken, snuiven, spuiten"

@@ -1,13 +1,3 @@
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "~/components/ui/dialog";
-import InfoIcon from "~/components/icons/info-icon";
-import { Button } from "~/components/ui/button";
 import { StyledParagraph } from "~/components/ui/text-components/paragraph";
 import { ListItem } from "~/components/ui/list-item";
 import { Divider } from "~/components/ui/text-components/divider";

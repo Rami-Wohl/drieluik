@@ -17,7 +17,7 @@ export function AandachtsOefening1() {
           Bewuste ademhaling en gedachten observeren
         </div>
       </DialogTrigger>
-      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
+      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-gradient-to-b from-backgroundStart to-background lg:w-2/3">
         <DialogHeader className="mb-2 mt-4">
           <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
             Bewuste ademhaling en gedachten observeren
@@ -142,7 +142,7 @@ export function AandachtsOefening1() {
           <Button
             type="button"
             variant="secondary"
-            className="rounded-md border bg-transparent"
+            className="rounded-md border bg-backgroundStart bg-opacity-90"
           >
             Sluiten
           </Button>
@@ -160,7 +160,7 @@ export function AandachtsOefening2() {
           Lichaamsverkenning en bewust zijn van emoties
         </div>
       </DialogTrigger>
-      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
+      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-gradient-to-b from-backgroundStart to-background lg:w-2/3">
         <DialogHeader className="mb-2 mt-4">
           <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
             Lichaamsverkenning en bewust zijn van emoties
@@ -286,7 +286,7 @@ export function AandachtsOefening2() {
           <Button
             type="button"
             variant="secondary"
-            className="rounded-md border bg-transparent"
+            className="rounded-md border bg-backgroundStart bg-opacity-90"
           >
             Sluiten
           </Button>
@@ -304,7 +304,7 @@ export function AandachtsOefening3() {
           Aandachtsoefening: bewuste omgevingsobservatie
         </div>
       </DialogTrigger>
-      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-70 bg-gradient-to-b from-[#ffffff] to-blue-50 lg:w-2/3">
+      <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-gradient-to-b from-backgroundStart to-background lg:w-2/3">
         <DialogHeader className="mb-2 mt-4">
           <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
             Aandachtsoefening: bewuste omgevingsobservatie
@@ -416,7 +416,7 @@ export function AandachtsOefening3() {
           <Button
             type="button"
             variant="secondary"
-            className="rounded-md border bg-transparent"
+            className="rounded-md border bg-backgroundStart bg-opacity-90"
           >
             Sluiten
           </Button>

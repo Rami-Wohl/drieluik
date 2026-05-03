@@ -3,6 +3,7 @@ import { SubSectionHeader } from "~/components/ui/text-components/subsection-hea
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
+import { ResponsiveImage } from "~/components/ui/responsive-image";
 
 export default function Page() {
   return (
@@ -49,6 +50,10 @@ export default function Page() {
 const GedragsverslavingenAlgemeen = () => {
   return (
     <>
+      <ResponsiveImage
+        src="/images/cannabis-1.jpg"
+        alt="Plaatje van gedragsverslavingen"
+      />
       <StyledParagraph>
         Gedragsverslavingen zijn verslavingen waarbij niet <b>een middel</b>,
         maar <b>een handeling</b> centraal staat: gokken, gamen, seks, shoppen,

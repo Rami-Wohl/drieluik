@@ -20,9 +20,9 @@ export const InfoPanel = ({ content, title }: InfoPanelProps) => {
       <DialogTrigger>
         <InfoIcon fill="none" className="h-5 w-5 md:h-6 md:w-6" />
       </DialogTrigger>
-      <DialogContent className="max-h-[80vh] w-11/12 max-w-[1300px] overflow-x-hidden overflow-y-scroll rounded-md bg-opacity-80 bg-gradient-to-b from-[#ffffff] to-blue-50">
+      <DialogContent className="max-h-[80vh] w-11/12 max-w-[1300px] overflow-x-hidden overflow-y-scroll rounded-md bg-gradient-to-b from-backgroundStart to-background">
         <DialogHeader className="my-4">
-          <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
+          <DialogTitle className="w-full text-center font-sans text-2xl font-normal tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
             {title}
           </DialogTitle>
         </DialogHeader>
@@ -31,7 +31,7 @@ export const InfoPanel = ({ content, title }: InfoPanelProps) => {
           <Button
             type="button"
             variant="secondary"
-            className="rounded-md border bg-transparent"
+            className="rounded-md border bg-backgroundStart bg-opacity-90"
           >
             Sluiten
           </Button>

@@ -5,6 +5,7 @@ import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { DrugPropertiesTable } from "../drug-properties-table";
+import { ResponsiveImage } from "~/components/ui/responsive-image";
 
 export default function Page() {
   return (
@@ -51,6 +52,7 @@ export default function Page() {
 const SpeedAlgemeen = () => {
   return (
     <>
+      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van speed" />
       <DrugPropertiesTable
         werkzameStof="Amfetaminesulfaat C₁₈H₂₈N₂O₄S"
         gebruiksvorm="Snuiven, slikken"

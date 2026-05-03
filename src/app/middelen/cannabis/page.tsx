@@ -55,6 +55,10 @@ const CannabisAlgemeen = () => {
       <div className="mb-4">
         <CannabisAnamnese />
       </div>
+      <ResponsiveImage
+        src="/images/cannabis-1.jpg"
+        alt="Plaatje van cannabis"
+      />
       <DrugPropertiesTable
         werkzameStof="Tetrahydrocannabinol (THC) C₂₁H₃₀O₂"
         gebruiksvorm="Joint, eetwaren, vapen"
@@ -69,11 +73,7 @@ const CannabisAlgemeen = () => {
         als geestverruimend. En CBD heeft een meer pijnstillende en slaap
         opwekkende werking.
       </StyledParagraph>
-      <ResponsiveImage
-        src="/images/cannabis-1.jpg"
-        alt="Plaatje van cannabis"
-        description="Cannabis"
-      />
+
       <StyledParagraph marginBottom="mb-2">
         Er zijn drie soorten cannabis planten:
       </StyledParagraph>
