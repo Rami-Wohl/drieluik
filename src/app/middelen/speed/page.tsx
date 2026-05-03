@@ -4,6 +4,7 @@ import { SubSectionHeader } from "~/components/ui/text-components/subsection-hea
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
+import { DrugPropertiesTable } from "../drug-properties-table";
 
 export default function Page() {
   return (
@@ -50,6 +51,13 @@ export default function Page() {
 const SpeedAlgemeen = () => {
   return (
     <>
+      <DrugPropertiesTable
+        werkzameStof="Amfetaminesulfaat C₁₈H₂₈N₂O₄S"
+        gebruiksvorm="Snuiven, slikken"
+        uiterlijkeKenmerken="Wit poeder (kan gelig uitslaan)"
+        verslavingspotentie="1,9"
+        schadeTaxatie="1,84"
+      />
       <StyledParagraph header="Wat is speed?">
         Speed, ook bekend als amfetamine, is een synthetische stimulant die het
         centrale zenuwstelsel beïnvloedt. Het wordt vaak gebruikt om wakker te

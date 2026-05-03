@@ -3,10 +3,10 @@ import {
   BenzosAfbouwtabel2,
 } from "~/app/middelen/benzodiazepines/benzos-afbouwtabel";
 import { StyledParagraph } from "~/components/ui/text-components/paragraph";
-// import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
+import { DrugPropertiesTable } from "../drug-properties-table";
 
 export default function Page() {
   return (
@@ -53,6 +53,13 @@ export default function Page() {
 const BenzosAlgemeen = () => {
   return (
     <>
+      <DrugPropertiesTable
+        werkzameStof="Benzodiazepinen (verzamelterm)"
+        gebruiksvorm="Slikken"
+        uiterlijkeKenmerken="Verschillende soorten pillen"
+        verslavingspotentie="1,9"
+        schadeTaxatie="1,33"
+      />
       <StyledParagraph marginBottom="mb-2">
         Benzodiazepinen zijn medicijnen met een dempend effect op het centrale
         zenuwstelsel. Ze versterken de werking van GABA, een remmende

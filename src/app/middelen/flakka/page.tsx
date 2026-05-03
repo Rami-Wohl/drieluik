@@ -3,6 +3,7 @@ import { SubSectionHeader } from "~/components/ui/text-components/subsection-hea
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
+import { DrugPropertiesTable } from "../drug-properties-table";
 
 export default function Page() {
   return (
@@ -49,6 +50,13 @@ export default function Page() {
 const FlakkaAlgemeen = () => {
   return (
     <>
+      <DrugPropertiesTable
+        werkzameStof="Alfa-pyrrolidinovalerofenon C₁₅H₂₁NO"
+        gebruiksvorm="Roken, snuiven, spuiten"
+        uiterlijkeKenmerken="Witte kristallen"
+        verslavingspotentie="Niet bekend"
+        schadeTaxatie="Niet bekend"
+      />
       <StyledParagraph header="Wat is Flakka?">
         Flakka is de straatnaam voor <b>α-PVP</b>, een synthetische stimulant
         uit de groep <b>cathinonen</b>. Het werkt sterk op het dopamine- en

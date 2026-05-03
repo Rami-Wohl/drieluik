@@ -5,6 +5,7 @@ import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { StyledParagraph } from "~/components/ui/text-components/paragraph";
 import { GhbAfbouwtabel, GhbInfoTabel } from "./ghb-afbouwtabel";
+import { DrugPropertiesTable } from "../drug-properties-table";
 
 export default function Page() {
   return (
@@ -51,6 +52,13 @@ export default function Page() {
 const GhbAlgemeen = () => {
   return (
     <>
+      <DrugPropertiesTable
+        werkzameStof="Gamma-hydroxyboterzuur C₄H₈O₃"
+        gebruiksvorm="Drinken"
+        uiterlijkeKenmerken="Kleurloze, licht stroperige vloeistof"
+        verslavingspotentie="1,7"
+        schadeTaxatie="1,53"
+      />
       <StyledParagraph>
         Als eerst belangrijke voorlichting in een notendop:
       </StyledParagraph>

@@ -3,6 +3,7 @@ import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
+import { DrugPropertiesTable } from "../drug-properties-table";
 
 export default function Page() {
   return (
@@ -49,6 +50,13 @@ export default function Page() {
 const RokenAlgemeen = () => {
   return (
     <>
+      <DrugPropertiesTable
+        werkzameStof="Nicotine C₁₀H₁₄N₂"
+        gebruiksvorm="Roken, vapen"
+        uiterlijkeKenmerken="Sigaretten, shag, vapes"
+        verslavingspotentie="2,8"
+        schadeTaxatie="2,2"
+      />
       <StyledParagraph marginBottom="mb-2">
         Nicotineverslaving is één van de meest wijdverspreide en genormaliseerde
         verslavingen, en tegelijk één van de meest onderschatte. Dat geldt niet

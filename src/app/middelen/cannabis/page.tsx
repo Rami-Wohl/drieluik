@@ -5,6 +5,7 @@ import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { ResponsiveImage } from "~/components/ui/responsive-image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
+import { DrugPropertiesTable } from "../drug-properties-table";
 
 export default function Page() {
   return (
@@ -54,6 +55,13 @@ const CannabisAlgemeen = () => {
       <div className="mb-4">
         <CannabisAnamnese />
       </div>
+      <DrugPropertiesTable
+        werkzameStof="Tetrahydrocannabinol (THC) C₂₁H₃₀O₂"
+        gebruiksvorm="Joint, eetwaren, vapen"
+        uiterlijkeKenmerken="Groene plant (wiet), bruine plakken (hasj)"
+        verslavingspotentie="1,1"
+        schadeTaxatie="1,19"
+      />
       <StyledParagraph marginBottom="mb-2">
         <span className="font-semibold">Wiet</span> is de (gedroogde) vrucht van
         de cannabisplant (toppen). THC en CBD zijn de hoofd-werkzame stoffen in

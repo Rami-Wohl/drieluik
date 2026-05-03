@@ -3,6 +3,7 @@ import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
+import { DrugPropertiesTable } from "../drug-properties-table";
 
 export default function Page() {
   return (
@@ -49,6 +50,13 @@ export default function Page() {
 const KetamineAlgemeen = () => {
   return (
     <>
+      <DrugPropertiesTable
+        werkzameStof="Ketamine C₁₃H₁₆ClNO"
+        gebruiksvorm="Snuiven"
+        uiterlijkeKenmerken="Poeder (glazig)"
+        verslavingspotentie="0,8"
+        schadeTaxatie="1,07"
+      />
       <StyledParagraph marginBottom="mb-2">
         Ketamine is een middel dat oorspronkelijk is ontwikkeld als
         verdovingsmiddel in de medische wereld. In ziekenhuizen wordt het nog

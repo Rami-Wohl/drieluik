@@ -4,6 +4,7 @@ import { SubSectionHeader } from "~/components/ui/text-components/subsection-hea
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
+import { DrugPropertiesTable } from "../drug-properties-table";
 
 export default function Page() {
   return (
@@ -50,6 +51,13 @@ export default function Page() {
 const AlcoholAlgemeen = () => {
   return (
     <>
+      <DrugPropertiesTable
+        werkzameStof="Ethanol (C₂H₅OH)"
+        gebruiksvorm="Drinken"
+        uiterlijkeKenmerken="Vloeistof (bier, wijn etc)"
+        verslavingspotentie="2,1"
+        schadeTaxatie="2,16"
+      />
       <StyledParagraph>
         Alcohol is één van de meest genormaliseerde psychoactieve stoffen in
         Nederland. Juist daardoor is problematisch gebruik vaak moeilijker te
