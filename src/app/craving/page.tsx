@@ -13,6 +13,7 @@ import {
 import {
   VerbeeldingsOefening1,
   VerbeeldingsOefening2,
+  VerbeeldingsOefeningenBronnen,
 } from "~/components/sections/craving/verbeeldingsoefeningen";
 import {
   Accordion,
@@ -23,7 +24,10 @@ import {
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { CravingInfo } from "./craving-info";
-import { VervangendeActiviteiten } from "~/components/sections/craving/vervangende-activiteiten";
+import {
+  VervangendeActiviteiten,
+  VervangendeActiviteitenBronnen,
+} from "~/components/sections/craving/vervangende-activiteiten";
 import { StyledParagraph } from "~/components/ui/text-components/paragraph";
 import { Divider } from "~/components/ui/text-components/divider";
 import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
@@ -67,7 +71,10 @@ export default function CravingPage() {
               Vervangende bezigheden
             </AccordionTrigger>
             <AccordionContent className="bg-blue-900 bg-opacity-5 p-6">
-              <VervangendeActiviteiten />
+              <div className="my-2 flex flex-col gap-2">
+                <VervangendeActiviteiten />
+                <VervangendeActiviteitenBronnen />
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
@@ -159,96 +166,13 @@ export default function CravingPage() {
               Verbeeldingsoefeningen
             </AccordionTrigger>
             <AccordionContent className="bg-blue-900 bg-opacity-5 p-6">
-              <StyledParagraph marginBottom="mb-2">
-                Het doel van verbeeldingsoefeningen bij de behandeling van
-                verslaving is het ondersteunen van cognitieve, emotionele en
-                gedragsmatige veranderingen door middel van mentale
-                representaties en visualisaties. Cognitieve processen rond
-                aandacht en craving zijn medebepalend voor verslavingsgedrag.
-                Dus mentale strategieën (visualisatie, cognitieve
-                herstructurering) gericht op aandacht en beelden zijn zinvol in
-                therapie
-              </StyledParagraph>
-              <StyledParagraph marginBottom="mb-2">
-                Imaginatie als op zichzelf staande cue-exposure is vaak
-                onvoldoende effectief; maar als de verbeeldingsoefening
-                gecombineerd worden met coping- en mindfulnessvaardigheden, dan
-                is er wetenschappelijke evidentie voor werkzaamheid.{" "}
-              </StyledParagraph>
-              <Divider />
-              <StyledParagraph marginBottom="mb-2">
-                Verbeeldingoefeningen (mental imagery of imaginatie) worden
-                gebruikt in verslavingsbehandeling om cliënten helpen:
-              </StyledParagraph>
-              <ol className="mb-4 flex flex-col gap-3 px-4">
-                <ListItem ordered>
-                  <b>Craving te herkennen en te reguleren </b>– cliënten leren
-                  mentale beelden van middelengebruik of triggers te observeren
-                  zonder impulsief te handelen.
-                </ListItem>
-                <ListItem ordered>
-                  <b>Copingvaardigheden te versterken </b>– door alternatieve
-                  gedragingen in gedachten te oefenen bij blootstelling aan
-                  triggers.
-                </ListItem>
-                <ListItem ordered>
-                  <b>Zelfcontrole en motivatie te verhogen </b>– positieve
-                  toekomstscenario’s of succeservaringen worden mentaal
-                  geoefend.
-                </ListItem>
-                <ListItem ordered>
-                  <b>Emotionele regulatie te verbeteren </b>– het leren omgaan
-                  met stress, angst of negatieve emoties zonder middelen.
-                </ListItem>
-              </ol>
-              <Divider />
-              <SubSectionHeader>Bronnen</SubSectionHeader>
-              <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
-                <ListItem>
-                  Kavanagh, A. M., Andrade, J., & May, J. (2005).
-                  <i>
-                    Imaginary relish and exquisite torture: The elaborated
-                    intrusion theory of desire.
-                  </i>{" "}
-                  Psychological Review, 112(2), 446–467.
-                </ListItem>
-                <ListItem>
-                  May, J., Kavanagh, D. J., & Andrade, J. (2015).
-                  <i>
-                    The elaborated intrusion theory of desire: A 10-year
-                    retrospective and implications for addiction treatments.
-                  </i>{" "}
-                  Addictive Behaviors, 44, 29–34.
-                </ListItem>
-                <ListItem>
-                  Bowen, S., Chawla, N., & Marlatt, G. A. (2011).
-                  <i>
-                    Mindfulness-based relapse prevention for addictive
-                    behaviors: A clinician’s guide.
-                  </i>{" "}
-                  Guilford Press.
-                </ListItem>
-                <ListItem>
-                  Grant, J. E., & Potenza, M. N. (2006).
-                  <i>Neurobiology of gambling behavior. </i> Current Psychiatry
-                  Reports, 8(5), 399–404.
-                </ListItem>
-                <ListItem>
-                  Huang, Q., Liao, Z., Wang, X., Wang, W., Chao, L., Nie, Y.,
-                  Peng, S., Zhao, L., Shen, H., Qi, J., & Chen, X. (2026).
-                  <i>
-                    Relationship between attentional bias and psychological
-                    craving in methamphetamine use disorder.
-                  </i>{" "}
-                  Frontiers in Public Health, 13, Article 1659759.
-                </ListItem>
-              </ul>
               <p className="mb-8 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
                 Klik op een verbeeldingsoefening om de instructies te lezen:
               </p>
               <div className="my-2 flex flex-col gap-2">
                 <VerbeeldingsOefening1 />
                 <VerbeeldingsOefening2 />
+                <VerbeeldingsOefeningenBronnen />
               </div>
             </AccordionContent>
           </AccordionItem>

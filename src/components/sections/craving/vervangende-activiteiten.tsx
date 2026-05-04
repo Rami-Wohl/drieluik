@@ -183,7 +183,7 @@ export function VervangendeActiviteiten() {
     <Dialog>
       <DialogTrigger className="w-full gap-2 rounded-none bg-white bg-opacity-30 px-4 py-2 hover:bg-opacity-70 hover:shadow-sm">
         <div className="text-center font-sans text-sm font-light tracking-[1px] text-[#333333] text-opacity-90">
-          Open de vervangende bezigheden tabel
+          Vervangende bezigheden tabel
         </div>
       </DialogTrigger>
       <DialogContent className="max-h-[80vh] w-11/12 max-w-full overflow-x-hidden overflow-y-scroll rounded-md bg-gradient-to-b from-backgroundStart to-background">
@@ -239,8 +239,37 @@ export function VervangendeActiviteiten() {
               ))}
             </tbody>
           </table>
-          <Divider />
-          <StyledParagraph header="Uitleg en bronnen">
+        </div>
+        <DialogClose asChild>
+          <Button
+            type="button"
+            variant="secondary"
+            className="rounded-md border bg-backgroundStart bg-opacity-90"
+          >
+            Sluiten
+          </Button>
+        </DialogClose>
+      </DialogContent>
+    </Dialog>
+  );
+}
+
+export function VervangendeActiviteitenBronnen() {
+  return (
+    <Dialog>
+      <DialogTrigger className="w-full gap-2 rounded-none bg-white bg-opacity-30 px-4 py-2 hover:bg-opacity-70 hover:shadow-sm">
+        <div className="text-center font-sans text-sm font-light tracking-[1px] text-[#333333] text-opacity-90">
+          Toelichting en bronnen
+        </div>
+      </DialogTrigger>
+      <DialogContent className="max-h-[80vh] w-11/12 max-w-full overflow-x-hidden overflow-y-scroll rounded-md bg-gradient-to-b from-backgroundStart to-background">
+        <DialogHeader className="mb-2 mt-4">
+          <DialogTitle className="w-full text-center font-sans text-2xl font-semibold tracking-[0.1rem] text-[#333333] text-opacity-90 lg:text-3xl">
+            Vervangende bezigheden: toelichting en bronnen
+          </DialogTitle>
+        </DialogHeader>
+        <div className="my-6 flex flex-col overflow-scroll lg:px-4">
+          <StyledParagraph>
             Vervangende bezigheden zijn een centrale component van gedragsmatige
             interventies bij verslaving. Dit zijn activiteiten die de cliënt in
             plaats van middelengebruik kan ondernemen, met als doel het
@@ -315,7 +344,7 @@ export function VervangendeActiviteiten() {
             </ListItem>
           </ul>
           <Divider />
-          <StyledParagraph marginBottom="mb-2">
+          <StyledParagraph marginBottom="mb-2" header="Bronnen">
             De inhoud van dit luik is gebaseerd op wetenschappelijke literatuur
             over craving, aandacht en imaginatie, waaronder:
           </StyledParagraph>{" "}
