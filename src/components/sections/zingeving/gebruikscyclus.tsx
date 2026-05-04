@@ -10,6 +10,9 @@ import { GameContainer } from "./kernquadranten";
 import { Button } from "~/components/ui/button";
 import CyclusIcon from "~/components/icons/zingeving/cyclus-icon";
 import { ListItem } from "~/components/ui/list-item";
+import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
+import { Divider } from "~/components/ui/text-components/divider";
 
 export function Gebruikscyclus() {
   return (
@@ -24,295 +27,235 @@ export function Gebruikscyclus() {
             De gebruikscyclus
           </DialogTitle>
         </DialogHeader>
-        <div className="my-2 flex flex-col gap-4 lg:px-4">
-          <table className="mb-2">
+        <div className="mb-6 flex flex-col font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <table className="mb-6 p-3">
             <tbody>
-              <tr className="h-auto">
-                <td className="w-6 max-w-fit text-wrap pr-2 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
                   Doel:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
-                  Begrijpen dat gebruik vaak een herhaald patroon volgt en dat
-                  inzicht hierin de eerste stap is naar verandering.
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  De cliënten inzicht geven in het patroon van zijn/haar gebruik
+                  en triggers, en samen aanknopingspunten ontdekken om dit
+                  patroon te doorbreken.
+                </td>
+              </tr>
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                  Benodigdheden:
+                </td>
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  Whiteboard, schrijfblok, stiften/pennen, eventueel ingevuld
+                  schema voor de cliënt.
                 </td>
               </tr>
             </tbody>
           </table>
-        </div>
-        <div className="relative mb-4 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              1. Introductie van de gebruikscyclus
-            </span>{" "}
-            De gebruikscyclus helpt cliënten inzicht krijgen in de patronen en
-            triggers die leiden tot gebruik. Het brengt de processen van
-            gedachten, gevoelens en gedrag in kaart en biedt aanknopingspunten
-            om deze te doorbreken.
-          </DialogDescription>
-          <DialogDescription className="gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Uitleg aan de cliënt: </span>
-            “Veel van ons gedrag verloopt in een cyclus: er is een gebeurtenis
-            of situatie die een bepaalde gedachte of gevoel oproept, en dat
-            leidt tot bepaald gedrag. Bij gebruik zien we vaak een soortgelijk
-            patroon. Door dit patroon te herkennen, kunnen we manieren vinden om
-            het te doorbreken.”
-          </DialogDescription>
-          <DialogDescription className="mt-4 flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              2. De vijf fasen van de cyclus
-            </span>{" "}
-            Laat de cliënt de cyclus opsplitsen in vijf duidelijke stappen:
-          </DialogDescription>
-          <ol className="mb-4 flex list-inside flex-col gap-4">
+          <SubSectionHeader size="large">Stappen</SubSectionHeader>
+          <SubSectionHeader>
+            Stap 1: Introductie van de oefening
+          </SubSectionHeader>
+          <ol className="mb-6 flex flex-col gap-1 px-6">
             <ListItem ordered>
-              <span className="font-semibold">
-                Trigger (externe of interne prikkel)
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
+              Leg uit wat de gebruikscyclus is: gedrag volgt vaak een herhaald
+              patroon van trigger → gedachte → gevoel → gedrag → gevolg.
+            </ListItem>
+            <ListItem ordered>
+              Benadruk: inzicht in dit patroon is de eerste stap naar
+              verandering.
+            </ListItem>
+            <ListItem ordered>
+              Geef voorbeelduitleg aan de cliënt:
+              <br />
+              <br />
+              <i>
+                “Veel van ons gedrag verloopt in een cyclus: een situatie of
+                gevoel roept een gedachte op, die leidt tot een actie. Bij
+                gebruik zien we vaak een herhaald patroon. Door dit te
+                herkennen, kun je manieren vinden om het te doorbreken.”
+              </i>
+            </ListItem>
+          </ol>
+          <StyledParagraph
+            marginBottom="mb-2"
+            header="Stap 2: De vijf fasen van de cyclus"
+          >
+            Bespreek samen met de cliënt het meest recente gebruiksmoment en
+            werk de vijf fasen uit:
+          </StyledParagraph>
+          <ol className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem ordered>
+              Trigger – wat gebeurde er vlak voordat je wilde gebruiken?
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
                 <ListItem>
-                  Vraag:{" "}
-                  <span className="italic">
-                    “Wat gebeurt er meestal vlak voordat je wilt gebruiken?”
-                  </span>
+                  Extern: situaties, mensen, plaatsen, geuren.
                 </ListItem>
                 <ListItem>
-                  Externe triggers: Situaties, mensen, plaatsen, geuren, beelden
-                  (bijv. een feestje, ruzie, loon krijgen).
-                </ListItem>
-                <ListItem>
-                  Interne triggers: Gedachten, gevoelens, emoties, lichamelijke
-                  sensaties (bijv. eenzaamheid, stress, verveling).{" "}
+                  Intern: gedachten, gevoelens, lichamelijke sensaties (stress,
+                  verveling, eenzaamheid).
                 </ListItem>
               </ul>
             </ListItem>
             <ListItem ordered>
-              <span className="font-semibold">
-                Gedachte (reactie op de trigger){" "}
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
+              Gedachte – welke gedachten gingen door je hoofd?
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
                 <ListItem>
-                  Vraag:{" "}
-                  <span className="italic">
-                    “Wat denk je in dat moment? Wat gaat er door je hoofd?”
-                  </span>
-                </ListItem>
-                <ListItem>
-                  Typische gedachten kunnen zijn:{" "}
-                  <span className="italic">
-                    “Ik heb het nodig,” “Ik verdien dit,” “Het maakt toch niet
-                    meer uit.”
-                  </span>
+                  Bijvoorbeeld: “Ik heb dit nodig”, “Het maakt toch niet uit”,
+                  “Ik verdien het.”
                 </ListItem>
               </ul>
             </ListItem>
             <ListItem ordered>
-              <span className="font-semibold">
-                Gevoel (hoe je je voelt na de gedachte)
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
+              Gevoel – welke emoties en lichamelijke sensaties ervaarde je?
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
+                <ListItem>Emoties: onrust, frustratie, angst, leegte.</ListItem>
                 <ListItem>
-                  Vraag:{" "}
-                  <span className="italic">
-                    “Wat voel je op dat moment? Emotioneel en fysiek?”
-                  </span>
-                </ListItem>
-                <ListItem>
-                  Gevoelens: Angst, frustratie, onrust, leegte, opwinding,
-                  verlangen.
-                </ListItem>
-                <ListItem>
-                  Lichamelijke sensaties: Spanning, onrust, honger,
-                  hartkloppingen.{" "}
+                  Lichamelijk: spanning, hartkloppingen, druk op de borst.
                 </ListItem>
               </ul>
             </ListItem>
             <ListItem ordered>
-              <span className="font-semibold">
-                Gedrag (de actie: het gebruiken)
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
+              Gedrag – wat deed je concreet?
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
                 <ListItem>
-                  Vraag:{" "}
-                  <span className="italic">
-                    “Wat doe je vervolgens? Hoe pak je dat aan?”
-                  </span>
-                </ListItem>
-                <ListItem>
-                  Bespreek het daadwerkelijke gedrag: Hoe, wat, waar en wanneer
-                  gebruikt de cliënt.
+                  Bespreek het gebruik: wat, hoe, waar en wanneer.
                 </ListItem>
               </ul>
             </ListItem>
             <ListItem ordered>
-              <span className="font-semibold">
-                Gevolg (het effect van het gebruik){" "}
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
+              Gevolg – wat gebeurde daarna en hoe voelde je je?
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
                 <ListItem>
-                  Vraag:{" "}
-                  <span className="italic">
-                    “Wat gebeurt er daarna? Hoe voel je je na het gebruik?”
-                  </span>
+                  Positief: (bijv. ontspanning, ontsnappen aan gevoelens.)
                 </ListItem>
                 <ListItem>
-                  Bespreek positieve gevolgen (ontspanning, ontsnappen aan
-                  gevoelens) én negatieve gevolgen (schuld, schaamte, fysieke
-                  klachten).
+                  Negatief:(bijv. schuld, schaamte, fysieke klachten.)
+                </ListItem>
+              </ul>
+            </ListItem>
+            <SubSectionHeader>Voorbeeld: </SubSectionHeader>
+            <ul className="mt-2 flex flex-col gap-1 px-4">
+              <ListItem>Trigger: stress op werk.</ListItem>
+              <ListItem>
+                Gedachte: “Ik kan hier niet mee omgaan, ik heb iets nodig.”
+              </ListItem>
+              <ListItem>Gevoel: spanning, leegte.</ListItem>
+              <ListItem>Gedrag: alcohol drinken.</ListItem>
+              <ListItem>
+                Gevolg: tijdelijke ontspanning, later schuldgevoel en meer
+                stress.
+              </ListItem>
+            </ul>
+          </ol>
+          <StyledParagraph
+            marginBottom="mb-2"
+            header="Stap 3: Inzicht en interventiemogelijkheden"
+          >
+            Bespreek samen met de cliënt waar ingegrepen kan worden in de
+            cyclus:
+          </StyledParagraph>
+          <ol className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem ordered>
+              <b>Triggers:</b> vermijden of leren omgaan met externe of interne
+              triggers.
+            </ListItem>
+            <ListItem ordered>
+              <b>Gedachten:</b> uitdagen of vervangen door positievere,
+              realistische gedachten.
+            </ListItem>
+            <ListItem ordered>
+              <b>Gevoelens:</b> leren reguleren via ademhaling, mindfulness of
+              ontspanningstechnieken.
+            </ListItem>
+            <ListItem ordered>
+              <b>Alternatief gedrag: :</b> andere manieren vinden om dezelfde
+              behoefte te vervullen (bijv. sporten, muziek, sociale contacten).
+            </ListItem>
+            <ListItem ordered>
+              <b>Omgaan met gevolgen:</b> negatieve emoties en schuld herkennen
+              en hanteren zonder terugval.
+            </ListItem>
+          </ol>
+          <SubSectionHeader>
+            Stap 4: Oefening: eigen cyclus in kaart brengen
+          </SubSectionHeader>
+          <ol className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem ordered>
+              Laat de cliënt zijn/haar meest recente gebruiksmoment stap voor
+              stap beschrijven.
+            </ListItem>
+            <ListItem ordered>
+              Vul samen een schema in met de vijf fasen.
+            </ListItem>
+            <ListItem ordered>
+              Reflecteer:
+              <ul className="mt-2 flex flex-col gap-1 px-4">
+                <ListItem>Welke patronen vallen op?</ListItem>
+                <ListItem>
+                  Waar wil de cliënt verandering in aanbrengen?
                 </ListItem>
               </ul>
             </ListItem>
           </ol>
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              3. Voorbeeld van een gebruikscyclus
-            </span>{" "}
-          </DialogDescription>
-          <ol className="mb-4 flex list-inside flex-col gap-4">
+          <SubSectionHeader>Stap 5: Plan van aanpak</SubSectionHeader>
+          <ol className="mb-6 flex flex-col gap-1 px-6">
             <ListItem ordered>
-              <span className="font-semibold">Trigger:</span> Stress op het werk
-              na kritiek van de baas.
+              Korte termijn doel: kies één fase van de cyclus om aan te pakken.
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
+                <ListItem>
+                  Bijvoorbeeld: leren omgaan met stress (trigger) of negatieve
+                  gedachten herkennen (gedachte).
+                </ListItem>
+              </ul>
             </ListItem>
             <ListItem ordered>
-              <span className="font-semibold">Gedachte:</span> &quot;Ik kan hier
-              niet mee omgaan, ik heb iets nodig om me te ontspannen.&quot;
-            </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Gevoel:</span> Onrust, spanning in
-              de borst, leegte.
-            </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Gedrag:</span> Gebruik van alcohol
-              of drugs om te ontspannen.
-            </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Gevolg:</span> Tijdelijke
-              verlichting, maar later schuldgevoel en meer stress de volgende
-              dag.
+              <b>Lange termijn doel</b>: ontwikkel strategieën voor meerdere
+              fases, met alternatieve copingstrategieën.
             </ListItem>
           </ol>
-          <DialogDescription className="mt-4 flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              4. Inzicht: waar kun je ingrijpen in de cyclus?
-            </span>{" "}
-            Samen met de cliënt bespreek je de zwakke schakels in de cyclus. Dit
-            zijn punten waarop ze invloed kunnen uitoefenen:{" "}
-          </DialogDescription>
-          <ol className="mb-4 flex list-inside flex-col gap-4">
+          <SubSectionHeader>Stap 6: Reflectie en afsluiting</SubSectionHeader>
+          <ol className="mb-6 flex flex-col gap-1 px-6">
             <ListItem ordered>
-              <span className="font-semibold">
-                Triggers vermijden of anders leren omgaan met triggers:
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  Als externe triggers: Kunnen bepaalde situaties of mensen
-                  worden vermeden?
-                </ListItem>
-                <ListItem>
-                  Als interne triggers: Kunnen ze leren omgaan met gevoelens van
-                  eenzaamheid, verveling of stress?
-                </ListItem>
-              </ul>
+              Bespreek wat de cliënt heeft geleerd over zijn/haar patroon.
             </ListItem>
             <ListItem ordered>
-              <span className="font-semibold">
-                Gedachten uitdagen of vervangen:
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  Negatieve gedachten vervangen door positievere, realistischere
-                  gedachten.
-                </ListItem>
-                <ListItem>
-                  Bijvoorbeeld: &quot;Ik verdien dit niet&quot; vervangen door
-                  &quot;Ik verdien het om gezond te zijn.&quot;
-                </ListItem>
-              </ul>
+              Formuleer samen een intentie of actiepunt:
+              <br />
+              <br />
+              <i>
+                “Deze week ga ik oefenen met [concreet alternatief gedrag]
+                wanneer ik stress voel.”
+              </i>
+              <br />
+              <br />
             </ListItem>
             <ListItem ordered>
-              <span className="font-semibold">Gevoelens leren reguleren:</span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  Oefeningen zoals ademhaling, mindfulness of
-                  ontspanningstechnieken toepassen.
-                </ListItem>
-              </ul>
-            </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Alternatieven voor gedrag:</span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  Wat kunnen ze in plaats van gebruiken doen om hetzelfde
-                  resultaat te bereiken? (Bijv. sporten, muziek luisteren,
-                  bellen met een vriend).
-                </ListItem>
-              </ul>
-            </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Leren omgaan met gevolgen: </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  Bespreek hoe ze met schuldgevoel of negatieve emoties kunnen
-                  omgaan zonder terug te vallen in de cyclus.
-                </ListItem>
-              </ul>
+              Moedig aan om de oefening te herhalen bij nieuwe situaties en de
+              cyclus actief te blijven observeren.
             </ListItem>
           </ol>
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              5. Oefening: breng je eigen cyclus in kaart
-            </span>{" "}
-          </DialogDescription>
-          <ol className="mb-4 flex list-inside flex-col gap-4">
-            <ListItem ordered>
-              Laat de cliënt hun meest recente gebruiksmoment beschrijven, stap
-              voor stap volgens de cyclus.
-            </ListItem>
-            <ListItem ordered>
-              Vul samen een schema in met de vijf fasen (trigger, gedachte,
-              gevoel, gedrag, gevolg).
-            </ListItem>
-            <ListItem ordered>
-              Reflecteer: Wat valt op? Welke patronen zien ze? Waar zouden ze
-              graag verandering willen?
-            </ListItem>
-          </ol>
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              6. Plan van aanpak: doorbreken van de cyclus
-            </span>{" "}
-          </DialogDescription>
-          <ul className="mb-4 flex list-inside flex-col gap-4">
+          <Divider />
+          <SubSectionHeader>Tips voor de begeleiding</SubSectionHeader>
+          <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
             <ListItem>
-              <span className="font-semibold">Kortetermijndoel:</span> Kies één
-              fase van de cyclus om aan te pakken en maak een plan.
-              <ul className="my-4 flex list-inside flex-col gap-4">
-                <ListItem>
-                  Bijv. leren omgaan met stressvolle situaties (trigger).
-                </ListItem>
-                <ListItem>
-                  Of: negatieve gedachten herkennen en uitdagen (gedachte).
-                </ListItem>
-              </ul>
+              Gebruik open vragen en wees nieuwsgierig naar de beleving van de
+              cliënt.
             </ListItem>
             <ListItem>
-              <span className="font-semibold">Langetermijndoel:</span> Leer
-              omgaan met meerdere fases en ontwikkel alternatieve
-              copingstrategieën.
-            </ListItem>
-          </ul>
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              7. Follow-up en herhaling{" "}
-            </span>{" "}
-          </DialogDescription>
-          <ul className="mb-4 flex list-inside flex-col gap-4">
-            <ListItem>
-              Bespreek hoe het de cliënt vergaat met het doorbreken van de
-              cyclus.
+              Respecteer emoties; sommige fasen (zoals schuld of schaamte)
+              kunnen zwaar zijn.
             </ListItem>
             <ListItem>
-              Moedig hen aan om nieuwe situaties te analyseren en te oefenen met
-              het toepassen van hun plan.
+              Werk stap voor stap en maak de oefening visueel op een whiteboard
+              of schema.
+            </ListItem>
+            <ListItem>
+              Focus op patroonherkenning en coping in plaats van het
+              bekritiseren van gedrag.
+            </ListItem>
+            <ListItem>
+              Moedig aan om de cyclus ook als huiswerk bij te houden voor
+              verdieping.
             </ListItem>
           </ul>
         </div>

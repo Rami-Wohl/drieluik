@@ -10,6 +10,11 @@ import { GameContainer } from "./kernquadranten";
 import { Button } from "~/components/ui/button";
 import { ListItem } from "~/components/ui/list-item";
 import GebruikIcon from "~/components/icons/zingeving/gebruik-icon";
+import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
+import { Divider } from "~/components/ui/text-components/divider";
+import { TableHeaderCellStyled } from "~/components/ui/table-components/table-header-cell";
+import { TableCellStyled } from "~/components/ui/table-components/table-cell";
 
 export function Gebruiksfunctie() {
   return (
@@ -24,378 +29,315 @@ export function Gebruiksfunctie() {
             De functie van gebruik
           </DialogTitle>
         </DialogHeader>
-        <div className="my-2 flex flex-col gap-4 lg:px-4">
-          <table className="mb-2">
+        <div className="mb-6 flex flex-col font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <table className="mb-6 p-3">
             <tbody>
-              <tr className="h-auto">
-                <td className="w-6 max-w-fit text-wrap pr-2 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
                   Doel:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
-                  Helpen inzien dat gebruik een functie heeft, zoals het
-                  vervullen van een behoefte of het vermijden van een probleem.
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  De cliënt inzicht geven in de onderliggende functies van
+                  zijn/haar gebruik, zodat hij/zij alternatieve, gezondere
+                  strategieën kan ontwikkelen.
+                </td>
+              </tr>
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                  Benodigdheden:
+                </td>
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  Whiteboard, schrijfblok, stiften/pennen, eventueel
+                  functiekaart of schema.
                 </td>
               </tr>
             </tbody>
           </table>
-        </div>
-        <div className="relative mb-4 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              1. Introductie van het concept
-            </span>{" "}
-            Deze oefening richt zich op het begrijpen van de onderliggende
-            redenen waarom iemand gebruikt. Het helpt cliënten om het gebruik
-            niet alleen als een probleem te zien, maar als een strategie om met
-            bepaalde situaties, emoties of behoeften om te gaan. Door de functie
-            van gebruik te herkennen, kunnen alternatieve, gezondere strategieën
-            worden ontwikkeld.
-          </DialogDescription>
-          <DialogDescription className="gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Uitleg aan de cliënt: </span>
-            “Gebruik is niet zomaar iets dat je doet. Het heeft een reden en
-            vervult vaak een belangrijke functie, zoals stress verlichten,
-            emoties onderdrukken, of je beter voelen. Als we begrijpen waarom je
-            gebruikt, kunnen we manieren vinden om dezelfde functie op een
-            andere manier te vervullen.”
-          </DialogDescription>
-          <DialogDescription className="mt-4 flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">2. De drie hoofdvragen</span> Stel
-            deze drie kernvragen om het gesprek te starten:
-          </DialogDescription>
-          <ol className="mb-4 flex list-inside flex-col gap-4">
+          <SubSectionHeader size="large">Stappen</SubSectionHeader>
+          <SubSectionHeader>
+            Stap 1: Introductie van de oefening
+          </SubSectionHeader>
+          <ol className="mb-6 flex flex-col gap-1 px-6">
             <ListItem ordered>
-              <span className="font-semibold">
-                Wat levert het gebruik je op?
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
+              Leg uit dat gebruik vaak een functie of doel heeft, zoals het
+              verminderen van stress, vermijden van emoties of vergroten van
+              zelfvertrouwen.
+            </ListItem>
+            <ListItem ordered>
+              Benadruk dat het herkennen van deze functies de eerste stap is
+              naar effectieve verandering.
+            </ListItem>
+            <ListItem ordered>
+              Voorbeelduitleg aan de cliënt:
+              <br />
+              <br />
+              <i>
+                “Gebruik is niet zomaar iets dat je doet. Het vervult vaak een
+                belangrijke functie, zoals stress verlichten, emoties
+                onderdrukken of je beter voelen. Als we begrijpen waarom je
+                gebruikt, kunnen we manieren vinden om dezelfde functie op een
+                andere manier te vervullen.”
+              </i>
+            </ListItem>
+          </ol>
+
+          <SubSectionHeader>
+            Stap 2: Kernvragen voor verkenning
+          </SubSectionHeader>
+          <StyledParagraph marginBottom="mb-2">
+            Gebruik de volgende drie vragen om het gesprek te structureren:
+          </StyledParagraph>
+          <ol className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem ordered>
+              <b>Wat levert het gebruik je op?</b>
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
                 <ListItem>
-                  Bespreek wat de cliënt wint of ervaart door te gebruiken.
-                  Bijvoorbeeld: ontspanning, ontsnappen aan emoties, plezier,
-                  zelfvertrouwen, energie.
+                  Positieve effecten, zoals ontspanning, plezier, energie,
+                  zelfvertrouwen.
                 </ListItem>
               </ul>
             </ListItem>
+
             <ListItem ordered>
-              <span className="font-semibold">
-                Wat probeer je te vermijden door te gebruiken?
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
+              <b>Wat probeer je te vermijden door te gebruiken?</b>
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
                 <ListItem>
-                  Onderzoek welke ongemakken, pijnlijke emoties of situaties ze
-                  willen vermijden. Bijvoorbeeld: stress, eenzaamheid,
+                  Negatieve gevoelens of situaties, zoals stress, eenzaamheid,
                   verveling, angst.
                 </ListItem>
               </ul>
             </ListItem>
+
             <ListItem ordered>
-              <span className="font-semibold">
-                Wat zou er gebeuren als je niet zou gebruiken?
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
+              <b>Wat zou er gebeuren als je niet zou gebruiken?</b>
+              <ul className="mt-2 flex flex-col gap-1 px-4">
                 <ListItem>
-                  Verken wat de cliënt denkt dat er zou gebeuren als ze zouden
-                  stoppen. Dit kan inzicht geven in onderliggende angsten of
-                  overtuigingen.
+                  Inzicht in onderliggende angsten of overtuigingen die
+                  verandering bemoeilijken.
                 </ListItem>
               </ul>
             </ListItem>
           </ol>
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">3. Voorbeeld van functies</span>{" "}
-            Help de cliënt de mogelijke functies van gebruik te begrijpen. Dit
-            kunnen zijn:
-          </DialogDescription>
-          <ol className="mb-4 flex list-inside flex-col gap-4">
-            <ListItem ordered>
-              <span className="font-semibold">Emotieregulatie:</span> Gebruik om
-              negatieve emoties te verminderen (stress, angst, verdriet).
+
+          <StyledParagraph
+            marginBottom="mb-2"
+            header="Stap 3: Voorbeelden van functies"
+          >
+            Bespreek mogelijke functies van gebruik om bewustzijn te vergroten:
+          </StyledParagraph>
+          <ul className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem>
+              <b>Emotieregulatie:</b> verminderen van negatieve emoties (stress,
+              angst, verdriet).
             </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Ontsnappen of vermijden:</span>{" "}
-              Gebruik om aan pijnlijke gedachten, herinneringen of situaties te
-              ontsnappen.
+            <ListItem>
+              <b>Ontsnappen of vermijden:</b> pijnlijke gedachten of situaties
+              vermijden.
             </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Sociale connectie:</span> Gebruik
-              om erbij te horen, makkelijker te praten, of sociale angst te
+            <ListItem>
+              <b>Sociale connectie:</b> erbij horen of sociale angst
               verminderen.
             </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Zelfbeeld verbeteren:</span>{" "}
-              Gebruik om zich zelfverzekerder of sterker te voelen.
-            </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Fysieke redenen:</span> Gebruik om
-              vermoeidheid te verminderen of pijn te verlichten.
-            </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Verveling bestrijden:</span>{" "}
-              Gebruik om een gevoel van leegte of doelloosheid te vullen.
-            </ListItem>
-          </ol>
-          <DialogDescription className="mt-4 flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              4. Inzicht in persoonlijke functies
-            </span>{" "}
-            <span className="font-semibold italic">
-              Oefening: De functiekaart
-            </span>{" "}
-          </DialogDescription>
-          <ol className="mb-4 flex list-inside flex-col gap-4">
-            <ListItem ordered>
-              <span className="font-semibold">
-                Laat de cliënt nadenken over de laatste keer dat ze gebruikten.
-                Stel de volgende vragen:
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
-                <ListItem>“Wat voelde je voordat je gebruikte?”</ListItem>
-                <ListItem>“Wat dacht je op dat moment?”</ListItem>
-                <ListItem>
-                  “Wat hoopte je dat het gebruik zou doen voor je?”{" "}
-                </ListItem>
-              </ul>
-            </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">
-                Maak samen een tabel met twee kolommen:
-              </span>
-              <ul className="mt-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  <span className="font-semibold">Links:</span> De situatie (wat
-                  was er aan de hand?).
-                </ListItem>
-                <ListItem>
-                  <span className="font-semibold">Rechts:</span> De functie (wat
-                  hoopte je dat gebruik zou oplossen of opleveren?).
-                </ListItem>
-              </ul>
-            </ListItem>
-          </ol>
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold italic">Voorbeeld</span>
-          </DialogDescription>
-          <div className="relative flex w-full font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <table className="mb-2 border-collapse border border-black text-sm lg:text-base">
-              <thead className="p-2">
-                <tr className="h-8 pb-4">
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans font-semibold tracking-[1px] text-[#333333] text-opacity-90">
-                    Situatie
-                  </td>
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans font-semibold tracking-[1px] text-[#333333] text-opacity-90">
-                    Functie
-                  </td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="h-6">
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Ruzie met partner
-                  </td>
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Stress verminderen, gedachten uitschakelen
-                  </td>
-                </tr>
-                <tr className="h-auto">
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Verveling op een vrije avond
-                  </td>
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Tijd doden, een gevoel van opwinding ervaren
-                  </td>
-                </tr>
-                <tr className="h-auto">
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Zich eenzaam voelen op een feestje{" "}
-                  </td>
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Meer zelfvertrouwen krijgen, makkelijker praten
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <DialogDescription className="mt-4 flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">5. Alternatieven verkennen</span>{" "}
-            Zodra de functies van gebruik helder zijn, kun je samen zoeken naar
-            alternatieven die dezelfde behoefte vervullen.
-            <span className="font-semibold italic">
-              Oefening: Alternatieve strategieën
-            </span>{" "}
-          </DialogDescription>
-          <ol className="mb-4 flex list-inside flex-col gap-4">
-            <ListItem ordered>
-              Neem elke functie die de cliënt heeft genoemd.
-            </ListItem>
-            <ListItem ordered>
-              Brainstorm samen over andere, gezondere manieren om deze behoefte
-              te vervullen.
-              <ul className="mt-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  <span className="font-semibold">Voorbeeld 1:</span> Als
-                  gebruik stress vermindert, kunnen ademhalingsoefeningen of
-                  lichaamsbeweging een alternatief zijn.
-                </ListItem>
-                <ListItem>
-                  <span className="font-semibold">Voorbeeld 2:</span> Als
-                  gebruik eenzaamheid verzacht, kan het opbouwen van sociale
-                  contacten of hobby’s proberen helpen.
-                </ListItem>
-              </ul>
-            </ListItem>
-            <ListItem ordered>
-              Laat de cliënt drie alternatieve strategieën opschrijven en vraag
-              hen een daarvan uit te proberen voor de volgende sessie.
-            </ListItem>
-          </ol>
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">6. Reflecteren op gevolgen</span>{" "}
-            Help de cliënt inzien dat gebruik niet alleen een functie heeft,
-            maar ook gevolgen. Dit maakt het makkelijker om te motiveren voor
-            verandering.
-            <span className="font-semibold italic">
-              Oefening: Positieve en negatieve gevolgen
-            </span>{" "}
-          </DialogDescription>
-          <ol className="mb-4 flex list-inside flex-col gap-4">
-            <ListItem ordered>
-              Laat de cliënt twee kolommen maken:
-              <ul className="mt-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  <span className="font-semibold">Links: </span> Wat levert
-                  gebruik op? (positieve effecten).
-                </ListItem>
-                <ListItem>
-                  <span className="font-semibold">Rechts: </span> Wat kost
-                  gebruik je? (negatieve effecten).
-                </ListItem>
-              </ul>
-            </ListItem>
-            <ListItem ordered>
-              Reflecteer op de balans: Wegen de korte-termijn voordelen van
-              gebruik op tegen de lange-termijn nadelen?
-            </ListItem>
-          </ol>
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold italic">Voorbeeld</span>
-          </DialogDescription>
-          <div className="relative flex w-full font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <table className="mb-2 border-collapse border border-black text-sm lg:text-base">
-              <thead className="p-2">
-                <tr className="h-8 pb-4">
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans font-semibold tracking-[1px] text-[#333333] text-opacity-90">
-                    Voordelen van gebruik
-                  </td>
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans font-semibold tracking-[1px] text-[#333333] text-opacity-90">
-                    Nadelen van gebruik
-                  </td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="h-6">
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Vermindert stress direct
-                  </td>
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Schaamte en schuldgevoel achteraf{" "}
-                  </td>
-                </tr>
-                <tr className="h-auto">
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Helpt bij sociale situaties{" "}
-                  </td>
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Gezondheid gaat achteruit{" "}
-                  </td>
-                </tr>
-                <tr className="h-auto">
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Geeft een gevoel van controle{" "}
-                  </td>
-                  <td className="text-wrap border border-black p-2 text-start align-top font-sans tracking-[1px] text-[#333333] text-opacity-90">
-                    Financiële problemen{" "}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <DialogDescription className="mt-4 flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              7. Dieper graven: wat ligt onder de functie?
-            </span>{" "}
-            Vaak vervult gebruik niet alleen een oppervlakkige functie, maar
-            raakt het diepere, onbewuste thema&apos;s. Stel verdiepende vragen:
-          </DialogDescription>
-          <ol className="flex list-inside flex-col gap-4">
-            <ListItem ordered>
-              <span className="font-semibold">
-                Welke onvervulde behoefte ligt hieraan ten grondslag?
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  Bijvoorbeeld: een behoefte aan veiligheid, liefde, autonomie,
-                  of erkenning.
-                </ListItem>
-              </ul>
-            </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">
-                Hoe kun je deze behoefte op een andere manier vervullen?
-              </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  Bijvoorbeeld: door relaties te verbeteren, grenzen te leren
-                  stellen, of eigen doelen na te streven.
-                </ListItem>
-              </ul>
-            </ListItem>
-          </ol>
-          <DialogDescription className="mt-4 flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              8. Plan van aanpak: naar gezonde alternatieven{" "}
-            </span>{" "}
-            Maak een concreet plan op basis van de inzichten die de cliënt heeft
-            opgedaan:
-          </DialogDescription>
-          <ol className="mb-4 flex list-inside flex-col gap-4">
-            <ListItem ordered>
-              <span className="font-semibold">Korte-termijndoelen:</span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  Eén functie van gebruik aanpakken en hier een gezonde
-                  strategie voor vinden.
-                </ListItem>
-                <ListItem>
-                  Bijvoorbeeld: In plaats van stress te verlichten met middelen,
-                  proberen ze dagelijks 10 minuten ademhalingsoefeningen te
-                  doen.{" "}
-                </ListItem>
-              </ul>
-            </ListItem>
-            <ListItem ordered>
-              <span className="font-semibold">Langetermijndoelen: </span>
-              <ul className="my-2 flex list-inside flex-col gap-2">
-                <ListItem>
-                  Werken aan bredere thema&apos;s zoals zelfbeeld, sociale
-                  vaardigheden, of emotieregulatie.
-                </ListItem>
-              </ul>
-            </ListItem>
-          </ol>
-          <DialogDescription className="flex flex-col gap-4 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              9. Follow-up en Evaluatie
-            </span>{" "}
-          </DialogDescription>
-          <ul className="mb-4 flex list-inside flex-col gap-4">
             <ListItem>
-              Vraag in een volgende sessie hoe het is gegaan met het herkennen
-              van de functie van gebruik en het toepassen van alternatieven.
+              <b>Zelfbeeld verbeteren:</b> zich zelfverzekerder of sterker
+              voelen.
+            </ListItem>
+            <ListItem>
+              <b>Fysieke redenen:</b> vermoeidheid verminderen of pijn
+              verlichten.
+            </ListItem>
+            <ListItem>
+              <b>Verveling bestrijden:</b> leegte of doelloosheid opvullen.
+            </ListItem>
+          </ul>
+          <SubSectionHeader>
+            Stap 4: Persoonlijke functie verkennen (functiekaart)
+          </SubSectionHeader>
+
+          <ol className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem ordered>
+              Vraag de cliënt te reflecteren op zijn/haar laatste
+              gebruiksmoment:
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
+                <ListItem>Wat voelde je?</ListItem>
+                <ListItem>Wat dacht je?</ListItem>
+                <ListItem>
+                  Wat hoopte je dat het gebruik zou opleveren?
+                </ListItem>
+              </ul>
+            </ListItem>
+
+            <ListItem ordered>
+              Vul samen een tabel in:
+              <table className="mb-8 mt-6 w-full">
+                <thead>
+                  <tr>
+                    <TableHeaderCellStyled className="py-2 align-top">
+                      Situatie
+                    </TableHeaderCellStyled>
+                    <TableHeaderCellStyled className="py-2 align-top">
+                      Functie van gebruik
+                    </TableHeaderCellStyled>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <TableCellStyled className="py-2 align-top">
+                      Voorbeeld: ruzie met partner
+                    </TableCellStyled>
+                    <TableCellStyled className="py-2 align-top">
+                      Stress verminderen, gedachten uitschakelen
+                    </TableCellStyled>
+                  </tr>
+                  <tr>
+                    <TableCellStyled className="py-2 align-top">
+                      Voorbeeld: verveling op een vrije avond
+                    </TableCellStyled>
+                    <TableCellStyled className="py-2 align-top">
+                      Tijd doden, opwinding ervaren
+                    </TableCellStyled>
+                  </tr>
+                </tbody>
+              </table>
+            </ListItem>
+          </ol>
+
+          <SubSectionHeader>Stap 5: Alternatieven verkennen</SubSectionHeader>
+
+          <ol className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem ordered>
+              Bespreek bij elke functie gezondere manieren om dezelfde behoefte
+              te vervullen.
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
+                <ListItem>
+                  Voorbeeld: stress → ademhalingsoefeningen of sporten.
+                </ListItem>
+                <ListItem>
+                  Voorbeeld: eenzaamheid → sociale contacten of hobby’s.
+                </ListItem>
+              </ul>
+            </ListItem>
+
+            <ListItem ordered>
+              Laat de cliënt drie alternatieve strategieën opschrijven en één
+              uitproberen voor de volgende sessie.
+            </ListItem>
+          </ol>
+          <SubSectionHeader>Stap 6: Reflectie op gevolgen</SubSectionHeader>
+
+          <ol className="mb-4 flex flex-col gap-1 px-6">
+            <ListItem ordered>
+              Maak twee kolommen om positieve en negatieve gevolgen van gebruik
+              te verkennen:
+              <table className="mb-8 mt-6 w-full">
+                <thead>
+                  <tr>
+                    <TableHeaderCellStyled className="py-2 align-top">
+                      Voordelen van gebruik
+                    </TableHeaderCellStyled>
+                    <TableHeaderCellStyled className="py-2 align-top">
+                      Nadelen van gebruik
+                    </TableHeaderCellStyled>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <TableCellStyled className="py-2 align-top">
+                      Stress verminderd
+                    </TableCellStyled>
+                    <TableCellStyled className="py-2 align-top">
+                      Schuldgevoel, schaamte
+                    </TableCellStyled>
+                  </tr>
+                  <tr>
+                    <TableCellStyled className="py-2 align-top">
+                      Sociale situatie makkelijker
+                    </TableCellStyled>
+                    <TableCellStyled className="py-2 align-top">
+                      Gezondheid achteruit
+                    </TableCellStyled>
+                  </tr>
+                  <tr>
+                    <TableCellStyled className="py-2 align-top">
+                      Controle ervaren
+                    </TableCellStyled>
+                    <TableCellStyled className="py-2 align-top">
+                      Financiële problemen
+                    </TableCellStyled>
+                  </tr>
+                </tbody>
+              </table>
+            </ListItem>
+            <ListItem ordered>
+              Bespreek de balans: wegen korte-termijn voordelen op tegen
+              lange-termijn nadelen?
+            </ListItem>
+          </ol>
+          <SubSectionHeader>Stap 7: Dieper graven</SubSectionHeader>
+
+          <ol className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem ordered>
+              Verken de onderliggende behoeften: veiligheid, liefde, autonomie,
+              erkenning.
+            </ListItem>
+            <ListItem ordered>
+              Bespreek hoe deze behoeften op een andere manier vervuld kunnen
+              worden: relaties verbeteren, grenzen leren stellen, eigen doelen
+              nastreven.
+            </ListItem>
+          </ol>
+          <SubSectionHeader>Stap 8: Plan van aanpak</SubSectionHeader>
+
+          <ol className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem ordered>
+              <b>Kortetermijndoelen:</b> één functie van gebruik aanpakken en
+              alternatieve strategie toepassen.
+              <ul className="mb-6 mt-2 flex flex-col gap-1 px-4">
+                <ListItem>
+                  Voorbeeld: stress verlichten door dagelijks 10 minuten
+                  ademhalingsoefeningen.
+                </ListItem>
+              </ul>
+            </ListItem>
+
+            <ListItem ordered>
+              <b>Langetermijndoelen:</b> werken aan bredere thema’s zoals
+              zelfbeeld, sociale vaardigheden of emotieregulatie.
+            </ListItem>
+          </ol>
+          <SubSectionHeader>Stap 9: Reflectie en follow-up</SubSectionHeader>
+
+          <ul className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem>
+              Bespreek in de volgende sessie hoe het herkennen van functies en
+              het toepassen van alternatieven ging.
             </ListItem>
             <ListItem>Bespreek succesmomenten en obstakels.</ListItem>
             <ListItem>
-              Moedig hen aan om door te gaan met het ontdekken van nieuwe,
-              gezonde strategieën.{" "}
+              Moedig aan om nieuwe, gezonde strategieën te blijven ontdekken en
+              oefenen.
+            </ListItem>
+          </ul>
+          <Divider />
+          <SubSectionHeader>Tips voor de begeleiding</SubSectionHeader>
+
+          <ul className="mb-6 flex flex-col gap-1 px-6">
+            <ListItem>
+              Gebruik open vragen en laat de cliënt zelf voorbeelden bedenken.
+            </ListItem>
+            <ListItem>
+              Respecteer emoties; sommige functies of onderliggende behoeften
+              kunnen gevoelig liggen.
+            </ListItem>
+            <ListItem>
+              Maak de oefening visueel met een schema of tabel.
+            </ListItem>
+            <ListItem>
+              Focus op inzicht en alternatieven, niet op oordeel over gebruik.
+            </ListItem>
+            <ListItem>
+              Stimuleer het uitproberen van alternatieven en reflecteer in
+              volgende sessies.
             </ListItem>
           </ul>
         </div>

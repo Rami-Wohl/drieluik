@@ -9,6 +9,10 @@ import {
 import { GameContainer } from "./kernquadranten";
 import TijdlijnIcon from "~/components/icons/zingeving/tijdlijn-icon";
 import { Button } from "~/components/ui/button";
+import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
+import { ListItem } from "~/components/ui/list-item";
+import { Divider } from "~/components/ui/text-components/divider";
 
 export function Tijdlijn() {
   return (
@@ -26,19 +30,119 @@ export function Tijdlijn() {
             Hoe is jouw leven tot nu toe gelopen?
           </h3>
         </DialogHeader>
-        <div className="mb-6 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            Teken een tijdlijn uit waarbij je je focust op gebeurtenissen die
-            hebben bijgedragen aan de ontwikkeling tot de persoon die je nu
-            bent. begin bij nul en eindig bij het heden. Breek het desnoods op
-            in meerdere sessies en geef het ook als huiswerk op. Juist als
-            iemand moeite heeft met oude herinneringen ophalen, kan het erg
-            helpend zijn om hier de tijd voor te nemen, zien wat het los maakt
-            en de tijd te nemen om het allemaal goed te bekijken.
-          </DialogDescription>
-          <div className="mb-4 flex w-full flex-col items-center justify-center">
+        <div className="mb-6 flex flex-col font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <table className="mb-6 p-3">
+            <tbody>
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                  Doel:
+                </td>
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  De oefening helpt de cliënt inzicht te krijgen in de
+                  ontwikkeling van zijn/haar leven tot nu toe. Door belangrijke
+                  gebeurtenissen — zowel positieve als negatieve — in kaart te
+                  brengen, wordt duidelijk hoe ervaringen hebben bijgedragen aan
+                  wie de cliënt nu is. Dit bevordert zelfreflectie,
+                  zelfbewustzijn en inzicht in patronen in het leven.
+                </td>
+              </tr>
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                  Benodigdheden:
+                </td>
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  Groot vel papier of schetsboek, pennen, stiften of
+                  kleurpotloden, eventueel notitiepapier voor aantekeningen,
+                  rustige, ongestoorde omgeving
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <SubSectionHeader size="large">Stappen</SubSectionHeader>
+          <StyledParagraph header="Stap 1: introductie van de oefening">
+            Sommige mensen merken dat gebruik niet meer past, bijvoorbeeld door
+            klachten achteraf, verlies van controle of impact op werk, relaties
+            of gezondheid.
+          </StyledParagraph>
+          <StyledParagraph header="Stap 2:	Start van de tijdlijn">
+            Vraag de cliënt om een horizontale lijn te tekenen van geboorte tot
+            het heden. Markeer de start (geboorte) en het einde (heden).
+          </StyledParagraph>
+          <div className="mb-6 flex w-full flex-col items-center justify-center">
             <TijdlijnDiagram />
           </div>
+          <SubSectionHeader>
+            Stap 3: Invullen van belangrijke gebeurtenissen
+          </SubSectionHeader>
+          <ul className="mb-6 flex flex-col gap-1 px-4">
+            <ListItem>
+              Vraag de cliënt om zowel positieve als negatieve gebeurtenissen te
+              noteren.
+            </ListItem>
+            <ListItem>
+              Stimuleer de cliënt om te denken aan gebeurtenissen die hebben
+              bijgedragen aan wie hij/zij nu is.
+            </ListItem>
+            <ListItem>
+              Het kan helpen om dit op te delen in periodes of thema’s (bijv.
+              kindertijd, adolescentie, volwassenheid).
+            </ListItem>
+          </ul>
+          <SubSectionHeader>Stap 4: Verdieping en toelichting</SubSectionHeader>
+          <ul className="mb-6 flex flex-col gap-1 px-4">
+            <ListItem>
+              Bespreek bij elke gebeurtenis kort wat het voor de cliënt
+              betekende.
+            </ListItem>
+            <ListItem>
+              Vraag eventueel welke vaardigheden, inzichten of veranderingen
+              eruit voortkwamen.
+            </ListItem>
+            <ListItem>
+              Neem de tijd; het is prima om dit over meerdere sessies te
+              spreiden of als huiswerk mee te geven.
+            </ListItem>
+          </ul>
+          <SubSectionHeader>
+            Stap 5: Reflectie op de oefening (afsluiting)
+          </SubSectionHeader>
+          <ul className="mb-6 flex flex-col gap-1 px-4">
+            <ListItem>
+              Bespreek samen wat opviel tijdens het maken van de tijdlijn.
+            </ListItem>
+            <ListItem>
+              Vraag naar gevoelens die naar boven kwamen en wat de cliënt
+              geleerd heeft over zichzelf.
+            </ListItem>
+            <ListItem>
+              Benoem vooruitgang of nieuwe inzichten die de cliënt heeft
+              opgedaan.
+            </ListItem>
+          </ul>
+          <Divider />
+          <SubSectionHeader>Tips voor de begeleiding</SubSectionHeader>
+          <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
+            <ListItem>
+              Wees geduldig, vooral als het ophalen van oude herinneringen
+              moeilijk is.
+            </ListItem>
+            <ListItem>
+              Respecteer grenzen; sommige gebeurtenissen mogen niet besproken
+              worden.
+            </ListItem>
+            <ListItem>
+              Moedig aan om zowel positieve als negatieve gebeurtenissen op te
+              nemen.
+            </ListItem>
+            <ListItem>
+              Gebruik gerust stilte; het proces kan reflectief en emotioneel
+              zijn.
+            </ListItem>
+            <ListItem>
+              Beloon en bevestig de inzet en openheid van de cliënt, ook als het
+              resultaat niet “perfect” is.
+            </ListItem>
+          </ul>
         </div>
         <DialogClose asChild>
           <Button

@@ -55,7 +55,7 @@ export function Doelenspel() {
           <SubSectionHeader size="large">Stappen</SubSectionHeader>
           <StyledParagraph
             marginBottom="mb-2"
-            header="Stap 1: introductie van het model "
+            header="Stap 1: introductie van het model"
           >
             Sommige mensen merken dat gebruik niet meer past, bijvoorbeeld door
             klachten achteraf, verlies van controle of impact op werk, relaties
@@ -69,7 +69,7 @@ export function Doelenspel() {
           <StyledParagraph marginBottom="mb-2">
             Introduceer onderstaande categorieën:
           </StyledParagraph>
-          <ol className="mb-6 flex flex-col gap-1 px-4">
+          <ol className="mb-6 flex flex-col gap-1 px-6">
             <ListItem ordered>Behandeling</ListItem>
             <ListItem ordered>Wonen</ListItem>
             <ListItem ordered>Financiën</ListItem>
