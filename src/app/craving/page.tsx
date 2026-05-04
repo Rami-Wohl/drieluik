@@ -76,10 +76,18 @@ export default function CravingPage() {
             </AccordionTrigger>
             <AccordionContent className="bg-blue-900 bg-opacity-5 p-6">
               <p className="mb-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-                De ademhaling onder controle krijgen is een sterke basis voor
-                omgaan met craving. Daarom gebruiken we dit in de basis van
-                bijna iedere oefening. Hier onder volgt een oefening die je
-                regelmatig kan herhalen.
+                In je lichaam zit veel ervaring opgeslagen. Je lichaam onthoudt
+                wat je hebt meegemaakt, ook als je daar niet altijd bewust aan
+                denkt. Bij mensen met verslavingsproblemen kan dit zichtbaar
+                worden in craving, spanning, lichaamshouding of automatische
+                gewoonten.
+              </p>{" "}
+              <p className="mb-4 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+                Door rustig en met aandacht naar je lichaam te luisteren, kun je
+                signalen eerder herkennen. Je leert beter merken wat er in je
+                gebeurt, zodat je eerder kunt ingrijpen bij spanning, onrust of
+                trek. Oefeningen met ademhaling, beweging en lichaamsbewustzijn
+                kunnen helpen om meer rust te krijgen en craving te verminderen.
               </p>
               <div className="my-2 flex flex-col gap-2">
                 <AdemhalingsOefening1 />

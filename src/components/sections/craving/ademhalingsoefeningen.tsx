@@ -5,9 +5,12 @@ import {
   DialogTrigger,
   DialogContent,
   DialogTitle,
-  DialogDescription,
   DialogClose,
 } from "~/components/ui/dialog";
+import { ListItem } from "~/components/ui/list-item";
+import { Divider } from "~/components/ui/text-components/divider";
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
+import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
 
 export function AdemhalingsOefening1() {
   return (
@@ -23,8 +26,8 @@ export function AdemhalingsOefening1() {
             Basis ademhalingsoefening
           </DialogTitle>
         </DialogHeader>
-        <div className="mb-6 flex flex-col gap-8 lg:px-4">
-          <table>
+        <div className="mb-6 flex flex-col lg:px-4">
+          <table className="mb-8">
             <tbody>
               <tr className="h-6">
                 <td className="text-wrap pr-2 text-start align-top font-sans text-sm font-semibold tracking-[1px] text-[#333333] text-opacity-90">
@@ -36,41 +39,77 @@ export function AdemhalingsOefening1() {
               </tr>
             </tbody>
           </table>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            De mate van craving kan beïnvloed worden door middel van de
-            ademhaling. Craving en stress gaan vaak samen. Door deze spanning
-            gaan mensen vaak oppervlakkiger, sneller of zelfs onregelmatig
-            ademhalen, wat de craving kan versterken. Dat komt omdat het lichaam
-            in een fight-or-flight toestand verkeert, waarin de behoefte aan
-            onmiddellijke bevrediging toeneemt. Bewuste, langzame ademhaling
-            helpt om het parasympathische zenuwstelsel te activeren, wat zorgt
-            voor ontspanning. Dit verlaagt de hartslag en verlaagt gevoelens van
-            stress en spanning. Diep en rustig ademhalen stimuleert gebieden in
-            de hersenen die verbonden zijn met zelfcontrole en emotionele
-            regulatie. Dit kan helpen om impulsieve verlangens of craving beter
-            te weerstaan. Studies tonen aan dat ademhalingsoefeningen ook een
-            positief effect kunnen hebben op de prefrontale cortex, het gebied
-            dat belangrijk is voor het maken van weloverwogen beslissingen en
-            het reguleren van impulsen.
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            Bewust werken aan de ademhaling geeft een soort biofeedback: je
-            merkt hoe het lichaam kalmeert, waardoor de behoefte om de craving
-            te vervullen soms afneemt. Het zelf kalmeren door middel van
-            ademhaling geeft daarnaast een gevoel van controle, wat juist
-            ontbreekt in een situatie van hevige craving.
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            De eerste keer is het belangrijk om een heel vast ritme aan te
-            leren. Het ritme moet rustig en constant zijn. Je kan bijvoorbeeld
-            met pen zachtjes op de tafel tikken. Inademen gaat vaak iets sneller
-            dan uitademen en bouw altijd twee tikken in na het inademen en één
-            of twee na het uitademen.
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <StyledParagraph>
+            Onderzoek laat zien dat ademhaling direct invloed heeft op je
+            lichaam en geest. Bij stress, spanning of craving gaan mensen vaak
+            snel, hoog en oppervlakkig ademen. Dit kan onrust en angst
+            versterken. Rustig en langzaam ademen via je neus helpt om je
+            zenuwstelsel te kalmeren en meer ontspanning te voelen.
+          </StyledParagraph>
+          <SubSectionHeader>Je ademhaling waarnemen:</SubSectionHeader>
+
+          <StyledParagraph marginBottom="mb-2">
+            Neem even de tijd om je aandacht op je ademhaling te richten, zonder
+            iets te veranderen. Adem gewoon zoals je nu doet.{" "}
+          </StyledParagraph>
+          <ul className="mb-10 flex flex-col gap-2 px-4">
+            <ListItem>Adem je door je neus, je mond of beide?</ListItem>
+            <ListItem>Is je ademhaling snel of langzaam?</ListItem>
+            <ListItem>
+              Adem je vooral in je borst of meer naar je buik?
+            </ListItem>
+            <ListItem>
+              Voel je spanning in je schouders, nek of ergens anders?
+            </ListItem>
+            <ListItem>
+              Probeer nu rustiger te ademen via je neus en meer naar je buik.
+              Adem licht en ontspannen.
+            </ListItem>
+            <ListItem>
+              Tel bij het inademen tot (bijvoorbeeld) vier en bij het uitademen
+              tot zes.
+            </ListItem>
+            <ListItem>
+              Je kunt je uitademing verlengen door zachtjes door getuite lippen
+              uit te ademen.
+            </ListItem>
+            <ListItem>
+              Welke veranderingen merk je in je lichaam of gevoel?
+            </ListItem>
+            <ListItem>
+              Oefen hier meerdere keren per dag kort mee, vooral bij stress,
+              onrust of craving.
+            </ListItem>
+          </ul>
+          <SubSectionHeader>Langzame buikademhaling:</SubSectionHeader>
+          <ul className="mb-6 flex flex-col gap-2 px-4">
+            <ListItem>Ga comfortabel zitten of liggen.</ListItem>
+            <ListItem>Leg één hand op je buik.</ListItem>
+            <ListItem>
+              Adem langzaam in door je neus en voel je buik omhoog komen.
+            </ListItem>
+            <ListItem>
+              Adem rustig uit door je neus en voel je buik weer zakken.
+            </ListItem>
+            <ListItem>Houd je ademhaling rustig, licht en langzaam.</ListItem>
+            <ListItem>Oefen dit een paar minuten.</ListItem>
+            <ListItem>
+              Probeer ook overdag regelmatig je ademhaling rustiger te maken.
+            </ListItem>
+          </ul>
+          <Divider />
+
+          <StyledParagraph marginBottom="mb-2">
+            De eerste keer is het handig om een heel vast ritme aan te leren.
+            Het ritme moet rustig en constant zijn. Je kan bijvoorbeeld met pen
+            zachtjes op de tafel tikken. Inademen gaat vaak iets sneller dan
+            uitademen en bouw altijd twee tikken in na het inademen en één of
+            twee na het uitademen.
+          </StyledParagraph>
+          <StyledParagraph marginBottom="mb-2">
             Een voorbeeld ritme kan dan zijn:
-          </DialogDescription>
-          <div className="relative mt-2 flex h-60 w-full flex-col items-center justify-center lg:my-6 lg:mb-4 lg:h-60 lg:scale-100 lg:px-6">
+          </StyledParagraph>
+          <div className="relative mb-10 flex h-60 w-full flex-col items-center justify-center lg:h-60 lg:scale-100 lg:px-6">
             <table
               className={`relative h-full w-full border-collapse border-2 border-black border-opacity-70 bg-slate-300 p-2 text-center font-sans text-base font-semibold tracking-wide text-[#333] text-opacity-90 lg:text-lg`}
             >
@@ -110,12 +149,18 @@ export function AdemhalingsOefening1() {
               </tbody>
             </table>
           </div>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-sm tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <StyledParagraph marginBottom="mb-2">
             Het meetikken en überhaupt het nastreven van een rigide ritme is
             iets wat je alleen tijdens deze oefeningen doet. Zodra hier mee
             geoefend is, is het meestal juist weer handig om het tellen los te
             laten en de focus voor iets anders te gebruiken.
-          </DialogDescription>
+          </StyledParagraph>
+          <Divider />
+          <StyledParagraph marginBottom="mb-2">
+            De oefeningen zijn geïnspireerd door/ gebaseerd op: Het wijze
+            lichaam, Pat Ogden, Sensorimotor Psychotherapy-oefeningen voor
+            bewustwording, regulatie en groei, Uitgeverij Mens! (2025).{" "}
+          </StyledParagraph>
         </div>
         <DialogClose asChild>
           <Button
