@@ -23,6 +23,7 @@ import {
 import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
 import { CravingInfo } from "./craving-info";
+import { VervangendeActiviteiten } from "~/components/sections/craving/vervangende-activiteiten";
 
 export default function CravingPage() {
   return (
@@ -53,6 +54,17 @@ export default function CravingPage() {
             </AccordionTrigger>
             <AccordionContent className="bg-blue-900 bg-opacity-5 p-6">
               <CravingCheck />
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem
+            value="vervangende-activiteiten"
+            className="border-blue-950 border-opacity-5"
+          >
+            <AccordionTrigger className="mb-1 rounded-md bg-blue-900 bg-opacity-30 p-4 hover:bg-opacity-50 hover:no-underline">
+              Vervangende bezigheden
+            </AccordionTrigger>
+            <AccordionContent className="bg-blue-900 bg-opacity-5 p-6">
+              <VervangendeActiviteiten />
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
