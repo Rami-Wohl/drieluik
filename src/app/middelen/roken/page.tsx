@@ -51,7 +51,7 @@ export default function Page() {
 const RokenAlgemeen = () => {
   return (
     <>
-      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van roken" />
+      <ResponsiveImage src="/images/roken.jpg" alt="Plaatje van roken" />
       <DrugPropertiesTable
         werkzameStof="Nicotine C₁₀H₁₄N₂"
         gebruiksvorm="Roken, vapen"

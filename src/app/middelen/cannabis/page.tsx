@@ -55,10 +55,7 @@ const CannabisAlgemeen = () => {
       <div className="mb-4">
         <CannabisAnamnese />
       </div>
-      <ResponsiveImage
-        src="/images/cannabis-1.jpg"
-        alt="Plaatje van cannabis"
-      />
+      <ResponsiveImage src="/images/cannabis.jpg" alt="Plaatje van cannabis" />
       <DrugPropertiesTable
         werkzameStof="Tetrahydrocannabinol (THC) C₂₁H₃₀O₂"
         gebruiksvorm="Joint, eetwaren, vapen"
@@ -97,7 +94,7 @@ const CannabisAlgemeen = () => {
         kneedachtige hasj overblijft die Charas wordt genoemd.
       </StyledParagraph>
       <ResponsiveImage
-        src="/images/hash-1.png"
+        src="/images/hash.png"
         alt="Plaatje van hash"
         description="Hash"
       />

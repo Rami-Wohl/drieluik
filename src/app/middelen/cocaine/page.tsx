@@ -52,7 +52,7 @@ export default function Page() {
 const CocaineAlgemeen = () => {
   return (
     <>
-      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van cocaine" />
+      <ResponsiveImage src="/images/coke.jpg" alt="Plaatje van cocaine" />
       <DrugPropertiesTable
         werkzameStof="Benzoylmethylecgonine C₁₇H₂₁NO₄"
         gebruiksvorm="Snuiven, roken, basen"

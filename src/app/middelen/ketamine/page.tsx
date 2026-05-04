@@ -51,10 +51,7 @@ export default function Page() {
 const KetamineAlgemeen = () => {
   return (
     <>
-      <ResponsiveImage
-        src="/images/cannabis-1.jpg"
-        alt="Plaatje van ketamine"
-      />
+      <ResponsiveImage src="/images/ketamine.jpg" alt="Plaatje van ketamine" />
       <DrugPropertiesTable
         werkzameStof="Ketamine C₁₃H₁₆ClNO"
         gebruiksvorm="Snuiven"

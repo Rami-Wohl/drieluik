@@ -53,7 +53,7 @@ export default function Page() {
 const GhbAlgemeen = () => {
   return (
     <>
-      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van GHB" />
+      <ResponsiveImage src="/images/ghb.jpg" alt="Plaatje van GHB" />
       <DrugPropertiesTable
         werkzameStof="Gamma-hydroxyboterzuur C₄H₈O₃"
         gebruiksvorm="Drinken"

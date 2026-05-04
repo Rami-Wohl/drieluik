@@ -51,7 +51,7 @@ const GedragsverslavingenAlgemeen = () => {
   return (
     <>
       <ResponsiveImage
-        src="/images/cannabis-1.jpg"
+        src="/images/gedragsverslavingen.jpg"
         alt="Plaatje van gedragsverslavingen"
       />
       <StyledParagraph>

@@ -52,7 +52,7 @@ export default function Page() {
 const SpeedAlgemeen = () => {
   return (
     <>
-      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van speed" />
+      <ResponsiveImage src="/images/speed.jpg" alt="Plaatje van speed" />
       <DrugPropertiesTable
         werkzameStof="Amfetaminesulfaat C₁₈H₂₈N₂O₄S"
         gebruiksvorm="Snuiven, slikken"

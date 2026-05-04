@@ -51,7 +51,7 @@ export default function Page() {
 const FlakkaAlgemeen = () => {
   return (
     <>
-      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van flakka" />
+      <ResponsiveImage src="/images/flakka.jpg" alt="Plaatje van flakka" />
       <DrugPropertiesTable
         werkzameStof="Alfa-pyrrolidinovalerofenon C₁₅H₂₁NO"
         gebruiksvorm="Roken, snuiven, spuiten"

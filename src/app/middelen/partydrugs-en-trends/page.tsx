@@ -50,7 +50,7 @@ const PartydrugsAlgemeen = () => {
   return (
     <>
       <ResponsiveImage
-        src="/images/cannabis-1.jpg"
+        src="/images/partydrugs.jpg"
         alt="Plaatje van partydrugs"
       />
       <StyledParagraph marginBottom="mb-2">

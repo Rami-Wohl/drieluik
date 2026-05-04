@@ -51,7 +51,7 @@ export default function Page() {
 const OpiatenAlgemeen = () => {
   return (
     <>
-      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van opiaten" />
+      <ResponsiveImage src="/images/heroine.jpg" alt="Plaatje van opiaten" />
       <DrugPropertiesTable
         werkzameStof="Diacetylmorfine C₂₁H₂₃NO₅"
         gebruiksvorm="Roken, snuiven, spuiten"

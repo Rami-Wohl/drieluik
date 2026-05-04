@@ -54,7 +54,7 @@ export default function Page() {
 const BenzosAlgemeen = () => {
   return (
     <>
-      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van benzo's" />
+      <ResponsiveImage src="/images/benzos.jpg" alt="Plaatje van benzo's" />
       <DrugPropertiesTable
         werkzameStof="Benzodiazepinen (verzamelterm)"
         gebruiksvorm="Slikken"

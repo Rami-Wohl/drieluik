@@ -239,7 +239,8 @@ export function VervangendeActiviteiten() {
               ))}
             </tbody>
           </table>
-          <StyledParagraph header="Vervangende bezigheden">
+          <Divider />
+          <StyledParagraph header="Uitleg en bronnen">
             Vervangende bezigheden zijn een centrale component van gedragsmatige
             interventies bij verslaving. Dit zijn activiteiten die de cliënt in
             plaats van middelengebruik kan ondernemen, met als doel het
@@ -314,7 +315,7 @@ export function VervangendeActiviteiten() {
             </ListItem>
           </ul>
           <Divider />
-          <StyledParagraph marginBottom="mb-2" header="Bronnen">
+          <StyledParagraph marginBottom="mb-2">
             De inhoud van dit luik is gebaseerd op wetenschappelijke literatuur
             over craving, aandacht en imaginatie, waaronder:
           </StyledParagraph>{" "}
@@ -335,7 +336,7 @@ export function VervangendeActiviteiten() {
                 in the context of quality of life and happiness among people
                 using drugs.
               </i>{" "}
-              (2015) – Frontiers in Public Health, 12, 1229262.Substitutie van
+              (2015) – Frontiers in Public Health, 12, 1229262. Substitutie van
               belonende activiteiten
             </ListItem>
           </ul>

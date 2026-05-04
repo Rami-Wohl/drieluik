@@ -52,7 +52,7 @@ export default function Page() {
 const AlcoholAlgemeen = () => {
   return (
     <>
-      <ResponsiveImage src="/images/cannabis-1.jpg" alt="Plaatje van alcohol" />
+      <ResponsiveImage src="/images/alcohol.jpg" alt="Plaatje van alcohol" />
       <DrugPropertiesTable
         werkzameStof="Ethanol (C₂H₅OH)"
         gebruiksvorm="Drinken"
