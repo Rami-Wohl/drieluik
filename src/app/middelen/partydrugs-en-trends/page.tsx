@@ -244,7 +244,7 @@ const PartydrugsAfbouwtips = () => {
 
       <StyledParagraph
         marginBottom="mb-2"
-        header="Harm reduction / veiliger gebruik"
+        header="Harm reduction/veiliger gebruik"
       >
         Als iemand gebruikt, is het belangrijk om risico’s te beperken:
       </StyledParagraph>

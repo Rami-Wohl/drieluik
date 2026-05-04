@@ -2,15 +2,17 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "~/components/ui/dialog";
 import { GameContainer } from "./kernquadranten";
 import WaardenspelIcon from "~/components/icons/zingeving/waardenspel-icon";
 import Link from "next/link";
-import { Separator } from "@radix-ui/react-dropdown-menu";
 import { Button } from "~/components/ui/button";
+import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
+import { Divider } from "~/components/ui/text-components/divider";
+import { ListItem } from "~/components/ui/list-item";
 
 export function Waardenspel() {
   return (
@@ -25,209 +27,213 @@ export function Waardenspel() {
             Waardenspel
           </DialogTitle>
         </DialogHeader>
-        <div className="my-2 flex flex-col gap-4 lg:px-4">
-          <h3 className="w-full text-center font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
-            Spelvorm 1
-          </h3>
-          <table className="mb-2">
+        <div className="mb-8 flex flex-col font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <StyledParagraph marginBottom="mb-2" header="Doel van de oefeningen">
+            De waardenoefeningen helpen de cliënt te reflecteren op wat hij/zij
+            belangrijk vindt in zijn/haar leven. Door kernwaarden in kaart te
+            brengen en te prioriteren, krijgt de cliënt inzicht in zijn/haar
+            keuzes, motivatie en herstelproces. Afhankelijk van de oefening kan
+            dit ook inzicht geven in hoe waarden door de tijd veranderen en hoe
+            ze in de toekomst kunnen worden ingezet.
+          </StyledParagraph>
+          <Divider />
+          <SubSectionHeader size="large">
+            Oefening 1: De Waardenpiramide
+          </SubSectionHeader>
+          <table className="mb-6 p-3">
             <tbody>
-              <tr className="h-auto">
-                <td className="text-wrap pr-2 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
-                  Titel:
-                </td>
-                <td className="text-wrap text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
-                  &quot;De Waardenpiramide&quot;
-                </td>
-              </tr>
-              <tr className="h-auto">
-                <td className="text-wrap pr-2 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
                   Doel:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
-                  Patiënten laten nadenken over wat zij belangrijk vinden en hoe
-                  zij hun keuzes prioriteren, met als einddoel hun &quot;Top 5
-                  Waarden&quot; in kaart te brengen.
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  De cliënt laten nadenken over wat hij/zij belangrijk vindt,
+                  keuzes prioriteren en een “Top 5 Waarden” identificeren.
+                </td>
+              </tr>
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                  Benodigdheden:
+                </td>
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  Kaarten met elk een waarde (50 kaarten,
+                  <span>
+                    {" "}
+                    een lijst met alle waarden vind je{" "}
+                    <Link
+                      href={"/waardenlijst"}
+                      target="_blank"
+                      referrerPolicy="no-referrer"
+                      className="text-blue-600 underline underline-offset-1"
+                    >
+                      hier
+                    </Link>
+                    )
+                  </span>
+                  , eventueel reflectiekaarten met vragen.{" "}
                 </td>
               </tr>
             </tbody>
           </table>
-        </div>
-        <div className="mb-4 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Voorbereiding:</span>{" "}
-            <span>
-              Knip of print elk van de waarden op een aparte kaart. Een lijst
-              met alle waarden vind je{" "}
-              <Link
-                href={"/waardenlijst"}
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className="text-blue-600 underline underline-offset-1"
-              >
-                hier
-              </Link>
-              .
-            </span>
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Ronde 1: </span>Geef de cliënt een
-            stapel van alle 50 waarden. Vraag om eerst 25 waarden te selecteren
-            die op dit moment het belangrijkste zijn.
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Ronde 2: </span>Vraag om de stapel
-            van 25 waarden verder te verkleinen tot 10 kernwaarden. Bespreek
-            eventueel kort waarom bepaalde waarden worden gekozen en anderen
-            niet.
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Ronde 3:</span>Nu moet er gekozen
-            worden uit deze 10 waarden en kom je uit op de &quot;Top 5
-            Waarden&quot;. Bespreking: Bespreek deze &quot;Top 5&quot; met de
-            cliënt. Laat de cliënt nadenken over hoe deze waarden in hun leven
-            passen en hoe deze hen kunnen ondersteunen in hun herstel.
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Variatieopties:</span>
-            <span>
-              <span className="italic">Scenariokoppeling:</span> Maak
-              scenario&apos;s waarbij elke waarde wordt toegepast in een
-              situatie (bijv. &apos;Je beste vriend vraagt je om hulp, maar je
-              hebt een zware dag gehad. Welke waarden komen hierbij
-              kijken?&apos;).{" "}
-            </span>
-            <span>
-              <span className="italic">Reflectiekaarten:</span> Gebruik
-              reflectievragen die de cliënten uitdagen om te denken over wat
-              deze waarde betekent in hun leven, zoals &quot;Wanneer voelde je
-              dat deze waarde echt belangrijk voor je was?&quot; of &quot;Hoe
-              helpt deze waarde je in moeilijke tijden?&quot;
-            </span>{" "}
-          </DialogDescription>
-        </div>
-        <Separator className="my-4 border-b-2 border-black border-opacity-30" />
-        <div className="my-2 flex flex-col gap-4 lg:px-4">
-          <h3 className="w-full text-center font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg lg:tracking-[0.1rem]">
-            Spelvorm 2
-          </h3>
-          <table className="mb-2">
+
+          <SubSectionHeader size="large">Stappen</SubSectionHeader>
+          <StyledParagraph header="Stap 1: Introductie">
+            Leg uit dat de oefening gaat over het ontdekken van wat echt
+            belangrijk is voor de cliënt en dat dit kan helpen bij keuzes en
+            herstel.
+          </StyledParagraph>
+          <StyledParagraph header="Stap 2:	Ronde 1 – Eerste selectie">
+            Geef de cliënt de stapel van 50 waarden en vraag hem/haar om de 25
+            waarden te selecteren die op dit moment het belangrijkst zijn.{" "}
+          </StyledParagraph>
+          <StyledParagraph header="Stap 3: Ronde 2 – Kernwaarden">
+            Laat de cliënt de 25 waarden verder terugbrengen tot 10 kernwaarden.
+            Sta kort stil bij de reden waarom bepaalde waarden gekozen worden en
+            anderen niet.{" "}
+          </StyledParagraph>
+          <StyledParagraph header="Stap 4: Ronde 3 – Top 5">
+            Vraag de cliënt uit deze 10 waarden de 5 belangrijkste waarden te
+            kiezen.{" "}
+          </StyledParagraph>
+          <StyledParagraph marginBottom="mb-2" header="Stap 5: Reflectie">
+            Bespreek samen de “Top 5 Waarden”. Stel vragen zoals:{" "}
+          </StyledParagraph>
+          <StyledParagraph marginBottom="mb-2">
+            “Hoe passen deze waarden in jouw dagelijks leven?”
+          </StyledParagraph>
+          <StyledParagraph marginBottom="mb-2">
+            “Hoe kunnen deze waarden je ondersteunen in je herstel?”
+          </StyledParagraph>
+          <Divider />
+          <SubSectionHeader>Tips voor de begeleiding</SubSectionHeader>
+          <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
+            <ListItem>
+              Geef ruimte voor uitleg, maar forceer geen keuzes.
+            </ListItem>
+            <ListItem>
+              Gebruik reflectievragen om verdieping te creëren.
+            </ListItem>
+            <ListItem>
+              Maak de oefening visueel door de kaarten te rangschikken of te
+              stapelen.
+            </ListItem>
+            <ListItem>
+              Variatieopties: koppel waarden aan scenario’s of gebruik extra
+              reflectievragen.
+            </ListItem>
+          </ul>
+          <Divider />
+          <SubSectionHeader size="large">
+            Oefening 1: De Waardenpiramide
+          </SubSectionHeader>
+          <table className="mb-6 p-3">
             <tbody>
-              <tr className="h-auto">
-                <td className="text-wrap pr-2 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
-                  Titel:
-                </td>
-                <td className="text-wrap text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
-                  &quot;Waarden Tijdlijn&quot;
-                </td>
-              </tr>
-              <tr className="h-auto">
-                <td className="text-wrap pr-2 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
                   Doel:
                 </td>
-                <td className="text-wrap text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
-                  Inzicht geven in hoe waarden veranderen door de tijd, en welke
-                  waarden de patiënt kan meenemen naar de toekomst om hen te
-                  ondersteunen.
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  De cliënt inzicht geven in hoe zijn/haar waarden door de tijd
+                  zijn veranderd en welke waarden hij/zij wil meenemen in de
+                  toekomst ter ondersteuning van herstel en persoonlijke groei.
+                </td>
+              </tr>
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                  Benodigdheden:
+                </td>
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  Groot vel papier of whiteboard, stiften, post-its in drie
+                  kleuren (voor Verleden, Heden, Toekomst), kaarten of post-its
+                  voor waarden (ongeveer 15)
                 </td>
               </tr>
             </tbody>
           </table>
+          <SubSectionHeader size="large">Stappen</SubSectionHeader>
+          <StyledParagraph header="Stap 1: Introductie">
+            Leg uit dat de oefening inzicht geeft in waarden in verleden, heden
+            en toekomst en hoe deze kunnen helpen bij keuzes en herstel.
+          </StyledParagraph>
+          <StyledParagraph header="Stap 2: Voorbereiding">
+            Teken een horizontale tijdlijn op papier of whiteboard en label drie
+            punten: Verleden, Heden, Toekomst. Laat de cliënt 15 waarden kiezen
+            die voor hem/haar belangrijk zijn.
+          </StyledParagraph>
+          <StyledParagraph
+            header="Stap 3: Waarden toewijzen"
+            marginBottom="mb-2"
+          >
+            Teken een horizontale tijdlijn op papier of whiteboard en label drie
+            punten: Verleden, Heden, Toekomst. Laat de cliënt 15 waarden kiezen
+            die voor hem/haar belangrijk zijn.
+          </StyledParagraph>
+          <StyledParagraph marginBottom="mb-2">
+            <b>Verleden:</b> Welke waarden waren belangrijk en hebben jou
+            gevormd?
+          </StyledParagraph>
+          <StyledParagraph marginBottom="mb-2">
+            <b>Heden :</b> Welke waarden zijn nu belangrijk in je dagelijks
+            leven en herstel?
+          </StyledParagraph>
+          <StyledParagraph>
+            <b>Toekomst:</b> Welke waarden wil je belangrijk maken om je doelen
+            en welzijn te ondersteunen?
+          </StyledParagraph>
+          <StyledParagraph
+            header="Stap 4: Reflectie per periode"
+            marginBottom="mb-2"
+          >
+            Bespreek de waarden met vragen zoals:
+          </StyledParagraph>
+          <StyledParagraph marginBottom="mb-2">
+            <b>Verleden:</b> “Waarom was deze waarde destijds belangrijk?”
+          </StyledParagraph>
+          <StyledParagraph marginBottom="mb-2">
+            <b>Heden :</b> “Welke rol speelt deze waarde nu in jouw leven?”
+          </StyledParagraph>
+          <StyledParagraph>
+            <b>Toekomst:</b> “Hoe kan deze waarde je helpen in de toekomst?”
+          </StyledParagraph>
+          <StyledParagraph header="Stap 5: Waarden prioriteren">
+            Vraag de cliënt om per periode de 2-3 belangrijkste waarden te
+            kiezen en bespreek hoe deze hebben gewerkt of kunnen werken.
+          </StyledParagraph>
+          <SubSectionHeader>Stap 6: Afsluiting</SubSectionHeader>
+          <StyledParagraph marginBottom="mb-2">
+            Bespreek samenvattend:{" "}
+          </StyledParagraph>
+          <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
+            <ListItem>Hoe het verleden hem/haar heeft gevormd</ListItem>
+            <ListItem>Hoe het heden helpt bij keuzes</ListItem>
+            <ListItem>
+              Hoe toekomstwaarden ondersteuning bieden in herstel
+            </ListItem>
+            <ListItem>
+              Eventueel actieplan: acties om waarden in het dagelijks leven te
+              integreren
+            </ListItem>
+          </ul>
+          <Divider />
+          <SubSectionHeader>Tips voor de begeleiding</SubSectionHeader>
+          <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
+            <ListItem>
+              Stimuleer de cliënt om zowel terug te kijken als vooruit te
+              denken.
+            </ListItem>
+            <ListItem>
+              Help bij het concretiseren van abstracte waarden.{" "}
+            </ListItem>
+            <ListItem>
+              Gebruik kleuren of symbolen om tijdsperiodes visueel te
+              onderscheiden.
+            </ListItem>
+            <ListItem>
+              Zorg dat reflectievragen persoonlijk en concreet zijn.
+            </ListItem>
+          </ul>
         </div>
-        <div className="mb-6 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Benodigdheden: </span>
-            Een groot vel papier (of whiteboard) en stiften. Drie gekleurde
-            post-its voor drie tijdsperiodes: Verleden, Heden en Toekomst.
-            Post-its voor de waarden.
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Voorbereiding: </span>
-            <span>
-              <span className="italic">Tijdlijn maken:</span> Teken een
-              horizontale lijn op het papier en label drie punten op de tijdlijn
-              met Verleden, Heden, en Toekomst.
-            </span>
-            <span>
-              <span className="italic">Waarden kiezen:</span> Vraag de patiënt
-              om uit een lijst ongeveer 15 waarden te kiezen die hen aanspreken.
-              Deze lijst vind je{" "}
-              <Link
-                href={"/waardenlijst"}
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className="text-blue-600 underline underline-offset-1"
-              >
-                hier
-              </Link>
-              . Schrijf elke waarde op een aparte kaart of post-it.
-            </span>{" "}
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Waarden toewijzen:</span> Geef de
-            patiënt de taak om de waardenkaarten te verdelen over de drie
-            tijdsperiodes.
-            <span>
-              <br />
-              <span className="italic">Verleden:</span> Vraag de patiënt welke
-              waarden in hun verleden belangrijk waren en hen hebben beïnvloed.
-            </span>
-            <span>
-              <span className="italic">Heden: </span> Vraag hen welke waarden
-              momenteel belangrijk zijn in hun dagelijks leven en herstel.
-            </span>
-            <span>
-              <span className="italic">Toekomst: </span> Vraag hen welke waarden
-              zij in de toekomst belangrijk willen maken om hen te ondersteunen
-              in hun doelen en welzijn.
-              <br />
-            </span>
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">
-              Reflectievraag per tijdsperiode:{" "}
-            </span>{" "}
-            Voor elke periode bespreek je de gekozen waarden.
-            <span>
-              <br /> <span className="italic">Verleden:</span> &quot;Waarom was
-              deze waarde destijds belangrijk? Hoe heeft die jou gevormd?&quot;
-            </span>
-            <span>
-              <span className="italic">Heden: </span> &quot;Welke rol speelt
-              deze waarde nu in jouw leven? Hoe helpt deze jou om je sterk te
-              voelen?&quot;
-            </span>
-            <span>
-              <span className="italic">Toekomst: </span> &quot;Wat zou het
-              betekenen als je deze waarde meer centraal zou stellen in je
-              leven? Hoe kan deze waarde je helpen in je herstel?&quot;
-              <br />
-            </span>
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold"> Waarden prioriteren: </span> Nadat
-            de patiënt waarden heeft toegewezen aan elk tijdsblok, vraag je hen
-            om in elke tijdsperiode de belangrijkste 2-3 waarden te kiezen.{" "}
-            <br />
-            <span>
-              Bespreek hoe deze waarden in hun leven hebben gewerkt, werken of
-              kunnen werken.
-            </span>
-          </DialogDescription>
-          <DialogDescription className="flex flex-col gap-2 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            <span className="font-semibold">Afsluiting:</span>
-            <span>
-              <span className="italic">Samenvatting en doelen:</span> Bespreek
-              hoe het verleden hen heeft gevormd, hoe het heden hen helpt om
-              keuzes te maken, en hoe de toekomstwaarden hen kunnen helpen om
-              hun herstel en persoonlijke groei te ondersteunen.
-            </span>
-            <span>
-              <span className="italic">Actieplan:</span> Vraag of er acties zijn
-              die de patiënt wil ondernemen om hun toekomstige waarden te
-              integreren in hun dagelijks leven.
-            </span>{" "}
-          </DialogDescription>
-        </div>
+
         <DialogClose asChild>
           <Button
             type="button"

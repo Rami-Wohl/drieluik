@@ -3,20 +3,15 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "~/components/ui/dialog";
 import { GameContainer } from "./kernquadranten";
 import { Button } from "~/components/ui/button";
-
-function ListItem({ children }: { children: string }) {
-  return (
-    <li className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-      {children}
-    </li>
-  );
-}
+import { StyledParagraph } from "~/components/ui/text-components/paragraph";
+import { SubSectionHeader } from "~/components/ui/text-components/subsection-header";
+import { ListItem } from "~/components/ui/list-item";
+import { Divider } from "~/components/ui/text-components/divider";
 
 export function Doelenspel() {
   return (
@@ -34,52 +29,145 @@ export function Doelenspel() {
             Wat wil je graag allemaal doen met je leven?
           </h3>
         </DialogHeader>
-        <div className="mb-6 flex flex-col gap-6 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            Soms zal je je leven compleet nieuw vorm moeten geven als je uit een
-            verslaving komt. Het doelenspel kan helpen om in beeld te brengen
-            welke dingen je graag wil doen en hoe belangrijk die voor je zijn.
-          </DialogDescription>
-          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            Je begint met zoveel mogelijk categorieën te definiëren. Je geeft je
-            cliënt dan 10 lege briefjes waar ze vervolgens doelen op mogen
-            schrijven. Moedig dan vooral aan om de doelen op zo veel mogelijk
-            verschillende categorieën te laten baseren.
-          </DialogDescription>
-          <div className="flex flex-col gap-2">
-            <span className="font-sans text-base font-medium tracking-[1px] text-[#333333] text-opacity-90 lg:text-lg">
-              Categoriën
-            </span>
-            <ol className="pl-1 font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-              <ListItem>1. Behandeling</ListItem>
-              <ListItem>2. Wonen</ListItem>
-              <ListItem>3. Financiën</ListItem>
-              <ListItem>4. Hobby&apos;s</ListItem>
-              <ListItem>5. Werk</ListItem>
-              <ListItem>6. Opleiding</ListItem>
-              <ListItem>7. Familie</ListItem>
-              <ListItem>8. Sport</ListItem>
-              <ListItem>9. Voeding</ListItem>
-              <ListItem>10. Spiritualiteit</ListItem>
-            </ol>
-          </div>
-          <div className="flex w-full flex-col items-center justify-center">
+        <div className="mb-6 flex flex-col font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
+          <table className="mb-6 p-3">
+            <tbody>
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                  Doel:
+                </td>
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  Gebruik het doelenspel om samen met de cliënt inzicht te
+                  krijgen in wat deze belangrijk vindt bij het opnieuw vormgeven
+                  van zijn of haar leven.
+                </td>
+              </tr>
+              <tr className="h-auto border border-black border-opacity-30">
+                <td className="text-wrap border border-black border-opacity-30 p-2 pr-6 text-start align-top font-sans text-base font-semibold tracking-[1px] text-[#333333] text-opacity-90">
+                  Benodigdheden:
+                </td>
+                <td className="text-wrap border border-black border-opacity-30 p-2 text-start align-top font-sans text-base tracking-[1px] text-[#333333] text-opacity-90">
+                  Pen en papier of een whiteboard, tien papiertjes/memoblaadjes
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <SubSectionHeader size="large">Stappen</SubSectionHeader>
+          <StyledParagraph
+            marginBottom="mb-2"
+            header="Stap 1: introductie van het model "
+          >
+            Sommige mensen merken dat gebruik niet meer past, bijvoorbeeld door
+            klachten achteraf, verlies van controle of impact op werk, relaties
+            of gezondheid.
+          </StyledParagraph>
+          <StyledParagraph marginBottom="mb-2">
+            Leg kort uit dat deze oefening de cliënt helpt om inzicht te krijgen
+            in wat hij/zij belangrijk vindt bij het opnieuw vormgeven van
+            zijn/haar leven
+          </StyledParagraph>
+          <StyledParagraph marginBottom="mb-2">
+            Introduceer onderstaande categorieën:
+          </StyledParagraph>
+          <ol className="mb-6 flex flex-col gap-1 px-4">
+            <ListItem ordered>Behandeling</ListItem>
+            <ListItem ordered>Wonen</ListItem>
+            <ListItem ordered>Financiën</ListItem>
+            <ListItem ordered>Hobby’s</ListItem>
+            <ListItem ordered>Werk</ListItem>
+            <ListItem ordered>Opleiding</ListItem>
+            <ListItem ordered>Familie</ListItem>
+            <ListItem ordered>Sport</ListItem>
+            <ListItem ordered>Voeding</ListItem>
+            <ListItem ordered>Spiritualiteit</ListItem>
+          </ol>
+          <StyledParagraph header="Stap 2: Doelen formuleren">
+            Geef de cliënt tien lege briefjes. De cliënt schrijft op elk briefje
+            één doel. Stimuleer hem/haar om doelen te formuleren binnen
+            verschillende categorieën.
+          </StyledParagraph>
+          <StyledParagraph header="Stap 3: Startopstelling">
+            Laat de cliënt alle doelen op één stapel rechts van zich neerleggen.
+            Dit is de startstapel.
+          </StyledParagraph>
+          <div className="mb-8 mt-2 flex w-full items-center justify-center">
             <DoelenspelKaarten />
           </div>
-          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            Vervolgens leg je alle doelen op een stapel rechts van je (de start
-            stapel). Dan pak je twee willekeurige doelen en die leg je recht
-            voor je neer, dit zijn dan de strijdende doelen. Laat deze strijd op
-            intuïtie gaan en denk er vooral niet te lang over na.
-          </DialogDescription>
-          <DialogDescription className="font-sans text-base tracking-[1px] text-[#333333] text-opacity-90 lg:text-base">
-            Het winnende doel blijft liggen en de verliezer leg je links van je
-            neer. Dit doe je tot er één winnaar voor je blijft liggen en alle
-            doelen op een stapel links van je liggen. Het winnende doel schuif
-            je dan naar boven (en daar schrijf je 1. op) en alle overige doelen
-            leg je weer rechts van je neer op de startstapel en je herhaalt
-            alles totdat er een rangorde in de doelen is ontstaan.
-          </DialogDescription>
+          <SubSectionHeader>
+            Stap 4: Strijdende doelen vergelijken
+          </SubSectionHeader>
+          <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
+            <ListItem>
+              De cliënt pakt twee willekeurige doelen van de startstapel en legt
+              deze recht voor zich neer. Dit zijn de strijdende doelen. Laat de
+              client op basis van intuïtie kiezen welk doel het belangrijkst is,
+              zonder hier te lang over na te denken.
+            </ListItem>
+            <ListItem>Het winnende doel blijft liggen.</ListItem>
+            <ListItem>
+              Het verliezende doel wordt links van de cliënt neergelegd.
+            </ListItem>
+            <ListItem>
+              Deze stap wordt herhaald totdat er nog één doel voor de cliënt
+              ligt en alle andere doelen links liggen.
+            </ListItem>
+          </ul>
+          <StyledParagraph
+            header="Stap 5: Rangorde bepalen"
+            marginBottom="mb-2"
+          >
+            Het overgebleven doel is het belangrijkste doel. Laat de cliënt dit
+            doel bovenaan leggen en nummeren als 1.
+          </StyledParagraph>
+          <StyledParagraph>
+            Daarna worden alle overige doelen opnieuw op de startstapel rechts
+            gelegd. De stappen 4 en 5 worden herhaald totdat alle doelen zijn
+            gerangschikt en er een volledige prioriteitenlijst is ontstaan.{" "}
+          </StyledParagraph>
+          <SubSectionHeader>Stap 6: Reflectie</SubSectionHeader>
+          <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
+            <ListItem>
+              Bespreek samen met de cliënt de gerangschikte doelen.
+            </ListItem>
+            <ListItem>Welke doelen voelen het meest belangrijk?</ListItem>
+            <ListItem>Zijn er verrassingen in de volgorde?</ListItem>
+            <ListItem>
+              Welke doelen zijn haalbaar op korte termijn, welke op lange
+              termijn?
+            </ListItem>
+            <ListItem>
+              Welke kleine stappen kunnen worden gezet om de belangrijkste
+              doelen te bereiken?
+            </ListItem>
+            <ListItem>
+              Noteer eventueel inzichten die de cliënt zelf wil onthouden of
+              verder wil uitwerken.
+            </ListItem>
+          </ul>
+          <Divider />
+          <SubSectionHeader>Tips voor de begeleiding</SubSectionHeader>
+          <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
+            <ListItem>
+              Stimuleer de cliënt om intuïtief te kiezen; voorkom overdenken.
+            </ListItem>
+            <ListItem>Zorg voor een rustige en veilige omgeving.</ListItem>
+            <ListItem>
+              Moedig diversiteit in categorieën aan; soms zijn onverwachte
+              doelen belangrijk.
+            </ListItem>
+            <ListItem>
+              Observeer patronen: welke categorieën domineren, welke blijven
+              leeg?
+            </ListItem>
+            <ListItem>
+              Stel open vragen tijdens de reflectie: “Wat valt je op?” of
+              “Waarom is dit doel zo belangrijk voor je?”
+            </ListItem>
+            <ListItem>
+              Geef de cliënt ruimte om emoties te uiten; sommige doelen roepen
+              sterke gevoelens op.
+            </ListItem>
+          </ul>
         </div>
         <DialogClose asChild>
           <Button

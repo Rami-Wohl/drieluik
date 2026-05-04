@@ -128,7 +128,7 @@ const FlakkaAfbouwtips = () => {
         <ListItem>Gebruiker overschat eigen functioneren</ListItem>
         <ListItem>Verminderd ziektebesef</ListItem>
         <ListItem>Toenemende achterdocht richting hulpverlening</ListItem>
-        <ListItem>Verwaarlozing slaap / structuur </ListItem>
+        <ListItem>Verwaarlozing slaap/structuur </ListItem>
       </ul>
       <StyledParagraph>
         <b>Afbouwen begint vaak met stabiliseren, niet met stoppen.</b>

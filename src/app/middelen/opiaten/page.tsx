@@ -55,7 +55,7 @@ const OpiatenAlgemeen = () => {
       <DrugPropertiesTable
         werkzameStof="Diacetylmorfine C₂₁H₂₃NO₅"
         gebruiksvorm="Roken, snuiven, spuiten"
-        uiterlijkeKenmerken="Bruine kristallen / poeder"
+        uiterlijkeKenmerken="Bruine kristallen/poeder"
         verslavingspotentie="2,9"
         schadeTaxatie="2,53"
       />

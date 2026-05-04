@@ -149,7 +149,7 @@ const RokenAlgemeen = () => {
           frequentere nicotine-inname
         </ListItem>
         <ListItem>
-          <b>Snus / nicotinezakjes:</b> minder longschade, maar langdurige
+          <b>Snus/nicotinezakjes:</b> minder longschade, maar langdurige
           nicotineblootstelling{" "}
         </ListItem>
         <ListItem>

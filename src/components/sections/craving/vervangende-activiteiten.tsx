@@ -197,7 +197,7 @@ export function VervangendeActiviteiten() {
             <thead>
               <tr>
                 <TableHeaderCellStyled className="py-2 align-top">
-                  Fysiek / actief
+                  Fysiek/actief
                 </TableHeaderCellStyled>
                 <TableHeaderCellStyled className="py-2 align-top">
                   Creatief
@@ -206,10 +206,10 @@ export function VervangendeActiviteiten() {
                   Sociaal
                 </TableHeaderCellStyled>
                 <TableHeaderCellStyled className="py-2 align-top">
-                  Ontspanning / rust
+                  Ontspanning/rust
                 </TableHeaderCellStyled>
                 <TableHeaderCellStyled className="py-2 align-top">
-                  Zingeving / groei
+                  Zingeving/groei
                 </TableHeaderCellStyled>
               </tr>
             </thead>

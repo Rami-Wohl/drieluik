@@ -1,13 +1,6 @@
 import { type ReactNode } from "react";
+import { ListItem } from "~/components/ui/list-item";
 import { Pageheader } from "~/components/ui/pageheader";
-
-function ListItem({ children }: { children: ReactNode }) {
-  return (
-    <li className="list-item list-decimal font-sans text-lg tracking-[1px] text-[#333333] text-opacity-90">
-      {children}
-    </li>
-  );
-}
 
 export default function WaardenPage() {
   return (
@@ -15,56 +8,56 @@ export default function WaardenPage() {
       <div className="relative mt-10 flex w-full max-w-full flex-col items-center justify-center gap-10 px-6 md:max-w-[600px]">
         <Pageheader text="Waardenlijst" />
         <ol className="mb-10 flex w-[230px] flex-col gap-1">
-          <ListItem>Gezondheid</ListItem>
-          <ListItem>Familie</ListItem>
-          <ListItem>Vriendschap</ListItem>
-          <ListItem>Vrijheid</ListItem>
-          <ListItem>Zelfvertrouwen</ListItem>
-          <ListItem>Verantwoordelijkheid</ListItem>
-          <ListItem>Veiligheid</ListItem>
-          <ListItem>Geluk</ListItem>
-          <ListItem>Groei</ListItem>
-          <ListItem>Respect</ListItem>
-          <ListItem>Eerlijkheid</ListItem>
-          <ListItem>Vertrouwen</ListItem>
-          <ListItem>Creativiteit</ListItem>
-          <ListItem>Rust</ListItem>
-          <ListItem>Dankbaarheid</ListItem>
-          <ListItem>Zelfbeheersing</ListItem>
-          <ListItem>Empathie</ListItem>
-          <ListItem>Liefde</ListItem>
-          <ListItem>Vergeving</ListItem>
-          <ListItem>Geduld</ListItem>
-          <ListItem>Leren</ListItem>
-          <ListItem>Avontuur</ListItem>
-          <ListItem>Humor</ListItem>
-          <ListItem>Spiritualiteit</ListItem>
-          <ListItem>Vertrouwen op jezelf</ListItem>
-          <ListItem>Verbondenheid</ListItem>
-          <ListItem>Innerlijke vrede</ListItem>
-          <ListItem>Betrouwbaarheid</ListItem>
-          <ListItem>Moed</ListItem>
-          <ListItem>Openheid</ListItem>
-          <ListItem>Zelfexpressie</ListItem>
-          <ListItem>Zorgzaamheid</ListItem>
-          <ListItem>Natuur</ListItem>
-          <ListItem>Kennis</ListItem>
-          <ListItem>Positiviteit</ListItem>
-          <ListItem>Plezier</ListItem>
-          <ListItem>Bescheidenheid</ListItem>
-          <ListItem>Motivatie</ListItem>
-          <ListItem>Levensvreugde</ListItem>
-          <ListItem>Tijd</ListItem>
-          <ListItem>Toewijding</ListItem>
-          <ListItem>Wijsheid</ListItem>
-          <ListItem>Vasthoudendheid</ListItem>
-          <ListItem>Identiteit</ListItem>
-          <ListItem>Betekenisgeving</ListItem>
-          <ListItem>Humor</ListItem>
-          <ListItem>Successen behalen</ListItem>
-          <ListItem>Trouw</ListItem>
-          <ListItem>Plezier</ListItem>
-          <ListItem>Begrip</ListItem>
+          <ListItem ordered>Gezondheid</ListItem>
+          <ListItem ordered>Familie</ListItem>
+          <ListItem ordered>Vriendschap</ListItem>
+          <ListItem ordered>Vrijheid</ListItem>
+          <ListItem ordered>Zelfvertrouwen</ListItem>
+          <ListItem ordered>Verantwoordelijkheid</ListItem>
+          <ListItem ordered>Veiligheid</ListItem>
+          <ListItem ordered>Geluk</ListItem>
+          <ListItem ordered>Groei</ListItem>
+          <ListItem ordered>Respect</ListItem>
+          <ListItem ordered>Eerlijkheid</ListItem>
+          <ListItem ordered>Vertrouwen</ListItem>
+          <ListItem ordered>Creativiteit</ListItem>
+          <ListItem ordered>Rust</ListItem>
+          <ListItem ordered>Dankbaarheid</ListItem>
+          <ListItem ordered>Zelfbeheersing</ListItem>
+          <ListItem ordered>Empathie</ListItem>
+          <ListItem ordered>Liefde</ListItem>
+          <ListItem ordered>Vergeving</ListItem>
+          <ListItem ordered>Geduld</ListItem>
+          <ListItem ordered>Leren</ListItem>
+          <ListItem ordered>Avontuur</ListItem>
+          <ListItem ordered>Humor</ListItem>
+          <ListItem ordered>Spiritualiteit</ListItem>
+          <ListItem ordered>Zelfstandigheid</ListItem>
+          <ListItem ordered>Verbondenheid</ListItem>
+          <ListItem ordered>Innerlijke vrede</ListItem>
+          <ListItem ordered>Betrouwbaarheid</ListItem>
+          <ListItem ordered>Moed</ListItem>
+          <ListItem ordered>Openheid</ListItem>
+          <ListItem ordered>Zelfexpressie</ListItem>
+          <ListItem ordered>Zorgzaamheid</ListItem>
+          <ListItem ordered>Natuur</ListItem>
+          <ListItem ordered>Kennis</ListItem>
+          <ListItem ordered>Positiviteit</ListItem>
+          <ListItem ordered>Speelsheid</ListItem>
+          <ListItem ordered>Bescheidenheid</ListItem>
+          <ListItem ordered>Motivatie</ListItem>
+          <ListItem ordered>Levensvreugde</ListItem>
+          <ListItem ordered>Tijd</ListItem>
+          <ListItem ordered>Toewijding</ListItem>
+          <ListItem ordered>Wijsheid</ListItem>
+          <ListItem ordered>Vasthoudendheid</ListItem>
+          <ListItem ordered>Identiteit</ListItem>
+          <ListItem ordered>Betekenisgeving</ListItem>
+          <ListItem ordered>Successen behalen</ListItem>
+          <ListItem ordered>Trouw</ListItem>
+          <ListItem ordered>Compassie</ListItem>
+          <ListItem ordered>Integriteit</ListItem>
+          <ListItem ordered>Inspiratie</ListItem>
         </ol>
       </div>
     </>
