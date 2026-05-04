@@ -348,7 +348,7 @@ export function VervangendeActiviteitenBronnen() {
             De inhoud van dit luik is gebaseerd op wetenschappelijke literatuur
             over craving, aandacht en imaginatie, waaronder:
           </StyledParagraph>{" "}
-          <ul className="mb-6 mt-2 flex flex-col gap-2">
+          <ul className="mb-6 mt-2 flex flex-col gap-2 px-4">
             <ListItem>
               Meyers, R. J., Roozen, H. G., & Smith, J. E. (2011).{" "}
               <i>

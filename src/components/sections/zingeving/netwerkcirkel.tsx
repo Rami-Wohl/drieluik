@@ -14,7 +14,11 @@ export function Netwerkcirkel() {
   return (
     <Dialog>
       <GameContainer
-        icon={<NetwerkcirkelIcon height={72} width={72} />}
+        icon={
+          <div className="flex h-[72px] w-[72px] items-center justify-center rounded-full border border-black border-opacity-30 bg-green-600 bg-opacity-70">
+            <NetwerkcirkelIcon height={48} width={48} />
+          </div>
+        }
         title="Netwerkcirkel"
       />
       <DialogContent className="max-h-[80vh] w-11/12 max-w-[800px] overflow-x-hidden overflow-y-scroll rounded-md bg-gradient-to-b from-backgroundStart to-background lg:w-2/3">

@@ -18,7 +18,7 @@ export function GameContainer({
   title: string;
 }) {
   return (
-    <DialogTrigger className="flex h-36 w-36 cursor-pointer flex-col items-center justify-between rounded-md border-4 border-green-900 border-opacity-20 bg-green-900 bg-opacity-10 py-3 hover:bg-opacity-20 hover:shadow-sm lg:h-40 lg:w-44">
+    <DialogTrigger className="flex h-36 w-36 cursor-pointer flex-col items-center justify-between rounded-md border-4 border-green-900 border-opacity-20 bg-green-900 bg-opacity-10 pb-3 pt-4 hover:bg-opacity-20 hover:shadow-sm lg:h-40 lg:w-44">
       {icon}
       <span className="max-w-full overflow-hidden px-2 text-sm font-semibold tracking-[0.5px] text-[#333333] text-opacity-90 lg:text-lg">
         {title}
