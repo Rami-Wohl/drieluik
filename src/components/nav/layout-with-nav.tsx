@@ -16,11 +16,11 @@ export const LayoutWithNav = ({ children }: { children: ReactNode }) => {
           </div>
         </main>
 
-        <footer className="flex h-10 w-full items-center justify-center border-t border-black/50">
+        {/* <footer className="flex h-10 w-full items-center justify-center border-t border-black/50">
           <span className="font-sans text-sm">
             Design en ontwikkeling door Rami Wohl © {new Date().getFullYear()}
           </span>
-        </footer>
+        </footer> */}
       </div>
     </NavProvider>
   );
